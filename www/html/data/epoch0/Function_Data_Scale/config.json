@@ -1,0 +1,560 @@
+{
+	"title" : "Scale",
+	"graph" : {
+		"linkDistance" : 20,
+		"charge" : -400,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 8,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"" : {
+			"short" : "",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Loop #4" : {
+			"short" : "Loop #4",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "indvars.iv" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvars.iv" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "shl1514" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "shl1514" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "arrayidx" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "arrayidx" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "bitcast1515" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "bitcast1515" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "load1516" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "load1516" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "fdiv1517" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "fdiv1517" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "bitcast1518" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "bitcast1518" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "store1519" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "store1519" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "indvars.iv.next" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvars.iv.next" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "add1520" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "add1520" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "arrayidx.1" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "arrayidx.1" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "bitcast1521" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "bitcast1521" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "load1522" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "load1522" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "fdiv1523" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "fdiv1523" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "bitcast1524" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "bitcast1524" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "store1525" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "store1525" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "indvars.iv.next.1" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvars.iv.next.1" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "lftr.wideiv.1" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "lftr.wideiv.1" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "exitcond.1" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "exitcond.1" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "br1526" },
+			"type" : "linkStrength",
+			"target" : "Loop #4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "br1526" },
+			"type" : "linkColor",
+			"target" : "Loop #4",
+			"color" : "white"
+		}, {
+			"has" : { "name" : "Loop #4" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop #4" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop #4" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "n1" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "n1" },
+			"type" : "position",
+			"x" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "N" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "N" },
+			"type" : "position",
+			"x" : 0.111111,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "n1" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "n1" },
+			"type" : "position",
+			"x" : 0.222222,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "x" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "x" },
+			"type" : "position",
+			"x" : 0.333333,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "x" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "x" },
+			"type" : "position",
+			"x" : 0.444444,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "n1" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "n1" },
+			"type" : "position",
+			"x" : 0.555556,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "x" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "x" },
+			"type" : "position",
+			"x" : 0.666667,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "x" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "x" },
+			"type" : "position",
+			"x" : 0.777778,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "n1" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "n1" },
+			"type" : "position",
+			"x" : 0.888889,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "store1509" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "store1519" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "store1525" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "ret1529" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

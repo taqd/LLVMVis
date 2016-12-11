@@ -1,0 +1,62 @@
+<script src="code-prettify/loader/run_prettify.js?autoload=true&skin=default" ></script> 
+ <script src="code-prettify/src/lang-llvm.js"></script>
+
+<b>Jump to Module:</b> (stdin) [Control Flow](http://137.82.252.51/graph.php?dataset=Module_Control_stdin)<br /><b>Jump to Function:</b> (main) [Control Flow](http://137.82.252.51/graph.php?dataset=Function_Control_main), [Data Flow](http://137.82.252.51/graph.php?dataset=Function_Data_main) <br />
+<br /><b>Instruction data:</b>
+<pre class="prettyprint lang-llvm ">;; Line: 452, Column: 31
+  %initdonetime482 = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %170, i64 0, i32 7, !dbg !1229</pre>
+Operand # 0 (0x6c163d8) <br /><pre class="prettyprint lang-llvm ">  %170 = load %struct.GlobalMemory*, %struct.GlobalMemory** @Global, align 8, !dbg !1227, !tbaa !489</pre>
+Operand # 1 (0x6b65300) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 2 (0x6c12be0) <br /><pre class="prettyprint lang-llvm ">i32 7</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+if.end470:                                        ; preds = %for.end458, %if.end283
+  %160 = load %struct.GlobalMemory*, %struct.GlobalMemory** @Global, align 8, !dbg !1205, !tbaa !489
+  %starttime = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %160, i64 0, i32 5, !dbg !1206
+  store i64 %add, i64* %starttime, align 8, !dbg !1207, !tbaa !1208
+  %putchar553 = tail call i32 @putchar(i32 10) #5, !dbg !1209
+  %puts554 = tail call i32 @puts(i8* nonnull getelementptr inbounds ([36 x i8], [36 x i8]* @str.71, i64 0, i64 0)), !dbg !1210
+  %161 = load %struct.GlobalMemory*, %struct.GlobalMemory** @Global, align 8, !dbg !1211, !tbaa !489
+  %starttime473 = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %161, i64 0, i32 5, !dbg !1212
+  %162 = load i64, i64* %starttime473, align 8, !dbg !1212, !tbaa !1208
+  %call474 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([43 x i8], [43 x i8]* @.str.52, i64 0, i64 0), i64 %162), !dbg !1213
+  %163 = load %struct.GlobalMemory*, %struct.GlobalMemory** @Global, align 8, !dbg !1214, !tbaa !489
+  %initdonetime = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %163, i64 0, i32 7, !dbg !1215
+  %164 = load i64, i64* %initdonetime, align 8, !dbg !1215, !tbaa !1216
+  %call475 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([43 x i8], [43 x i8]* @.str.53, i64 0, i64 0), i64 %164), !dbg !1217
+  %165 = load %struct.GlobalMemory*, %struct.GlobalMemory** @Global, align 8, !dbg !1218, !tbaa !489
+  %finishtime = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %165, i64 0, i32 6, !dbg !1219
+  %166 = load i64, i64* %finishtime, align 8, !dbg !1219, !tbaa !1220
+  %call476 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([43 x i8], [43 x i8]* @.str.54, i64 0, i64 0), i64 %166), !dbg !1221
+  %167 = load %struct.GlobalMemory*, %struct.GlobalMemory** @Global, align 8, !dbg !1222, !tbaa !489
+  %finishtime477 = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %167, i64 0, i32 6, !dbg !1223
+  %168 = load i64, i64* %finishtime477, align 8, !dbg !1223, !tbaa !1220
+  %starttime478 = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %167, i64 0, i32 5, !dbg !1224
+  %169 = load i64, i64* %starttime478, align 8, !dbg !1224, !tbaa !1208
+  %sub479 = sub nsw i64 %168, %169, !dbg !1225
+  %call480 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([43 x i8], [43 x i8]* @.str.55, i64 0, i64 0), i64 %sub479), !dbg !1226
+  %170 = load %struct.GlobalMemory*, %struct.GlobalMemory** @Global, align 8, !dbg !1227, !tbaa !489
+  %finishtime481 = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %170, i64 0, i32 6, !dbg !1228
+  %171 = load i64, i64* %finishtime481, align 8, !dbg !1228, !tbaa !1220
+  %initdonetime482 = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %170, i64 0, i32 7, !dbg !1229
+  %172 = load i64, i64* %initdonetime482, align 8, !dbg !1229, !tbaa !1216
+  %sub483 = sub nsw i64 %171, %172, !dbg !1230
+  %call484 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([43 x i8], [43 x i8]* @.str.56, i64 0, i64 0), i64 %sub483), !dbg !1231
+  %173 = load i64, i64* @transtime, align 8, !dbg !1232, !tbaa !1049
+  %call485 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([43 x i8], [43 x i8]* @.str.57, i64 0, i64 0), i64 %173), !dbg !1233
+  %174 = load i64, i64* @transtime, align 8, !dbg !1234, !tbaa !1049
+  %conv486 = sitofp i64 %174 to double, !dbg !1235
+  %175 = load %struct.GlobalMemory*, %struct.GlobalMemory** @Global, align 8, !dbg !1236, !tbaa !489
+  %finishtime487 = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %175, i64 0, i32 6, !dbg !1237
+  %176 = load i64, i64* %finishtime487, align 8, !dbg !1237, !tbaa !1220
+  %initdonetime488 = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %175, i64 0, i32 7, !dbg !1238
+  %177 = load i64, i64* %initdonetime488, align 8, !dbg !1238, !tbaa !1216
+  %sub489 = sub nsw i64 %176, %177, !dbg !1239
+  %conv490 = sitofp i64 %sub489 to double, !dbg !1240
+  %div491 = fdiv double %conv486, %conv490, !dbg !1241
+  %call492 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([44 x i8], [44 x i8]* @.str.58, i64 0, i64 0), double %div491), !dbg !1242
+  %putchar555 = tail call i32 @putchar(i32 10) #5, !dbg !1243
+  %178 = load i32, i32* @test\_result, align 4, !dbg !1244, !tbaa !496
+  %tobool494 = icmp eq i32 %178, 0, !dbg !1244
+  br i1 %tobool494, label %if.end509, label %if.then495, !dbg !1246
+</pre>
+<br /><b>Other views:</b><br />[Module\_Control\_stdin](http://137.82.252.51/graph.php?dataset=Module_Control_stdin "Module_Control_stdin")<br />[Function\_Control\_main](http://137.82.252.51/graph.php?dataset=Function_Control_main "Function_Control_main")<br />[Function\_Control\_PrintArray](http://137.82.252.51/graph.php?dataset=Function_Control_PrintArray "Function_Control_PrintArray")<br />[Function\_Control\_SlaveStart](http://137.82.252.51/graph.php?dataset=Function_Control_SlaveStart "Function_Control_SlaveStart")<br />[Function\_Control\_FFT1D](http://137.82.252.51/graph.php?dataset=Function_Control_FFT1D "Function_Control_FFT1D")<br />[Function\_Control\_Transpose](http://137.82.252.51/graph.php?dataset=Function_Control_Transpose "Function_Control_Transpose")<br />[Function\_Control\_FFT1DOnce](http://137.82.252.51/graph.php?dataset=Function_Control_FFT1DOnce "Function_Control_FFT1DOnce")<br />[Function\_Control\_printerr](http://137.82.252.51/graph.php?dataset=Function_Control_printerr "Function_Control_printerr")<br />[Function\_Control\_log\_2](http://137.82.252.51/graph.php?dataset=Function_Control_log_2 "Function_Control_log_2")<br />[Function\_Control\_TouchArray](http://137.82.252.51/graph.php?dataset=Function_Control_TouchArray "Function_Control_TouchArray")<br />[Function\_Control\_CheckSum](http://137.82.252.51/graph.php?dataset=Function_Control_CheckSum "Function_Control_CheckSum")<br />[Function\_Control\_InitX](http://137.82.252.51/graph.php?dataset=Function_Control_InitX "Function_Control_InitX")<br />[Function\_Control\_InitU](http://137.82.252.51/graph.php?dataset=Function_Control_InitU "Function_Control_InitU")<br />[Function\_Control\_InitU2](http://137.82.252.51/graph.php?dataset=Function_Control_InitU2 "Function_Control_InitU2")<br />[Function\_Control\_BitReverse](http://137.82.252.51/graph.php?dataset=Function_Control_BitReverse "Function_Control_BitReverse")<br />[Function\_Control\_TwiddleOneCol](http://137.82.252.51/graph.php?dataset=Function_Control_TwiddleOneCol "Function_Control_TwiddleOneCol")<br />[Function\_Control\_Scale](http://137.82.252.51/graph.php?dataset=Function_Control_Scale "Function_Control_Scale")<br />[Function\_Control\_CopyColumn](http://137.82.252.51/graph.php?dataset=Function_Control_CopyColumn "Function_Control_CopyColumn")<br />[Function\_Control\_Reverse](http://137.82.252.51/graph.php?dataset=Function_Control_Reverse "Function_Control_Reverse")<br />[Function\_Data\_main](http://137.82.252.51/graph.php?dataset=Function_Data_main "Function_Data_main")<br />[Function\_Data\_PrintArray](http://137.82.252.51/graph.php?dataset=Function_Data_PrintArray "Function_Data_PrintArray")<br />[Function\_Data\_SlaveStart](http://137.82.252.51/graph.php?dataset=Function_Data_SlaveStart "Function_Data_SlaveStart")<br />[Function\_Data\_FFT1D](http://137.82.252.51/graph.php?dataset=Function_Data_FFT1D "Function_Data_FFT1D")<br />[Function\_Data\_Transpose](http://137.82.252.51/graph.php?dataset=Function_Data_Transpose "Function_Data_Transpose")<br />[Function\_Data\_FFT1DOnce](http://137.82.252.51/graph.php?dataset=Function_Data_FFT1DOnce "Function_Data_FFT1DOnce")<br />[Function\_Data\_printerr](http://137.82.252.51/graph.php?dataset=Function_Data_printerr "Function_Data_printerr")<br />[Function\_Data\_log\_2](http://137.82.252.51/graph.php?dataset=Function_Data_log_2 "Function_Data_log_2")<br />[Function\_Data\_TouchArray](http://137.82.252.51/graph.php?dataset=Function_Data_TouchArray "Function_Data_TouchArray")<br />[Function\_Data\_CheckSum](http://137.82.252.51/graph.php?dataset=Function_Data_CheckSum "Function_Data_CheckSum")<br />[Function\_Data\_InitX](http://137.82.252.51/graph.php?dataset=Function_Data_InitX "Function_Data_InitX")<br />[Function\_Data\_InitU](http://137.82.252.51/graph.php?dataset=Function_Data_InitU "Function_Data_InitU")<br />[Function\_Data\_InitU2](http://137.82.252.51/graph.php?dataset=Function_Data_InitU2 "Function_Data_InitU2")<br />[Function\_Data\_BitReverse](http://137.82.252.51/graph.php?dataset=Function_Data_BitReverse "Function_Data_BitReverse")<br />[Function\_Data\_TwiddleOneCol](http://137.82.252.51/graph.php?dataset=Function_Data_TwiddleOneCol "Function_Data_TwiddleOneCol")<br />[Function\_Data\_Scale](http://137.82.252.51/graph.php?dataset=Function_Data_Scale "Function_Data_Scale")<br />[Function\_Data\_CopyColumn](http://137.82.252.51/graph.php?dataset=Function_Data_CopyColumn "Function_Data_CopyColumn")<br />[Function\_Data\_Reverse](http://137.82.252.51/graph.php?dataset=Function_Data_Reverse "Function_Data_Reverse")<br />

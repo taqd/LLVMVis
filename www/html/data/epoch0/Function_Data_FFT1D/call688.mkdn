@@ -1,0 +1,63 @@
+<script src="code-prettify/loader/run_prettify.js?autoload=true&skin=default" ></script> 
+ <script src="code-prettify/src/lang-llvm.js"></script>
+
+<b>Jump to Module:</b> (stdin) [Control Flow](http://137.82.252.51/graph.php?dataset=Module_Control_stdin)<br /><b>Jump to Function:</b> (FFT1D) [Control Flow](http://137.82.252.51/graph.php?dataset=Function_Control_FFT1D), [Data Flow](http://137.82.252.51/graph.php?dataset=Function_Data_FFT1D) <br />
+<br /><b>Instruction data:</b>
+<pre class="prettyprint lang-llvm ">;; Line: 776, Column: 2
+  call void @llvm.lifetime.start(i64 4, i8* %1) #5, !dbg !486</pre>
+Operand # 0 (0x6b98b70) <br /><pre class="prettyprint lang-llvm ">i64 4</pre>
+Operand # 1 (0x6c762e8) <br /><pre class="prettyprint lang-llvm ">  %1 = bitcast i32* %Temp to i8*, !dbg !485</pre>
+Operand # 2 (0x6b72fc8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: argmemonly nounwind
+declare void @llvm.lifetime.start(i64, i8* nocapture) #2
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+entry:
+  %Cancel = alloca i32, align 4
+  %Temp = alloca i32, align 4
+  %FullTime = alloca %struct.timeval, align 8
+  %FullTime51 = alloca %struct.timeval, align 8
+  %Cancel74 = alloca i32, align 4
+  %Temp75 = alloca i32, align 4
+  %FullTime137 = alloca %struct.timeval, align 8
+  %FullTime150 = alloca %struct.timeval, align 8
+  %Cancel184 = alloca i32, align 4
+  %Temp185 = alloca i32, align 4
+  %FullTime247 = alloca %struct.timeval, align 8
+  %FullTime260 = alloca %struct.timeval, align 8
+  %Cancel271 = alloca i32, align 4
+  %Temp272 = alloca i32, align 4
+  %Cancel354 = alloca i32, align 4
+  %Temp355 = alloca i32, align 4
+  tail call void @llvm.dbg.value(metadata i32 %direction, i64 0, metadata !220, metadata !462), !dbg !463
+  tail call void @llvm.dbg.value(metadata i32 %M, i64 0, metadata !221, metadata !462), !dbg !464
+  tail call void @llvm.dbg.value(metadata i32 %N, i64 0, metadata !222, metadata !462), !dbg !465
+  tail call void @llvm.dbg.value(metadata double* %x, i64 0, metadata !223, metadata !462), !dbg !466
+  tail call void @llvm.dbg.value(metadata double* %scratch, i64 0, metadata !224, metadata !462), !dbg !467
+  tail call void @llvm.dbg.value(metadata double* %upriv, i64 0, metadata !225, metadata !462), !dbg !468
+  tail call void @llvm.dbg.value(metadata double* %umain2, i64 0, metadata !226, metadata !462), !dbg !469
+  tail call void @llvm.dbg.value(metadata i32 %MyNum, i64 0, metadata !227, metadata !462), !dbg !470
+  tail call void @llvm.dbg.value(metadata i64* %l\_transtime, i64 0, metadata !228, metadata !462), !dbg !471
+  tail call void @llvm.dbg.value(metadata i32 %MyFirst, i64 0, metadata !229, metadata !462), !dbg !472
+  tail call void @llvm.dbg.value(metadata i32 %MyLast, i64 0, metadata !230, metadata !462), !dbg !473
+  tail call void @llvm.dbg.value(metadata i32 %pad\_length, i64 0, metadata !231, metadata !462), !dbg !474
+  tail call void @llvm.dbg.value(metadata i32 %P, i64 0, metadata !232, metadata !462), !dbg !475
+  tail call void @llvm.dbg.value(metadata i32 %test\_result, i64 0, metadata !233, metadata !462), !dbg !476
+  tail call void @llvm.dbg.value(metadata i32 %doprint, i64 0, metadata !234, metadata !462), !dbg !477
+  tail call void @llvm.dbg.value(metadata i32 %dostats, i64 0, metadata !235, metadata !462), !dbg !478
+  tail call void @llvm.dbg.value(metadata %struct.GlobalMemory* %Global, i64 0, metadata !236, metadata !462), !dbg !479
+  tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !241, metadata !462), !dbg !480
+  %div = sdiv i32 %M, 2, !dbg !481
+  tail call void @llvm.dbg.value(metadata i32 %div, i64 0, metadata !239, metadata !462), !dbg !482
+  %shl = shl i32 1, %div, !dbg !483
+  tail call void @llvm.dbg.value(metadata i32 %shl, i64 0, metadata !240, metadata !462), !dbg !484
+  %0 = bitcast i32* %Cancel to i8*, !dbg !485
+  call void @llvm.lifetime.start(i64 4, i8* %0) #5, !dbg !485
+  %1 = bitcast i32* %Temp to i8*, !dbg !485
+  call void @llvm.lifetime.start(i64 4, i8* %1) #5, !dbg !486
+  %mutex = getelementptr inbounds %struct.GlobalMemory, %struct.GlobalMemory* %Global, i64 0, i32 2, i32 0, !dbg !488
+  %call = tail call i32 @pthread\_mutex\_lock(%union.pthread\_mutex\_t* %mutex) #5, !dbg !489
+  %cmp = icmp eq i32 %call, 0, !dbg !490
+  br i1 %cmp, label %if.end, label %if.then, !dbg !492
+</pre>
+<br /><b>Other views:</b><br />[Module\_Control\_stdin](http://137.82.252.51/graph.php?dataset=Module_Control_stdin "Module_Control_stdin")<br />[Function\_Control\_main](http://137.82.252.51/graph.php?dataset=Function_Control_main "Function_Control_main")<br />[Function\_Control\_PrintArray](http://137.82.252.51/graph.php?dataset=Function_Control_PrintArray "Function_Control_PrintArray")<br />[Function\_Control\_SlaveStart](http://137.82.252.51/graph.php?dataset=Function_Control_SlaveStart "Function_Control_SlaveStart")<br />[Function\_Control\_FFT1D](http://137.82.252.51/graph.php?dataset=Function_Control_FFT1D "Function_Control_FFT1D")<br />[Function\_Control\_Transpose](http://137.82.252.51/graph.php?dataset=Function_Control_Transpose "Function_Control_Transpose")<br />[Function\_Control\_FFT1DOnce](http://137.82.252.51/graph.php?dataset=Function_Control_FFT1DOnce "Function_Control_FFT1DOnce")<br />[Function\_Control\_printerr](http://137.82.252.51/graph.php?dataset=Function_Control_printerr "Function_Control_printerr")<br />[Function\_Control\_log\_2](http://137.82.252.51/graph.php?dataset=Function_Control_log_2 "Function_Control_log_2")<br />[Function\_Control\_TouchArray](http://137.82.252.51/graph.php?dataset=Function_Control_TouchArray "Function_Control_TouchArray")<br />[Function\_Control\_CheckSum](http://137.82.252.51/graph.php?dataset=Function_Control_CheckSum "Function_Control_CheckSum")<br />[Function\_Control\_InitX](http://137.82.252.51/graph.php?dataset=Function_Control_InitX "Function_Control_InitX")<br />[Function\_Control\_InitU](http://137.82.252.51/graph.php?dataset=Function_Control_InitU "Function_Control_InitU")<br />[Function\_Control\_InitU2](http://137.82.252.51/graph.php?dataset=Function_Control_InitU2 "Function_Control_InitU2")<br />[Function\_Control\_BitReverse](http://137.82.252.51/graph.php?dataset=Function_Control_BitReverse "Function_Control_BitReverse")<br />[Function\_Control\_TwiddleOneCol](http://137.82.252.51/graph.php?dataset=Function_Control_TwiddleOneCol "Function_Control_TwiddleOneCol")<br />[Function\_Control\_Scale](http://137.82.252.51/graph.php?dataset=Function_Control_Scale "Function_Control_Scale")<br />[Function\_Control\_CopyColumn](http://137.82.252.51/graph.php?dataset=Function_Control_CopyColumn "Function_Control_CopyColumn")<br />[Function\_Control\_Reverse](http://137.82.252.51/graph.php?dataset=Function_Control_Reverse "Function_Control_Reverse")<br />[Function\_Data\_main](http://137.82.252.51/graph.php?dataset=Function_Data_main "Function_Data_main")<br />[Function\_Data\_PrintArray](http://137.82.252.51/graph.php?dataset=Function_Data_PrintArray "Function_Data_PrintArray")<br />[Function\_Data\_SlaveStart](http://137.82.252.51/graph.php?dataset=Function_Data_SlaveStart "Function_Data_SlaveStart")<br />[Function\_Data\_FFT1D](http://137.82.252.51/graph.php?dataset=Function_Data_FFT1D "Function_Data_FFT1D")<br />[Function\_Data\_Transpose](http://137.82.252.51/graph.php?dataset=Function_Data_Transpose "Function_Data_Transpose")<br />[Function\_Data\_FFT1DOnce](http://137.82.252.51/graph.php?dataset=Function_Data_FFT1DOnce "Function_Data_FFT1DOnce")<br />[Function\_Data\_printerr](http://137.82.252.51/graph.php?dataset=Function_Data_printerr "Function_Data_printerr")<br />[Function\_Data\_log\_2](http://137.82.252.51/graph.php?dataset=Function_Data_log_2 "Function_Data_log_2")<br />[Function\_Data\_TouchArray](http://137.82.252.51/graph.php?dataset=Function_Data_TouchArray "Function_Data_TouchArray")<br />[Function\_Data\_CheckSum](http://137.82.252.51/graph.php?dataset=Function_Data_CheckSum "Function_Data_CheckSum")<br />[Function\_Data\_InitX](http://137.82.252.51/graph.php?dataset=Function_Data_InitX "Function_Data_InitX")<br />[Function\_Data\_InitU](http://137.82.252.51/graph.php?dataset=Function_Data_InitU "Function_Data_InitU")<br />[Function\_Data\_InitU2](http://137.82.252.51/graph.php?dataset=Function_Data_InitU2 "Function_Data_InitU2")<br />[Function\_Data\_BitReverse](http://137.82.252.51/graph.php?dataset=Function_Data_BitReverse "Function_Data_BitReverse")<br />[Function\_Data\_TwiddleOneCol](http://137.82.252.51/graph.php?dataset=Function_Data_TwiddleOneCol "Function_Data_TwiddleOneCol")<br />[Function\_Data\_Scale](http://137.82.252.51/graph.php?dataset=Function_Data_Scale "Function_Data_Scale")<br />[Function\_Data\_CopyColumn](http://137.82.252.51/graph.php?dataset=Function_Data_CopyColumn "Function_Data_CopyColumn")<br />[Function\_Data\_Reverse](http://137.82.252.51/graph.php?dataset=Function_Data_Reverse "Function_Data_Reverse")<br />

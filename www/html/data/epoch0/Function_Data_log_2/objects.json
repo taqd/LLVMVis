@@ -1,0 +1,216 @@
+[
+	{
+		"type" : "Loop #13",
+		"name" : "Loop #13",
+		"group" : "",
+		"depends" : [
+			"cmp237",
+			"out.0.ph36",
+			"cumulative.0.ph35",
+			"br1265",
+			"mul",
+			"inc",
+			"cmp2",
+			"cmp1.not",
+			"notlhs.not",
+			"brmerge",
+			"br1268"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "number",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "number",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "number",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "number",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "ret1272",
+		"group" : "",
+		"depends" : [
+			"cmp228"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "cmp233",
+		"group" : "",
+		"depends" : [
+			"number"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "notlhs.not34",
+		"group" : "",
+		"depends" : [
+			"number"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "br1263",
+		"group" : "",
+		"depends" : [
+			"notlhs.not34"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "cmp237",
+		"group" : "",
+		"depends" : [
+			"cmp2",
+			"cmp233"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "out.0.ph36",
+		"group" : "",
+		"depends" : [
+			"inc"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "cumulative.0.ph35",
+		"group" : "",
+		"depends" : [
+			"mul"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "br1265",
+		"group" : "",
+		"depends" : [
+			"cmp237"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "mul",
+		"group" : "",
+		"depends" : [
+			"cumulative.0.ph35"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "inc",
+		"group" : "",
+		"depends" : [
+			"out.0.ph36"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "cmp2",
+		"group" : "",
+		"depends" : [
+			"mul",
+			"number"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "cmp1.not",
+		"group" : "",
+		"depends" : [
+			"out.0.ph36"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "notlhs.not",
+		"group" : "",
+		"depends" : [
+			"mul",
+			"number"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "brmerge",
+		"group" : "",
+		"depends" : [
+			"cmp1.not",
+			"notlhs.not"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "br1268",
+		"group" : "",
+		"depends" : [
+			"brmerge"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "cmp2.lcssa42",
+		"group" : "",
+		"depends" : [
+			"cmp2"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "inc.lcssa",
+		"group" : "",
+		"depends" : [
+			"inc"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "cmp2.lcssa",
+		"group" : "",
+		"depends" : [
+			"cmp233",
+			"cmp2.lcssa42"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "out.0.ph.lcssa",
+		"group" : "",
+		"depends" : [
+			"inc.lcssa"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "phitmp",
+		"group" : "",
+		"depends" : [
+			"cmp2.lcssa",
+			"out.0.ph.lcssa"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "out.0.ph36.lcssa",
+		"group" : "",
+		"depends" : [
+			"out.0.ph36"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "cmp228",
+		"group" : "",
+		"depends" : [
+			"phitmp",
+			"out.0.ph36.lcssa"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "ret1272",
+		"group" : "",
+		"depends" : [
+			"cmp228"
+		]
+	}
+]

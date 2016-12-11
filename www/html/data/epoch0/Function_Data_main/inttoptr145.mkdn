@@ -1,0 +1,38 @@
+<script src="code-prettify/loader/run_prettify.js?autoload=true&skin=default" ></script> 
+ <script src="code-prettify/src/lang-llvm.js"></script>
+
+<b>Jump to Module:</b> (stdin) [Control Flow](http://137.82.252.51/graph.php?dataset=Module_Control_stdin)<br /><b>Jump to Function:</b> (main) [Control Flow](http://137.82.252.51/graph.php?dataset=Function_Control_main), [Data Flow](http://137.82.252.51/graph.php?dataset=Function_Data_main) <br />
+<br /><b>Instruction data:</b>
+<pre class="prettyprint lang-llvm ">;; Line: 274, Column: 11
+  %39 = inttoptr i64 %sub187 to double*, !dbg !781</pre>
+Operand # 0 (0x6b90b60) <br /><pre class="prettyprint lang-llvm ">  %sub187 = sub i64 %add185, %rem186, !dbg !780</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+if.end182:                                        ; preds = %if.else174
+  %37 = ptrtoint i8* %call134 to i64, !dbg !772
+  %add183 = add i64 %37, 4096, !dbg !773
+  %rem = and i64 %37, 4095, !dbg !774
+  %sub184 = sub i64 %add183, %rem, !dbg !775
+  %38 = inttoptr i64 %sub184 to double*, !dbg !776
+  store double* %38, double** @x, align 8, !dbg !777, !tbaa !489
+  %add185 = add i64 %30, 4096, !dbg !778
+  %rem186 = and i64 %30, 4095, !dbg !779
+  %sub187 = sub i64 %add185, %rem186, !dbg !780
+  %39 = inttoptr i64 %sub187 to double*, !dbg !781
+  store double* %39, double** @trans, align 8, !dbg !782, !tbaa !489
+  %add188 = add i64 %31, 4096, !dbg !783
+  %rem189 = and i64 %31, 4095, !dbg !784
+  %sub190 = sub i64 %add188, %rem189, !dbg !785
+  %40 = inttoptr i64 %sub190 to double*, !dbg !786
+  store double* %40, double** @umain2, align 8, !dbg !787, !tbaa !489
+  %putchar = tail call i32 @putchar(i32 10) #5, !dbg !788
+  %puts = tail call i32 @puts(i8* nonnull getelementptr inbounds ([28 x i8], [28 x i8]* @str, i64 0, i64 0)), !dbg !789
+  %41 = load i32, i32* @N, align 4, !dbg !790, !tbaa !496
+  %call193 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([23 x i8], [23 x i8]* @.str.31, i64 0, i64 0), i32 %41), !dbg !791
+  %42 = load i32, i32* @P, align 4, !dbg !792, !tbaa !496
+  %call194 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([18 x i8], [18 x i8]* @.str.32, i64 0, i64 0), i32 %42), !dbg !793
+  %43 = load i32, i32* @num\_cache\_lines, align 4, !dbg !794, !tbaa !496
+  %44 = load i32, i32* @orig\_num\_lines, align 4, !dbg !796, !tbaa !496
+  %cmp195 = icmp eq i32 %43, %44, !dbg !797
+  br i1 %cmp195, label %if.else200, label %if.then197, !dbg !798
+</pre>
+<br /><b>Other views:</b><br />[Module\_Control\_stdin](http://137.82.252.51/graph.php?dataset=Module_Control_stdin "Module_Control_stdin")<br />[Function\_Control\_main](http://137.82.252.51/graph.php?dataset=Function_Control_main "Function_Control_main")<br />[Function\_Control\_PrintArray](http://137.82.252.51/graph.php?dataset=Function_Control_PrintArray "Function_Control_PrintArray")<br />[Function\_Control\_SlaveStart](http://137.82.252.51/graph.php?dataset=Function_Control_SlaveStart "Function_Control_SlaveStart")<br />[Function\_Control\_FFT1D](http://137.82.252.51/graph.php?dataset=Function_Control_FFT1D "Function_Control_FFT1D")<br />[Function\_Control\_Transpose](http://137.82.252.51/graph.php?dataset=Function_Control_Transpose "Function_Control_Transpose")<br />[Function\_Control\_FFT1DOnce](http://137.82.252.51/graph.php?dataset=Function_Control_FFT1DOnce "Function_Control_FFT1DOnce")<br />[Function\_Control\_printerr](http://137.82.252.51/graph.php?dataset=Function_Control_printerr "Function_Control_printerr")<br />[Function\_Control\_log\_2](http://137.82.252.51/graph.php?dataset=Function_Control_log_2 "Function_Control_log_2")<br />[Function\_Control\_TouchArray](http://137.82.252.51/graph.php?dataset=Function_Control_TouchArray "Function_Control_TouchArray")<br />[Function\_Control\_CheckSum](http://137.82.252.51/graph.php?dataset=Function_Control_CheckSum "Function_Control_CheckSum")<br />[Function\_Control\_InitX](http://137.82.252.51/graph.php?dataset=Function_Control_InitX "Function_Control_InitX")<br />[Function\_Control\_InitU](http://137.82.252.51/graph.php?dataset=Function_Control_InitU "Function_Control_InitU")<br />[Function\_Control\_InitU2](http://137.82.252.51/graph.php?dataset=Function_Control_InitU2 "Function_Control_InitU2")<br />[Function\_Control\_BitReverse](http://137.82.252.51/graph.php?dataset=Function_Control_BitReverse "Function_Control_BitReverse")<br />[Function\_Control\_TwiddleOneCol](http://137.82.252.51/graph.php?dataset=Function_Control_TwiddleOneCol "Function_Control_TwiddleOneCol")<br />[Function\_Control\_Scale](http://137.82.252.51/graph.php?dataset=Function_Control_Scale "Function_Control_Scale")<br />[Function\_Control\_CopyColumn](http://137.82.252.51/graph.php?dataset=Function_Control_CopyColumn "Function_Control_CopyColumn")<br />[Function\_Control\_Reverse](http://137.82.252.51/graph.php?dataset=Function_Control_Reverse "Function_Control_Reverse")<br />[Function\_Data\_main](http://137.82.252.51/graph.php?dataset=Function_Data_main "Function_Data_main")<br />[Function\_Data\_PrintArray](http://137.82.252.51/graph.php?dataset=Function_Data_PrintArray "Function_Data_PrintArray")<br />[Function\_Data\_SlaveStart](http://137.82.252.51/graph.php?dataset=Function_Data_SlaveStart "Function_Data_SlaveStart")<br />[Function\_Data\_FFT1D](http://137.82.252.51/graph.php?dataset=Function_Data_FFT1D "Function_Data_FFT1D")<br />[Function\_Data\_Transpose](http://137.82.252.51/graph.php?dataset=Function_Data_Transpose "Function_Data_Transpose")<br />[Function\_Data\_FFT1DOnce](http://137.82.252.51/graph.php?dataset=Function_Data_FFT1DOnce "Function_Data_FFT1DOnce")<br />[Function\_Data\_printerr](http://137.82.252.51/graph.php?dataset=Function_Data_printerr "Function_Data_printerr")<br />[Function\_Data\_log\_2](http://137.82.252.51/graph.php?dataset=Function_Data_log_2 "Function_Data_log_2")<br />[Function\_Data\_TouchArray](http://137.82.252.51/graph.php?dataset=Function_Data_TouchArray "Function_Data_TouchArray")<br />[Function\_Data\_CheckSum](http://137.82.252.51/graph.php?dataset=Function_Data_CheckSum "Function_Data_CheckSum")<br />[Function\_Data\_InitX](http://137.82.252.51/graph.php?dataset=Function_Data_InitX "Function_Data_InitX")<br />[Function\_Data\_InitU](http://137.82.252.51/graph.php?dataset=Function_Data_InitU "Function_Data_InitU")<br />[Function\_Data\_InitU2](http://137.82.252.51/graph.php?dataset=Function_Data_InitU2 "Function_Data_InitU2")<br />[Function\_Data\_BitReverse](http://137.82.252.51/graph.php?dataset=Function_Data_BitReverse "Function_Data_BitReverse")<br />[Function\_Data\_TwiddleOneCol](http://137.82.252.51/graph.php?dataset=Function_Data_TwiddleOneCol "Function_Data_TwiddleOneCol")<br />[Function\_Data\_Scale](http://137.82.252.51/graph.php?dataset=Function_Data_Scale "Function_Data_Scale")<br />[Function\_Data\_CopyColumn](http://137.82.252.51/graph.php?dataset=Function_Data_CopyColumn "Function_Data_CopyColumn")<br />[Function\_Data\_Reverse](http://137.82.252.51/graph.php?dataset=Function_Data_Reverse "Function_Data_Reverse")<br />

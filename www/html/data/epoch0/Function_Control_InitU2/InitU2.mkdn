@@ -1,0 +1,71 @@
+<script src="code-prettify/loader/run_prettify.js?autoload=true&skin=default" ></script> 
+ <script src="code-prettify/src/lang-llvm.js"></script>
+
+<b>Jump to Module:</b> (stdin) [Control Flow](http://137.82.252.51/graph.php?dataset=Module_Control_stdin)<br /><b>Jump to Function:</b> (InitU2) [Control Flow](http://137.82.252.51/graph.php?dataset=Function_Control_InitU2), [Data Flow](http://137.82.252.51/graph.php?dataset=Function_Data_InitU2) <br />
+<br /><b>Function data:</b>
+<pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define i32 @InitU2(i32 %N, double* nocapture %u, i32 %n1) #6 !dbg !196 {
+entry:
+  tail call void @llvm.dbg.value(metadata i32 %N, i64 0, metadata !200, metadata !462), !dbg !2428
+  tail call void @llvm.dbg.value(metadata double* %u, i64 0, metadata !201, metadata !462), !dbg !2429
+  tail call void @llvm.dbg.value(metadata i32 %n1, i64 0, metadata !202, metadata !462), !dbg !2430
+  tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !204, metadata !462), !dbg !2431
+  %cmp44 = icmp sgt i32 %n1, 0, !dbg !2432
+  br i1 %cmp44, label %{{for.body.lr.ph}}, label %{{for.end24}}, !dbg !2433
+
+{{for.body.lr.ph}}:                                   ; preds = %{{entry}}
+  %conv7 = sitofp i32 %N to double, !dbg !2434
+  br label %{{for.body.us}}, !dbg !2433
+
+{{for.body.us}}:                                      ; preds = %{{for.cond1.for.inc22_crit_edge.us}}, %{{for.body.lr.ph}}
+  %j.045.us = phi i32 [ 0, %{{for.body.lr.ph}} ], [ %inc23.us, %{{for.cond1.for.inc22_crit_edge.us}} ]
+  %0 = load i32, i32* @rootN, align 4, !dbg !2435, !tbaa !496
+  %1 = load i32, i32* @pad_length, align 4, !dbg !2436, !tbaa !496
+  %add.us = add nsw i32 %1, %0, !dbg !2437
+  %mul.us = mul nsw i32 %add.us, %j.045.us, !dbg !2438
+  tail call void @llvm.dbg.value(metadata i32 %mul.us, i64 0, metadata !205, metadata !462), !dbg !2439
+  tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !203, metadata !462), !dbg !2440
+  %conv5.us = sitofp i32 %j.045.us to double, !dbg !2441
+  %2 = zext i32 %mul.us to i64, !dbg !2442
+  br label %{{for.body3.us}}, !dbg !2442
+
+{{for.body3.us}}:                                     ; preds = %{{for.body3.us}}, %{{for.body.us}}
+  %indvars.iv = phi i64 [ 0, %{{for.body.us}} ], [ %indvars.iv.next, %{{for.body3.us}} ]
+  %3 = trunc i64 %indvars.iv to i32, !dbg !2443
+  %conv.us = sitofp i32 %3 to double, !dbg !2443
+  %mul4.us = fmul double %conv.us, 6.283200e+00, !dbg !2444
+  %mul6.us = fmul double %conv5.us, %mul4.us, !dbg !2445
+  %div.us = fdiv double %mul6.us, %conv7, !dbg !2446
+  %call.us = tail call double @cos(double %div.us) #5, !dbg !2447
+  %4 = add i64 %indvars.iv, %2, !dbg !2448
+  %5 = trunc i64 %4 to i32, !dbg !2449
+  %mul9.us = shl nsw i32 %5, 1, !dbg !2449
+  %idxprom.us = sext i32 %mul9.us to i64, !dbg !2450
+  %arrayidx.us = getelementptr inbounds double, double* %u, i64 %idxprom.us, !dbg !2450
+  store double %call.us, double* %arrayidx.us, align 8, !dbg !2451, !tbaa !872
+  %call16.us = tail call double @sin(double %div.us) #5, !dbg !2452
+  %sub.us = fsub double -0.000000e+00, %call16.us, !dbg !2453
+  %add19.us = or i32 %mul9.us, 1, !dbg !2454
+  %idxprom20.us = sext i32 %add19.us to i64, !dbg !2455
+  %arrayidx21.us = getelementptr inbounds double, double* %u, i64 %idxprom20.us, !dbg !2455
+  store double %sub.us, double* %arrayidx21.us, align 8, !dbg !2456, !tbaa !872
+  %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1, !dbg !2442
+  %lftr.wideiv = trunc i64 %indvars.iv.next to i32, !dbg !2442
+  %exitcond = icmp eq i32 %lftr.wideiv, %n1, !dbg !2442
+  br i1 %exitcond, label %{{for.cond1.for.inc22_crit_edge.us}}, label %{{for.body3.us}}, !dbg !2442
+
+{{for.cond1.for.inc22_crit_edge.us}}:                 ; preds = %{{for.body3.us}}
+  %inc23.us = add nuw nsw i32 %j.045.us, 1, !dbg !2457
+  tail call void @llvm.dbg.value(metadata i32 %inc23.us, i64 0, metadata !204, metadata !462), !dbg !2431
+  %exitcond47 = icmp eq i32 %inc23.us, %n1, !dbg !2433
+  br i1 %exitcond47, label %{{for.end24.loopexit}}, label %{{for.body.us}}, !dbg !2433
+
+{{for.end24.loopexit}}:                               ; preds = %{{for.cond1.for.inc22_crit_edge.us}}
+  br label %{{for.end24}}, !dbg !2458
+
+{{for.end24}}:                                        ; preds = %{{for.end24.loopexit}}, %{{entry}}
+  ret i32 undef, !dbg !2458
+}
+</pre>
+<br /><b>Other views:</b><br />[Module\_Control\_stdin](http://137.82.252.51/graph.php?dataset=Module_Control_stdin "Module_Control_stdin")<br />[Function\_Control\_main](http://137.82.252.51/graph.php?dataset=Function_Control_main "Function_Control_main")<br />[Function\_Control\_PrintArray](http://137.82.252.51/graph.php?dataset=Function_Control_PrintArray "Function_Control_PrintArray")<br />[Function\_Control\_SlaveStart](http://137.82.252.51/graph.php?dataset=Function_Control_SlaveStart "Function_Control_SlaveStart")<br />[Function\_Control\_FFT1D](http://137.82.252.51/graph.php?dataset=Function_Control_FFT1D "Function_Control_FFT1D")<br />[Function\_Control\_Transpose](http://137.82.252.51/graph.php?dataset=Function_Control_Transpose "Function_Control_Transpose")<br />[Function\_Control\_FFT1DOnce](http://137.82.252.51/graph.php?dataset=Function_Control_FFT1DOnce "Function_Control_FFT1DOnce")<br />[Function\_Control\_printerr](http://137.82.252.51/graph.php?dataset=Function_Control_printerr "Function_Control_printerr")<br />[Function\_Control\_log\_2](http://137.82.252.51/graph.php?dataset=Function_Control_log_2 "Function_Control_log_2")<br />[Function\_Control\_TouchArray](http://137.82.252.51/graph.php?dataset=Function_Control_TouchArray "Function_Control_TouchArray")<br />[Function\_Control\_CheckSum](http://137.82.252.51/graph.php?dataset=Function_Control_CheckSum "Function_Control_CheckSum")<br />[Function\_Control\_InitX](http://137.82.252.51/graph.php?dataset=Function_Control_InitX "Function_Control_InitX")<br />[Function\_Control\_InitU](http://137.82.252.51/graph.php?dataset=Function_Control_InitU "Function_Control_InitU")<br />[Function\_Control\_InitU2](http://137.82.252.51/graph.php?dataset=Function_Control_InitU2 "Function_Control_InitU2")<br />[Function\_Control\_BitReverse](http://137.82.252.51/graph.php?dataset=Function_Control_BitReverse "Function_Control_BitReverse")<br />[Function\_Control\_TwiddleOneCol](http://137.82.252.51/graph.php?dataset=Function_Control_TwiddleOneCol "Function_Control_TwiddleOneCol")<br />[Function\_Control\_Scale](http://137.82.252.51/graph.php?dataset=Function_Control_Scale "Function_Control_Scale")<br />[Function\_Control\_CopyColumn](http://137.82.252.51/graph.php?dataset=Function_Control_CopyColumn "Function_Control_CopyColumn")<br />[Function\_Control\_Reverse](http://137.82.252.51/graph.php?dataset=Function_Control_Reverse "Function_Control_Reverse")<br />[Function\_Data\_main](http://137.82.252.51/graph.php?dataset=Function_Data_main "Function_Data_main")<br />[Function\_Data\_PrintArray](http://137.82.252.51/graph.php?dataset=Function_Data_PrintArray "Function_Data_PrintArray")<br />[Function\_Data\_SlaveStart](http://137.82.252.51/graph.php?dataset=Function_Data_SlaveStart "Function_Data_SlaveStart")<br />[Function\_Data\_FFT1D](http://137.82.252.51/graph.php?dataset=Function_Data_FFT1D "Function_Data_FFT1D")<br />[Function\_Data\_Transpose](http://137.82.252.51/graph.php?dataset=Function_Data_Transpose "Function_Data_Transpose")<br />[Function\_Data\_FFT1DOnce](http://137.82.252.51/graph.php?dataset=Function_Data_FFT1DOnce "Function_Data_FFT1DOnce")<br />[Function\_Data\_printerr](http://137.82.252.51/graph.php?dataset=Function_Data_printerr "Function_Data_printerr")<br />[Function\_Data\_log\_2](http://137.82.252.51/graph.php?dataset=Function_Data_log_2 "Function_Data_log_2")<br />[Function\_Data\_TouchArray](http://137.82.252.51/graph.php?dataset=Function_Data_TouchArray "Function_Data_TouchArray")<br />[Function\_Data\_CheckSum](http://137.82.252.51/graph.php?dataset=Function_Data_CheckSum "Function_Data_CheckSum")<br />[Function\_Data\_InitX](http://137.82.252.51/graph.php?dataset=Function_Data_InitX "Function_Data_InitX")<br />[Function\_Data\_InitU](http://137.82.252.51/graph.php?dataset=Function_Data_InitU "Function_Data_InitU")<br />[Function\_Data\_InitU2](http://137.82.252.51/graph.php?dataset=Function_Data_InitU2 "Function_Data_InitU2")<br />[Function\_Data\_BitReverse](http://137.82.252.51/graph.php?dataset=Function_Data_BitReverse "Function_Data_BitReverse")<br />[Function\_Data\_TwiddleOneCol](http://137.82.252.51/graph.php?dataset=Function_Data_TwiddleOneCol "Function_Data_TwiddleOneCol")<br />[Function\_Data\_Scale](http://137.82.252.51/graph.php?dataset=Function_Data_Scale "Function_Data_Scale")<br />[Function\_Data\_CopyColumn](http://137.82.252.51/graph.php?dataset=Function_Data_CopyColumn "Function_Data_CopyColumn")<br />[Function\_Data\_Reverse](http://137.82.252.51/graph.php?dataset=Function_Data_Reverse "Function_Data_Reverse")<br />

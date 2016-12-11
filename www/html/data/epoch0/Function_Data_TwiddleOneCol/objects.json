@@ -1,0 +1,433 @@
+[
+	{
+		"type" : "Loop #13",
+		"name" : "Loop #13",
+		"group" : "",
+		"depends" : [
+			"indvars.iv",
+			"i.059",
+			"add1",
+			"mul2",
+			"idxprom",
+			"arrayidx",
+			"load1482",
+			"add7",
+			"idxprom8",
+			"arrayidx9",
+			"load1484",
+			"mul10",
+			"trunc1486",
+			"mul11",
+			"idxprom12",
+			"arrayidx13",
+			"load1487",
+			"add15",
+			"idxprom16",
+			"arrayidx17",
+			"load1489",
+			"mul18",
+			"mul19",
+			"sub",
+			"store1491",
+			"mul23",
+			"mul24",
+			"add25",
+			"store1492",
+			"indvars.iv.next",
+			"inc",
+			"lftr.wideiv",
+			"exitcond",
+			"br1494"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "n1",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "pad_length",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "n1",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "j",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "direction",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "u",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "u",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "x",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "x",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "n1",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "store1491",
+		"group" : "",
+		"depends" : [
+			"sub",
+			"arrayidx13"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "store1492",
+		"group" : "",
+		"depends" : [
+			"add25",
+			"arrayidx17"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "ret1496",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "cmp58",
+		"group" : "",
+		"depends" : [
+			"n1"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "br1480",
+		"group" : "",
+		"depends" : [
+			"cmp58"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "add",
+		"group" : "",
+		"depends" : [
+			"pad_length",
+			"n1"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "mul",
+		"group" : "",
+		"depends" : [
+			"add",
+			"j"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "conv",
+		"group" : "",
+		"depends" : [
+			"direction"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "indvars.iv",
+		"group" : "",
+		"depends" : [
+			"indvars.iv.next"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "i.059",
+		"group" : "",
+		"depends" : [
+			"inc"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "add1",
+		"group" : "",
+		"depends" : [
+			"i.059",
+			"mul"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "mul2",
+		"group" : "",
+		"depends" : [
+			"add1"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "idxprom",
+		"group" : "",
+		"depends" : [
+			"mul2"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "arrayidx",
+		"group" : "",
+		"depends" : [
+			"u",
+			"idxprom"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "load1482",
+		"group" : "",
+		"depends" : [
+			"arrayidx"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "add7",
+		"group" : "",
+		"depends" : [
+			"mul2"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "idxprom8",
+		"group" : "",
+		"depends" : [
+			"add7"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "arrayidx9",
+		"group" : "",
+		"depends" : [
+			"u",
+			"idxprom8"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "load1484",
+		"group" : "",
+		"depends" : [
+			"arrayidx9"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "mul10",
+		"group" : "",
+		"depends" : [
+			"conv",
+			"load1484"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "trunc1486",
+		"group" : "",
+		"depends" : [
+			"indvars.iv"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "mul11",
+		"group" : "",
+		"depends" : [
+			"trunc1486"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "idxprom12",
+		"group" : "",
+		"depends" : [
+			"mul11"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "arrayidx13",
+		"group" : "",
+		"depends" : [
+			"x",
+			"idxprom12"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "load1487",
+		"group" : "",
+		"depends" : [
+			"arrayidx13"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "add15",
+		"group" : "",
+		"depends" : [
+			"mul11"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "idxprom16",
+		"group" : "",
+		"depends" : [
+			"add15"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "arrayidx17",
+		"group" : "",
+		"depends" : [
+			"x",
+			"idxprom16"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "load1489",
+		"group" : "",
+		"depends" : [
+			"arrayidx17"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "mul18",
+		"group" : "",
+		"depends" : [
+			"load1482",
+			"load1487"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "mul19",
+		"group" : "",
+		"depends" : [
+			"mul10",
+			"load1489"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "sub",
+		"group" : "",
+		"depends" : [
+			"mul18",
+			"mul19"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "store1491",
+		"group" : "",
+		"depends" : [
+			"sub",
+			"arrayidx13"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "mul23",
+		"group" : "",
+		"depends" : [
+			"load1482",
+			"load1489"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "mul24",
+		"group" : "",
+		"depends" : [
+			"mul10",
+			"load1487"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "add25",
+		"group" : "",
+		"depends" : [
+			"mul24",
+			"mul23"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "store1492",
+		"group" : "",
+		"depends" : [
+			"add25",
+			"arrayidx17"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "indvars.iv.next",
+		"group" : "",
+		"depends" : [
+			"indvars.iv"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "inc",
+		"group" : "",
+		"depends" : [
+			"i.059"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "lftr.wideiv",
+		"group" : "",
+		"depends" : [
+			"indvars.iv.next"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "exitcond",
+		"group" : "",
+		"depends" : [
+			"lftr.wideiv",
+			"n1"
+		]
+	}, {
+		"type" : "Loop #13",
+		"name" : "br1494",
+		"group" : "",
+		"depends" : [
+			"exitcond"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "ret1496",
+		"group" : "",
+		"depends" : [
+
+		]
+	}
+]

@@ -1,0 +1,83 @@
+[
+	{
+		"type" : "Helper",
+		"name" : "Scale",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop #4",
+		"name" : "Loop #4",
+		"group" : "",
+		"depends" : [
+			"for.body"
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "entry",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "for.body.lr.ph",
+		"group" : "",
+		"depends" : [
+			"entry"
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "for.body.prol",
+		"group" : "",
+		"depends" : [
+			"for.body.lr.ph"
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "for.body.lr.ph.split",
+		"group" : "",
+		"depends" : [
+			"for.body.prol",
+			"for.body.lr.ph"
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "for.body.lr.ph.split.split",
+		"group" : "",
+		"depends" : [
+			"for.body.lr.ph.split"
+		]
+	}, {
+		"type" : "Loop #4",
+		"name" : "for.body",
+		"group" : "",
+		"depends" : [
+			"for.body.lr.ph.split.split"
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "for.end.loopexit.unr-lcssa",
+		"group" : "",
+		"depends" : [
+			"for.body"
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "for.end.loopexit",
+		"group" : "",
+		"depends" : [
+			"for.end.loopexit.unr-lcssa",
+			"for.body.lr.ph.split"
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "for.end",
+		"group" : "",
+		"depends" : [
+			"for.end.loopexit",
+			"entry"
+		]
+	}
+]

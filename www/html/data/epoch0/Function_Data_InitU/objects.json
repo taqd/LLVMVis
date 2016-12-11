@@ -1,0 +1,432 @@
+[
+	{
+		"type" : "Loop #9",
+		"name" : "Loop #9",
+		"group" : "",
+		"depends" : [
+			"shl52",
+			"q.051",
+			"cmp348",
+			"br1406",
+			"sub",
+			"mul7",
+			"conv8",
+			"sext1407",
+			"sext1408",
+			"indvars.iv",
+			"add1410",
+			"load1411",
+			"sext1412",
+			"cmp6",
+			"br1413",
+			"trunc1414",
+			"conv",
+			"mul",
+			"div",
+			"call",
+			"trunc1415",
+			"mul10",
+			"idxprom",
+			"arrayidx",
+			"store1416",
+			"call16",
+			"sub17",
+			"add20",
+			"idxprom21",
+			"arrayidx22",
+			"store1417",
+			"indvars.iv.next",
+			"cmp3",
+			"br1418",
+			"inc24",
+			"shl",
+			"cmp",
+			"br1421"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "Loop #5",
+		"group" : "",
+		"depends" : [
+			"indvars.iv",
+			"add1410",
+			"load1411",
+			"sext1412",
+			"cmp6",
+			"br1413",
+			"trunc1414",
+			"conv",
+			"mul",
+			"div",
+			"call",
+			"trunc1415",
+			"mul10",
+			"idxprom",
+			"arrayidx",
+			"store1416",
+			"call16",
+			"sub17",
+			"add20",
+			"idxprom21",
+			"arrayidx22",
+			"store1417",
+			"indvars.iv.next",
+			"cmp3",
+			"br1418"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "N",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "rootN",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "u",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "u",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "N",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "store1416",
+		"group" : "",
+		"depends" : [
+			"call",
+			"arrayidx"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "store1417",
+		"group" : "",
+		"depends" : [
+			"sub17",
+			"arrayidx22"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "ret1424",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "cmp50",
+		"group" : "",
+		"depends" : [
+			"N"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "br1401",
+		"group" : "",
+		"depends" : [
+			"cmp50"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "shl52",
+		"group" : "",
+		"depends" : [
+			"shl"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "q.051",
+		"group" : "",
+		"depends" : [
+			"inc24"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "cmp348",
+		"group" : "",
+		"depends" : [
+			"shl52"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "br1406",
+		"group" : "",
+		"depends" : [
+			"cmp348"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "sub",
+		"group" : "",
+		"depends" : [
+			"shl52"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "mul7",
+		"group" : "",
+		"depends" : [
+			"shl52"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "conv8",
+		"group" : "",
+		"depends" : [
+			"mul7"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "sext1407",
+		"group" : "",
+		"depends" : [
+			"shl52"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "sext1408",
+		"group" : "",
+		"depends" : [
+			"sub"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "indvars.iv",
+		"group" : "",
+		"depends" : [
+			"indvars.iv.next"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "add1410",
+		"group" : "",
+		"depends" : [
+			"sext1408",
+			"indvars.iv"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "load1411",
+		"group" : "",
+		"depends" : [
+			"rootN"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "sext1412",
+		"group" : "",
+		"depends" : [
+			"load1411"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "cmp6",
+		"group" : "",
+		"depends" : [
+			"add1410",
+			"sext1412"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "br1413",
+		"group" : "",
+		"depends" : [
+			"cmp6"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "trunc1414",
+		"group" : "",
+		"depends" : [
+			"indvars.iv"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "conv",
+		"group" : "",
+		"depends" : [
+			"trunc1414"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "mul",
+		"group" : "",
+		"depends" : [
+			"conv"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "div",
+		"group" : "",
+		"depends" : [
+			"mul",
+			"conv8"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "call",
+		"group" : "",
+		"depends" : [
+			"div"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "trunc1415",
+		"group" : "",
+		"depends" : [
+			"add1410"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "mul10",
+		"group" : "",
+		"depends" : [
+			"trunc1415"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "idxprom",
+		"group" : "",
+		"depends" : [
+			"mul10"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "arrayidx",
+		"group" : "",
+		"depends" : [
+			"u",
+			"idxprom"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "store1416",
+		"group" : "",
+		"depends" : [
+			"call",
+			"arrayidx"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "call16",
+		"group" : "",
+		"depends" : [
+			"div"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "sub17",
+		"group" : "",
+		"depends" : [
+			"call16"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "add20",
+		"group" : "",
+		"depends" : [
+			"mul10"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "idxprom21",
+		"group" : "",
+		"depends" : [
+			"add20"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "arrayidx22",
+		"group" : "",
+		"depends" : [
+			"u",
+			"idxprom21"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "store1417",
+		"group" : "",
+		"depends" : [
+			"sub17",
+			"arrayidx22"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "indvars.iv.next",
+		"group" : "",
+		"depends" : [
+			"indvars.iv"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "cmp3",
+		"group" : "",
+		"depends" : [
+			"indvars.iv.next",
+			"sext1407"
+		]
+	}, {
+		"type" : "Loop #5",
+		"name" : "br1418",
+		"group" : "",
+		"depends" : [
+			"cmp3"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "inc24",
+		"group" : "",
+		"depends" : [
+			"q.051"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "shl",
+		"group" : "",
+		"depends" : [
+			"inc24"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "cmp",
+		"group" : "",
+		"depends" : [
+			"shl",
+			"N"
+		]
+	}, {
+		"type" : "Loop #9",
+		"name" : "br1421",
+		"group" : "",
+		"depends" : [
+			"cmp"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "ret1424",
+		"group" : "",
+		"depends" : [
+
+		]
+	}
+]
