@@ -21,7 +21,7 @@ javascript library.
 #### Module Level Control Flow View
 
 
-![Control Flow view of Module](https://github.com/tqdwyer/LLVMVis/img/LLVMVis_470lbm_ModuleCF.gif)]
+![Control Flow view of Module](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_ModuleCF.gif)]
 
 ### Other details
 
