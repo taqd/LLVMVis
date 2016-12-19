@@ -14,7 +14,21 @@ javascript library.
 * A history across successive visualizations allowing for changes in code to be easily seen and understood.
 * Extended information on every node, such as the IR of the object, along with its debug information. This is easily adapted to show anything else that the developer desires.
 * Ability to navigate through a program, from function to function, or block to block in a single, easy to use interface.
-* Themeable! 
+* Themeable!
+
+## Installation
+* Add the source code to your LLVM source directory
+** git clone https://github.com/tqdwyer/LLVMVis.git ~/<LLVM SRC>/lib/Analysis
+** add “add_subdirectory(visualize)” to <LLVM SRC>/lib/Analysis/CMakeLists.txt
+** Re-build your llvm
+
+* Install a webserver with php
+** sudo apt-get install apache2 php libapache2-mod-php
+
+* Run the visualization pass
+** opt –load visualize.so –visualize -o dump < your_input.bc
+
+* Now check out your webserver! The pass will automatically sync the data files to /var/www/http/data
 
 ## Demonstration
 
