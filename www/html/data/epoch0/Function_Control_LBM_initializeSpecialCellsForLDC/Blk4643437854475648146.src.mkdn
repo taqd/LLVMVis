@@ -1,0 +1,27 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk4643437854475648146 ():
+L132,C6:  call void @llvm.dbg.declare(metadata i32** %_aux_, metadata !428, metadata !199), !dbg !431
+L132,C6:  %32 = load i32, i32* %x, align 4, !dbg !259
+L132,C6:  %33 = load i32, i32* %y, align 4, !dbg !259
+L132,C6:  %34 = mul nsw i32 %33, 100, !dbg !259
+L132,C6:  %35 = add nsw i32 %32, %34, !dbg !259
+L132,C6:  %36 = load i32, i32* %z, align 4, !dbg !259
+L132,C6:  %37 = mul nsw i32 %36, 100, !dbg !259
+L132,C6:  %38 = mul nsw i32 %37, 100, !dbg !259
+L132,C6:  %39 = add nsw i32 %35, %38, !dbg !259
+L132,C6:  %40 = mul nsw i32 20, %39, !dbg !259
+L132,C6:  %41 = add nsw i32 19, %40, !dbg !259
+L132,C6:  %42 = sext i32 %41 to i64, !dbg !259
+L132,C6:  %43 = load double*, double** %1, align 8, !dbg !259
+L132,C6:  %44 = getelementptr inbounds double, double* %43, i64 %42, !dbg !259
+L132,C6:  %45 = bitcast double* %44 to i8*, !dbg !259
+L132,C6:  %46 = bitcast i8* %45 to i32*, !dbg !259
+L132,C6:  store i32* %46, i32** %_aux_, align 8, !dbg !259
+L132,C6:  %47 = load i32*, i32** %_aux_, align 8, !dbg !259
+L132,C6:  %48 = load i32, i32* %47, align 4, !dbg !259
+L132,C6:  %49 = or i32 %48, 1, !dbg !259
+L132,C6:  store i32 %49, i32* %47, align 4, !dbg !259
+L133,C5:  br label %88, !dbg !260
+

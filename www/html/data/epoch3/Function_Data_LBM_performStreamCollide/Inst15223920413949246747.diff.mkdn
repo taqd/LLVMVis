@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d269d0) <br /><pre class="prettyprint lang-llvm ">  %6 = and i32 %5, 1, </pre>
+< Operand # 1 (0x4d2a9e0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+---
+> <br/>Operand # 0 (0x4f07330) <br /><pre class="prettyprint lang-llvm ">  %6 = and i32 %5, 1, </pre>
+> Operand # 1 (0x4ee7750) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>

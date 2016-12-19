@@ -1,0 +1,19 @@
+;; Line: 508, Column: 9
+  %423 = load i32, i32* %nObstacleCells, align 4, 
+</pre>
+<br/>Operand # 0 (0x5d5dd68) <br /><pre class="prettyprint lang-llvm ">  %nObstacleCells = alloca i32, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:422                                     ; preds = %2
+  %423 = load i32, i32* %nObstacleCells, align 4, 
+  %424 = load i32, i32* %nAccelCells, align 4, 
+  %425 = load i32, i32* %nFluidCells, align 4, 
+  %426 = load double, double* %minRho, align 8, 
+  %427 = load double, double* %maxRho, align 8, 
+  %428 = load double, double* %mass, align 8, 
+  %429 = load double, double* %minU2, align 8, 
+  %430 = call double @sqrt(double %429) #6, 
+  %431 = load double, double* %maxU2, align 8, 
+  %432 = call double @sqrt(double %431) #6, 
+  %433 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([138 x i8], [138 x i8]* @.str.2, i32 0, i32 0), i32 %423, i32 %424, i32 %425, double %426, double %427, double %428, double %430, double %432), 
+  ret void, 
+</pre>

@@ -1,0 +1,50 @@
+File: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+Blk13635905812159140990 ():
+L39,C14:  %7 = load i32, i32* %t, align 4, !dbg !215
+L39,C25:  %8 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i32 0, i32 0, !dbg !218
+L39,C25:  %9 = load i32, i32* %8, align 8, !dbg !218
+L39,C16:  %10 = icmp sle i32 %7, %9, !dbg !219
+L39,C2:  br i1 %10, label %11, label %35, !dbg !220
+
+Blk721064491137785041 ():
+L40,C13:  %12 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i32 0, i32 3, !dbg !221
+L40,C13:  %13 = load i32, i32* %12, align 4, !dbg !221
+L40,C21:  %14 = icmp eq i32 %13, 1, !dbg !224
+L40,C7:  br i1 %14, label %15, label %18, !dbg !225
+
+Blk2883330386313427965 ():
+L41,C26:  %16 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !226
+L41,C25:  %17 = getelementptr inbounds [26000000 x double], [26000000 x double]* %16, i32 0, i32 0, !dbg !228
+L41,C4:  call void @LBM_handleInOutFlow(double* %17), !dbg !229
+L42,C3:  br label %18, !dbg !230
+
+Blk6107138962260328550 ():
+L44,C30:  %19 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !231
+L44,C29:  %20 = getelementptr inbounds [26000000 x double], [26000000 x double]* %19, i32 0, i32 0, !dbg !232
+L44,C40:  %21 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !233
+L44,C39:  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i32 0, i32 0, !dbg !234
+L44,C3:  call void @LBM_performStreamCollide(double* %20, double* %22), !dbg !235
+L45,C3:  call void @LBM_swapGrids([26000000 x double]** @srcGrid, [26000000 x double]** @dstGrid), !dbg !236
+L47,C8:  %23 = load i32, i32* %t, align 4, !dbg !237
+L47,C10:  %24 = and i32 %23, 63, !dbg !239
+L47,C16:  %25 = icmp eq i32 %24, 0, !dbg !240
+L47,C7:  br i1 %25, label %26, label %31, !dbg !241
+
+Blk17969493404145094958 ():
+L48,C30:  %27 = load i32, i32* %t, align 4, !dbg !242
+L48,C4:  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i32 0, i32 0), i32 %27), !dbg !244
+L49,C29:  %29 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !245
+L49,C28:  %30 = getelementptr inbounds [26000000 x double], [26000000 x double]* %29, i32 0, i32 0, !dbg !246
+L49,C4:  call void @LBM_showGridStatistics(double* %30), !dbg !247
+L50,C3:  br label %31, !dbg !248
+
+Blk6393248884221118880 ():
+L51,C2:  br label %32, !dbg !249
+
+Blk4963448313971312132 ():
+L39,C38:  %33 = load i32, i32* %t, align 4, !dbg !250
+L39,C38:  %34 = add nsw i32 %33, 1, !dbg !250
+L39,C38:  store i32 %34, i32* %t, align 4, !dbg !250
+L39,C2:  br label %6, !dbg !252
+

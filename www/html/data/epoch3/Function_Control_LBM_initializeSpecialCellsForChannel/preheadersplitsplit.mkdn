@@ -1,0 +1,8 @@
+File: lbm.c, Lines: 160, Cols: 16,
+.preheader.split.split:                           ; preds = %53, %.preheader.split.split.preheader
+  %indvars.iv38 = phi i64 [ 0, %.preheader.split.split.preheader ], [ %indvars.iv.next39.1, %53 ]
+  %33 = trunc i64 %indvars.iv38 to i32, 
+  switch i32 %33, label %.preheader.split.split.153 [
+    i32 99, label %34
+    i32 0, label %34
+  ], 

@@ -1,0 +1,25 @@
+2,13c2,11
+< ; Function Attrs: nounwind uwtable
+< define void @LBM_swapGrids([26000000 x double]** %grid1, [26000000 x double]** %grid2) #0 {
+<   %1 = alloca [26000000 x double]**, align 8
+<   %2 = alloca [26000000 x double]**, align 8
+<   %aux = alloca [26000000 x double]*, align 8
+<   store [26000000 x double]** %grid1, [26000000 x double]*** %1, align 8
+<   store [26000000 x double]** %grid2, [26000000 x double]*** %2, align 8
+<   %3 = load [26000000 x double]**, [26000000 x double]*** %1, align 8, 
+<   %4 = load [26000000 x double]*, [26000000 x double]** %3, align 8, 
+<   store [26000000 x double]* %4, [26000000 x double]** %aux, align 8, 
+<   %5 = load [260000
+< ... (TRIMMED)
+\ No newline at end of file
+---
+> ; Function Attrs: norecurse nounwind uwtable
+> define void @LBM_swapGrids([26000000 x double]** nocapture %grid1, [26000000 x double]** nocapture %grid2) #4 {
+>   %1 = bitcast [26000000 x double]** %grid1 to i64*, 
+>   %2 = load i64, i64* %1, align 8, 
+>   %3 = bitcast [26000000 x double]** %grid2 to i64*, 
+>   %4 = load i64, i64* %3, align 8, 
+>   store i64 %4, i64* %1, align 8, 
+>   store i64 %2, i64* %3, align 8, 
+>   ret void, 
+> }

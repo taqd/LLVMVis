@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d2b7f0) <br /><pre class="prettyprint lang-llvm ">double -1.000000e+30</pre>
+< Operand # 1 (0x4da0958) <br /><pre class="prettyprint lang-llvm ">  %maxRho.1 = select i1 %77, double %75, double %maxRho.0129, </pre>
+---
+> <br/>Operand # 0 (0x4ee8560) <br /><pre class="prettyprint lang-llvm ">double -1.000000e+30</pre>
+> Operand # 1 (0x4f63248) <br /><pre class="prettyprint lang-llvm ">  %maxRho.1 = select i1 %77, double %75, double %maxRho.0129, </pre>

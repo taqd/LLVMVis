@@ -1,0 +1,27 @@
+;; Line: 252, Column: 21
+  store double %684, double* %689, align 8, 
+</pre>
+<br/>Operand # 0 (0x5cdaef0) <br /><pre class="prettyprint lang-llvm ">  %684 = fadd double %672, %683, </pre>
+Operand # 1 (0x5cdb170) <br /><pre class="prettyprint lang-llvm ">  %689 = getelementptr inbounds double, double* %688, i64 %687, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:587                                     ; preds = %586, %227
+  %588 = load double, double* %ux, align 8, 
+  %589 = load double, double* %ux, align 8, 
+  %590 = fmul double %588, %589, 
+  %591 = load double, double* %uy, align 8, 
+  %592 = load double, double* %uy, align 8, 
+  %593 = fmul double %591, %592, 
+  %594 = fadd double %590, %593, 
+  %595 = load double, double* %uz, align 8, 
+  %596 = load double, double* %uz, align 8, 
+  %597 = fmul double %595, %596, 
+  %598 = fadd double %594, %597, 
+  %599 = fmul double 1.500000e+00, %598, 
+  store double %599, double* %u2, align 8, 
+  %600 = load i32, i32* %i, align 4, 
+  %601 = add nsw i32 0, %600, 
+  %602 = sext i32 %601 to i64, 
+  %603 = load double*, double** %1, align 8, 
+  %604 = getelementptr inbounds double, double* %603, i64 %602, 
+  %605 = load double, double
+... (TRIMMED)</pre>

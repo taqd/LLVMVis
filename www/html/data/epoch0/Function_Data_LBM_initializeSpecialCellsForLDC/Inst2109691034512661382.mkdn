@@ -1,0 +1,25 @@
+;; Line: 132, Column: 6
+  %46 = bitcast i8* %45 to i32*, 
+</pre>
+<br/>Operand # 0 (0x5cc40d8) <br /><pre class="prettyprint lang-llvm ">  %45 = bitcast double* %44 to i8*, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:31                                      ; preds = %28, %25, %22, %19, %16, %13
+  %32 = load i32, i32* %x, align 4, 
+  %33 = load i32, i32* %y, align 4, 
+  %34 = mul nsw i32 %33, 100, 
+  %35 = add nsw i32 %32, %34, 
+  %36 = load i32, i32* %z, align 4, 
+  %37 = mul nsw i32 %36, 100, 
+  %38 = mul nsw i32 %37, 100, 
+  %39 = add nsw i32 %35, %38, 
+  %40 = mul nsw i32 20, %39, 
+  %41 = add nsw i32 19, %40, 
+  %42 = sext i32 %41 to i64, 
+  %43 = load double*, double** %1, align 8, 
+  %44 = getelementptr inbounds double, double* %43, i64 %42, 
+  %45 = bitcast double* %44 to i8*, 
+  %46 = bitcast i8* %45 to i32*, 
+  store i32* %46, i32** %_aux_, align 8, 
+  %47 = load i32*, i32** %_aux_, align 8, 
+  %48 = load i32, i32* %47, align 4, 
+... (TRIMMED)</pre>

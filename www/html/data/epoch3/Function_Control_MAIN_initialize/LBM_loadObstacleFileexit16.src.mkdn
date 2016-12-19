@@ -1,0 +1,7 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+LBM_loadObstacleFileexit16 (LBM_loadObstacleFile.exit16):
+L112,C2:  %63 = tail call i32 @fclose(%struct._IO_FILE* %42) #7, !dbg !292
+L134,C2:  br label %64, !dbg !293
+

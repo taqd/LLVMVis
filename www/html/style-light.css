@@ -1,0 +1,197 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /* color: green; */
+    /* background-color: black; */
+    overflow-y: hidden;
+}
+
+html.lt-ie9, html.lt-ie9 body {
+    width: auto;
+    height: 100px;
+}
+
+.unsupported-browser {
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 0 5px 45px;
+    margin: 8px 8px 8px 100px;
+    background: url(ie-notice.png) no-repeat center left;
+    display: none;
+}
+html.lt-ie9 .unsupported-browser {
+    display: block;
+}
+
+.nav-button {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+#docs-list {
+    margin: 50px 8px 8px 8px;
+}
+
+#docs-list .docs {
+    border-bottom: 1px solid #ccc;
+    margin: 12px 0;
+}
+
+html.lt-ie9 #graph-container {
+    display: none;
+}
+
+#split-container {
+    height: 100%;
+    width: 100%;
+}
+
+#graph-container {
+    float: left;
+    /* width: 60%; */    
+    height: 100%;
+}
+
+#docs-container {
+    /* width: 40%; */
+    height: 100%;
+    float: left;
+    position: relative;
+    border-left: 2px solid black;    
+    display: none;
+    overflow-y: scroll;
+}
+#docs-close {
+    display: block;
+    position: fixed;
+    font-size: 2em;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    right: 16px;
+    background: white
+    color: green;
+    text-align: center;
+    text-decoration: none;
+}
+#docs-close:hover {
+    background: #ccc;
+}
+#docs-scroll {
+    overflow-y: scroll;
+}
+#docs {
+    padding: 8px;
+}
+
+.docs h2 {
+    font-size: 24px; /* h3 */
+    margin-top: 0;
+}
+.docs h3 {
+    font-size: 14px; /* h4 */
+}
+.docs h2 em, .docs h3 em {
+    font-size: 8px;
+    color: #999;
+    padding-left: 4px;
+    font-style: normal;
+}
+.docs pre {
+    padding: 4px;
+    
+    /*For line wrapping the box unset this*/
+    white-space: pre;
+    
+    /* background-color: black; */
+}
+.docs .select-object.missing {
+    color: #c7254e;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.lasso path {
+  stroke: rgb(80,80,80);
+  stroke-width:2px;
+}
+
+.lasso .drawn {
+  fill-opacity:.05 ;
+}
+
+.lasso .loop_close {
+  fill:none;
+  stroke-dasharray: 4,4;
+}
+
+.lasso .origin {
+  fill:#3399FF;
+  fill-opacity:.5;
+}
+
+.not_possible {
+  fill:rgb(200,200,200);
+}
+
+.possible {
+  fill:#EC888C;
+}
+
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Style the tab content */
+.show {
+    display: block;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}

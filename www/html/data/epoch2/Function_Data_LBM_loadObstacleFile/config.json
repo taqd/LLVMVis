@@ -1,0 +1,904 @@
+{
+	"title" : "LBM_loadObstacleFile",
+	"graph" : {
+		"linkDistance" : 20,
+		"charge" : -400,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 8,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "LBM_loadObstacleFile" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "LBM_loadObstacleFile" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "indvarsiv17" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsiv17" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst12510429260640023231" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst12510429260640023231" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "indvarsiv14" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsiv14" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst13295664854749091068" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst13295664854749091068" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst13582264887573176499" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst13582264887573176499" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst8052435468266680325" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst8052435468266680325" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "indvarsiv" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsiv" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst101120102850345732" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst101120102850345732" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst14808163149375140432" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst14808163149375140432" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6637879201484942483" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6637879201484942483" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst9850030378581956250" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst9850030378581956250" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst17868808884019799845" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst17868808884019799845" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst11894813527780433473" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst11894813527780433473" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst1790722974819562785" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst1790722974819562785" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6830829988215191385" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6830829988215191385" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst3105230832474180807" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst3105230832474180807" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst10314936924722983352" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst10314936924722983352" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "indvarsivnext" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsivnext" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst10431294560289632212" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst10431294560289632212" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "exitcond" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "exitcond" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst2669633399840171690" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst2669633399840171690" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "indvarsivnext15" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsivnext15" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "exitcond16" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "exitcond16" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst14882533745732266507" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst14882533745732266507" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst8417187732028107226" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst8417187732028107226" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "indvarsivnext18" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsivnext18" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "exitcond19" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "exitcond19" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst14912428871036945891" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst14912428871036945891" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop1" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop1" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop1" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "indvarsiv14" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsiv14" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst13295664854749091068" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst13295664854749091068" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst13582264887573176499" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst13582264887573176499" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst8052435468266680325" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst8052435468266680325" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "indvarsiv" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsiv" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst101120102850345732" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst101120102850345732" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst14808163149375140432" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst14808163149375140432" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6637879201484942483" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6637879201484942483" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst9850030378581956250" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst9850030378581956250" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst17868808884019799845" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst17868808884019799845" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst11894813527780433473" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst11894813527780433473" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst1790722974819562785" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst1790722974819562785" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6830829988215191385" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6830829988215191385" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst3105230832474180807" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst3105230832474180807" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst10314936924722983352" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst10314936924722983352" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "indvarsivnext" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsivnext" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst10431294560289632212" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst10431294560289632212" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "exitcond" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "exitcond" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst2669633399840171690" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst2669633399840171690" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "indvarsivnext15" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsivnext15" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "exitcond16" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "exitcond16" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst14882533745732266507" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst14882533745732266507" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop2" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop2" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop2" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "indvarsiv" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsiv" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst101120102850345732" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst101120102850345732" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst14808163149375140432" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst14808163149375140432" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6637879201484942483" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6637879201484942483" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst9850030378581956250" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst9850030378581956250" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst17868808884019799845" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst17868808884019799845" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst11894813527780433473" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst11894813527780433473" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst1790722974819562785" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst1790722974819562785" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6830829988215191385" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6830829988215191385" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst3105230832474180807" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst3105230832474180807" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst10314936924722983352" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst10314936924722983352" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "indvarsivnext" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsivnext" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst10431294560289632212" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst10431294560289632212" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "exitcond" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "exitcond" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst2669633399840171690" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst2669633399840171690" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop3" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop3" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop3" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Inst10314936924722983352" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst8417187732028107226" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst4297003559567146790" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst12954596989022148499" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

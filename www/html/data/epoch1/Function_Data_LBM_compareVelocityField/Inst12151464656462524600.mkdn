@@ -1,0 +1,16 @@
+;; Line: 666, Column: 7
+  %116 = call i32 (%struct._IO_FILE*, i8*, ...) @__isoc99_fscanf(%struct._IO_FILE* %3, i8* nonnull getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i64 0, i64 0), float* nonnull %fileUx, float* nonnull %fileUy, float* nonnull %fileUz) #7, 
+</pre>
+<br/>Operand # 0 (0x4fb3bb8) <br /><pre class="prettyprint lang-llvm ">  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), </pre>
+Operand # 1 (0x4fb2168) <br /><pre class="prettyprint lang-llvm ">i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i64 0, i64 0)</pre>
+Operand # 2 (0x4fb33d8) <br /><pre class="prettyprint lang-llvm ">  %fileUx = alloca float, align 4</pre>
+Operand # 3 (0x4fb3448) <br /><pre class="prettyprint lang-llvm ">  %fileUy = alloca float, align 4</pre>
+Operand # 4 (0x4fb34b8) <br /><pre class="prettyprint lang-llvm ">  %fileUz = alloca float, align 4</pre>
+Operand # 5 (0x4f194d8) <br /><pre class="prettyprint lang-llvm ">
+declare i32 @__isoc99_fscanf(%struct._IO_FILE*, i8*, ...) #5
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:115                                     ; preds = %7
+  %116 = call i32 (%struct._IO_FILE*, i8*, ...) @__isoc99_fscanf(%struct._IO_FILE* %3, i8* nonnull getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i64 0, i64 0), float* nonnull %fileUx, float* nonnull %fileUy, float* nonnull %fileUz) #7, 
+  br label %117
+</pre>

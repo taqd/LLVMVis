@@ -1,0 +1,9 @@
+File: lbm.c, Lines: 129, Cols: 11,16,21,
+.preheader.split.split:                           ; preds = %.preheader.split.split.preheader, %78
+  %indvars.iv57 = phi i64 [ %indvars.iv.next58, %78 ], [ 0, %.preheader.split.split.preheader ]
+  %54 = icmp eq i64 %indvars.iv57, 0, 
+  %55 = icmp eq i64 %indvars.iv57, 99, 
+  %or.cond = or i1 %54, %55, 
+  %or.cond3 = or i1 %5, %or.cond, 
+  %or.cond5 = or i1 %6, %or.cond3, 
+  br i1 %or.cond5, label %56, label %64, 

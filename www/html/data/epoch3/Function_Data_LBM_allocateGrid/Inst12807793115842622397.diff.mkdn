@@ -1,0 +1,4 @@
+4c4
+< <br/>Operand # 0 (0x4d31fe0) <br /><pre class="prettyprint lang-llvm ">double** %ptr</pre>
+---
+> <br/>Operand # 0 (0x4eeedb0) <br /><pre class="prettyprint lang-llvm ">double** %ptr</pre>

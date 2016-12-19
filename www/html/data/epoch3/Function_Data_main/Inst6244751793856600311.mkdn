@@ -1,0 +1,33 @@
+;; Line: 44, Column: 3
+  tail call void @LBM_performStreamCollide(double* %24, double* %26), 
+</pre>
+<br/>Operand # 0 (0x4f80d08) <br /><pre class="prettyprint lang-llvm ">  %24 = getelementptr inbounds [26000000 x double], [26000000 x double]* %23, i64 0, i64 0, </pre>
+Operand # 1 (0x4f80e68) <br /><pre class="prettyprint lang-llvm ">  %26 = getelementptr inbounds [26000000 x double], [26000000 x double]* %25, i64 0, i64 0, </pre>
+Operand # 2 (0x4edf4a8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: norecurse nounwind uwtable
+define void @LBM_performStreamCollide(double* readonly %srcGrid, double* %dstGrid) #4 {
+  br label %1, 
+<br/>; label:1                                       ; preds = %0, %466
+  %indvars.iv = phi i64 [ 0, %0 ], [ %indvars.iv.next, %466 ]
+  %2 = add nuw nsw i64 %indvars.iv, 19, 
+  %3 = getelementptr inbounds double, double* %srcGrid, i64 %2, 
+  %4 = bitcast double* %3 to i32*, 
+  %5 = load i32, i32* %4, align 4, 
+  %6 = and i32 %5, 1, 
+  %7 = icmp eq i32 %6, 0, 
+  %8 = getelementptr inbounds double, double* %srcGrid, i64 %indvars.iv, 
+  %9 = load double, do
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.lr.ph.split.us:                                  ; preds = %.lr.ph.split.us.preheader, %35
+  %t.04.us = phi i32 [ %36, %35 ], [ 1, %.lr.ph.split.us.preheader ]
+  %21 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i64 0, i64 0, 
+  tail call void @LBM_handleInOutFlow(double* %22), 
+  %23 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %24 = getelementptr inbounds [26000000 x double], [26000000 x double]* %23, i64 0, i64 0, 
+  %25 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %26 = getelementptr inbounds [26000000 x double], [26000000 x double]* %25, i64 0, i64 0, 
+  tail call void @LBM_performStreamCollide(double* %24, double* %26), 
+  tail cal
+... (TRIMMED)</pre>

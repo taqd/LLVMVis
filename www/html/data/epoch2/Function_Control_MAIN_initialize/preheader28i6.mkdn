@@ -1,0 +1,5 @@
+File: main.c, Lines: 138,158,162, Cols: 3,6,
+.preheader28.i6:                                  ; preds = %65, %LBM_initializeSpecialCellsForChannel.exit
+  %indvars.iv35.i5 = phi i64 [ -2, %LBM_initializeSpecialCellsForChannel.exit ], [ %indvars.iv.next36.i17, %65 ], 
+  %47 = mul nsw i64 %indvars.iv35.i5, 10000, 
+  br label %.preheader.i8, 

@@ -1,0 +1,10 @@
+File: lbm.c, Lines: 148,149-157, Cols: 6,7-9,10-14,53,
+  %1 = alloca double*, align 8
+  %x = alloca i32, align 4
+  %y = alloca i32, align 4
+  %z = alloca i32, align 4
+  %_aux_ = alloca i32*, align 8
+  %_aux_1 = alloca i32*, align 8
+  store double* %grid, double** %1, align 8
+  store i32 -2, i32* %z, align 4, 
+  br label %2, 

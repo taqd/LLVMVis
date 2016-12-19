@@ -1,0 +1,11 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk17969493404145094958 ():
+L48,C30:  %27 = load i32, i32* %t, align 4, !dbg !242
+L48,C4:  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i32 0, i32 0), i32 %27), !dbg !244
+L49,C29:  %29 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !245
+L49,C28:  %30 = getelementptr inbounds [26000000 x double], [26000000 x double]* %29, i32 0, i32 0, !dbg !246
+L49,C4:  call void @LBM_showGridStatistics(double* %30), !dbg !247
+L50,C3:  br label %31, !dbg !248
+

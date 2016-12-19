@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4da2e10) <br /><pre class="prettyprint lang-llvm ">  %123 = fdiv double %121, %122, </pre>
+< Operand # 1 (0x4d91638) <br /><pre class="prettyprint lang-llvm ">  %maxU2.0126 = phi double [ -1.000000e+30, %0 ], [ %maxU2.1, %127 ]</pre>
+---
+> <br/>Operand # 0 (0x4f65820) <br /><pre class="prettyprint lang-llvm ">  %123 = fdiv double %121, %122, </pre>
+> Operand # 1 (0x4f5ff58) <br /><pre class="prettyprint lang-llvm ">  %maxU2.0126 = phi double [ -1.000000e+30, %0 ], [ %maxU2.1, %127 ]</pre>

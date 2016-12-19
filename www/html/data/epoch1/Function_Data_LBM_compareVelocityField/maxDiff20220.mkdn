@@ -1,0 +1,12 @@
+
+  %maxDiff2.0220 = phi float [ 0xC6293E5940000000, %0 ], [ %maxDiff2.3.lcssa.lcssa, %137 ]
+</pre>
+<br/>Operand # 0 (0x4f19af0) <br /><pre class="prettyprint lang-llvm ">float 0xC6293E5940000000</pre>
+Operand # 1 (0x4fbc258) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa, %136 ]</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader214:                                    ; preds = %137, %0
+  %indvars.iv224 = phi i64 [ 0, %0 ], [ %indvars.iv.next225, %137 ]
+  %maxDiff2.0220 = phi float [ 0xC6293E5940000000, %0 ], [ %maxDiff2.3.lcssa.lcssa, %137 ]
+  %4 = mul nuw nsw i64 %indvars.iv224, 10000, 
+  br label %.preheader, 
+</pre>

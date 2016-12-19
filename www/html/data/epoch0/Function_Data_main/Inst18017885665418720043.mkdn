@@ -1,0 +1,38 @@
+;; Line: 32, Column: 2
+  call void @MAIN_parseCommandLine(i32 %4, i8** %5, %struct.MAIN_Param* %param), 
+</pre>
+<br/>Operand # 0 (0x5daec78) <br /><pre class="prettyprint lang-llvm ">  %4 = load i32, i32* %2, align 4, </pre>
+Operand # 1 (0x5daed08) <br /><pre class="prettyprint lang-llvm ">  %5 = load i8**, i8*** %3, align 8, </pre>
+Operand # 2 (0x5dae538) <br /><pre class="prettyprint lang-llvm ">  %param = alloca %struct.MAIN_Param, align 8</pre>
+Operand # 3 (0x5c8a168) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* %param) #0 {
+  %1 = alloca i32, align 4
+  %2 = alloca i8**, align 8
+  %3 = alloca %struct.MAIN_Param*, align 8
+  %fileStat = alloca %struct.stat, align 8
+  store i32 %nArgs, i32* %1, align 4
+  store i8** %arg, i8*** %2, align 8
+  store %struct.MAIN_Param* %param, %struct.MAIN_Param** %3, align 8
+  %4 = load i32, i32* %1, align 4, 
+  %5 = icmp slt i32 %4, 5, 
+  br i1 %5, label %9, label %6, 
+<br/>; label:6                                       ; pr
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = alloca i32, align 4
+  %2 = alloca i32, align 4
+  %3 = alloca i8**, align 8
+  %param = alloca %struct.MAIN_Param, align 8
+  %t = alloca i32, align 4
+  store i32 0, i32* %1, align 4
+  store i32 %nArgs, i32* %2, align 4
+  store i8** %arg, i8*** %3, align 8
+  %4 = load i32, i32* %2, align 4, 
+  %5 = load i8**, i8*** %3, align 8, 
+  call void @MAIN_parseCommandLine(i32 %4, i8** %5, %struct.MAIN_Param* %param), 
+  call void @MAIN_printInfo(%struct.MAIN_Param* %param), 
+  call void @MAIN_initialize(%struct.MAIN_Param* %param), 
+  store i32 1, i32* %t, align 4, 
+ 
+... (TRIMMED)</pre>

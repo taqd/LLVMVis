@@ -1,0 +1,802 @@
+{
+	"title" : "LBM_initializeGrid",
+	"graph" : {
+		"linkDistance" : 20,
+		"charge" : -400,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 8,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Loop0" : {
+			"short" : "Loop0",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "LBM_initializeGrid" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "LBM_initializeGrid" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "indvarsiv" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsiv" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst7652535631444612077" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst7652535631444612077" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst8172481087986831477" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst8172481087986831477" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst8326520407463716349" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst8326520407463716349" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst5180597425031571232" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst5180597425031571232" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst3167407746144140647" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst3167407746144140647" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst4915492484437542629" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst4915492484437542629" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst11373995543345063375" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst11373995543345063375" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst3193481244703960" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst3193481244703960" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst7819459937714380554" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst7819459937714380554" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst18286207016418958453" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst18286207016418958453" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst13924632234227123054" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst13924632234227123054" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst4612317387118675948" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst4612317387118675948" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6343259630149026654" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6343259630149026654" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst9735471660167496684" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst9735471660167496684" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst4631191216397841154" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst4631191216397841154" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst1642723424416659923" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst1642723424416659923" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst1805453281233065072" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst1805453281233065072" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst7619741909759513959" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst7619741909759513959" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst7763771971048143062" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst7763771971048143062" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst9059891501735279634" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst9059891501735279634" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst7330897622684588142" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst7330897622684588142" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst16285356347231546433" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst16285356347231546433" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst12749421323917092918" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst12749421323917092918" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst11952532295141161634" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst11952532295141161634" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst15003298153468056496" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst15003298153468056496" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst17528207124619931538" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst17528207124619931538" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6209015837912354572" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6209015837912354572" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst8329698561248190970" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst8329698561248190970" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst18411577574903269075" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst18411577574903269075" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst5339204811885076535" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst5339204811885076535" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst13869825318910596008" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst13869825318910596008" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst13006374003339490084" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst13006374003339490084" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst15370643371755508485" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst15370643371755508485" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst14649716842763660313" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst14649716842763660313" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6634442231039505952" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6634442231039505952" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst937294138100867018" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst937294138100867018" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst2128465152997163580" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst2128465152997163580" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst10313224760976984078" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst10313224760976984078" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst16448393432866343060" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst16448393432866343060" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst783169238860822878" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst783169238860822878" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6362957419760413498" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6362957419760413498" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "indvarsivnext" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "indvarsivnext" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst6338902087508426048" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst6338902087508426048" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst9786343243029639542" },
+			"type" : "linkStrength",
+			"target" : "Loop0",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst9786343243029639542" },
+			"type" : "linkColor",
+			"target" : "Loop0",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop0" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop0" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop0" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Inst8326520407463716349" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst11373995543345063375" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst13924632234227123054" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst4631191216397841154" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst7763771971048143062" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst12749421323917092918" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst6209015837912354572" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst13869825318910596008" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst6634442231039505952" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst10313224760976984078" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst6362957419760413498" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst5018592692366112860" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

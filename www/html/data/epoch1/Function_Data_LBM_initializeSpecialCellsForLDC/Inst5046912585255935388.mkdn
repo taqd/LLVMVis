@@ -1,0 +1,13 @@
+;; Line: 135, Column: 18
+  %33 = trunc i64 %32 to i32, 
+</pre>
+<br/>Operand # 0 (0x4f50750) <br /><pre class="prettyprint lang-llvm ">  %32 = add i64 %indvars.iv, 4294967294, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:31                                      ; preds = %20
+  %32 = add i64 %indvars.iv, 4294967294, 
+  %33 = trunc i64 %32 to i32, 
+  %34 = icmp ult i32 %33, 96, 
+  %35 = and i1 %or.cond11, %34, 
+  %36 = and i1 %17, %35, 
+  br i1 %36, label %37, label %45, 
+</pre>

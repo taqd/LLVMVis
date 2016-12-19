@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 104,105 Cols: 4,9,
+; label:17                                      ; preds = %6, %9
+  %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1, 
+  %18 = tail call i32 @fgetc(%struct._IO_FILE* %1), 
+  %exitcond = icmp eq i64 %indvars.iv.next, 100, 
+  br i1 %exitcond, label %19, label %6, 

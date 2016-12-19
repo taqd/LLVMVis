@@ -1,0 +1,15 @@
+1c1
+< File: main.c, Lines: 39,40 Cols: 2,13,21,25,
+---
+> File: main.c, Lines: 39,40 Cols: 2,13,21,
+3,7c3,6
+<   %4 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, 
+<   %5 = load i32, i32* %4, align 4, 
+<   %6 = icmp eq i32 %5, 1, 
+<   %7 = load i32, i32* %1, align 8, 
+<   br label %8, 
+---
+>   %17 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, 
+>   %18 = load i32, i32* %17, align 4, 
+>   %19 = icmp eq i32 %18, 1, 
+>   br label %20, 

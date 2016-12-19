@@ -1,0 +1,18 @@
+;; Line: 674, Column: 9
+  %maxDiff2.3 = select i1 %135, float %134, float %maxDiff2.2215, 
+</pre>
+<br/>Operand # 0 (0x4fbbc90) <br /><pre class="prettyprint lang-llvm ">  %135 = fcmp ogt float %134, %maxDiff2.2215, </pre>
+Operand # 1 (0x4fbba80) <br /><pre class="prettyprint lang-llvm ">  %134 = fadd float %132, %133, </pre>
+Operand # 2 (0x4fb45e8) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.2215 = phi float [ %maxDiff2.1218, %.preheader ], [ %maxDiff2.3, %117 ]</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:117                                     ; preds = %115, %114
+  %118 = load float, float* %fileUx, align 4, 
+  %119 = fpext float %118 to double, 
+  %120 = fsub double %111, %119, 
+  %121 = fptrunc double %120 to float, 
+  %122 = load float, float* %fileUy, align 4, 
+  %123 = fpext float %122 to double, 
+  %124 = fsub double %112, %123, 
+  %125 = fptrunc double %124 to float, 
+  %126 = load float, float* %fileUz, align 4, 
+... (TRIMMED)</pre>

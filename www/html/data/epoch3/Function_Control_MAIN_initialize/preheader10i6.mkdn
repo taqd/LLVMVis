@@ -1,0 +1,5 @@
+File: main.c, Lines: 103,105,133, Cols: 3,32,
+.preheader10.i6:                                  ; preds = %61, %LBM_loadObstacleFile.exit
+  %indvars.iv17.i5 = phi i64 [ 0, %LBM_loadObstacleFile.exit ], [ %indvars.iv.next18.i14, %61 ], 
+  %43 = mul nuw nsw i64 %indvars.iv17.i5, 10000, 
+  br label %.preheader.i8, 

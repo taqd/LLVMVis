@@ -1,0 +1,8 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk2175028250036131736 ():
+L155,C13:  %12 = phi i32 [ %.pr, %6 ], [ %4, %0 ], !dbg !212
+L155,C20:  %13 = icmp eq i32 %12, 2, !dbg !214
+L155,C6:  br i1 %13, label %14, label %19, !dbg !215
+

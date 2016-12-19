@@ -1,0 +1,8 @@
+File: lbm.c, Lines: 89,90-92,93 Cols: 1,9,11,20,34,54,
+  %1 = bitcast [26000000 x double]** %grid1 to i64*, 
+  %2 = load i64, i64* %1, align 8, 
+  %3 = bitcast [26000000 x double]** %grid2 to i64*, 
+  %4 = load i64, i64* %3, align 8, 
+  store i64 %4, i64* %1, align 8, 
+  store i64 %2, i64* %3, align 8, 
+  ret void, 

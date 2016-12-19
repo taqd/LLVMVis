@@ -1,0 +1,16 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk411411428479552077 ():
+L25,C15:  call void @llvm.dbg.declare(metadata i32* %2, metadata !2877, metadata !199), !dbg !2878
+L25,C28:  call void @llvm.dbg.declare(metadata i8*** %3, metadata !2879, metadata !199), !dbg !2880
+L26,C13:  call void @llvm.dbg.declare(metadata %struct.MAIN_Param* %param, metadata !2881, metadata !199), !dbg !2882
+L30,C6:  call void @llvm.dbg.declare(metadata i32* %t, metadata !2883, metadata !199), !dbg !2884
+L32,C25:  %4 = load i32, i32* %2, align 4, !dbg !207
+L32,C32:  %5 = load i8**, i8*** %3, align 8, !dbg !208
+L32,C2:  call void @MAIN_parseCommandLine(i32 %4, i8** %5, %struct.MAIN_Param* %param), !dbg !209
+L33,C2:  call void @MAIN_printInfo(%struct.MAIN_Param* %param), !dbg !210
+L34,C2:  call void @MAIN_initialize(%struct.MAIN_Param* %param), !dbg !211
+L39,C9:  store i32 1, i32* %t, align 4, !dbg !212
+L39,C7:  br label %6, !dbg !214
+

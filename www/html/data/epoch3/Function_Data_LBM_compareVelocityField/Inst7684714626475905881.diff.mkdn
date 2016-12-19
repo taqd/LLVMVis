@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d8f6f0) <br /><pre class="prettyprint lang-llvm ">  %140 = fadd float %138, %139, </pre>
+< Operand # 1 (0x4db12a8) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.2215 = phi float [ %maxDiff2.1218, %.preheader ], [ %maxDiff2.3, %123 ]</pre>
+---
+> <br/>Operand # 0 (0x4f7d040) <br /><pre class="prettyprint lang-llvm ">  %140 = fadd float %138, %139, </pre>
+> Operand # 1 (0x4f74b28) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.2215 = phi float [ %maxDiff2.1218, %.preheader ], [ %maxDiff2.3, %123 ]</pre>

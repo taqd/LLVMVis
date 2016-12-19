@@ -1,0 +1,5 @@
+File: main.c, Lines: 67,68 Cols: 3,
+; label:9                                       ; preds = %6, %0
+  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([109 x i8], [109 x i8]* @.str.1.1, i32 0, i32 0)), 
+  call void @exit(i32 1) #6, 
+  unreachable, 

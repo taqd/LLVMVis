@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d65ad0) <br /><pre class="prettyprint lang-llvm ">  %611 = fadd double %610, 1.000000e+00, </pre>
+< Operand # 1 (0x4d62ce0) <br /><pre class="prettyprint lang-llvm ">  %498 = fmul double %497, 1.500000e+00, </pre>
+---
+> <br/>Operand # 0 (0x4f27300) <br /><pre class="prettyprint lang-llvm ">  %611 = fadd double %610, 1.000000e+00, </pre>
+> Operand # 1 (0x4f52e00) <br /><pre class="prettyprint lang-llvm ">  %498 = fmul double %497, 1.500000e+00, </pre>

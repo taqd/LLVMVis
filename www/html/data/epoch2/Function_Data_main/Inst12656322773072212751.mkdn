@@ -1,0 +1,13 @@
+;; Line: 41, Column: 25
+  %23 = getelementptr inbounds [26000000 x double], [26000000 x double]* %22, i64 0, i64 0, 
+</pre>
+<br/>Operand # 0 (0x4dbdcf8) <br /><pre class="prettyprint lang-llvm ">  %22 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, </pre>
+Operand # 1 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 2 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:21                                      ; preds = %20
+  %22 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %23 = getelementptr inbounds [26000000 x double], [26000000 x double]* %22, i64 0, i64 0, 
+  tail call void @LBM_handleInOutFlow(double* %23), 
+  br label %24, 
+</pre>

@@ -1,0 +1,27 @@
+;; Line: 158, Column: 3
+  br i1 %exitcond43.i, label %111, label %.preheader.i17, 
+</pre>
+<br/>Operand # 0 (0x4f92e00) <br /><pre class="prettyprint lang-llvm ">  %exitcond43.i = icmp eq i64 %indvars.iv.next42.i, 100, </pre>
+Operand # 1 (0x4f89c00) <br /><pre class="prettyprint lang-llvm ">
+.preheader.i17:                                   ; preds = %.us-lcssa.us.i, %.preheader28.i
+  %indvars.iv41.i = phi i64 [ 0, %.preheader28.i ], [ %indvars.iv.next42.i, %.us-lcssa.us.i ], 
+  %70 = mul nuw nsw i64 %indvars.iv41.i, 100, 
+  %71 = add nsw i64 %70, %69, 
+  %72 = trunc i64 %indvars.iv41.i to i32, 
+  switch i32 %72, label %.preheader.split.split.i.preheader [
+    i32 99, label %.preheader.split.us.i.preheader
+    i32 0, label %.preheader.split.split.us.i.preheader
+  ], 
+</pre>
+Operand # 2 (0x4f8a010) <br /><pre class="prettyprint lang-llvm ">
+; label:111                                     ; preds = %.us-lcssa.us.i
+  %indvars.iv.next45.i = add nsw i64 %indvars.iv44.i, 1, 
+  %exitcond46.i = icmp eq i64 %indvars.iv.next45.i, 132, 
+  br i1 %exitcond46.i, label %LBM_initializeSpecialCellsForChannel.exit, label %.preheader28.i, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.us-lcssa.us.i:                                   ; preds = %.us-lcssa.us.i.loopexit62, %.us-lcssa.us.i.loopexit61, %.us-lcssa.us.i.loopexit
+  %indvars.iv.next42.i = add nuw nsw i64 %indvars.iv41.i, 1, 
+  %exitcond43.i = icmp eq i64 %indvars.iv.next42.i, 100, 
+  br i1 %exitcond43.i, label %111, label %.preheader.i17, 
+</pre>

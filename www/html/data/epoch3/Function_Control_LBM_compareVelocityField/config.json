@@ -1,0 +1,328 @@
+{
+	"title" : "LBM_compareVelocityField",
+	"graph" : {
+		"linkDistance" : 100,
+		"charge" : -600,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 32,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Loop22" : {
+			"short" : "Loop22",
+			"long"  : "" 
+		},
+		"Loop23" : {
+			"short" : "Loop23",
+			"long"  : "" 
+		},
+		"Loop24" : {
+			"short" : "Loop24",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Loop22" : {
+			"short" : "Loop22",
+			"long"  : "" 
+		},
+		"Loop23" : {
+			"short" : "Loop23",
+			"long"  : "" 
+		},
+		"Loop24" : {
+			"short" : "Loop24",
+			"long"  : "" 
+		},
+		"Loop24" : {
+			"short" : "Loop24",
+			"long"  : "" 
+		},
+		"Loop24" : {
+			"short" : "Loop24",
+			"long"  : "" 
+		},
+		"Loop24" : {
+			"short" : "Loop24",
+			"long"  : "" 
+		},
+		"Loop23" : {
+			"short" : "Loop23",
+			"long"  : "" 
+		},
+		"Loop22" : {
+			"short" : "Loop22",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "LBM_compareVelocityField" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "LBM_compareVelocityField" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "preheader214" },
+			"type" : "linkStrength",
+			"target" : "Loop22",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "preheader214" },
+			"type" : "linkColor",
+			"target" : "Loop22",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "preheader" },
+			"type" : "linkStrength",
+			"target" : "Loop22",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "preheader" },
+			"type" : "linkColor",
+			"target" : "Loop22",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk11827509509595033988" },
+			"type" : "linkStrength",
+			"target" : "Loop22",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk11827509509595033988" },
+			"type" : "linkColor",
+			"target" : "Loop22",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk5915067219943892619" },
+			"type" : "linkStrength",
+			"target" : "Loop22",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk5915067219943892619" },
+			"type" : "linkColor",
+			"target" : "Loop22",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk9990423432046513615" },
+			"type" : "linkStrength",
+			"target" : "Loop22",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk9990423432046513615" },
+			"type" : "linkColor",
+			"target" : "Loop22",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk15015210044080087479" },
+			"type" : "linkStrength",
+			"target" : "Loop22",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk15015210044080087479" },
+			"type" : "linkColor",
+			"target" : "Loop22",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk3184058238686171152" },
+			"type" : "linkStrength",
+			"target" : "Loop22",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk3184058238686171152" },
+			"type" : "linkColor",
+			"target" : "Loop22",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk15495640082063832181" },
+			"type" : "linkStrength",
+			"target" : "Loop22",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk15495640082063832181" },
+			"type" : "linkColor",
+			"target" : "Loop22",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop22" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop22" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop22" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "preheader" },
+			"type" : "linkStrength",
+			"target" : "Loop23",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "preheader" },
+			"type" : "linkColor",
+			"target" : "Loop23",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk11827509509595033988" },
+			"type" : "linkStrength",
+			"target" : "Loop23",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk11827509509595033988" },
+			"type" : "linkColor",
+			"target" : "Loop23",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk5915067219943892619" },
+			"type" : "linkStrength",
+			"target" : "Loop23",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk5915067219943892619" },
+			"type" : "linkColor",
+			"target" : "Loop23",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk9990423432046513615" },
+			"type" : "linkStrength",
+			"target" : "Loop23",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk9990423432046513615" },
+			"type" : "linkColor",
+			"target" : "Loop23",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk15015210044080087479" },
+			"type" : "linkStrength",
+			"target" : "Loop23",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk15015210044080087479" },
+			"type" : "linkColor",
+			"target" : "Loop23",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk3184058238686171152" },
+			"type" : "linkStrength",
+			"target" : "Loop23",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk3184058238686171152" },
+			"type" : "linkColor",
+			"target" : "Loop23",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop23" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop23" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop23" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk11827509509595033988" },
+			"type" : "linkStrength",
+			"target" : "Loop24",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk11827509509595033988" },
+			"type" : "linkColor",
+			"target" : "Loop24",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk5915067219943892619" },
+			"type" : "linkStrength",
+			"target" : "Loop24",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk5915067219943892619" },
+			"type" : "linkColor",
+			"target" : "Loop24",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk9990423432046513615" },
+			"type" : "linkStrength",
+			"target" : "Loop24",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk9990423432046513615" },
+			"type" : "linkColor",
+			"target" : "Loop24",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk15015210044080087479" },
+			"type" : "linkStrength",
+			"target" : "Loop24",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk15015210044080087479" },
+			"type" : "linkColor",
+			"target" : "Loop24",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop24" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop24" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop24" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk12459702765017216386" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Blk6690457471469973324" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

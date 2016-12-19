@@ -1,0 +1,31 @@
+;; Line: 141, Column: 3
+  tail call void @LBM_initializeSpecialCellsForLDC(double* %67), 
+</pre>
+<br/>Operand # 0 (0x4dc9b18) <br /><pre class="prettyprint lang-llvm ">  %67 = getelementptr inbounds [26000000 x double], [26000000 x double]* %26, i64 0, i64 0, </pre>
+Operand # 1 (0x4d225a8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: norecurse nounwind uwtable
+define void @LBM_initializeSpecialCellsForLDC(double* nocapture %grid) #4 {
+  br label %.preheader42, 
+<br/>.preheader42:                                     ; preds = %41, %0
+  %indvars.iv51 = phi i64 [ -2, %0 ], [ %indvars.iv.next52, %41 ]
+  %1 = trunc i64 %indvars.iv51 to i32, 
+  %2 = icmp eq i32 %1, 0, 
+  %3 = icmp eq i32 %1, 129, 
+  %4 = mul nsw i64 %indvars.iv51, 10000, 
+  %5 = icmp eq i32 %1, 1, 
+  %6 = icmp eq i32 %1, 128, 
+  %or.cond11 = or i1 %5, %6, 
+  br label %.preheader, 
+<br/>.preheader:                                       ; preds = %40, %.preheader42
+  %indvars.iv47 = phi i64 [ 0, %.preheader42 ], [ %indvars.iv.next48, %40 ]
+  %7 = icmp eq i64
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:66                                      ; preds = %22
+  %67 = getelementptr inbounds [26000000 x double], [26000000 x double]* %26, i64 0, i64 0, 
+  tail call void @LBM_initializeSpecialCellsForLDC(double* %67), 
+  %68 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %69 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 0, 
+  tail call void @LBM_initializeSpecialCellsForLDC(double* %69), 
+  br label %LBM_initializeSpecialCellsForChannel.exit19
+</pre>

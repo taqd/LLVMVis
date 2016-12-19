@@ -1,0 +1,29 @@
+;; Line: 137, Column: 3
+  tail call void @LBM_initializeSpecialCellsForChannel(double* %19), 
+</pre>
+<br/>Operand # 0 (0x4fc73e8) <br /><pre class="prettyprint lang-llvm ">  %19 = getelementptr inbounds [26000000 x double], [26000000 x double]* %18, i64 0, i64 0, </pre>
+Operand # 1 (0x4f170e8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: norecurse nounwind uwtable
+define void @LBM_initializeSpecialCellsForChannel(double* nocapture %grid) #4 {
+  br label %.preheader28, 
+<br/>.preheader28:                                     ; preds = %19, %0
+  %indvars.iv35 = phi i64 [ -2, %0 ], [ %indvars.iv.next36, %19 ]
+  %1 = mul nsw i64 %indvars.iv35, 10000, 
+  br label %.preheader, 
+<br/>.preheader:                                       ; preds = %18, %.preheader28
+  %indvars.iv32 = phi i64 [ 0, %.preheader28 ], [ %indvars.iv.next33, %18 ]
+  %2 = icmp eq i64 %indvars.iv32, 0, 
+  %3 = icmp eq i64 %indvars.iv32, 99, 
+  %4 = mul nuw nsw i64 %indvars.iv32, 100, 
+  %5 = add nsw i64 %4, %1, 
+  br label %6, 
+<br/>; label:6                            
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:20                                      ; preds = %14
+  tail call void @LBM_initializeSpecialCellsForChannel(double* %19), 
+  %21 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i64 0, i64 0, 
+  tail call void @LBM_initializeSpecialCellsForChannel(double* %22), 
+  br label %26, 
+</pre>

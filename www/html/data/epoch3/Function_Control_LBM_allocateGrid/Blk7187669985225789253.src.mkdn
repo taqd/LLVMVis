@@ -1,0 +1,8 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk7187669985225789253 ():
+L39,C7:  %7 = getelementptr inbounds i8, i8* %1, i64 3200000, !dbg !214
+L39,C7:  store i8* %7, i8** %2, align 8, !dbg !214
+L40,C1:  ret void, !dbg !215
+

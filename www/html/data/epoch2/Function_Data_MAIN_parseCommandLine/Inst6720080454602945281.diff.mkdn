@@ -1,0 +1,12 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4fc4368) <br /><pre class="prettyprint lang-llvm ">  %42 = load i32, i32* %16, align 8, </pre>
+< Operand # 1 (0x4f19b30) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+---
+> <br/>Operand # 0 (0x4dc27a8) <br /><pre class="prettyprint lang-llvm ">  %42 = phi i32 [ %.pre, %._crit_edge ], [ %15, %39 ], </pre>
+> Operand # 1 (0x4d24bb0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+7,8c7,8
+< ; label:41                                      ; preds = %31, %39
+<   %42 = load i32, i32* %16, align 8, 
+---
+> ; label:41                                      ; preds = %._crit_edge, %39
+>   %42 = phi i32 [ %.pre, %._crit_edge ], [ %15, %39 ], 

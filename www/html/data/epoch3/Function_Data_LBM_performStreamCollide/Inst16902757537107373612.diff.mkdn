@@ -1,0 +1,4 @@
+4c4
+< <br/>Operand # 0 (0x4d4fbb8) <br /><pre class="prettyprint lang-llvm ">  %112 = bitcast double* %111 to i64*, </pre>
+---
+> <br/>Operand # 0 (0x4f20608) <br /><pre class="prettyprint lang-llvm ">  %112 = bitcast double* %111 to i64*, </pre>

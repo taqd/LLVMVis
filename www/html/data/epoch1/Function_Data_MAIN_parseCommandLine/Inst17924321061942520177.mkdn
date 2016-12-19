@@ -1,0 +1,39 @@
+;; Line: 76, Column: 6
+  br i1 %21, label %22, label %39, 
+</pre>
+<br/>Operand # 0 (0x4fc31b0) <br /><pre class="prettyprint lang-llvm ">  %21 = icmp eq i32 %nArgs, 6, </pre>
+Operand # 1 (0x4fc1490) <br /><pre class="prettyprint lang-llvm ">
+; label:39                                      ; preds = %3
+  %40 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 4, 
+  store i8* null, i8** %40, align 8, 
+  br label %41
+</pre>
+Operand # 2 (0x4fc1350) <br /><pre class="prettyprint lang-llvm ">
+; label:22                                      ; preds = %3
+  %23 = getelementptr inbounds i8*, i8** %arg, i64 5, 
+  %24 = load i8*, i8** %23, align 8, 
+  %25 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 4, 
+  store i8* %24, i8** %25, align 8, 
+  %26 = call i32 @stat(i8* %24, %struct.stat* nonnull %fileStat) #7, 
+  %27 = icmp eq i32 %26, 0, 
+  br i1 %27, label %31, label %28, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:3                                       ; preds = %0
+  %4 = getelementptr inbounds i8*, i8** %arg, i64 1, 
+  %5 = load i8*, i8** %4, align 8, 
+  %6 = tail call i32 @atoi(i8* %5) #9, 
+  %7 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, 
+  store i32 %6, i32* %7, align 8, 
+  %8 = getelementptr inbounds i8*, i8** %arg, i64 2, 
+  %9 = bitcast i8** %8 to i64*, 
+  %10 = load i64, i64* %9, align 8, 
+  %11 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, 
+  %12 = bitcast i8** %11 to i64*, 
+  store i64 %10, i64* %12, align 8, 
+  %13 = getelementptr inbounds i8*, i8** %arg, i64 3, 
+  %14 = load i8*, i8** %13, align 8, 
+  %15 = tail call i32 @atoi(i8* %14) #9, 
+  %16 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 2, 
+  store i32 %15, i32* %1
+... (TRIMMED)</pre>

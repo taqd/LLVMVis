@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4fc4568) <br /><pre class="prettyprint lang-llvm ">  %45 = load i8*, i8** %11, align 8, </pre>
+< Operand # 1 (0x4fc1c58) <br /><pre class="prettyprint lang-llvm ">  %fileStat = alloca %struct.stat, align 8</pre>
+< Operand # 2 (0x4f12e98) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4dc29d8) <br /><pre class="prettyprint lang-llvm ">  %45 = load i8*, i8** %11, align 8, </pre>
+> Operand # 1 (0x4dc0018) <br /><pre class="prettyprint lang-llvm ">  %fileStat = alloca %struct.stat, align 8</pre>
+> Operand # 2 (0x4d1dd08) <br /><pre class="prettyprint lang-llvm ">

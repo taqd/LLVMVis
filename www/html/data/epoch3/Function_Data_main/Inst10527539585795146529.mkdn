@@ -1,0 +1,14 @@
+;; Line: 48, Column: 7
+  store double* null, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, 
+</pre>
+<br/>Operand # 0 (0x4ef19f0) <br /><pre class="prettyprint lang-llvm ">double* null</pre>
+Operand # 1 (0x4ee18f8) <br /><pre class="prettyprint lang-llvm ">double** bitcast ([26000000 x double]** @srcGrid to double**)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+MAIN_finalize.exit:                               ; preds = %._crit_edge, %.thread, %57
+  %60 = load double*, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, 
+  %61 = getelementptr inbounds double, double* %60, i64 -400000, 
+  %62 = bitcast double* %61 to i8*, 
+  tail call void @free(i8* %62) #7, 
+  store double* null, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, 
+  %63 = load d
+... (TRIMMED)</pre>

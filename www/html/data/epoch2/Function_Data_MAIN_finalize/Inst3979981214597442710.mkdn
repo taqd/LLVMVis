@@ -1,0 +1,11 @@
+;; Line: 155, Column: 13
+  %12 = phi i32 [ %.pr, %6 ], [ %4, %0 ], 
+</pre>
+<br/>Operand # 0 (0x4dcb6f8) <br /><pre class="prettyprint lang-llvm ">  %.pr = load i32, i32* %3, align 8, </pre>
+Operand # 1 (0x4dcb1a8) <br /><pre class="prettyprint lang-llvm ">  %4 = load i32, i32* %3, align 8, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:11                                      ; preds = %6, %0
+  %12 = phi i32 [ %.pr, %6 ], [ %4, %0 ], 
+  %13 = icmp eq i32 %12, 2, 
+  br i1 %13, label %14, label %19, 
+</pre>

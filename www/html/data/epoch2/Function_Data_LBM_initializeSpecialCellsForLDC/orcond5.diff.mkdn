@@ -1,0 +1,32 @@
+2c2
+<   %or.cond5 = or i1 %12, %or.cond3, 
+---
+>   %or.cond5 = or i1 %8, %or.cond3, 
+4,5c4,5
+< <br/>Operand # 0 (0x4f1aa00) <br /><pre class="prettyprint lang-llvm ">  %12 = icmp eq i64 %indvars.iv47, 99, </pre>
+< Operand # 1 (0x4f4ff30) <br /><pre class="prettyprint lang-llvm ">  %or.cond3 = or i1 %11, %or.cond, </pre>
+---
+> <br/>Operand # 0 (0x4d4dfb0) <br /><pre class="prettyprint lang-llvm ">  %8 = icmp eq i64 %indvars.iv47, 99, </pre>
+> Operand # 1 (0x4d4e650) <br /><pre class="prettyprint lang-llvm ">  %or.cond3 = or i1 %7, %or.cond, </pre>
+7,13c7,13
+< ; label:20                                      ; preds = %45, %.preheader
+<   %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %45 ]
+<   %21 = icmp eq i64 %indvars.iv, 0, 
+<   %22 = icmp eq i64 %indvars.iv, 99, 
+<   %or.cond = or i1 %21, %22, 
+<   %or.cond3 = or i1 %11, %or.cond, 
+<   %or.cond5 = or i1 %12, %or.cond3, 
+---
+> ; label:14                                      ; preds = %39, %.preheader
+>   %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %39 ]
+>   %15 = icmp eq i64 %indvars.iv, 0, 
+>   %16 = icmp eq i64 %indvars.iv, 99, 
+>   %or.cond = or i1 %15, %16, 
+>   %or.cond3 = or i1 %7, %or.cond, 
+>   %or.cond5 = or i1 %8, %or.cond3, 
+15,16c15,16
+<   %or.cond9 = or i1 %4, %or.cond7, 
+<   br i1 %or.cond9, label %23, label %31, 
+---
+>   %or.cond9 = or i1 %3, %or.cond7, 
+>   br i1 %or.cond9, label %17, label %25, 

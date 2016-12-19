@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4da3c58) <br /><pre class="prettyprint lang-llvm ">  %minU2.2.lcssa = phi double [ %minU2.2, %127 ]</pre>
+< Operand # 1 (0x4d24198) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f66668) <br /><pre class="prettyprint lang-llvm ">  %minU2.2.lcssa = phi double [ %minU2.2, %127 ]</pre>
+> Operand # 1 (0x4ee0e88) <br /><pre class="prettyprint lang-llvm ">

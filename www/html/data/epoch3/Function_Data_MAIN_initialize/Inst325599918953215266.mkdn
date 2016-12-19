@@ -1,0 +1,11 @@
+;; Line: 162, Column: 6
+  %113 = mul nsw i64 %indvars.iv44.i21, 10000, 
+</pre>
+<br/>Operand # 0 (0x4f932c8) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv44.i21 = phi i64 [ -2, %LBM_initializeSpecialCellsForChannel.exit ], [ %indvars.iv.next45.i40, %155 ], </pre>
+Operand # 1 (0x4f07810) <br /><pre class="prettyprint lang-llvm ">i64 10000</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader28.i22:                                 ; preds = %155, %LBM_initializeSpecialCellsForChannel.exit
+  %indvars.iv44.i21 = phi i64 [ -2, %LBM_initializeSpecialCellsForChannel.exit ], [ %indvars.iv.next45.i40, %155 ], 
+  %113 = mul nsw i64 %indvars.iv44.i21, 10000, 
+  br label %.preheader.i24, 
+</pre>

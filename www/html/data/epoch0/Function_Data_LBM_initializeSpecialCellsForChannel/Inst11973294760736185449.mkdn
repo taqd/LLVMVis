@@ -1,0 +1,19 @@
+;; Line: 158, Column: 3
+  br i1 %8, label %9, label %96, 
+</pre>
+<br/>Operand # 0 (0x5cc8a70) <br /><pre class="prettyprint lang-llvm ">  %8 = icmp slt i32 %7, 100, </pre>
+Operand # 1 (0x5cc7740) <br /><pre class="prettyprint lang-llvm ">
+; label:96                                      ; preds = %6
+  br label %97, 
+</pre>
+Operand # 2 (0x5cbee30) <br /><pre class="prettyprint lang-llvm ">
+; label:9                                       ; preds = %6
+  store i32 0, i32* %x, align 4, 
+  br label %10, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:6                                       ; preds = %93, %5
+  %7 = load i32, i32* %y, align 4, 
+  %8 = icmp slt i32 %7, 100, 
+  br i1 %8, label %9, label %96, 
+</pre>

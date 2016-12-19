@@ -1,0 +1,24 @@
+;; Line: 26, Column: 15
+</pre>
+<br/>Operand # 0 (0x5c9f110) <br /><pre class="prettyprint lang-llvm ">i64* %margin</pre>
+Operand # 1 (0x5c9f140) <br /><pre class="prettyprint lang-llvm ">= (name: "margin", scope: , file: , line: 26, type: )</pre>
+Operand # 2 (0x5c9f0e0) <br /><pre class="prettyprint lang-llvm ">= ()</pre>
+Operand # 3 (0x5c8ffa8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind readnone
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = alloca double**, align 8
+  %margin = alloca i64, align 8
+  %size = alloca i64, align 8
+  store double** %ptr, double*** %1, align 8
+  store i64 400000, i64* %margin, align 8, 
+  store i64 214400000, i64* %size, align 8, 
+  %2 = call noalias i8* @malloc(i64 214400000) #6, 
+  %3 = bitcast i8* %2 to double*, 
+  %4 = load double**, double*** %1, align 8, 
+  store double* %3, double** %4, align 8, 
+  %5 = load double**, double*** %1, align 8, 
+  %6 = load double*, double** %5, align 8, 
+  %7 = icmp ne double* %6, null, 
+  br i1 %7, label %10, label %8, 
+</pre>

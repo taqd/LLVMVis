@@ -1,0 +1,23 @@
+;; Line: 132, Column: 6
+  %18 = or i32 %17, 1, 
+</pre>
+<br/>Operand # 0 (0x4f0be38) <br /><pre class="prettyprint lang-llvm ">  %17 = load i32, i32* %16, align 4, </pre>
+Operand # 1 (0x4ee18a0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.us.split.us:                     ; preds = %.preheader.split.us.split.us, %.preheader.split.us.split.us.preheader
+  %indvars.iv54 = phi i64 [ 0, %.preheader.split.us.split.us.preheader ], [ %indvars.iv.next55.1, %.preheader.split.us.split.us ]
+  %12 = add nsw i64 %8, %indvars.iv54, 
+  %13 = mul nsw i64 %12, 20, 
+  %14 = add nsw i64 %13, 19, 
+  %15 = getelementptr inbounds double, double* %grid, i64 %14, 
+  %16 = bitcast double* %15 to i32*, 
+  %17 = load i32, i32* %16, align 4, 
+  %18 = or i32 %17, 1, 
+  store i32 %18, i32* %16, align 4, 
+  %indvars.iv.next55 = or i64 %indvars.iv54, 1, 
+  %19 = add nsw i64 %8, %indvars.iv.next55, 
+  %20 = mul nsw i64 %19, 20, 
+  %21 = add nsw i64 %20, 19, 
+  %22 = getelementptr inbounds double, double* %grid, i64 %21, 
+  
+... (TRIMMED)</pre>

@@ -1,0 +1,21 @@
+;; Line: 100, Column: 15
+  %4 = call %struct._IO_FILE* @fopen(i8* %3, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i32 0, i32 0)), 
+</pre>
+<br/>Operand # 0 (0x5cbe148) <br /><pre class="prettyprint lang-llvm ">  %3 = load i8*, i8** %2, align 8, </pre>
+Operand # 1 (0x5cbcec8) <br /><pre class="prettyprint lang-llvm ">i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i32 0, i32 0)</pre>
+Operand # 2 (0x5c907d8) <br /><pre class="prettyprint lang-llvm ">
+declare %struct._IO_FILE* @fopen(i8*, i8*) #3
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = alloca double*, align 8
+  %2 = alloca i8*, align 8
+  %x = alloca i32, align 4
+  %y = alloca i32, align 4
+  %z = alloca i32, align 4
+  %file = alloca %struct._IO_FILE*, align 8
+  %_aux_ = alloca i32*, align 8
+  store double* %grid, double** %1, align 8
+  store i8* %filename, i8** %2, align 8
+  %3 = load i8*, i8** %2, align 8, 
+  %4 = call %struct._IO_FILE* @fopen(i8* %3, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1
+... (TRIMMED)</pre>

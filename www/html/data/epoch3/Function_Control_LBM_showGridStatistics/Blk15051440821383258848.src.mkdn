@@ -1,0 +1,16 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk15051440821383258848 ():
+L448,C39:  tail call void @llvm.dbg.value(metadata double* %grid, i64 0, metadata !1150, metadata !199), !dbg !1151
+L449,C6:  tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !1152, metadata !199), !dbg !1153
+L450,C6:  tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !1154, metadata !199), !dbg !1155
+L451,C6:  tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !1156, metadata !199), !dbg !1157
+L453,C9:  tail call void @llvm.dbg.value(metadata double 1.000000e+30, i64 0, metadata !1158, metadata !199), !dbg !1159
+L453,C25:  tail call void @llvm.dbg.value(metadata double -1.000000e+30, i64 0, metadata !1160, metadata !199), !dbg !1161
+L454,C9:  tail call void @llvm.dbg.value(metadata double 1.000000e+30, i64 0, metadata !1162, metadata !199), !dbg !1163
+L454,C25:  tail call void @llvm.dbg.value(metadata double -1.000000e+30, i64 0, metadata !1164, metadata !199), !dbg !1165
+L455,C9:  tail call void @llvm.dbg.value(metadata double 0.000000e+00, i64 0, metadata !1166, metadata !199), !dbg !1167
+L457,C2:  tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !1168, metadata !199), !dbg !1169
+L459,C2:  br label %1, !dbg !219
+

@@ -1,0 +1,5 @@
+File: main.c, Lines: 97,98-100,102,132, Cols: 2,8,14,15-26,55,
+; label:16                                      ; preds = %LBM_allocateGrid.exit4
+  %17 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %18 = tail call %struct._IO_FILE* @fopen(i8* nonnull %14, i8* nonnull getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0)) #7, 
+  br label %.preheader10.i, 

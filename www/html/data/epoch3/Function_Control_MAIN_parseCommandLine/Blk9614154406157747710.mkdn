@@ -1,0 +1,5 @@
+File: main.c, Lines: 93, Cols: 14,31,
+; label:39                                      ; preds = %3
+  %40 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 4, 
+  store i8* null, i8** %40, align 8, 
+  br label %41

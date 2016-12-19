@@ -1,0 +1,43 @@
+;; Line: 626, Column: 4
+  br i1 %exitcond, label %142, label %10, 
+</pre>
+<br/>Operand # 0 (0x4d8fb30) <br /><pre class="prettyprint lang-llvm ">  %exitcond = icmp eq i64 %indvars.iv.next, 100, </pre>
+Operand # 1 (0x4dae310) <br /><pre class="prettyprint lang-llvm ">
+; label:10                                      ; preds = %123, %.preheader
+  %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %123 ]
+  %maxDiff2.2215 = phi float [ %maxDiff2.1218, %.preheader ], [ %maxDiff2.3, %123 ]
+  %11 = add nuw nsw i64 %9, %indvars.iv, 
+  %12 = mul nuw nsw i64 %11, 20, 
+  %13 = getelementptr inbounds double, double* %grid, i64 %12, 
+  %14 = load double, double* %13, align 8, 
+  %15 = or i64 %12, 1, 
+  %16 = getelementptr inbounds double, double* %grid, i64 %15, 
+  %17 = load double, double* %16, align 8, 
+  %18 = fadd double %14, %17, 
+  %19 = or i64 %12, 2, 
+  %20 = getelementptr inbounds double, double* %grid, i64 %19, 
+  %21 = load double, double* %20, align 8, 
+  %22 = fadd double %18, %21, 
+  %23 = or i64 %12, 3, 
+  %24 = getelementptr inbounds double, double* %grid, i64 %23, 
+  %25 = load double, double* %24, align 8,
+... (TRIMMED)</pre>
+Operand # 2 (0x4dae450) <br /><pre class="prettyprint lang-llvm ">
+; label:142                                     ; preds = %123
+  %maxDiff2.3.lcssa = phi float [ %maxDiff2.3, %123 ]
+  %indvars.iv.next222 = add nuw nsw i64 %indvars.iv221, 1, 
+  %exitcond223 = icmp eq i64 %indvars.iv.next222, 100, 
+  br i1 %exitcond223, label %143, label %.preheader, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:123                                     ; preds = %121, %117
+  %124 = load float, float* %fileUx, align 4, 
+  %125 = fpext float %124 to double, 
+  %126 = fsub double %114, %125, 
+  %127 = fptrunc double %126 to float, 
+  %128 = load float, float* %fileUy, align 4, 
+  %129 = fpext float %128 to double, 
+  %130 = fsub double %115, %129, 
+  %131 = fptrunc double %130 to float, 
+  %132 = load float, float* %fileUz, align 4, 
+... (TRIMMED)</pre>

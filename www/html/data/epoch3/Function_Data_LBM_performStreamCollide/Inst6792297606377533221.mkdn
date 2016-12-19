@@ -1,0 +1,25 @@
+;; Line: 194, Column: 22
+  store i64 %50, i64* %53, align 8, 
+</pre>
+<br/>Operand # 0 (0x4f19bb8) <br /><pre class="prettyprint lang-llvm ">  %50 = load i64, i64* %49, align 8, </pre>
+Operand # 1 (0x4f19d58) <br /><pre class="prettyprint lang-llvm ">  %53 = bitcast double* %52 to i64*, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:10                                      ; preds = %1
+  %11 = getelementptr inbounds double, double* %dstGrid, i64 %indvars.iv, 
+  store double %9, double* %11, align 8, 
+  %12 = or i64 %indvars.iv, 1, 
+  %13 = getelementptr inbounds double, double* %srcGrid, i64 %12, 
+  %14 = bitcast double* %13 to i64*, 
+  %15 = load i64, i64* %14, align 8, 
+  %16 = add nsw i64 %indvars.iv, -1998, 
+  %17 = getelementptr inbounds double, double* %dstGrid, i64 %16, 
+  %18 = bitcast double* %17 to i64*, 
+  store i64 %15, i64* %18, align 8, 
+  %19 = or i64 %indvars.iv, 2, 
+  %20 = getelementptr inbounds double, double* %srcGrid, i64 %19, 
+  %21 = bitcast double* %20 to i64*, 
+  %22 = load i64, i64* %21, align 8, 
+  %23 = add nuw nsw i64 %indvars.iv, 2001, 
+  %24 = getelementptr inbounds double, double* %dstGrid, i64 %23, 
+  %25 = bitcast double* %24 to 
+... (TRIMMED)</pre>

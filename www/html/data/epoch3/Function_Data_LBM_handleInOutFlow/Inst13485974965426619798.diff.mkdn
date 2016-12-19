@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d90380) <br /><pre class="prettyprint lang-llvm ">  %495 = extractelement <2 x double> %492, i32 0, </pre>
+< Operand # 1 (0x4d90380) <br /><pre class="prettyprint lang-llvm ">  %495 = extractelement <2 x double> %492, i32 0, </pre>
+---
+> <br/>Operand # 0 (0x4f52c20) <br /><pre class="prettyprint lang-llvm ">  %495 = extractelement <2 x double> %492, i32 0, </pre>
+> Operand # 1 (0x4f52c20) <br /><pre class="prettyprint lang-llvm ">  %495 = extractelement <2 x double> %492, i32 0, </pre>

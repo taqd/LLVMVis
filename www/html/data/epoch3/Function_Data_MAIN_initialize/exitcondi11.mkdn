@@ -1,0 +1,12 @@
+;; Line: 104, Column: 4
+  %exitcond.i11 = icmp eq i64 %indvars.iv.next.i10, 100, 
+</pre>
+<br/>Operand # 0 (0x4f8f8d0) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.next.i10 = add nuw nsw i64 %indvars.iv.i9, 1, </pre>
+Operand # 1 (0x4f07850) <br /><pre class="prettyprint lang-llvm ">i64 100</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:58                                      ; preds = %50, %47
+  %indvars.iv.next.i10 = add nuw nsw i64 %indvars.iv.i9, 1, 
+  %59 = tail call i32 @fgetc(%struct._IO_FILE* %42) #7, 
+  %exitcond.i11 = icmp eq i64 %indvars.iv.next.i10, 100, 
+  br i1 %exitcond.i11, label %60, label %47, 
+</pre>

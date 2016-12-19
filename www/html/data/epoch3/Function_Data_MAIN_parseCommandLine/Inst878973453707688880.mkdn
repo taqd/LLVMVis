@@ -1,0 +1,22 @@
+;; Line: 95, Column: 6
+  br i1 %47, label %51, label %48, 
+</pre>
+<br/>Operand # 0 (0x4f87c60) <br /><pre class="prettyprint lang-llvm ">  %47 = icmp eq i32 %46, 0, </pre>
+Operand # 1 (0x4f84950) <br /><pre class="prettyprint lang-llvm ">
+; label:48                                      ; preds = %44
+  %49 = load i8*, i8** %11, align 8, 
+  %50 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([53 x i8], [53 x i8]* @.str.4.4, i64 0, i64 0), i8* %49), 
+  tail call void @exit(i32 1) #8, 
+  unreachable, 
+</pre>
+Operand # 2 (0x4f849a0) <br /><pre class="prettyprint lang-llvm ">
+; label:51                                      ; preds = %44, %41
+  ret void, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:44                                      ; preds = %41
+  %45 = load i8*, i8** %11, align 8, 
+  %46 = call i32 @stat(i8* %45, %struct.stat* nonnull %fileStat) #7, 
+  %47 = icmp eq i32 %46, 0, 
+  br i1 %47, label %51, label %48, 
+</pre>

@@ -1,0 +1,14 @@
+;; Line: 151, Column: 27
+  %53 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+</pre>
+<br/>Operand # 0 (0x4edf238) <br /><pre class="prettyprint lang-llvm ">@srcGrid = internal global [26000000 x double]* null, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+._crit_edge:                                      ; preds = %._crit_edge.loopexit8, %._crit_edge.loopexit, %0
+  %53 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %54 = getelementptr inbounds [26000000 x double], [26000000 x double]* %53, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %54) #7, 
+  switch i32 %17, label %MAIN_finalize.exit [
+    i32 1, label %.thread
+    i32 2, label %57
+  ], 
+</pre>

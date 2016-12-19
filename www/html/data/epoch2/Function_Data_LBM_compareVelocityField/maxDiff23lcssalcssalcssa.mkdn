@@ -1,0 +1,13 @@
+
+  %maxDiff2.3.lcssa.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa.lcssa, %143 ]
+</pre>
+<br/>Operand # 0 (0x4dba028) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa, %142 ]</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:144                                     ; preds = %143
+  %maxDiff2.3.lcssa.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa.lcssa, %143 ]
+  %145 = fpext float %maxDiff2.3.lcssa.lcssa.lcssa to double, 
+  %146 = call double @sqrt(double %145) #7, 
+  %147 = call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([43 x i8], [43 x i8]* @.str.8, i64 0, i64 0), double %146), 
+  %148 = call i32 @fclose(%struct._IO_FILE* %3), 
+  ret void, 
+</pre>

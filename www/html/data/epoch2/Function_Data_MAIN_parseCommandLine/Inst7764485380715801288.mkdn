@@ -1,0 +1,11 @@
+;; Line: 66, Column: 16
+  %1 = icmp ugt i32 %nArgs.off, 1, 
+</pre>
+<br/>Operand # 0 (0x4dc0460) <br /><pre class="prettyprint lang-llvm ">  %nArgs.off = add i32 %nArgs, -5, </pre>
+Operand # 1 (0x4d24bb0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %fileStat = alloca %struct.stat, align 8
+  %nArgs.off = add i32 %nArgs, -5, 
+  %1 = icmp ugt i32 %nArgs.off, 1, 
+  br i1 %1, label %2, label %3, 
+</pre>

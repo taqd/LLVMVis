@@ -1,12 +1,8 @@
 #include "visualize.hpp"
 
 //Todo:
-// - Create git repo for it
 // - Create read me
-// - Clean up loop map/id/num stuff
-// - Add file name to debug information
 // - Formalize 'theme' ability
-// - Implement code diff between epochs
 
 //LLVM Stuff
 static const char h_name[] = "printGraph Module Pass";
@@ -25,10 +21,12 @@ struct visualize : public ModulePass {
 char visualize::ID = 0;
 static RegisterPass<visualize> X("visualize", "Pass to print a nice d3 web visualization graph");
 
+
 unordered_map<BasicBlock*,string> loopIDs;
-unordered_map<BasicBlock*,Loop*> loopMap;
-unordered_map<Loop*,int> loopNum;
+unordered_map<BasicBlock*,int> loopNum;
 unordered_map<Value*,string> nameMap;
+int current_epoch;
+
 
 
 /*************************************************************************
@@ -41,14 +39,14 @@ unordered_map<Value*,string> nameMap;
 //Create constraints  on the nodes, and  edges. This is where  we have
 //manual control over the graph.
 void set_constraints(Function *fun_source, node *n) {
-  
+  int max_width = 5;
   //Put any function named 'main' at the top (Zero in Y axis, with
   //weight '5' so it isn't pulled down by other nodes too easily
-  if (get_name(fun_source).find("main") != string::npos)
+  if (get_name(fun_source)  == "main")
     set_Y_position(n,0,5); 
 
   //Increase edge width on the number of times the function is called
-  for (Function *fun_target : find_called(fun_source))  {
+  for (Function *fun_target : find_called(fun_source))  {   
 
     //Get the number of times the target is called in the source
     int num_calls = count_calls(fun_source, fun_target);
@@ -59,7 +57,7 @@ void set_constraints(Function *fun_source, node *n) {
     node_target->name = get_name(fun_target);
 
     //Set the edge width
-    set_link_width(n,node_target,num_calls);
+    set_link_width(n,node_target,min(max_width,num_calls));
 
     //Set the edge colour of functions called by main.
     if (get_name(fun_source).find("main") != string::npos) {
@@ -82,21 +80,34 @@ vector<string> get_dependencies(Function *f, node *n) {
   return depends;
 }
 
-//Create the text that will be shown in the area to the left of the
-//graph. This is written in markdown, and supports javascript.
-string get_metadata(Function *f, vector<string> folders) {
-  string header = "<b>Function data:</b>\n";
+//Text to go into the 'IR' tab
+string get_ir(Function *f){
+  if (!ENABLE_IR) return "Disabled";
 
   //Get the contents of this function
-  string fun_data = print(f);
-
-  //Give it nice syntax highlighting
-  string code = header + syntax_beg + fun_data + syntax_end;
+  string IR = print(f);
 
   //Build the full metadata page with navigation to related functions,
   //and a list of all available views
-  return build_metadata(f,code,folders);
+  return prep_metadata(IR);
 }
+
+//Text for the debug tab
+string get_debug(Function *f) {
+  if (!ENABLE_DEBUG) return "Disabled";
+  
+  string debug_header = "Filename: " + get_file(f) + "\nDirectory: " + get_dir(f);
+  string debug_content ="";
+
+  //Enable this for line-by-line debug information for the entire
+  //function. Warning: SLOW
+  // for (BasicBlock &b : *f) {
+  //   debug_content += get_blk_metadata(&b);
+  // }
+
+  return debug_header + "\n" + debug_content;
+}
+
 
 //Create the full view. This assumes that the folders have already
 //been created, and their names are in the 'folders' vector.
@@ -104,6 +115,9 @@ void create_control_flow_view(Module &m, vector<string> folders)
 {
   vector<node*> nodes;   
   string title = get_name(&m);
+  if (VERBOSE)
+    outs() << "Creating control flow view for module: " << title;
+
  
   //Create the objects. Each function is a node.
   for (Function &f : m) {
@@ -115,12 +129,15 @@ void create_control_flow_view(Module &m, vector<string> folders)
     n->type = get_type(&f);
     n->group = get_group(&f);
     n->depends = get_dependencies(&f,n);        
-    n->metadata = get_metadata(&f,folders);        
+    n->metadata = get_ir(&f);
+    n->src = get_debug(&f);
     n->json = create_object(n);
     nodes.push_back(n);    
 
     //Set the constraints for this node
     set_constraints(&f,n);
+
+    if (VERBOSE) outs() << ".";
   }
   
   //Create objects.json 
@@ -135,12 +152,13 @@ void create_control_flow_view(Module &m, vector<string> folders)
   create_data_files(folder,nodes);
 
   //Print some nice output
-  int paddingLength = 15;
-  if (paddingLength - title.size() > 0)
-    title.insert(title.end(),paddingLength - title.size(), ' ');
-  outs() << "Control flow view created for module: " << title
-	 << "\t Total Nodes: " << nodes.size() << "\n";
+  if (VERBOSE)
+    outs() << "\t Total Nodes: " << nodes.size() << "\n";
+
+  //Sync the data folder to the web folder
+  if (DO_SYNC) system(syncCommand.c_str());        
 }
+
 
 
 /*************************************************************************
@@ -180,11 +198,11 @@ vector<string> get_dependencies(BasicBlock *b, node *n) {
   return depends;
 }
 
-//Metadata for a basic block
-string get_metadata(BasicBlock*b, vector<string> folders) {
-  string header = "<b>Basicblock data:</b>\n";
- 
-  //First, get the debug information for this block
+//Text for the IR tab
+string get_ir(BasicBlock*b) {
+  if (!ENABLE_IR) return "Disabled";  
+
+  //First, get the file/line/col debug information for this block
   string debug = "";
   vector<int> lines, cols;
   for (Instruction &i : *b) {
@@ -199,28 +217,32 @@ string get_metadata(BasicBlock*b, vector<string> folders) {
 	cols.push_back(col);
     }
   }
-  debug = ";; Lines: " + format_as_range(lines) + " " + "Cols: " + format_as_range(cols);
+
+  //Format it nicely into a range style
+  debug = "File: " + get_file(b->getParent()) + ", Lines: " + format_as_range(lines) + " " + "Cols: " + format_as_range(cols);
 
   //Get the contents of this block
-  string blk_data = print(b);
-
-  //Put the debug information and block contents together, and syntax
-  //highlight both
-  string code = header + syntax_beg + debug + blk_data + syntax_end;
-
-  //Change the names of blocks to be clickable and highlight the node
-  //in the graph.
-  replaceAll(code,"_","\\_");
-  code = change_blocks_to_links(b->getParent(),code);
-
+  string code = debug + print(b);
+  
   //Build the full metadata page with navigation to related functions,
   //and a list of all available views
-  return build_metadata(b->getParent(),code,folders);
+  return prep_metadata(code);
+}
+
+//Text for the debug tab
+string get_debug(BasicBlock *b) {
+  if (!ENABLE_DEBUG) return "Disabled";  
+  string debug_header = "Filename: " + get_file(b->getParent()) + "\nDirectory: " + get_dir(b->getParent());
+  string debug_content = get_blk_metadata(b);
+
+  return debug_header + "\n\n" + debug_content;
 }
 
 void create_control_flow_view(Function &f, vector<string> folders, LoopInfo *LI) {
   vector<node*> nodes;
   string title = get_name(&f);
+  if (VERBOSE)
+    outs() << "Creating control flow view for function: " << title;
 
   //Create a independant function node (a helper)
   node *n = create_function_node(&f,folders,true);
@@ -250,11 +272,14 @@ void create_control_flow_view(Function &f, vector<string> folders, LoopInfo *LI)
     n->type = get_type(&b);
     n->group = get_group(&b);
     n->depends = get_dependencies(&b,n); 
-    n->metadata = get_metadata(&b,folders);
+    n->metadata = get_ir(&b);
+    n->src = get_debug(&b);
     n->json = create_object(n);
     nodes.push_back(n);
     
     set_constraints(&b,n);
+
+    if (VERBOSE) outs() << ".";
   }
     
   //Create objects.json
@@ -269,11 +294,14 @@ void create_control_flow_view(Function &f, vector<string> folders, LoopInfo *LI)
   create_data_files(folder,nodes);
 
   //Print some nice output
-  int paddingLength = 15;
-  if (paddingLength - title.size() > 0)
-    title.insert(title.end(),paddingLength - title.size(), ' ');
-  outs() << "Control flow view created for function: " << title
-	 << "\t Total Nodes: " << nodes.size() << "\n";
+  // int paddingLength = 15;
+  // if (paddingLength - title.size() > 0)
+  //   title.insert(title.end(),paddingLength - title.size(), ' ');
+  if (VERBOSE)
+    outs() << "\t Total Nodes: " << nodes.size() << "\n";
+
+  //Sync the data folder to the web folder
+  if (DO_SYNC) system(syncCommand.c_str());          
 }
 
 
@@ -300,19 +328,13 @@ void set_constraints(Value *v, node *n, vector<Value*> &Inputs, vector<Value*> &
     set_Y_position(n,1,5); //Put the output nodes a the bottom
 }
 
-//Metadata for an arbitrary value, include it's pointer address,
-//operands, and parent block
-string get_metadata(Value *v, vector<string> folders) {
-  string header;
-  if (isa<Instruction>(v)) 
-    header = "<b>Instruction data:</b>\n";
-  else
-    header = "<b>Value data:</b>\n";
-  
-  //Get the debug information if this is an instruciton
+//Text for the IR tab
+string get_ir(Value *v) {
+  if (!ENABLE_IR) return "Disabled";
+  //Get the file/line/col debug information if this is an instruciton
   string debug = "";
   if (Instruction *i = dyn_cast<Instruction>(v)) {
-    if (i->getMetadata("dbg")) {     //    if (MDNode *N = i->getMetadata("dbg")) {
+    if (i->getMetadata("dbg")) {
       DebugLoc loc = i->getDebugLoc();
       string line = to_string(loc.getLine());
       string col = to_string(loc.getCol());      
@@ -321,32 +343,26 @@ string get_metadata(Value *v, vector<string> folders) {
   }
 
   //Get the contents of this value
-  string val_data = print(v);
-
-  //Give it nice syntax highlighting
-  string code = header + syntax_beg + debug + "\n" + val_data + syntax_end;
-
+  string code = debug + "\n" + print(v);
+  
   //Add the instruction operands, and parent block in different code blocks
-  Function *parentFun = NULL;
-  if (Instruction *i = dyn_cast<Instruction>(v)) {
-    parentFun = i->getParent()->getParent();
-    
+  string other = "\n" + syntax_end + "\n"; //End the last code block
+					   //(added automatically in
+					   //prep_metadata
+  if (Instruction *i = dyn_cast<Instruction>(v)) {    
     for (Use &op : i->operands()) {
       int opNum = op.getOperandNo();
       string opPrefix = "Operand # " + to_string(opNum) + " (" + get_val_addr(op) + ") <br />";
       string opData = print(op);
-      code += opPrefix + syntax_beg + opData + syntax_end;
+      other += opPrefix + syntax_beg + opData + syntax_end;
     }
     //code = change_instructions_to_links(parentFun,code);    
 
     string parentBlk_data = print(i->getParent());
-    code += "Parent Block : <br />" + syntax_beg + parentBlk_data + syntax_end;
+    other += "Parent Block : <br />" + syntax_beg + parentBlk_data + syntax_end;
   } 
-  replaceAll(code,"_","\\_");
 
-  //Build the full metadata page with navigation to related functions,
-  //and a list of all available views   
-  return build_metadata(parentFun,code,folders);
+  return prep_metadata(code+other);
 }
 
 //Create an instruction node. These depend on which other instructions
@@ -358,9 +374,12 @@ vector<string> get_dependencies(Instruction *i, vector<Value*> &Inputs) {
   for (Use &u : i->operands()) {
 
     //If the operand is another instruction, we depend on that instruction
-    if (isa<Instruction>(u))
-      depends.push_back(get_name(u));
-
+    if (Instruction* op  = dyn_cast<Instruction>(u)) {
+      if (!hide(*op)) {
+	depends.push_back(get_name(u));
+      }
+    }
+    
     //Note: global value are considered 'Inputs' as they are defined
     //outside of the function, and will automatically be depended on
     //in the next else if, however, as constants such as '42' are
@@ -375,15 +394,15 @@ vector<string> get_dependencies(Instruction *i, vector<Value*> &Inputs) {
   }
   return depends;
 }
- 
- 
+  
 void create_data_flow_view(Function &f, vector<string> folders, LoopInfo *LI) {
-  vector<node*> nodes;
+    vector<node*> nodes;
     string title = get_name(&f);
-
+    if (VERBOSE)
+      outs() << "Creating dataflow view for function: " << title;
+    
     //Create an function helper node
-    node *n = new node(&f);
-    create_function_node(&f,folders,false);
+    node *n = create_function_node(&f,folders,true);    
     nodes.push_back(n);
 
     //Create loop helper nodes
@@ -411,11 +430,13 @@ void create_data_flow_view(Function &f, vector<string> folders, LoopInfo *LI) {
       n->type = get_type(v);
       n->group = get_group(v);
       n->depends = empty_set;
-      n->metadata = get_metadata(v,folders);
+      n->metadata = get_ir(v);
       n->json = create_object(n);
       nodes.push_back(n);
       
-      set_constraints(v,n,Inputs,Outputs); 
+      set_constraints(v,n,Inputs,Outputs);
+
+      if (VERBOSE) outs() << ".";
     }
     step = 0; //Local global used in set_constraints
 
@@ -431,11 +452,13 @@ void create_data_flow_view(Function &f, vector<string> folders, LoopInfo *LI) {
       } else {
 	n->depends = empty_set;
       }
-      n->metadata = get_metadata(v,folders);
+      n->metadata = get_ir(v);
       n->json = create_object(n);
       nodes.push_back(n);
       
       set_constraints(v,n,Inputs,Outputs);
+      
+      if (VERBOSE) outs() << ".";
     }
     step = 0; //Local global used in set_constraints    
 
@@ -456,9 +479,11 @@ void create_data_flow_view(Function &f, vector<string> folders, LoopInfo *LI) {
 	n->type = get_type(&i);
 	n->group = get_group(&i);
 	n->depends = get_dependencies(&i,Inputs);
-	n->metadata = get_metadata(&i,folders);
+	n->metadata = get_ir(&i);
 	n->json = create_object(n);      		
 	nodes.push_back(n);
+
+	if (VERBOSE) outs() << ".";
       }
     }
 
@@ -474,13 +499,14 @@ void create_data_flow_view(Function &f, vector<string> folders, LoopInfo *LI) {
     create_data_files(folder,nodes);
 
     //Print some nice output
-    int paddingLength = 15;
-    if (paddingLength - title.size() > 0)
-      title.insert(title.end(),paddingLength - title.size(), ' ');
-    outs() << "Dataflow view created for function: " << title
-	   << "\t Inputs: " << Inputs.size()
-	   << "\t Outputs: " << Outputs.size()
-	   << "\t Total Nodes: " << nodes.size() << "\n";
+    if (VERBOSE) {
+      outs() << "\t Inputs: " << Inputs.size()
+	     << "\t Outputs: " << Outputs.size()
+	     << "\t Total Nodes: " << nodes.size() << "\n";
+    }
+
+    //Sync the data folder to the web folder
+    if (DO_SYNC) system(syncCommand.c_str());
 }
 
 //Finds the current epoch
@@ -492,9 +518,9 @@ string get_epoch(string filename) {
 
   //Get previous epoch number, and update to current
   if (File.is_open()) {
-    int epoch;
-    File >> epoch;
-    currentEpoch = to_string(epoch + 1);  
+    File >> current_epoch;
+    currentEpoch = to_string(current_epoch + 1);
+    current_epoch++;
     File.close();
   }
   
@@ -510,52 +536,59 @@ string get_epoch(string filename) {
 
 bool visualize::runOnModule(Module &m)
 {
-  outs() << "Creating a d3-process-map visualization\n";
-  
+
   string epochStr = get_epoch(epochFile);
   dataFolder = "data/epoch" + epochStr + "/";
-  
-  outs() << "Visualization being written to: " << dataFolder << "\n";
-  vector<string> folders; //The folders/views created
 
+  if (VERBOSE) {
+    char full_path[PATH_MAX];
+    realpath(dataFolder.c_str(),full_path);
+    string path = full_path;
+    outs() << "\n-= Welcome to LLVMVis =-\n"
+	   << " - Module title: " << get_name(&m) << "\n"
+	   << " - Epoch: " << epochStr << "\n"
+	   << " - Output folder: " << path << "\n"
+	   << " - Web folder: " << webFolder << "\n"
+	   << " - Sync command: " << syncCommand << "\n";
+  }
+					       
+
+  vector<string> folders; //The folders/views created
   
-  //Name all loops
+  //Name all loops. Note: This indexes on the first block of a loop
+  //instead of the loop itself, because the latter yields incorrect
+  //results 
   int loopID = 0;
   for (Function &f : m) {
     if (f.isDeclaration()) continue;
+
     LoopInfo *LI = &getAnalysis<LoopInfoWrapperPass>(f).getLoopInfo();
     for (BasicBlock &b : f) {
+      
+      //Get the loop for this block
       Loop *loop = LI->getLoopFor(&b);
-      loopMap[&b] = loop;
-      if (loopNum.find(loop) == loopNum.end()) {
-	loopNum[loop] = loopID;
+
+      if (!loop) {
+	loopIDs[&b] = "";
+  	continue;
+      }
+      
+      //Get/set the loop number
+      if (loopNum.find(loop->getBlocks().front()) == loopNum.end()) {
+	loopNum[loop->getBlocks().front()] = loopID;
 	loopID++;
       }
-      if (loop) {
-	loopIDs[&b] = to_string(loopNum[loop]);
-      } else {
-	loopIDs[&b] = "";
-      }
-    }
-  }
 
-  //Make names for all unnamed instructions
-  int num = 0;
-  for (Function &f : m) {
-    if (f.isDeclaration()) continue;
-    for (BasicBlock &b : f) {
-      for (Instruction &i : b) {
-	if (i.getName() == "") {
-	  nameMap[&i] = to_string(num);
-	  num++;
-	}
-      }
+      //Map this block, to the loop ID. This will put associate a
+      //block to its inner most loop      
+      loopIDs[&b] = to_string(loopNum[loop->getBlocks().front()]);
+           
     }
   }
 
   //Create the module control flow graph folder
   if (CREATE_CF_MODULE_VIEW) {
-    string name = "Module_Control_" + sanitize(m.getName());;
+    string name = "Module_Control_" + get_name(&m);;
     string command = "mkdir -p " + dataFolder + name;
     system(command.c_str());
     folders.push_back(name);
@@ -565,7 +598,11 @@ bool visualize::runOnModule(Module &m)
   if (CREATE_CF_FUNCTION_VIEWS) {
     for (Function &f : m) {
       if (f.isDeclaration()) continue;
-      string name = "Function_Control_" + sanitize(f.getName());
+      if (onlyDoFuns != "all" &&
+	  onlyDoFuns.find(get_name(&f)) == string::npos)
+      	continue;
+	
+      string name = "Function_Control_" + get_name(&f);
       string command = "mkdir -p " + dataFolder + name;
       system(command.c_str());
       folders.push_back(name);
@@ -576,7 +613,12 @@ bool visualize::runOnModule(Module &m)
   if (CREATE_DF_FUNCTION_VIEWS) {
     for (Function &f : m) {
       if (f.isDeclaration()) continue;
-      string name = "Function_Data_" + sanitize(f.getName());
+
+      if (onlyDoFuns != "all" &&
+	  onlyDoFuns.find(get_name(&f)) == string::npos)
+      	continue;
+      
+      string name = "Function_Data_" + get_name(&f);
       string command = "mkdir -p " + dataFolder + name;
       system(command.c_str());
       folders.push_back(name);
@@ -594,6 +636,11 @@ bool visualize::runOnModule(Module &m)
   if (CREATE_CF_FUNCTION_VIEWS) {
     for (Function &f : m) {
       if (f.isDeclaration()) continue;
+      if (onlyDoFuns != "all" &&
+	  onlyDoFuns.find(get_name(&f)) == string::npos)
+      	continue;
+
+      
       LoopInfo *LI = &getAnalysis<LoopInfoWrapperPass>(f).getLoopInfo();
       create_control_flow_view(f,folders,LI);
     }
@@ -604,13 +651,29 @@ bool visualize::runOnModule(Module &m)
   if (CREATE_DF_FUNCTION_VIEWS) {
     for (Function &f : m) {
       if (f.isDeclaration()) continue;
+      if (onlyDoFuns != "all" &&
+	  onlyDoFuns.find(get_name(&f)) == string::npos)
+      	continue;
+      
       LoopInfo *LI = &getAnalysis<LoopInfoWrapperPass>(f).getLoopInfo();      
       create_data_flow_view(f,folders,LI);
+
+
     }
   }
 
-  outs() << "Visualization created!\n";
+  if (DO_SYNC) {
+    if (VERBOSE) outs() << "Running sync command: " << syncCommand << " ... ";
+
+    if (VERBOSE) outs() << "Done\n";
+  }
+
   
+  if (VERBOSE) outs() << "-= LLVMVis Complete =-\n\n";
   //This pass did not make changes to the IR
   return false;
 }
+
+
+
+

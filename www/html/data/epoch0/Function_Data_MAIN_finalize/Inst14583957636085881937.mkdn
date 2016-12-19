@@ -1,0 +1,16 @@
+;; Line: 154, Column: 29
+  %10 = getelementptr inbounds [26000000 x double], [26000000 x double]* %9, i32 0, i32 0, 
+</pre>
+<br/>Operand # 0 (0x5dba428) <br /><pre class="prettyprint lang-llvm ">  %9 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, </pre>
+Operand # 1 (0x5c9cec0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Operand # 2 (0x5c9cec0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:8                                       ; preds = %0
+  %9 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %10 = getelementptr inbounds [26000000 x double], [26000000 x double]* %9, i32 0, i32 0, 
+  %11 = load %struct.MAIN_Param*, %struct.MAIN_Param** %1, align 8, 
+  %12 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %11, i32 0, i32 1, 
+  %13 = load i8*, i8** %12, align 8, 
+  call void @LBM_compareVelocityField(double* %10, i8* %13, i32 -1), 
+  br label %14, 
+</pre>

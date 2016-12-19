@@ -1,0 +1,17 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+preheader42 (.preheader42):
+L131,C11:  %1 = trunc i64 %indvars.iv51 to i32, !dbg !207
+L131,C11:  %2 = icmp eq i32 %1, 0, !dbg !207
+L131,C21:  %3 = trunc i64 %indvars.iv51 to i32, !dbg !216
+L131,C21:  %4 = icmp eq i32 %3, 129, !dbg !216
+L132,C6:  %5 = mul nsw i64 %indvars.iv51, 10000, !dbg !218
+L135,C13:  %6 = trunc i64 %indvars.iv51 to i32, !dbg !221
+L135,C13:  %7 = icmp eq i32 %6, 1, !dbg !221
+L135,C23:  %8 = trunc i64 %indvars.iv51 to i32, !dbg !224
+L135,C23:  %9 = icmp eq i32 %8, 128, !dbg !224
+L135,C18:  %or.cond11 = or i1 %7, %9, !dbg !226
+L138,C7:  %10 = mul nsw i64 %indvars.iv51, 10000, !dbg !227
+L127,C3:  br label %.preheader, !dbg !230
+

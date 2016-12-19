@@ -1,0 +1,9 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+preheader (.preheader):
+L105,C9:  %3 = tail call i32 @fgetc(%struct._IO_FILE* %1), !dbg !225
+L105,C32:  %4 = mul nuw nsw i64 %indvars.iv14, 100, !dbg !212
+L105,C32:  %5 = add nuw nsw i64 %4, %2, !dbg !212
+L104,C4:  br label %6, !dbg !226
+

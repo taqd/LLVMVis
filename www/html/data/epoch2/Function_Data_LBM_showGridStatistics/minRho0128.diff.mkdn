@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f2b7c0) <br /><pre class="prettyprint lang-llvm ">double 1.000000e+30</pre>
+< Operand # 1 (0x4fa2f28) <br /><pre class="prettyprint lang-llvm ">  %minRho.1 = select i1 %76, double %75, double %minRho.0128, </pre>
+---
+> <br/>Operand # 0 (0x4d2b7b0) <br /><pre class="prettyprint lang-llvm ">double 1.000000e+30</pre>
+> Operand # 1 (0x4da0718) <br /><pre class="prettyprint lang-llvm ">  %minRho.1 = select i1 %76, double %75, double %minRho.0128, </pre>

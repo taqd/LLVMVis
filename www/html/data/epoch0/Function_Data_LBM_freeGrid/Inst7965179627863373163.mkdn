@@ -1,0 +1,18 @@
+;; Line: 47, Column: 9
+  %2 = load double**, double*** %1, align 8, 
+</pre>
+<br/>Operand # 0 (0x5c92238) <br /><pre class="prettyprint lang-llvm ">  %1 = alloca double**, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = alloca double**, align 8
+  %margin = alloca i64, align 8
+  store double** %ptr, double*** %1, align 8
+  store i64 400000, i64* %margin, align 8, 
+  %2 = load double**, double*** %1, align 8, 
+  %3 = load double*, double** %2, align 8, 
+  %4 = getelementptr inbounds double, double* %3, i64 -400000, 
+  %5 = bitcast double* %4 to i8*, 
+  call void @free(i8* %5) #6, 
+  %6 = load double**, double*** %1, align 8, 
+  store double* null, double** %6, align 8, 
+  ret void, 
+</pre>

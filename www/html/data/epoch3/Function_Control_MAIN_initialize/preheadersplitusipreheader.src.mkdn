@@ -1,0 +1,6 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+preheadersplitusipreheader (.preheader.split.us.i.preheader):
+L162,C6:  br label %.preheader.split.us.i, !dbg !300
+

@@ -1,0 +1,7 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk15073515090748508160 ():
+L625,C10:  store i32 0, i32* %y, align 4, !dbg !248
+L625,C8:  br label %13, !dbg !251
+

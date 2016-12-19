@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4dcba08) <br /><pre class="prettyprint lang-llvm ">  %15 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, </pre>
+< Operand # 1 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+< Operand # 2 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+---
+> <br/>Operand # 0 (0x4f99758) <br /><pre class="prettyprint lang-llvm ">  %15 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, </pre>
+> Operand # 1 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+> Operand # 2 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>

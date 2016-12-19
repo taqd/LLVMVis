@@ -1,0 +1,19 @@
+;; Line: 524, Column: 11
+  %22 = load i32, i32* %i, align 4, 
+</pre>
+<br/>Operand # 0 (0x5ccc908) <br /><pre class="prettyprint lang-llvm ">  %i = alloca i32, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:14                                      ; preds = %10
+  %15 = load i32, i32* %i, align 4, 
+  %16 = sext i32 %15 to i64, 
+  %17 = sub i64 4, %16, 
+  %18 = sub i64 %17, 1, 
+  %19 = load i8*, i8** %vPtr, align 8, 
+  %20 = getelementptr inbounds i8, i8* %19, i64 %18, 
+  %21 = load i8, i8* %20, align 1, 
+  %22 = load i32, i32* %i, align 4, 
+  %23 = sext i32 %22 to i64, 
+  %24 = getelementptr inbounds [4 x i8], [4 x i8]* %buffer, i64 0, i64 %23, 
+  store i8 %21, i8* %24, align 1, 
+  br label %25, 
+</pre>

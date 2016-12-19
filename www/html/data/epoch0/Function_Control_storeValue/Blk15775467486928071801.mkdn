@@ -1,0 +1,7 @@
+File: lbm.c, Lines: 519,520-523, Cols: 7,8-10,15,22,30,
+; label:7                                       ; preds = %0
+  %8 = load float*, float** %2, align 8, 
+  %9 = bitcast float* %8 to i8*, 
+  store i8* %9, i8** %vPtr, align 8, 
+  store i32 0, i32* %i, align 4, 
+  br label %10, 

@@ -1,0 +1,12 @@
+;; Line: 136, Column: 13
+  %24 = load i32, i32* %23, align 4, 
+</pre>
+<br/>Operand # 0 (0x4dc6c18) <br /><pre class="prettyprint lang-llvm ">  %23 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:22                                      ; preds = %LBM_allocateGrid.exit4, %16
+  %23 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, 
+  %24 = load i32, i32* %23, align 4, 
+  %25 = icmp eq i32 %24, 1, 
+  %26 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  br i1 %25, label %.preheader28.i.preheader, label %66, 
+</pre>

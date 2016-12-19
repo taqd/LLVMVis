@@ -1,0 +1,10 @@
+4,7c4,7
+< <br/>Operand # 0 (0x4d22338) <br /><pre class="prettyprint lang-llvm ">@MAIN_printInfo.simTypeString = internal constant [3 x [32 x i8]] [[32 x i8] c"lid-driven cavity\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00", [32 x i8] c"channel flow\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00", [32 x i8] zeroinitializer], align 16</pre>
+< Operand # 1 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+< Operand # 2 (0x4dc3a40) <br /><pre class="prettyprint lang-llvm ">  %10 = lshr i64 %7, 32, </pre>
+< Operand # 3 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+---
+> <br/>Operand # 0 (0x4edf058) <br /><pre class="prettyprint lang-llvm ">@MAIN_printInfo.simTypeString = internal constant [3 x [32 x i8]] [[32 x i8] c"lid-driven cavity\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00", [32 x i8] c"channel flow\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00", [32 x i8] zeroinitializer], align 16</pre>
+> Operand # 1 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+> Operand # 2 (0x4f88ab0) <br /><pre class="prettyprint lang-llvm ">  %10 = lshr i64 %7, 32, </pre>
+> Operand # 3 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>

@@ -1,0 +1,12 @@
+;; Line: 39, Column: 14
+  %7 = load i32, i32* %t, align 4, 
+</pre>
+<br/>Operand # 0 (0x5dae5a8) <br /><pre class="prettyprint lang-llvm ">  %t = alloca i32, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:6                                       ; preds = %32, %0
+  %7 = load i32, i32* %t, align 4, 
+  %8 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i32 0, i32 0, 
+  %9 = load i32, i32* %8, align 8, 
+  %10 = icmp sle i32 %7, %9, 
+  br i1 %10, label %11, label %35, 
+</pre>

@@ -1,0 +1,25 @@
+;; Line: 158, Column: 3
+  br i1 %exitcond34.i16, label %65, label %.preheader.i8, 
+</pre>
+<br/>Operand # 0 (0x4dc9860) <br /><pre class="prettyprint lang-llvm ">  %exitcond34.i16 = icmp eq i64 %indvars.iv.next33.i15, 100, </pre>
+Operand # 1 (0x4dc47a0) <br /><pre class="prettyprint lang-llvm ">
+.preheader.i8:                                    ; preds = %64, %.preheader28.i6
+  %indvars.iv32.i7 = phi i64 [ 0, %.preheader28.i6 ], [ %indvars.iv.next33.i15, %64 ], 
+  %48 = icmp eq i64 %indvars.iv32.i7, 0, 
+  %49 = icmp eq i64 %indvars.iv32.i7, 99, 
+  %50 = mul nuw nsw i64 %indvars.iv32.i7, 100, 
+  %51 = add nsw i64 %50, %47, 
+  br label %52, 
+</pre>
+Operand # 2 (0x4dc4930) <br /><pre class="prettyprint lang-llvm ">
+; label:65                                      ; preds = %64
+  %indvars.iv.next36.i17 = add nsw i64 %indvars.iv35.i5, 1, 
+  %exitcond37.i18 = icmp eq i64 %indvars.iv.next36.i17, 132, 
+  br i1 %exitcond37.i18, label %LBM_initializeSpecialCellsForChannel.exit19.loopexit, label %.preheader28.i6, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:64                                      ; preds = %63
+  %indvars.iv.next33.i15 = add nuw nsw i64 %indvars.iv32.i7, 1, 
+  %exitcond34.i16 = icmp eq i64 %indvars.iv.next33.i15, 100, 
+  br i1 %exitcond34.i16, label %65, label %.preheader.i8, 
+</pre>

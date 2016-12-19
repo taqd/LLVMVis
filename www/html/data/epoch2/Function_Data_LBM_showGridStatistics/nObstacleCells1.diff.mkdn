@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4fa3780) <br /><pre class="prettyprint lang-llvm ">  %86 = add nsw i32 %nObstacleCells.0130, 1, </pre>
+< Operand # 1 (0x4f9fab8) <br /><pre class="prettyprint lang-llvm ">  %nObstacleCells.0130 = phi i32 [ 0, %0 ], [ %nObstacleCells.1, %127 ]</pre>
+< Operand # 2 (0x4f9fab8) <br /><pre class="prettyprint lang-llvm ">  %nObstacleCells.0130 = phi i32 [ 0, %0 ], [ %nObstacleCells.1, %127 ]</pre>
+---
+> <br/>Operand # 0 (0x4da0f70) <br /><pre class="prettyprint lang-llvm ">  %86 = add nsw i32 %nObstacleCells.0130, 1, </pre>
+> Operand # 1 (0x4d91278) <br /><pre class="prettyprint lang-llvm ">  %nObstacleCells.0130 = phi i32 [ 0, %0 ], [ %nObstacleCells.1, %127 ]</pre>
+> Operand # 2 (0x4d91278) <br /><pre class="prettyprint lang-llvm ">  %nObstacleCells.0130 = phi i32 [ 0, %0 ], [ %nObstacleCells.1, %127 ]</pre>

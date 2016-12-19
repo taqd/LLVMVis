@@ -1,0 +1,25 @@
+;; Line: 39, Column: 2
+  br i1 %52, label %.lr.ph.split, label %._crit_edge.loopexit8, 
+</pre>
+<br/>Operand # 0 (0x4f82980) <br /><pre class="prettyprint lang-llvm ">  %52 = icmp slt i32 %t.04, %2, </pre>
+Operand # 1 (0x4f7e7b0) <br /><pre class="prettyprint lang-llvm ">
+._crit_edge.loopexit8:                            ; preds = %50
+  br label %._crit_edge, 
+</pre>
+Operand # 2 (0x4f7e670) <br /><pre class="prettyprint lang-llvm ">
+.lr.ph.split:                                     ; preds = %.lr.ph.split.preheader, %50
+  %t.04 = phi i32 [ %51, %50 ], [ 1, %.lr.ph.split.preheader ]
+  %38 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %39 = getelementptr inbounds [26000000 x double], [26000000 x double]* %38, i64 0, i64 0, 
+  %40 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %41 = getelementptr inbounds [26000000 x double], [26000000 x double]* %40, i64 0, i64 0, 
+  tail call void @LBM_performStreamCollide(double* %39, double* %41), 
+  %42 = load i64, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, 
+  %43 = load i64, i64* bitcast ([26000000 x double]** @
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:50                                      ; preds = %.lr.ph.split, %46
+  %51 = add nuw nsw i32 %t.04, 1, 
+  %52 = icmp slt i32 %t.04, %2, 
+  br i1 %52, label %.lr.ph.split, label %._crit_edge.loopexit8, 
+</pre>

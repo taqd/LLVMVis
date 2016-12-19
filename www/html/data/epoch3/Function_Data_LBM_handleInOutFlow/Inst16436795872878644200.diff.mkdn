@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d87440) <br /><pre class="prettyprint lang-llvm ">  %301 = fadd double %297, %300, </pre>
+< Operand # 1 (0x4d87618) <br /><pre class="prettyprint lang-llvm ">  %304 = load double, double* %303, align 8, </pre>
+---
+> <br/>Operand # 0 (0x4f49e40) <br /><pre class="prettyprint lang-llvm ">  %301 = fadd double %297, %300, </pre>
+> Operand # 1 (0x4f4a018) <br /><pre class="prettyprint lang-llvm ">  %304 = load double, double* %303, align 8, </pre>

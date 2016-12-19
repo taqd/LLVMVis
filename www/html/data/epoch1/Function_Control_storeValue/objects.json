@@ -1,0 +1,17 @@
+[
+	{
+		"type" : "Helper",
+		"name" : "storeValue",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "Blk4972014843332920021",
+		"group" : "",
+		"depends" : [
+
+		]
+	}
+]

@@ -1,0 +1,12 @@
+;; Line: 536, Column: 12
+</pre>
+<br/>Operand # 0 (0x4dac000) <br /><pre class="prettyprint lang-llvm ">i32* undef</pre>
+Operand # 1 (0x4db5e60) <br /><pre class="prettyprint lang-llvm ">= (name: "litteBigEndianTest", scope: , file: , line: 536, type: )</pre>
+Operand # 2 (0x4d33740) <br /><pre class="prettyprint lang-llvm ">= ()</pre>
+Operand # 3 (0x4d22ed8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind readnone
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:117                                     ; preds = %10
+  %118 = call i64 @fread(i8* %4, i64 4, i64 1, %struct._IO_FILE* %3) #7, 
+... (TRIMMED)</pre>

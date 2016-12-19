@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 479, Cols: 5,16,
+; label:177                                     ; preds = %166
+  %178 = load i32, i32* %nAccelCells, align 4, 
+  %179 = add nsw i32 %178, 1, 
+  store i32 %179, i32* %nAccelCells, align 4, 
+  br label %183, 

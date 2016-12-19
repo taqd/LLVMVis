@@ -1,0 +1,18 @@
+;; Line: 187, Column: 7
+  %12 = bitcast double* %11 to i8*, 
+</pre>
+<br/>Operand # 0 (0x5ccedc0) <br /><pre class="prettyprint lang-llvm ">  %11 = getelementptr inbounds double, double* %10, i64 %9, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:6                                       ; preds = %3
+  %7 = load i32, i32* %i, align 4, 
+  %8 = add nsw i32 19, %7, 
+  %9 = sext i32 %8 to i64, 
+  %10 = load double*, double** %1, align 8, 
+  %11 = getelementptr inbounds double, double* %10, i64 %9, 
+  %12 = bitcast double* %11 to i8*, 
+  %13 = bitcast i8* %12 to i32*, 
+  %14 = load i32, i32* %13, align 4, 
+  %15 = and i32 %14, 1, 
+  %16 = icmp ne i32 %15, 0, 
+  br i1 %16, label %17, label %227, 
+</pre>

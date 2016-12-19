@@ -1,0 +1,11 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk2727147165994341276 ():
+L141,C38:  %32 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !239
+L141,C37:  %33 = getelementptr inbounds [26000000 x double], [26000000 x double]* %32, i32 0, i32 0, !dbg !241
+L141,C3:  call void @LBM_initializeSpecialCellsForLDC(double* %33), !dbg !242
+L142,C38:  %34 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !243
+L142,C37:  %35 = getelementptr inbounds [26000000 x double], [26000000 x double]* %34, i32 0, i32 0, !dbg !244
+L142,C3:  call void @LBM_initializeSpecialCellsForLDC(double* %35), !dbg !245
+

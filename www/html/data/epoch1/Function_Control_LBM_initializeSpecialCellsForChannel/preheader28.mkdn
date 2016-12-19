@@ -1,0 +1,5 @@
+File: lbm.c, Lines: 158,162, Cols: 3,6,
+.preheader28:                                     ; preds = %19, %0
+  %indvars.iv35 = phi i64 [ -2, %0 ], [ %indvars.iv.next36, %19 ]
+  %1 = mul nsw i64 %indvars.iv35, 10000, 
+  br label %.preheader, 

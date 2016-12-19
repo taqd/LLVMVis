@@ -1,0 +1,12 @@
+;; Line: 102, Column: 2
+  %exitcond19.i = icmp eq i64 %indvars.iv.next18.i, 130, 
+</pre>
+<br/>Operand # 0 (0x4f8e340) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.next18.i = add nuw nsw i64 %indvars.iv17.i, 1, </pre>
+Operand # 1 (0x4f07910) <br /><pre class="prettyprint lang-llvm ">i64 130</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:37                                      ; preds = %36
+  %38 = tail call i32 @fgetc(%struct._IO_FILE* %18) #7, 
+  %indvars.iv.next18.i = add nuw nsw i64 %indvars.iv17.i, 1, 
+  %exitcond19.i = icmp eq i64 %indvars.iv.next18.i, 130, 
+  br i1 %exitcond19.i, label %LBM_loadObstacleFile.exit, label %.preheader10.i, 
+</pre>

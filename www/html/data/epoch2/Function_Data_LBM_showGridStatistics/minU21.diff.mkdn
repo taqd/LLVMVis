@@ -1,0 +1,24 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4fa5a00) <br /><pre class="prettyprint lang-llvm ">  %124 = fcmp olt double %123, %minU2.0125, </pre>
+< Operand # 1 (0x4fa57f0) <br /><pre class="prettyprint lang-llvm ">  %123 = fdiv double %121, %122, </pre>
+< Operand # 2 (0x4f9ff68) <br /><pre class="prettyprint lang-llvm ">  %minU2.0125 = phi double [ 1.000000e+30, %0 ], [ %minU2.2, %127 ]</pre>
+---
+> <br/>Operand # 0 (0x4da3020) <br /><pre class="prettyprint lang-llvm ">  %124 = fcmp olt double %123, %minU2.0125, </pre>
+> Operand # 1 (0x4da2e10) <br /><pre class="prettyprint lang-llvm ">  %123 = fdiv double %121, %122, </pre>
+> Operand # 2 (0x4d91728) <br /><pre class="prettyprint lang-llvm ">  %minU2.0125 = phi double [ 1.000000e+30, %0 ], [ %minU2.2, %127 ]</pre>
+9,10c9,10
+<   %88 = and i32 %82, 2, 
+<   %.lobit = lshr exact i32 %88, 1, 
+---
+>   %88 = lshr i32 %82, 1, 
+>   %.lobit = and i32 %88, 1, 
+13,14c13
+<   %.lobit123 = lshr exact i32 %88, 1, 
+<   %nAccelCells.1 = add nsw i32 %.lobit123, %nAccelCells.0127, 
+---
+>   %nAccelCells.1 = add nsw i32 %.lobit, %nAccelCells.0127, 
+28c27,28
+<   %103 =
+---
+>   %103 = fsub double %102, %42, 
+>   %104 = fadd double %1

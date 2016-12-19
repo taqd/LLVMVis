@@ -1,0 +1,28 @@
+2c2
+<   %or.cond11 = or i1 %5, %6, 
+---
+>   %or.cond11 = or i1 %3, %4, 
+4,5c4,5
+< <br/>Operand # 0 (0x4d4db70) <br /><pre class="prettyprint lang-llvm ">  %5 = icmp eq i32 %1, 1, </pre>
+< Operand # 1 (0x4d4dc20) <br /><pre class="prettyprint lang-llvm ">  %6 = icmp eq i32 %1, 128, </pre>
+---
+> <br/>Operand # 0 (0x4f0af30) <br /><pre class="prettyprint lang-llvm ">  %3 = icmp eq i32 %2, 1, </pre>
+> Operand # 1 (0x4f0afb0) <br /><pre class="prettyprint lang-llvm ">  %4 = icmp eq i32 %2, 128, </pre>
+7,15c7,13
+< .preheader42:                                     ; preds = %41, %0
+<   %indvars.iv51 = phi i64 [ -2, %0 ], [ %indvars.iv.next52, %41 ]
+<   %1 = trunc i64 %indvars.iv51 to i32, 
+<   %2 = icmp eq i32 %1, 0, 
+<   %3 = icmp eq i32 %1, 129, 
+<   %4 = mul nsw i64 %indvars.iv51, 10000, 
+<   %5 = icmp eq i32 %1, 1, 
+<   %6 = icmp eq i32 %1, 128, 
+<   %or.cond11 = or i1 %5, %6, 
+---
+> .preheader42:                                     ; preds = %79, %0
+>   %indvars.iv65 = phi i64 [ -2, %0 ], [ %indvars.iv.next66, %79 ]
+>   %1 = mul nsw i64 %indvars.iv65, 10000, 
+>   %2 = trunc i64 %indvars.iv65 to i32, 
+>   %3 = icmp eq i32 %2, 1, 
+>   %4 = icmp eq i32 %2, 128, 
+>   %or.cond11 = or i1 %3, %4, 

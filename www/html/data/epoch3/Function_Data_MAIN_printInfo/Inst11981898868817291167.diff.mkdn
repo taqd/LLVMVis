@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4dc3858) <br /><pre class="prettyprint lang-llvm ">  %7 = load i64, i64* %6, align 8, </pre>
+< Operand # 1 (0x4db1260) <br /><pre class="prettyprint lang-llvm ">i64 32</pre>
+---
+> <br/>Operand # 0 (0x4f888c8) <br /><pre class="prettyprint lang-llvm ">  %7 = load i64, i64* %6, align 8, </pre>
+> Operand # 1 (0x4f74bd0) <br /><pre class="prettyprint lang-llvm ">i64 32</pre>

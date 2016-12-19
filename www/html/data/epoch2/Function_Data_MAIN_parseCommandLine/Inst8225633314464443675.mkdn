@@ -1,0 +1,11 @@
+;; Line: 95, Column: 13
+  %42 = phi i32 [ %.pre, %._crit_edge ], [ %15, %39 ], 
+</pre>
+<br/>Operand # 0 (0x4dc21b8) <br /><pre class="prettyprint lang-llvm ">  %.pre = load i32, i32* %16, align 8, </pre>
+Operand # 1 (0x4dc0f70) <br /><pre class="prettyprint lang-llvm ">  %15 = tail call i32 @atoi(i8* %14) #9, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:41                                      ; preds = %._crit_edge, %39
+  %42 = phi i32 [ %.pre, %._crit_edge ], [ %15, %39 ], 
+  %43 = icmp eq i32 %42, 1, 
+  br i1 %43, label %44, label %51, 
+</pre>

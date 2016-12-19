@@ -1,0 +1,11 @@
+;; Line: 135, Column: 13
+  %52 = icmp eq i32 %51, 1, 
+</pre>
+<br/>Operand # 0 (0x5cc4468) <br /><pre class="prettyprint lang-llvm ">  %51 = load i32, i32* %z, align 4, </pre>
+Operand # 1 (0x5c9c610) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:50                                      ; preds = %28
+  %51 = load i32, i32* %z, align 4, 
+  %52 = icmp eq i32 %51, 1, 
+  br i1 %52, label %56, label %53, 
+</pre>

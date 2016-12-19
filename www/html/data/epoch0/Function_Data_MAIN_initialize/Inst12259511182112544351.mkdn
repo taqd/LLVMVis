@@ -1,0 +1,18 @@
+;; Line: 129, Column: 23
+  %4 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+</pre>
+<br/>Operand # 0 (0x5c8ac58) <br /><pre class="prettyprint lang-llvm ">@dstGrid = internal global [26000000 x double]* null, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = alloca %struct.MAIN_Param*, align 8
+  store %struct.MAIN_Param* %param, %struct.MAIN_Param** %1, align 8
+  call void @LBM_allocateGrid(double** bitcast ([26000000 x double]** @srcGrid to double**)), 
+  call void @LBM_allocateGrid(double** bitcast ([26000000 x double]** @dstGrid to double**)), 
+  %2 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %3 = getelementptr inbounds [26000000 x double], [26000000 x double]* %2, i32 0, i32 0, 
+  call void @LBM_initializeGrid(double* %3), 
+  %4 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %5 = getelementptr inbounds [26000000 x double], [26000000 x double]* %4, i32 0, i32 0, 
+  call void @LBM_initializeGrid(double* %5), 
+  %6 = load %struct.MAIN_Param*, %struct.MAIN_Param** %1, align 8, 
+  %7 = getelement
+... (TRIMMED)</pre>

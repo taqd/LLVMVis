@@ -1,0 +1,8 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+_crit_edge (._crit_edge):
+L26,C13:  tail call void @llvm.dbg.value(metadata %struct.MAIN_Param* %param, i64 0, metadata !1736, metadata !1542), !dbg !1737
+L56,C2:  call void @MAIN_finalize(%struct.MAIN_Param* nonnull %param), !dbg !245
+L58,C2:  ret i32 0, !dbg !246
+

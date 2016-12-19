@@ -1,0 +1,164 @@
+File: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+preheader (.preheader):
+L130,C11:  %5 = icmp eq i64 %indvars.iv61, 0, !dbg !226
+L130,C21:  %6 = icmp eq i64 %indvars.iv61, 99, !dbg !227
+L132,C6:  %7 = mul nuw nsw i64 %indvars.iv61, 100, !dbg !207
+L132,C6:  %8 = add nsw i64 %7, %1, !dbg !207
+L135,C18:  %9 = add i64 %indvars.iv61, 4294967294, !dbg !223
+L135,C18:  %10 = trunc i64 %9 to i32, !dbg !223
+L135,C18:  %11 = icmp ult i32 %10, 96, !dbg !223
+L129,C16:  switch i32 %2, label %.preheader.split.split.preheader [
+    i32 129, label %.preheader.split.us
+    i32 0, label %.preheader.split.split.us.preheader
+  ], !dbg !229
+
+preheadersplitsplituspreheader (.preheader.split.split.us.preheader):
+L132,C6:  br label %.preheader.split.split.us, !dbg !207
+
+preheadersplitsplitus (.preheader.split.split.us):
+L132,C6:  %40 = add nsw i64 %8, %indvars.iv, !dbg !207
+L132,C6:  %41 = mul nsw i64 %40, 20, !dbg !207
+L132,C6:  %42 = add nsw i64 %41, 19, !dbg !207
+L132,C6:  %43 = getelementptr inbounds double, double* %grid, i64 %42, !dbg !207
+L132,C6:  %44 = bitcast double* %43 to i32*, !dbg !207
+L132,C6:  tail call void @llvm.dbg.value(metadata i32* %44, i64 0, metadata !336, metadata !199), !dbg !312
+L132,C6:  %45 = load i32, i32* %44, align 4, !dbg !207
+L132,C6:  %46 = or i32 %45, 1, !dbg !207
+L132,C6:  store i32 %46, i32* %44, align 4, !dbg !207
+L128,C4:  %indvars.iv.next = or i64 %indvars.iv, 1, !dbg !233
+L132,C6:  %47 = add nsw i64 %8, %indvars.iv.next, !dbg !207
+L132,C6:  %48 = mul nsw i64 %47, 20, !dbg !207
+L132,C6:  %49 = add nsw i64 %48, 19, !dbg !207
+L132,C6:  %50 = getelementptr inbounds double, double* %grid, i64 %49, !dbg !207
+L132,C6:  %51 = bitcast double* %50 to i32*, !dbg !207
+L132,C6:  tail call void @llvm.dbg.value(metadata i32* %44, i64 0, metadata !336, metadata !199), !dbg !312
+L132,C6:  %52 = load i32, i32* %51, align 4, !dbg !207
+L132,C6:  %53 = or i32 %52, 1, !dbg !207
+L132,C6:  store i32 %53, i32* %51, align 4, !dbg !207
+L128,C4:  %indvars.iv.next.1 = add nsw i64 %indvars.iv, 2, !dbg !233
+L128,C4:  %exitcond.1 = icmp eq i64 %indvars.iv.next.1, 100, !dbg !233
+L128,C4:  br i1 %exitcond.1, label %.us-lcssa.us.loopexit76, label %.preheader.split.split.us, !dbg !233
+
+us-lcssausloopexit76 (.us-lcssa.us.loopexit76):
+L127,C3:  br label %.us-lcssa.us, !dbg !224
+
+preheadersplitus (.preheader.split.us):
+L135,C18:  br i1 %11, label %.preheader.split.us.split.us.preheader, label %.preheader.split.us.split.preheader, !dbg !223
+
+preheadersplitussplitpreheader (.preheader.split.us.split.preheader):
+L132,C6:  br label %.preheader.split.us.split, !dbg !207
+
+preheadersplitussplit (.preheader.split.us.split):
+L132,C6:  %26 = add nsw i64 %8, %indvars.iv51, !dbg !207
+L132,C6:  %27 = mul nsw i64 %26, 20, !dbg !207
+L132,C6:  %28 = add nsw i64 %27, 19, !dbg !207
+L132,C6:  %29 = getelementptr inbounds double, double* %grid, i64 %28, !dbg !207
+L132,C6:  %30 = bitcast double* %29 to i32*, !dbg !207
+L132,C6:  tail call void @llvm.dbg.value(metadata i32* %30, i64 0, metadata !336, metadata !199), !dbg !312
+L132,C6:  %31 = load i32, i32* %30, align 4, !dbg !207
+L132,C6:  %32 = or i32 %31, 1, !dbg !207
+L132,C6:  store i32 %32, i32* %30, align 4, !dbg !207
+L128,C4:  %indvars.iv.next52 = or i64 %indvars.iv51, 1, !dbg !233
+L132,C6:  %33 = add nsw i64 %8, %indvars.iv.next52, !dbg !207
+L132,C6:  %34 = mul nsw i64 %33, 20, !dbg !207
+L132,C6:  %35 = add nsw i64 %34, 19, !dbg !207
+L132,C6:  %36 = getelementptr inbounds double, double* %grid, i64 %35, !dbg !207
+L132,C6:  %37 = bitcast double* %36 to i32*, !dbg !207
+L132,C6:  tail call void @llvm.dbg.value(metadata i32* %30, i64 0, metadata !336, metadata !199), !dbg !312
+L132,C6:  %38 = load i32, i32* %37, align 4, !dbg !207
+L132,C6:  %39 = or i32 %38, 1, !dbg !207
+L132,C6:  store i32 %39, i32* %37, align 4, !dbg !207
+L128,C4:  %indvars.iv.next52.1 = add nsw i64 %indvars.iv51, 2, !dbg !233
+L128,C4:  %exitcond53.1 = icmp eq i64 %indvars.iv.next52.1, 100, !dbg !233
+L128,C4:  br i1 %exitcond53.1, label %.us-lcssa.us.loopexit75, label %.preheader.split.us.split, !dbg !233
+
+us-lcssausloopexit75 (.us-lcssa.us.loopexit75):
+L127,C3:  br label %.us-lcssa.us, !dbg !224
+
+preheadersplitussplituspreheader (.preheader.split.us.split.us.preheader):
+L132,C6:  br label %.preheader.split.us.split.us, !dbg !207
+
+preheadersplitussplitus (.preheader.split.us.split.us):
+L132,C6:  %12 = add nsw i64 %8, %indvars.iv54, !dbg !207
+L132,C6:  %13 = mul nsw i64 %12, 20, !dbg !207
+L132,C6:  %14 = add nsw i64 %13, 19, !dbg !207
+L132,C6:  %15 = getelementptr inbounds double, double* %grid, i64 %14, !dbg !207
+L132,C6:  %16 = bitcast double* %15 to i32*, !dbg !207
+L132,C6:  tail call void @llvm.dbg.value(metadata i32* %16, i64 0, metadata !336, metadata !199), !dbg !312
+L132,C6:  %17 = load i32, i32* %16, align 4, !dbg !207
+L132,C6:  %18 = or i32 %17, 1, !dbg !207
+L132,C6:  store i32 %18, i32* %16, align 4, !dbg !207
+L128,C4:  %indvars.iv.next55 = or i64 %indvars.iv54, 1, !dbg !233
+L132,C6:  %19 = add nsw i64 %8, %indvars.iv.next55, !dbg !207
+L132,C6:  %20 = mul nsw i64 %19, 20, !dbg !207
+L132,C6:  %21 = add nsw i64 %20, 19, !dbg !207
+L132,C6:  %22 = getelementptr inbounds double, double* %grid, i64 %21, !dbg !207
+L132,C6:  %23 = bitcast double* %22 to i32*, !dbg !207
+L132,C6:  tail call void @llvm.dbg.value(metadata i32* %16, i64 0, metadata !336, metadata !199), !dbg !312
+L132,C6:  %24 = load i32, i32* %23, align 4, !dbg !207
+L132,C6:  %25 = or i32 %24, 1, !dbg !207
+L132,C6:  store i32 %25, i32* %23, align 4, !dbg !207
+L128,C4:  %indvars.iv.next55.1 = add nsw i64 %indvars.iv54, 2, !dbg !233
+L128,C4:  %exitcond56.1 = icmp eq i64 %indvars.iv.next55.1, 100, !dbg !233
+L128,C4:  br i1 %exitcond56.1, label %.us-lcssa.us.loopexit74, label %.preheader.split.us.split.us, !dbg !233
+
+us-lcssausloopexit74 (.us-lcssa.us.loopexit74):
+L127,C3:  br label %.us-lcssa.us, !dbg !224
+
+preheadersplitsplitpreheader (.preheader.split.split.preheader):
+L129,C11:  br label %.preheader.split.split, !dbg !230
+
+preheadersplitsplit (.preheader.split.split):
+L129,C11:  %54 = icmp eq i64 %indvars.iv57, 0, !dbg !230
+L129,C21:  %55 = icmp eq i64 %indvars.iv57, 99, !dbg !235
+L129,C16:  %or.cond = or i1 %54, %55, !dbg !229
+L129,C16:  %or.cond3 = or i1 %5, %or.cond, !dbg !229
+L129,C16:  %or.cond5 = or i1 %6, %or.cond3, !dbg !229
+L129,C16:  br i1 %or.cond5, label %56, label %64, !dbg !229
+
+Blk2936251838771326594 ():
+L135,C18:  %65 = add i64 %indvars.iv57, 4294967294, !dbg !223
+L135,C18:  %66 = trunc i64 %65 to i32, !dbg !223
+L135,C18:  %67 = icmp ult i32 %66, 96, !dbg !223
+L135,C18:  %68 = and i1 %or.cond11, %67, !dbg !223
+L135,C18:  %69 = and i1 %11, %68, !dbg !223
+L135,C18:  br i1 %69, label %70, label %78, !dbg !223
+
+Blk18307084270748078605 ():
+L138,C7:  %71 = add nsw i64 %8, %indvars.iv57, !dbg !237
+L138,C7:  %72 = mul nsw i64 %71, 20, !dbg !237
+L138,C7:  %73 = add nsw i64 %72, 19, !dbg !237
+L138,C7:  %74 = getelementptr inbounds double, double* %grid, i64 %73, !dbg !237
+L138,C7:  %75 = bitcast double* %74 to i32*, !dbg !237
+L138,C7:  tail call void @llvm.dbg.value(metadata i32* %75, i64 0, metadata !344, metadata !199), !dbg !341
+L138,C7:  %76 = load i32, i32* %75, align 4, !dbg !237
+L138,C7:  %77 = or i32 %76, 2, !dbg !237
+L138,C7:  store i32 %77, i32* %75, align 4, !dbg !237
+L139,C6:  br label %78, !dbg !241
+
+Blk12603535592472908008 ():
+L132,C6:  %57 = add nsw i64 %8, %indvars.iv57, !dbg !207
+L132,C6:  %58 = mul nsw i64 %57, 20, !dbg !207
+L132,C6:  %59 = add nsw i64 %58, 19, !dbg !207
+L132,C6:  %60 = getelementptr inbounds double, double* %grid, i64 %59, !dbg !207
+L132,C6:  %61 = bitcast double* %60 to i32*, !dbg !207
+L132,C6:  tail call void @llvm.dbg.value(metadata i32* %61, i64 0, metadata !336, metadata !199), !dbg !312
+L132,C6:  %62 = load i32, i32* %61, align 4, !dbg !207
+L132,C6:  %63 = or i32 %62, 1, !dbg !207
+L132,C6:  store i32 %63, i32* %61, align 4, !dbg !207
+L133,C5:  br label %78, !dbg !236
+
+Blk1550440311495826166 ():
+L128,C4:  %indvars.iv.next58 = add nuw nsw i64 %indvars.iv57, 1, !dbg !233
+L128,C4:  %exitcond60 = icmp eq i64 %indvars.iv.next58, 100, !dbg !233
+L128,C4:  br i1 %exitcond60, label %.us-lcssa.us.loopexit, label %.preheader.split.split, !dbg !233
+
+us-lcssausloopexit (.us-lcssa.us.loopexit):
+L127,C3:  br label %.us-lcssa.us, !dbg !224
+
+us-lcssaus (.us-lcssa.us):
+L127,C3:  %indvars.iv.next62 = add nuw nsw i64 %indvars.iv61, 1, !dbg !224
+L127,C3:  %exitcond64 = icmp eq i64 %indvars.iv.next62, 100, !dbg !224
+L127,C3:  br i1 %exitcond64, label %79, label %.preheader, !dbg !224
+

@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d64470) <br /><pre class="prettyprint lang-llvm ">  %532 = fmul <2 x double> %531, <double 0x3FAC71C71C71C71C, double 0x3FAC71C71C71C71C>, </pre>
+< Operand # 1 (0x4d6dca8) <br /><pre class="prettyprint lang-llvm ">  %533 = bitcast double* %521 to <2 x double>*, </pre>
+---
+> <br/>Operand # 0 (0x4f25c90) <br /><pre class="prettyprint lang-llvm ">  %532 = fmul <2 x double> %531, <double 0x3FAC71C71C71C71C, double 0x3FAC71C71C71C71C>, </pre>
+> Operand # 1 (0x4f25d28) <br /><pre class="prettyprint lang-llvm ">  %533 = bitcast double* %521 to <2 x double>*, </pre>

@@ -1,0 +1,17 @@
+;; Line: 132, Column: 6
+  %19 = mul nsw i64 %18, 20, 
+</pre>
+<br/>Operand # 0 (0x4d4e8e0) <br /><pre class="prettyprint lang-llvm ">  %18 = add nsw i64 %10, %indvars.iv, </pre>
+Operand # 1 (0x4d37000) <br /><pre class="prettyprint lang-llvm ">i64 20</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:17                                      ; preds = %14
+  %18 = add nsw i64 %10, %indvars.iv, 
+  %19 = mul nsw i64 %18, 20, 
+  %20 = add nsw i64 %19, 19, 
+  %21 = getelementptr inbounds double, double* %grid, i64 %20, 
+  %22 = bitcast double* %21 to i32*, 
+  %23 = load i32, i32* %22, align 4, 
+  %24 = or i32 %23, 1, 
+  store i32 %24, i32* %22, align 4, 
+  br label %39, 
+</pre>

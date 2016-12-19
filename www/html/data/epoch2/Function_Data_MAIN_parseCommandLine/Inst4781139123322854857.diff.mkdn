@@ -1,0 +1,10 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4fc3c88) <br /><pre class="prettyprint lang-llvm ">  %33 = load i64, i64* %32, align 8, </pre>
+< Operand # 1 (0x4fc1800) <br /><pre class="prettyprint lang-llvm ">i64 1313130</pre>
+---
+> <br/>Operand # 0 (0x4dc1fe8) <br /><pre class="prettyprint lang-llvm ">  %33 = load i64, i64* %32, align 8, </pre>
+> Operand # 1 (0x4dbfbc0) <br /><pre class="prettyprint lang-llvm ">i64 1313130</pre>
+11c11
+<   br i1 %34, label %41, label %35, 
+---
+>   br i1 %34, label %._crit_edge, label %35, 

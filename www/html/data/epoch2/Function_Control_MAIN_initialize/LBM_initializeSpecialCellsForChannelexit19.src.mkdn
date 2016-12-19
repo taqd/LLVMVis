@@ -1,0 +1,9 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+LBM_initializeSpecialCellsForChannelexit19 (LBM_initializeSpecialCellsForChannel.exit19):
+L145,C27:  %70 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !304
+L145,C26:  %71 = getelementptr inbounds [26000000 x double], [26000000 x double]* %70, i64 0, i64 0, !dbg !305
+L145,C2:  tail call void @LBM_showGridStatistics(double* %71), !dbg !306
+L146,C1:  ret void, !dbg !307
+

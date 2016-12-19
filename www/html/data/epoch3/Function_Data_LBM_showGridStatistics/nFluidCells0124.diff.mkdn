@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d2a9e0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+< Operand # 1 (0x4da3508) <br /><pre class="prettyprint lang-llvm ">  %nFluidCells.2 = phi i32 [ %nFluidCells.0124, %85 ], [ %nFluidCells.1, %126 ], [ %nFluidCells.1, %87 ]</pre>
+---
+> <br/>Operand # 0 (0x4ee7750) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+> Operand # 1 (0x4f65f18) <br /><pre class="prettyprint lang-llvm ">  %nFluidCells.2 = phi i32 [ %nFluidCells.0124, %85 ], [ %nFluidCells.1, %126 ], [ %nFluidCells.1, %87 ]</pre>

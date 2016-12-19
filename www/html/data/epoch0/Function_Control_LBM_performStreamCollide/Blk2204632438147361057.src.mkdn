@@ -1,0 +1,234 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk2204632438147361057 ():
+L188,C24:  %18 = load i32, i32* %i, align 4, !dbg !224
+L188,C24:  %19 = add nsw i32 0, %18, !dbg !224
+L188,C24:  %20 = sext i32 %19 to i64, !dbg !224
+L188,C24:  %21 = load double*, double** %1, align 8, !dbg !224
+L188,C24:  %22 = getelementptr inbounds double, double* %21, i64 %20, !dbg !224
+L188,C24:  %23 = load double, double* %22, align 8, !dbg !224
+L188,C4:  %24 = load i32, i32* %i, align 4, !dbg !226
+L188,C4:  %25 = add nsw i32 0, %24, !dbg !226
+L188,C4:  %26 = sext i32 %25 to i64, !dbg !226
+L188,C4:  %27 = load double*, double** %2, align 8, !dbg !226
+L188,C4:  %28 = getelementptr inbounds double, double* %27, i64 %26, !dbg !226
+L188,C22:  store double %23, double* %28, align 8, !dbg !227
+L189,C24:  %29 = load i32, i32* %i, align 4, !dbg !228
+L189,C24:  %30 = add nsw i32 1, %29, !dbg !228
+L189,C24:  %31 = sext i32 %30 to i64, !dbg !228
+L189,C24:  %32 = load double*, double** %1, align 8, !dbg !228
+L189,C24:  %33 = getelementptr inbounds double, double* %32, i64 %31, !dbg !228
+L189,C24:  %34 = load double, double* %33, align 8, !dbg !228
+L189,C4:  %35 = load i32, i32* %i, align 4, !dbg !229
+L189,C4:  %36 = add nsw i32 -1998, %35, !dbg !229
+L189,C4:  %37 = sext i32 %36 to i64, !dbg !229
+L189,C4:  %38 = load double*, double** %2, align 8, !dbg !229
+L189,C4:  %39 = getelementptr inbounds double, double* %38, i64 %37, !dbg !229
+L189,C22:  store double %34, double* %39, align 8, !dbg !230
+L190,C24:  %40 = load i32, i32* %i, align 4, !dbg !231
+L190,C24:  %41 = add nsw i32 2, %40, !dbg !231
+L190,C24:  %42 = sext i32 %41 to i64, !dbg !231
+L190,C24:  %43 = load double*, double** %1, align 8, !dbg !231
+L190,C24:  %44 = getelementptr inbounds double, double* %43, i64 %42, !dbg !231
+L190,C24:  %45 = load double, double* %44, align 8, !dbg !231
+L190,C4:  %46 = load i32, i32* %i, align 4, !dbg !232
+L190,C4:  %47 = add nsw i32 2001, %46, !dbg !232
+L190,C4:  %48 = sext i32 %47 to i64, !dbg !232
+L190,C4:  %49 = load double*, double** %2, align 8, !dbg !232
+L190,C4:  %50 = getelementptr inbounds double, double* %49, i64 %48, !dbg !232
+L190,C22:  store double %45, double* %50, align 8, !dbg !233
+L191,C24:  %51 = load i32, i32* %i, align 4, !dbg !234
+L191,C24:  %52 = add nsw i32 3, %51, !dbg !234
+L191,C24:  %53 = sext i32 %52 to i64, !dbg !234
+L191,C24:  %54 = load double*, double** %1, align 8, !dbg !234
+L191,C24:  %55 = getelementptr inbounds double, double* %54, i64 %53, !dbg !234
+L191,C24:  %56 = load double, double* %55, align 8, !dbg !234
+L191,C4:  %57 = load i32, i32* %i, align 4, !dbg !235
+L191,C4:  %58 = add nsw i32 -16, %57, !dbg !235
+L191,C4:  %59 = sext i32 %58 to i64, !dbg !235
+L191,C4:  %60 = load double*, double** %2, align 8, !dbg !235
+L191,C4:  %61 = getelementptr inbounds double, double* %60, i64 %59, !dbg !235
+L191,C22:  store double %56, double* %61, align 8, !dbg !236
+L192,C24:  %62 = load i32, i32* %i, align 4, !dbg !237
+L192,C24:  %63 = add nsw i32 4, %62, !dbg !237
+L192,C24:  %64 = sext i32 %63 to i64, !dbg !237
+L192,C24:  %65 = load double*, double** %1, align 8, !dbg !237
+L192,C24:  %66 = getelementptr inbounds double, double* %65, i64 %64, !dbg !237
+L192,C24:  %67 = load double, double* %66, align 8, !dbg !237
+L192,C4:  %68 = load i32, i32* %i, align 4, !dbg !238
+L192,C4:  %69 = add nsw i32 23, %68, !dbg !238
+L192,C4:  %70 = sext i32 %69 to i64, !dbg !238
+L192,C4:  %71 = load double*, double** %2, align 8, !dbg !238
+L192,C4:  %72 = getelementptr inbounds double, double* %71, i64 %70, !dbg !238
+L192,C22:  store double %67, double* %72, align 8, !dbg !239
+L193,C24:  %73 = load i32, i32* %i, align 4, !dbg !240
+L193,C24:  %74 = add nsw i32 5, %73, !dbg !240
+L193,C24:  %75 = sext i32 %74 to i64, !dbg !240
+L193,C24:  %76 = load double*, double** %1, align 8, !dbg !240
+L193,C24:  %77 = getelementptr inbounds double, double* %76, i64 %75, !dbg !240
+L193,C24:  %78 = load double, double* %77, align 8, !dbg !240
+L193,C4:  %79 = load i32, i32* %i, align 4, !dbg !241
+L193,C4:  %80 = add nsw i32 -199994, %79, !dbg !241
+L193,C4:  %81 = sext i32 %80 to i64, !dbg !241
+L193,C4:  %82 = load double*, double** %2, align 8, !dbg !241
+L193,C4:  %83 = getelementptr inbounds double, double* %82, i64 %81, !dbg !241
+L193,C22:  store double %78, double* %83, align 8, !dbg !242
+L194,C24:  %84 = load i32, i32* %i, align 4, !dbg !243
+L194,C24:  %85 = add nsw i32 6, %84, !dbg !243
+L194,C24:  %86 = sext i32 %85 to i64, !dbg !243
+L194,C24:  %87 = load double*, double** %1, align 8, !dbg !243
+L194,C24:  %88 = getelementptr inbounds double, double* %87, i64 %86, !dbg !243
+L194,C24:  %89 = load double, double* %88, align 8, !dbg !243
+L194,C4:  %90 = load i32, i32* %i, align 4, !dbg !244
+L194,C4:  %91 = add nsw i32 200005, %90, !dbg !244
+L194,C4:  %92 = sext i32 %91 to i64, !dbg !244
+L194,C4:  %93 = load double*, double** %2, align 8, !dbg !244
+L194,C4:  %94 = getelementptr inbounds double, double* %93, i64 %92, !dbg !244
+L194,C22:  store double %89, double* %94, align 8, !dbg !245
+L195,C24:  %95 = load i32, i32* %i, align 4, !dbg !246
+L195,C24:  %96 = add nsw i32 7, %95, !dbg !246
+L195,C24:  %97 = sext i32 %96 to i64, !dbg !246
+L195,C24:  %98 = load double*, double** %1, align 8, !dbg !246
+L195,C24:  %99 = getelementptr inbounds double, double* %98, i64 %97, !dbg !246
+L195,C24:  %100 = load double, double* %99, align 8, !dbg !246
+L195,C4:  %101 = load i32, i32* %i, align 4, !dbg !247
+L195,C4:  %102 = add nsw i32 -2010, %101, !dbg !247
+L195,C4:  %103 = sext i32 %102 to i64, !dbg !247
+L195,C4:  %104 = load double*, double** %2, align 8, !dbg !247
+L195,C4:  %105 = getelementptr inbounds double, double* %104, i64 %103, !dbg !247
+L195,C22:  store double %100, double* %105, align 8, !dbg !248
+L196,C24:  %106 = load i32, i32* %i, align 4, !dbg !249
+L196,C24:  %107 = add nsw i32 8, %106, !dbg !249
+L196,C24:  %108 = sext i32 %107 to i64, !dbg !249
+L196,C24:  %109 = load double*, double** %1, align 8, !dbg !249
+L196,C24:  %110 = getelementptr inbounds double, double* %109, i64 %108, !dbg !249
+L196,C24:  %111 = load double, double* %110, align 8, !dbg !249
+L196,C4:  %112 = load i32, i32* %i, align 4, !dbg !250
+L196,C4:  %113 = add nsw i32 -1971, %112, !dbg !250
+L196,C4:  %114 = sext i32 %113 to i64, !dbg !250
+L196,C4:  %115 = load double*, double** %2, align 8, !dbg !250
+L196,C4:  %116 = getelementptr inbounds double, double* %115, i64 %114, !dbg !250
+L196,C22:  store double %111, double* %116, align 8, !dbg !251
+L197,C24:  %117 = load i32, i32* %i, align 4, !dbg !252
+L197,C24:  %118 = add nsw i32 9, %117, !dbg !252
+L197,C24:  %119 = sext i32 %118 to i64, !dbg !252
+L197,C24:  %120 = load double*, double** %1, align 8, !dbg !252
+L197,C24:  %121 = getelementptr inbounds double, double* %120, i64 %119, !dbg !252
+L197,C24:  %122 = load double, double* %121, align 8, !dbg !252
+L197,C4:  %123 = load i32, i32* %i, align 4, !dbg !253
+L197,C4:  %124 = add nsw i32 1988, %123, !dbg !253
+L197,C4:  %125 = sext i32 %124 to i64, !dbg !253
+L197,C4:  %126 = load double*, double** %2, align 8, !dbg !253
+L197,C4:  %127 = getelementptr inbounds double, double* %126, i64 %125, !dbg !253
+L197,C22:  store double %122, double* %127, align 8, !dbg !254
+L198,C24:  %128 = load i32, i32* %i, align 4, !dbg !255
+L198,C24:  %129 = add nsw i32 10, %128, !dbg !255
+L198,C24:  %130 = sext i32 %129 to i64, !dbg !255
+L198,C24:  %131 = load double*, double** %1, align 8, !dbg !255
+L198,C24:  %132 = getelementptr inbounds double, double* %131, i64 %130, !dbg !255
+L198,C24:  %133 = load double, double* %132, align 8, !dbg !255
+L198,C4:  %134 = load i32, i32* %i, align 4, !dbg !256
+L198,C4:  %135 = add nsw i32 2027, %134, !dbg !256
+L198,C4:  %136 = sext i32 %135 to i64, !dbg !256
+L198,C4:  %137 = load double*, double** %2, align 8, !dbg !256
+L198,C4:  %138 = getelementptr inbounds double, double* %137, i64 %136, !dbg !256
+L198,C22:  store double %133, double* %138, align 8, !dbg !257
+L199,C24:  %139 = load i32, i32* %i, align 4, !dbg !258
+L199,C24:  %140 = add nsw i32 11, %139, !dbg !258
+L199,C24:  %141 = sext i32 %140 to i64, !dbg !258
+L199,C24:  %142 = load double*, double** %1, align 8, !dbg !258
+L199,C24:  %143 = getelementptr inbounds double, double* %142, i64 %141, !dbg !258
+L199,C24:  %144 = load double, double* %143, align 8, !dbg !258
+L199,C4:  %145 = load i32, i32* %i, align 4, !dbg !259
+L199,C4:  %146 = add nsw i32 -201986, %145, !dbg !259
+L199,C4:  %147 = sext i32 %146 to i64, !dbg !259
+L199,C4:  %148 = load double*, double** %2, align 8, !dbg !259
+L199,C4:  %149 = getelementptr inbounds double, double* %148, i64 %147, !dbg !259
+L199,C22:  store double %144, double* %149, align 8, !dbg !260
+L200,C24:  %150 = load i32, i32* %i, align 4, !dbg !261
+L200,C24:  %151 = add nsw i32 12, %150, !dbg !261
+L200,C24:  %152 = sext i32 %151 to i64, !dbg !261
+L200,C24:  %153 = load double*, double** %1, align 8, !dbg !261
+L200,C24:  %154 = getelementptr inbounds double, double* %153, i64 %152, !dbg !261
+L200,C24:  %155 = load double, double* %154, align 8, !dbg !261
+L200,C4:  %156 = load i32, i32* %i, align 4, !dbg !262
+L200,C4:  %157 = add nsw i32 198013, %156, !dbg !262
+L200,C4:  %158 = sext i32 %157 to i64, !dbg !262
+L200,C4:  %159 = load double*, double** %2, align 8, !dbg !262
+L200,C4:  %160 = getelementptr inbounds double, double* %159, i64 %158, !dbg !262
+L200,C22:  store double %155, double* %160, align 8, !dbg !263
+L201,C24:  %161 = load i32, i32* %i, align 4, !dbg !264
+L201,C24:  %162 = add nsw i32 13, %161, !dbg !264
+L201,C24:  %163 = sext i32 %162 to i64, !dbg !264
+L201,C24:  %164 = load double*, double** %1, align 8, !dbg !264
+L201,C24:  %165 = getelementptr inbounds double, double* %164, i64 %163, !dbg !264
+L201,C24:  %166 = load double, double* %165, align 8, !dbg !264
+L201,C4:  %167 = load i32, i32* %i, align 4, !dbg !265
+L201,C4:  %168 = add nsw i32 -197988, %167, !dbg !265
+L201,C4:  %169 = sext i32 %168 to i64, !dbg !265
+L201,C4:  %170 = load double*, double** %2, align 8, !dbg !265
+L201,C4:  %171 = getelementptr inbounds double, double* %170, i64 %169, !dbg !265
+L201,C22:  store double %166, double* %171, align 8, !dbg !266
+L202,C24:  %172 = load i32, i32* %i, align 4, !dbg !267
+L202,C24:  %173 = add nsw i32 14, %172, !dbg !267
+L202,C24:  %174 = sext i32 %173 to i64, !dbg !267
+L202,C24:  %175 = load double*, double** %1, align 8, !dbg !267
+L202,C24:  %176 = getelementptr inbounds double, double* %175, i64 %174, !dbg !267
+L202,C24:  %177 = load double, double* %176, align 8, !dbg !267
+L202,C4:  %178 = load i32, i32* %i, align 4, !dbg !268
+L202,C4:  %179 = add nsw i32 202011, %178, !dbg !268
+L202,C4:  %180 = sext i32 %179 to i64, !dbg !268
+L202,C4:  %181 = load double*, double** %2, align 8, !dbg !268
+L202,C4:  %182 = getelementptr inbounds double, double* %181, i64 %180, !dbg !268
+L202,C22:  store double %177, double* %182, align 8, !dbg !269
+L203,C24:  %183 = load i32, i32* %i, align 4, !dbg !270
+L203,C24:  %184 = add nsw i32 15, %183, !dbg !270
+L203,C24:  %185 = sext i32 %184 to i64, !dbg !270
+L203,C24:  %186 = load double*, double** %1, align 8, !dbg !270
+L203,C24:  %187 = getelementptr inbounds double, double* %186, i64 %185, !dbg !270
+L203,C24:  %188 = load double, double* %187, align 8, !dbg !270
+L203,C4:  %189 = load i32, i32* %i, align 4, !dbg !271
+L203,C4:  %190 = add nsw i32 -200002, %189, !dbg !271
+L203,C4:  %191 = sext i32 %190 to i64, !dbg !271
+L203,C4:  %192 = load double*, double** %2, align 8, !dbg !271
+L203,C4:  %193 = getelementptr inbounds double, double* %192, i64 %191, !dbg !271
+L203,C22:  store double %188, double* %193, align 8, !dbg !272
+L204,C24:  %194 = load i32, i32* %i, align 4, !dbg !273
+L204,C24:  %195 = add nsw i32 16, %194, !dbg !273
+L204,C24:  %196 = sext i32 %195 to i64, !dbg !273
+L204,C24:  %197 = load double*, double** %1, align 8, !dbg !273
+L204,C24:  %198 = getelementptr inbounds double, double* %197, i64 %196, !dbg !273
+L204,C24:  %199 = load double, double* %198, align 8, !dbg !273
+L204,C4:  %200 = load i32, i32* %i, align 4, !dbg !274
+L204,C4:  %201 = add nsw i32 199997, %200, !dbg !274
+L204,C4:  %202 = sext i32 %201 to i64, !dbg !274
+L204,C4:  %203 = load double*, double** %2, align 8, !dbg !274
+L204,C4:  %204 = getelementptr inbounds double, double* %203, i64 %202, !dbg !274
+L204,C22:  store double %199, double* %204, align 8, !dbg !275
+L205,C24:  %205 = load i32, i32* %i, align 4, !dbg !276
+L205,C24:  %206 = add nsw i32 17, %205, !dbg !276
+L205,C24:  %207 = sext i32 %206 to i64, !dbg !276
+L205,C24:  %208 = load double*, double** %1, align 8, !dbg !276
+L205,C24:  %209 = getelementptr inbounds double, double* %208, i64 %207, !dbg !276
+L205,C24:  %210 = load double, double* %209, align 8, !dbg !276
+L205,C4:  %211 = load i32, i32* %i, align 4, !dbg !277
+L205,C4:  %212 = add nsw i32 -199964, %211, !dbg !277
+L205,C4:  %213 = sext i32 %212 to i64, !dbg !277
+L205,C4:  %214 = load double*, double** %2, align 8, !dbg !277
+L205,C4:  %215 = getelementptr inbounds double, double* %214, i64 %213, !dbg !277
+L205,C22:  store double %210, double* %215, align 8, !dbg !278
+L206,C24:  %216 = load i32, i32* %i, align 4, !dbg !279
+L206,C24:  %217 = add nsw i32 18, %216, !dbg !279
+L206,C24:  %218 = sext i32 %217 to i64, !dbg !279
+L206,C24:  %219 = load double*, double** %1, align 8, !dbg !279
+L206,C24:  %220 = getelementptr inbounds double, double* %219, i64 %218, !dbg !279
+L206,C24:  %221 = load double, double* %220, align 8, !dbg !279
+L206,C4:  %222 = load i32, i32* %i, align 4, !dbg !280
+L206,C4:  %223 = add nsw i32 200035, %222, !dbg !280
+L206,C4:  %224 = sext i32 %223 to i64, !dbg !280
+L206,C4:  %225 = load double*, double** %2, align 8, !dbg !280
+L206,C4:  %226 = getelementptr inbounds double, double* %225, i64 %224, !dbg !280
+L206,C22:  store double %221, double* %226, align 8, !dbg !281
+L207,C4:  br label %1110, !dbg !282
+

@@ -1,0 +1,71 @@
+{
+	"title" : "MAIN_finalize",
+	"graph" : {
+		"linkDistance" : 100,
+		"charge" : -600,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 32,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "MAIN_finalize" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "MAIN_finalize" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Blk12170979089247745944" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Blk15469813752127600969" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

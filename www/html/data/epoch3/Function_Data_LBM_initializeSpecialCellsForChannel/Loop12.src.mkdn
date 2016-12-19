@@ -1,0 +1,26 @@
+File: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+preheadersplitus (.preheader.split.us):
+L162,C6:  %5 = add nsw i64 %3, %indvars.iv35, !dbg !207
+L162,C6:  %6 = mul nsw i64 %5, 20, !dbg !207
+L162,C6:  %7 = add nsw i64 %6, 19, !dbg !207
+L162,C6:  %8 = getelementptr inbounds double, double* %grid, i64 %7, !dbg !207
+L162,C6:  %9 = bitcast double* %8 to i32*, !dbg !207
+L162,C6:  tail call void @llvm.dbg.value(metadata i32* %9, i64 0, metadata !369, metadata !199), !dbg !355
+L162,C6:  %10 = load i32, i32* %9, align 4, !dbg !207
+L162,C6:  %11 = or i32 %10, 1, !dbg !207
+L162,C6:  store i32 %11, i32* %9, align 4, !dbg !207
+L159,C4:  %indvars.iv.next36 = or i64 %indvars.iv35, 1, !dbg !223
+L162,C6:  %12 = add nsw i64 %3, %indvars.iv.next36, !dbg !207
+L162,C6:  %13 = mul nsw i64 %12, 20, !dbg !207
+L162,C6:  %14 = add nsw i64 %13, 19, !dbg !207
+L162,C6:  %15 = getelementptr inbounds double, double* %grid, i64 %14, !dbg !207
+L162,C6:  %16 = bitcast double* %15 to i32*, !dbg !207
+L162,C6:  tail call void @llvm.dbg.value(metadata i32* %9, i64 0, metadata !369, metadata !199), !dbg !355
+L162,C6:  %17 = load i32, i32* %16, align 4, !dbg !207
+L162,C6:  %18 = or i32 %17, 1, !dbg !207
+L162,C6:  store i32 %18, i32* %16, align 4, !dbg !207
+L159,C4:  %indvars.iv.next36.1 = add nsw i64 %indvars.iv35, 2, !dbg !223
+L159,C4:  %exitcond37.1 = icmp eq i64 %indvars.iv.next36.1, 100, !dbg !223
+L159,C4:  br i1 %exitcond37.1, label %.us-lcssa.us.loopexit51, label %.preheader.split.us, !dbg !223
+

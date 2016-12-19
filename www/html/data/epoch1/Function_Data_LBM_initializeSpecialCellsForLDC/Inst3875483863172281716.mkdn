@@ -1,0 +1,20 @@
+;; Line: 135, Column: 13
+  %6 = trunc i64 %indvars.iv51 to i32, 
+</pre>
+<br/>Operand # 0 (0x4f4e9f8) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv51 = phi i64 [ -2, %0 ], [ %indvars.iv.next52, %47 ]</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader42:                                     ; preds = %47, %0
+  %indvars.iv51 = phi i64 [ -2, %0 ], [ %indvars.iv.next52, %47 ]
+  %1 = trunc i64 %indvars.iv51 to i32, 
+  %2 = icmp eq i32 %1, 0, 
+  %3 = trunc i64 %indvars.iv51 to i32, 
+  %4 = icmp eq i32 %3, 129, 
+  %5 = mul nsw i64 %indvars.iv51, 10000, 
+  %6 = trunc i64 %indvars.iv51 to i32, 
+  %7 = icmp eq i32 %6, 1, 
+  %8 = trunc i64 %indvars.iv51 to i32, 
+  %9 = icmp eq i32 %8, 128, 
+  %or.cond11 = or i1 %7, %9, 
+  %10 = mul nsw i64 %indvars.iv51, 10000, 
+  br label %.preheader, 
+</pre>

@@ -1,0 +1,20 @@
+File: lbm.c, Lines: 448,449-451,452-454,455-457,459, Cols: 2,6,9,13,17,25,39,42,
+  %1 = alloca double*, align 8
+  %nObstacleCells = alloca i32, align 4
+  %nAccelCells = alloca i32, align 4
+  %nFluidCells = alloca i32, align 4
+  %ux = alloca double, align 8
+  %uy = alloca double, align 8
+  %uz = alloca double, align 8
+  %minU2 = alloca double, align 8
+  %maxU2 = alloca double, align 8
+  %u2 = alloca double, align 8
+  %minRho = alloca double, align 8
+  %maxRho = alloca double, align 8
+  %rho = alloca double, align 8
+  %mass = alloca double, align 8
+  %i = alloca i32, align 4
+  store double* %grid, double** %1, align 8
+  store i32 0, i32* %nObstacleCells, align 4, 
+  store i32 0, i32* %nAccelCells, align 4, 
+... (TRIMMED)

@@ -1,0 +1,51 @@
+;; Line: 160, Column: 16
+  switch i32 %101, label %.preheader.split.split.i.164 [
+    i32 99, label %102
+    i32 0, label %102
+  ], 
+</pre>
+<br/>Operand # 0 (0x4f92398) <br /><pre class="prettyprint lang-llvm ">  %101 = trunc i64 %indvars.iv38.i to i32, </pre>
+Operand # 1 (0x4f89e80) <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split.i.164:                     ; preds = %102, %.preheader.split.split.i
+  %indvars.iv.next39.i = or i64 %indvars.iv38.i, 1, 
+  %110 = trunc i64 %indvars.iv.next39.i to i32, 
+  switch i32 %110, label %179 [
+    i32 99, label %171
+    i32 0, label %171
+  ], 
+</pre>
+Operand # 2 (0x4f0ba40) <br /><pre class="prettyprint lang-llvm ">i32 99</pre>
+Operand # 3 (0x4f89e30) <br /><pre class="prettyprint lang-llvm ">
+; label:102                                     ; preds = %.preheader.split.split.i, %.preheader.split.split.i
+  %103 = add nsw i64 %indvars.iv38.i, %71, 
+  %104 = mul nsw i64 %103, 20, 
+  %105 = add nsw i64 %104, 19, 
+  %106 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 %105, 
+  %107 = bitcast double* %106 to i32*, 
+  %108 = load i32, i32* %107, align 4, 
+  %109 = or i32 %108, 1, 
+  store i32 %109, i32* %107, align 4, 
+  br label %.preheader.split.split.i.164, 
+</pre>
+Operand # 4 (0x4ee7750) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Operand # 5 (0x4f89e30) <br /><pre class="prettyprint lang-llvm ">
+; label:102                                     ; preds = %.preheader.split.split.i, %.preheader.split.split.i
+  %103 = add nsw i64 %indvars.iv38.i, %71, 
+  %104 = mul nsw i64 %103, 20, 
+  %105 = add nsw i64 %104, 19, 
+  %106 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 %105, 
+  %107 = bitcast double* %106 to i32*, 
+  %108 = load i32, i32* %107, align 4, 
+  %109 = or i32 %108, 1, 
+  store i32 %109, i32* %107, align 4, 
+  br label %.preheader.split.split.i.164, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split.i:                         ; preds = %179, %.preheader.split.split.i.preheader
+  %indvars.iv38.i = phi i64 [ 0, %.preheader.split.split.i.preheader ], [ %indvars.iv.next39.i.1, %179 ], 
+  %101 = trunc i64 %indvars.iv38.i to i32, 
+  switch i32 %101, label %.preheader.split.split.i.164 [
+    i32 99, label %102
+    i32 0, label %102
+  ], 
+</pre>

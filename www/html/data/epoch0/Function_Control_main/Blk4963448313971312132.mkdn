@@ -1,0 +1,6 @@
+File: main.c, Lines: 39, Cols: 2,38,
+; label:32                                      ; preds = %31
+  %33 = load i32, i32* %t, align 4, 
+  %34 = add nsw i32 %33, 1, 
+  store i32 %34, i32* %t, align 4, 
+  br label %6, 

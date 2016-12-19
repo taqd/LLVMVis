@@ -1,0 +1,28 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk8064468597165641339 ():
+L71,C32:  %4 = getelementptr inbounds i8*, i8** %arg, i64 1, !dbg !210
+L71,C32:  %5 = load i8*, i8** %4, align 8, !dbg !210
+L71,C26:  %6 = tail call i32 @atoi(i8* %5) #9, !dbg !211
+L71,C9:  %7 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, !dbg !212
+L71,C24:  store i32 %6, i32* %7, align 8, !dbg !213
+L72,C26:  %8 = getelementptr inbounds i8*, i8** %arg, i64 2, !dbg !214
+L72,C26:  %9 = bitcast i8** %8 to i64*, !dbg !214
+L72,C26:  %10 = load i64, i64* %9, align 8, !dbg !214
+L72,C9:  %11 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, !dbg !215
+L72,C24:  %12 = bitcast i8** %11 to i64*, !dbg !216
+L72,C24:  store i64 %10, i64* %12, align 8, !dbg !216
+L73,C46:  %13 = getelementptr inbounds i8*, i8** %arg, i64 3, !dbg !217
+L73,C46:  %14 = load i8*, i8** %13, align 8, !dbg !217
+L73,C40:  %15 = tail call i32 @atoi(i8* %14) #9, !dbg !218
+L73,C9:  %16 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 2, !dbg !219
+L73,C24:  store i32 %15, i32* %16, align 8, !dbg !220
+L74,C47:  %17 = getelementptr inbounds i8*, i8** %arg, i64 4, !dbg !221
+L74,C47:  %18 = load i8*, i8** %17, align 8, !dbg !221
+L74,C41:  %19 = tail call i32 @atoi(i8* %18) #9, !dbg !222
+L74,C9:  %20 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, !dbg !223
+L74,C24:  store i32 %19, i32* %20, align 4, !dbg !224
+L76,C12:  %21 = icmp eq i32 %nArgs, 6, !dbg !225
+L76,C6:  br i1 %21, label %22, label %39, !dbg !227
+

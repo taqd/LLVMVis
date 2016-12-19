@@ -1,0 +1,16 @@
+;; Line: 603, Column: 15
+  %772 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+</pre>
+<br/>Operand # 0 (0x5d6f568) <br /><pre class="prettyprint lang-llvm ">  %file = alloca %struct._IO_FILE*, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:771                                     ; preds = %20
+  %772 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %773 = load float, float* %ux, align 4, 
+  %774 = fpext float %773 to double, 
+  %775 = load float, float* %uy, align 4, 
+  %776 = fpext float %775 to double, 
+  %777 = load float, float* %uz, align 4, 
+  %778 = fpext float %777 to double, 
+  %779 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %772, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.5, i32 0, i32 0), double %774, double %776, double %778), 
+  br label %780
+</pre>

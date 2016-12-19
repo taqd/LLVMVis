@@ -1,0 +1,26 @@
+2c2
+<   %.lobit = lshr exact i32 %88, 1, 
+---
+>   %.lobit = and i32 %88, 1, 
+4,5c4,5
+< <br/>Operand # 0 (0x4fa39c0) <br /><pre class="prettyprint lang-llvm ">  %88 = and i32 %82, 2, </pre>
+< Operand # 1 (0x4f19b30) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+---
+> <br/>Operand # 0 (0x4da11b0) <br /><pre class="prettyprint lang-llvm ">  %88 = lshr i32 %82, 1, </pre>
+> Operand # 1 (0x4d24bb0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+8,9c8,9
+<   %88 = and i32 %82, 2, 
+<   %.lobit = lshr exact i32 %88, 1, 
+---
+>   %88 = lshr i32 %82, 1, 
+>   %.lobit = and i32 %88, 1, 
+12,13c12
+<   %.lobit123 = lshr exact i32 %88, 1, 
+<   %nAccelCells.1 = add nsw i32 %.lobit123, %nAccelCells.0127, 
+---
+>   %nAccelCells.1 = add nsw i32 %.lobit, %nAccelCells.0127, 
+27c26,27
+<   %103 =
+---
+>   %103 = fsub double %102, %42, 
+>   %104 = fadd double %1

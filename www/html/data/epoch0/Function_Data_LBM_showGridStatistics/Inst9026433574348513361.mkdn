@@ -1,0 +1,12 @@
+;; Line: 475, Column: 18
+  store i32 %165, i32* %nObstacleCells, align 4, 
+</pre>
+<br/>Operand # 0 (0x5d65020) <br /><pre class="prettyprint lang-llvm ">  %165 = add nsw i32 %164, 1, </pre>
+Operand # 1 (0x5d5dd68) <br /><pre class="prettyprint lang-llvm ">  %nObstacleCells = alloca i32, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:163                                     ; preds = %149
+  %164 = load i32, i32* %nObstacleCells, align 4, 
+  %165 = add nsw i32 %164, 1, 
+  store i32 %165, i32* %nObstacleCells, align 4, 
+  br label %418, 
+</pre>

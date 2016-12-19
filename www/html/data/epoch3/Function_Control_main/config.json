@@ -1,0 +1,213 @@
+{
+	"title" : "main",
+	"graph" : {
+		"linkDistance" : 100,
+		"charge" : -600,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 32,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Loop25" : {
+			"short" : "Loop25",
+			"long"  : "" 
+		},
+		"Loop26" : {
+			"short" : "Loop26",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Loop25" : {
+			"short" : "Loop25",
+			"long"  : "" 
+		},
+		"Loop25" : {
+			"short" : "Loop25",
+			"long"  : "" 
+		},
+		"Loop25" : {
+			"short" : "Loop25",
+			"long"  : "" 
+		},
+		"Loop26" : {
+			"short" : "Loop26",
+			"long"  : "" 
+		},
+		"Loop26" : {
+			"short" : "Loop26",
+			"long"  : "" 
+		},
+		"Loop26" : {
+			"short" : "Loop26",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "main" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "lrphsplitus" },
+			"type" : "linkStrength",
+			"target" : "Loop25",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "lrphsplitus" },
+			"type" : "linkColor",
+			"target" : "Loop25",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk7115464411204505695" },
+			"type" : "linkStrength",
+			"target" : "Loop25",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk7115464411204505695" },
+			"type" : "linkColor",
+			"target" : "Loop25",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk13519289739870714813" },
+			"type" : "linkStrength",
+			"target" : "Loop25",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk13519289739870714813" },
+			"type" : "linkColor",
+			"target" : "Loop25",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop25" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop25" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop25" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "lrphsplit" },
+			"type" : "linkStrength",
+			"target" : "Loop26",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "lrphsplit" },
+			"type" : "linkColor",
+			"target" : "Loop26",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4400766303217007779" },
+			"type" : "linkStrength",
+			"target" : "Loop26",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4400766303217007779" },
+			"type" : "linkColor",
+			"target" : "Loop26",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk2118776025086998414" },
+			"type" : "linkStrength",
+			"target" : "Loop26",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk2118776025086998414" },
+			"type" : "linkColor",
+			"target" : "Loop26",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop26" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop26" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop26" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk14179992596986844031" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "MAIN_finalizeexit" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

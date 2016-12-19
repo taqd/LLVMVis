@@ -1,0 +1,16 @@
+23,24c23,24
+<   %88 = and i32 %82, 2, 
+<   %.lobit = lshr exact i32 %88, 1, 
+---
+>   %88 = lshr i32 %82, 1, 
+>   %.lobit = and i32 %88, 1, 
+27,28c27
+<   %.lobit123 = lshr exact i32 %88, 1, 
+<   %nAccelCells.1 = add nsw i32 %.lobit123, %nAccelCells.0127, 
+---
+>   %nAccelCells.1 = add nsw i32 %.lobit, %nAccelCells.0127, 
+42c41,42
+<   %103 =
+---
+>   %103 = fsub double %102, %42, 
+>   %104 = fadd double %1

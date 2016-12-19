@@ -1,0 +1,880 @@
+{
+	"title" : "LBM_initializeSpecialCellsForLDC",
+	"graph" : {
+		"linkDistance" : 20,
+		"charge" : -400,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 8,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Loop4" : {
+			"short" : "Loop4",
+			"long"  : "" 
+		},
+		"Loop5" : {
+			"short" : "Loop5",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Loop4" : {
+			"short" : "Loop4",
+			"long"  : "" 
+		},
+		"Loop4" : {
+			"short" : "Loop4",
+			"long"  : "" 
+		},
+		"Loop5" : {
+			"short" : "Loop5",
+			"long"  : "" 
+		},
+		"Loop5" : {
+			"short" : "Loop5",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop6" : {
+			"short" : "Loop6",
+			"long"  : "" 
+		},
+		"Loop5" : {
+			"short" : "Loop5",
+			"long"  : "" 
+		},
+		"Loop5" : {
+			"short" : "Loop5",
+			"long"  : "" 
+		},
+		"Loop4" : {
+			"short" : "Loop4",
+			"long"  : "" 
+		},
+		"Loop4" : {
+			"short" : "Loop4",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "LBM_initializeSpecialCellsForLDC" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "LBM_initializeSpecialCellsForLDC" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Blk4436320918841249782" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4436320918841249782" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk17066494273582306365" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk17066494273582306365" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk16587413338059628334" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk16587413338059628334" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk17110348994461240045" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk17110348994461240045" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk7578099299664984071" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk7578099299664984071" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4962112767732888095" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4962112767732888095" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk6340305574289220820" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk6340305574289220820" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk1323873587678248125" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk1323873587678248125" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk11958314219814263133" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk11958314219814263133" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk15240644229579536080" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk15240644229579536080" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk5193001629705469324" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk5193001629705469324" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk17089580885167564389" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk17089580885167564389" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk13181378064323782170" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk13181378064323782170" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk3047238571568572204" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk3047238571568572204" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk3777532565097091348" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk3777532565097091348" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk10071762878664867900" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk10071762878664867900" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk796602760940092831" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk796602760940092831" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk7259914986407070616" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk7259914986407070616" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4757695671707608226" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4757695671707608226" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk1361724552535440175" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk1361724552535440175" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk2158734265011922458" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk2158734265011922458" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk11731584351027670320" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk11731584351027670320" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk5311339234271797258" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk5311339234271797258" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4643437854475648146" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4643437854475648146" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk1149971383400636431" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk1149971383400636431" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk7053122985401729424" },
+			"type" : "linkStrength",
+			"target" : "Loop4",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk7053122985401729424" },
+			"type" : "linkColor",
+			"target" : "Loop4",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop4" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop4" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop4" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk16587413338059628334" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk16587413338059628334" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4962112767732888095" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4962112767732888095" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk6340305574289220820" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk6340305574289220820" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk1323873587678248125" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk1323873587678248125" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk11958314219814263133" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk11958314219814263133" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk15240644229579536080" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk15240644229579536080" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk5193001629705469324" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk5193001629705469324" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk17089580885167564389" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk17089580885167564389" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk13181378064323782170" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk13181378064323782170" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk3047238571568572204" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk3047238571568572204" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk3777532565097091348" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk3777532565097091348" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk10071762878664867900" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk10071762878664867900" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk796602760940092831" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk796602760940092831" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk7259914986407070616" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk7259914986407070616" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4757695671707608226" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4757695671707608226" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk1361724552535440175" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk1361724552535440175" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk2158734265011922458" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk2158734265011922458" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk11731584351027670320" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk11731584351027670320" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk5311339234271797258" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk5311339234271797258" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4643437854475648146" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4643437854475648146" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk1149971383400636431" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk1149971383400636431" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk7053122985401729424" },
+			"type" : "linkStrength",
+			"target" : "Loop5",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk7053122985401729424" },
+			"type" : "linkColor",
+			"target" : "Loop5",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop5" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop5" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop5" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk6340305574289220820" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk6340305574289220820" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk15240644229579536080" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk15240644229579536080" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk5193001629705469324" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk5193001629705469324" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk17089580885167564389" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk17089580885167564389" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk13181378064323782170" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk13181378064323782170" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk3047238571568572204" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk3047238571568572204" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk3777532565097091348" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk3777532565097091348" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk10071762878664867900" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk10071762878664867900" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk796602760940092831" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk796602760940092831" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk7259914986407070616" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk7259914986407070616" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4757695671707608226" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4757695671707608226" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk1361724552535440175" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk1361724552535440175" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk2158734265011922458" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk2158734265011922458" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk11731584351027670320" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk11731584351027670320" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk5311339234271797258" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk5311339234271797258" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4643437854475648146" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4643437854475648146" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk1149971383400636431" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk1149971383400636431" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk7053122985401729424" },
+			"type" : "linkStrength",
+			"target" : "Loop6",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk7053122985401729424" },
+			"type" : "linkColor",
+			"target" : "Loop6",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop6" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop6" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop6" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk13296701831505530663" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Blk1776953687009202361" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

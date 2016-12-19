@@ -1,0 +1,39 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk13016268602256540212 ():
+L670,C11:  %771 = load double, double* %ux, align 8, !dbg !387
+L670,C16:  %772 = load float, float* %fileUx, align 4, !dbg !388
+L670,C16:  %773 = fpext float %772 to double, !dbg !388
+L670,C14:  %774 = fsub double %771, %773, !dbg !389
+L670,C11:  %775 = fptrunc double %774 to float, !dbg !387
+L670,C9:  store float %775, float* %dUx, align 4, !dbg !390
+L671,C11:  %776 = load double, double* %uy, align 8, !dbg !391
+L671,C16:  %777 = load float, float* %fileUy, align 4, !dbg !392
+L671,C16:  %778 = fpext float %777 to double, !dbg !392
+L671,C14:  %779 = fsub double %776, %778, !dbg !393
+L671,C11:  %780 = fptrunc double %779 to float, !dbg !391
+L671,C9:  store float %780, float* %dUy, align 4, !dbg !394
+L672,C11:  %781 = load double, double* %uz, align 8, !dbg !395
+L672,C16:  %782 = load float, float* %fileUz, align 4, !dbg !396
+L672,C16:  %783 = fpext float %782 to double, !dbg !396
+L672,C14:  %784 = fsub double %781, %783, !dbg !397
+L672,C11:  %785 = fptrunc double %784 to float, !dbg !395
+L672,C9:  store float %785, float* %dUz, align 4, !dbg !398
+L673,C13:  %786 = load float, float* %dUx, align 4, !dbg !399
+L673,C17:  %787 = load float, float* %dUx, align 4, !dbg !400
+L673,C16:  %788 = fmul float %786, %787, !dbg !401
+L673,C23:  %789 = load float, float* %dUy, align 4, !dbg !402
+L673,C27:  %790 = load float, float* %dUy, align 4, !dbg !403
+L673,C26:  %791 = fmul float %789, %790, !dbg !404
+L673,C21:  %792 = fadd float %788, %791, !dbg !405
+L673,C33:  %793 = load float, float* %dUz, align 4, !dbg !406
+L673,C37:  %794 = load float, float* %dUz, align 4, !dbg !407
+L673,C36:  %795 = fmul float %793, %794, !dbg !408
+L673,C31:  %796 = fadd float %792, %795, !dbg !409
+L673,C11:  store float %796, float* %diff2, align 4, !dbg !410
+L674,C9:  %797 = load float, float* %diff2, align 4, !dbg !411
+L674,C17:  %798 = load float, float* %maxDiff2, align 4, !dbg !413
+L674,C15:  %799 = fcmp ogt float %797, %798, !dbg !414
+L674,C9:  br i1 %799, label %800, label %802, !dbg !415
+

@@ -1,0 +1,12 @@
+;; Line: 243, Column: 7
+  store double 2.000000e-03, double* %uy, align 8, 
+</pre>
+<br/>Operand # 0 (0x5c978a0) <br /><pre class="prettyprint lang-llvm ">double 2.000000e-03</pre>
+Operand # 1 (0x5ca47a8) <br /><pre class="prettyprint lang-llvm ">  %uy = alloca double, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:586                                     ; preds = %227
+  store double 5.000000e-03, double* %ux, align 8, 
+  store double 2.000000e-03, double* %uy, align 8, 
+  store double 0.000000e+00, double* %uz, align 8, 
+  br label %587, 
+</pre>

@@ -1,0 +1,30 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk6507983681597055597 ():
+L448,C39:  call void @llvm.dbg.declare(metadata double** %1, metadata !2133, metadata !199), !dbg !2134
+L449,C6:  call void @llvm.dbg.declare(metadata i32* %nObstacleCells, metadata !2135, metadata !199), !dbg !2136
+L449,C6:  store i32 0, i32* %nObstacleCells, align 4, !dbg !202
+L450,C6:  call void @llvm.dbg.declare(metadata i32* %nAccelCells, metadata !2137, metadata !199), !dbg !2138
+L450,C6:  store i32 0, i32* %nAccelCells, align 4, !dbg !204
+L451,C6:  call void @llvm.dbg.declare(metadata i32* %nFluidCells, metadata !2139, metadata !199), !dbg !2140
+L451,C6:  store i32 0, i32* %nFluidCells, align 4, !dbg !206
+L452,C9:  call void @llvm.dbg.declare(metadata double* %ux, metadata !2141, metadata !199), !dbg !2142
+L452,C13:  call void @llvm.dbg.declare(metadata double* %uy, metadata !2143, metadata !199), !dbg !2144
+L452,C17:  call void @llvm.dbg.declare(metadata double* %uz, metadata !2145, metadata !199), !dbg !2146
+L453,C9:  call void @llvm.dbg.declare(metadata double* %minU2, metadata !2147, metadata !199), !dbg !2148
+L453,C9:  store double 1.000000e+30, double* %minU2, align 8, !dbg !214
+L453,C25:  call void @llvm.dbg.declare(metadata double* %maxU2, metadata !2149, metadata !199), !dbg !2150
+L453,C25:  store double -1.000000e+30, double* %maxU2, align 8, !dbg !216
+L453,C42:  call void @llvm.dbg.declare(metadata double* %u2, metadata !2151, metadata !199), !dbg !2152
+L454,C9:  call void @llvm.dbg.declare(metadata double* %minRho, metadata !2153, metadata !199), !dbg !2154
+L454,C9:  store double 1.000000e+30, double* %minRho, align 8, !dbg !220
+L454,C25:  call void @llvm.dbg.declare(metadata double* %maxRho, metadata !2155, metadata !199), !dbg !2156
+L454,C25:  store double -1.000000e+30, double* %maxRho, align 8, !dbg !222
+L454,C42:  call void @llvm.dbg.declare(metadata double* %rho, metadata !2157, metadata !199), !dbg !2158
+L455,C9:  call void @llvm.dbg.declare(metadata double* %mass, metadata !2159, metadata !199), !dbg !2160
+L455,C9:  store double 0.000000e+00, double* %mass, align 8, !dbg !226
+L457,C2:  call void @llvm.dbg.declare(metadata i32* %i, metadata !2161, metadata !199), !dbg !2162
+L459,C2:  store i32 0, i32* %i, align 4, !dbg !229
+L459,C2:  br label %2, !dbg !229
+

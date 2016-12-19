@@ -1,0 +1,10 @@
+4,7c4,7
+< <br/>Operand # 0 (0x4d25ca0) <br /><pre class="prettyprint lang-llvm ">i32 %nArgs</pre>
+< Operand # 1 (0x4d25bc0) <br /><pre class="prettyprint lang-llvm ">i8** %arg</pre>
+< Operand # 2 (0x4d533f8) <br /><pre class="prettyprint lang-llvm ">  %param = alloca %struct.MAIN_Param, align 8</pre>
+< Operand # 3 (0x4d24918) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f72ff0) <br /><pre class="prettyprint lang-llvm ">i32 %nArgs</pre>
+> Operand # 1 (0x4f186c0) <br /><pre class="prettyprint lang-llvm ">i8** %arg</pre>
+> Operand # 2 (0x4f7ee78) <br /><pre class="prettyprint lang-llvm ">  %param = alloca %struct.MAIN_Param, align 8</pre>
+> Operand # 3 (0x4ee1608) <br /><pre class="prettyprint lang-llvm ">

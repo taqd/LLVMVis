@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f524e0) <br /><pre class="prettyprint lang-llvm ">  %4 = mul nuw nsw i64 %indvars.iv32, 100, </pre>
+< Operand # 1 (0x4f2c600) <br /><pre class="prettyprint lang-llvm ">  %1 = mul nsw i64 %indvars.iv35, 10000, </pre>
+---
+> <br/>Operand # 0 (0x4d51030) <br /><pre class="prettyprint lang-llvm ">  %4 = mul nuw nsw i64 %indvars.iv32, 100, </pre>
+> Operand # 1 (0x4d50ca0) <br /><pre class="prettyprint lang-llvm ">  %1 = mul nsw i64 %indvars.iv35, 10000, </pre>

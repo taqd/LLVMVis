@@ -1,0 +1,5 @@
+File: lbm.c, Lines: 666, Cols: 7,15,
+; label:767                                     ; preds = %20
+  %768 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %769 = call i32 (%struct._IO_FILE*, i8*, ...) @__isoc99_fscanf(%struct._IO_FILE* %768, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i32 0, i32 0), float* %fileUx, float* %fileUy, float* %fileUz), 
+  br label %770

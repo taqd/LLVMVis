@@ -1,0 +1,51 @@
+;; Line: 160, Column: 16
+  switch i32 %145, label %.preheader.split.split.i34.163 [
+    i32 99, label %146
+    i32 0, label %146
+  ], 
+</pre>
+<br/>Operand # 0 (0x4f952d8) <br /><pre class="prettyprint lang-llvm ">  %145 = trunc i64 %indvars.iv38.i33 to i32, </pre>
+Operand # 1 (0x4f8a380) <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split.i34.163:                   ; preds = %146, %.preheader.split.split.i34
+  %indvars.iv.next39.i35 = or i64 %indvars.iv38.i33, 1, 
+  %154 = trunc i64 %indvars.iv.next39.i35 to i32, 
+  switch i32 %154, label %170 [
+    i32 99, label %162
+    i32 0, label %162
+  ], 
+</pre>
+Operand # 2 (0x4f0ba40) <br /><pre class="prettyprint lang-llvm ">i32 99</pre>
+Operand # 3 (0x4f8a330) <br /><pre class="prettyprint lang-llvm ">
+; label:146                                     ; preds = %.preheader.split.split.i34, %.preheader.split.split.i34
+  %147 = add nsw i64 %indvars.iv38.i33, %115, 
+  %148 = mul nsw i64 %147, 20, 
+  %149 = add nsw i64 %148, 19, 
+  %150 = getelementptr inbounds [26000000 x double], [26000000 x double]* %112, i64 0, i64 %149, 
+  %151 = bitcast double* %150 to i32*, 
+  %152 = load i32, i32* %151, align 4, 
+  %153 = or i32 %152, 1, 
+  store i32 %153, i32* %151, align 4, 
+  br label %.preheader.split.split.i34.163, 
+</pre>
+Operand # 4 (0x4ee7750) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Operand # 5 (0x4f8a330) <br /><pre class="prettyprint lang-llvm ">
+; label:146                                     ; preds = %.preheader.split.split.i34, %.preheader.split.split.i34
+  %147 = add nsw i64 %indvars.iv38.i33, %115, 
+  %148 = mul nsw i64 %147, 20, 
+  %149 = add nsw i64 %148, 19, 
+  %150 = getelementptr inbounds [26000000 x double], [26000000 x double]* %112, i64 0, i64 %149, 
+  %151 = bitcast double* %150 to i32*, 
+  %152 = load i32, i32* %151, align 4, 
+  %153 = or i32 %152, 1, 
+  store i32 %153, i32* %151, align 4, 
+  br label %.preheader.split.split.i34.163, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split.i34:                       ; preds = %170, %.preheader.split.split.i34.preheader
+  %indvars.iv38.i33 = phi i64 [ 0, %.preheader.split.split.i34.preheader ], [ %indvars.iv.next39.i35.1, %170 ], 
+  %145 = trunc i64 %indvars.iv38.i33 to i32, 
+  switch i32 %145, label %.preheader.split.split.i34.163 [
+    i32 99, label %146
+    i32 0, label %146
+  ], 
+</pre>

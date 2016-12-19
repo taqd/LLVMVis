@@ -1,0 +1,12 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk7159671319347604012 ():
+L681,C16:  %815 = load float, float* %maxDiff2, align 4, !dbg !432
+L681,C16:  %816 = fpext float %815 to double, !dbg !432
+L681,C10:  %817 = call double @sqrt(double %816) #6, !dbg !433
+L680,C2:  %818 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([43 x i8], [43 x i8]* @.str.8, i32 0, i32 0), double %817), !dbg !434
+L687,C10:  %819 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, !dbg !435
+L687,C2:  %820 = call i32 @fclose(%struct._IO_FILE* %819), !dbg !436
+L688,C1:  ret void, !dbg !437
+

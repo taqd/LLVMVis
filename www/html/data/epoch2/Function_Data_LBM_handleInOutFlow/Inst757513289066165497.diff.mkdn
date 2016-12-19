@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f7d350) <br /><pre class="prettyprint lang-llvm ">  %155 = sdiv i32 %154, 20, </pre>
+< Operand # 1 (0x4f5d000) <br /><pre class="prettyprint lang-llvm ">i32 100</pre>
+---
+> <br/>Operand # 0 (0x4d80790) <br /><pre class="prettyprint lang-llvm ">  %155 = sdiv i32 %154, 20, </pre>
+> Operand # 1 (0x4d5c470) <br /><pre class="prettyprint lang-llvm ">i32 100</pre>

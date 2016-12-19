@@ -1,0 +1,11 @@
+
+  %indvars.iv35 = phi i64 [ -2, %0 ], [ %indvars.iv.next36, %19 ]
+</pre>
+<br/>Operand # 0 (0x4d4b760) <br /><pre class="prettyprint lang-llvm ">i64 -2</pre>
+Operand # 1 (0x4d2bff0) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.next36 = add nsw i64 %indvars.iv35, 1, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader28:                                     ; preds = %19, %0
+  %indvars.iv35 = phi i64 [ -2, %0 ], [ %indvars.iv.next36, %19 ]
+  %1 = mul nsw i64 %indvars.iv35, 10000, 
+  br label %.preheader, 
+</pre>

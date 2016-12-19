@@ -1,0 +1,12 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk7416718919534592607 ():
+L156,C27:  %20 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !219
+L156,C26:  %21 = getelementptr inbounds [26000000 x double], [26000000 x double]* %20, i32 0, i32 0, !dbg !220
+L156,C36:  %22 = load %struct.MAIN_Param*, %struct.MAIN_Param** %1, align 8, !dbg !221
+L156,C43:  %23 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %22, i32 0, i32 1, !dbg !222
+L156,C43:  %24 = load i8*, i8** %23, align 8, !dbg !222
+L156,C2:  call void @LBM_storeVelocityField(double* %21, i8* %24, i32 -1), !dbg !223
+L156,C2:  br label %25, !dbg !223
+

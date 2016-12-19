@@ -1,0 +1,32 @@
+;; Line: 145, Column: 2
+  call void @LBM_showGridStatistics(double* %38), 
+</pre>
+<br/>Operand # 0 (0x5db96f8) <br /><pre class="prettyprint lang-llvm ">  %38 = getelementptr inbounds [26000000 x double], [26000000 x double]* %37, i32 0, i32 0, </pre>
+Operand # 1 (0x5c911d8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define void @LBM_showGridStatistics(double* %grid) #0 {
+  %1 = alloca double*, align 8
+  %nObstacleCells = alloca i32, align 4
+  %nAccelCells = alloca i32, align 4
+  %nFluidCells = alloca i32, align 4
+  %ux = alloca double, align 8
+  %uy = alloca double, align 8
+  %uz = alloca double, align 8
+  %minU2 = alloca double, align 8
+  %maxU2 = alloca double, align 8
+  %u2 = alloca double, align 8
+  %minRho = alloca double, align 8
+  %maxRho = alloca double, align 8
+  %rho = alloca double, align 8
+  %mass = alloca double, align 8
+  %i = alloca i32, align 4
+  store double* %grid, double** %1, align 8
+  store i32 0, i32* %nObstacleCells, align 4, 
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:36                                      ; preds = %31, %26
+  %37 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %38 = getelementptr inbounds [26000000 x double], [26000000 x double]* %37, i32 0, i32 0, 
+  call void @LBM_showGridStatistics(double* %38), 
+  ret void, 
+</pre>

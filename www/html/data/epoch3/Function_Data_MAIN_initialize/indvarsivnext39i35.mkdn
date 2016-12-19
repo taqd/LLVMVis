@@ -1,0 +1,14 @@
+;; Line: 159, Column: 4
+  %indvars.iv.next39.i35 = or i64 %indvars.iv38.i33, 1, 
+</pre>
+<br/>Operand # 0 (0x4f95218) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv38.i33 = phi i64 [ 0, %.preheader.split.split.i34.preheader ], [ %indvars.iv.next39.i35.1, %170 ], </pre>
+Operand # 1 (0x4f078d0) <br /><pre class="prettyprint lang-llvm ">i64 1</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split.i34.163:                   ; preds = %146, %.preheader.split.split.i34
+  %indvars.iv.next39.i35 = or i64 %indvars.iv38.i33, 1, 
+  %154 = trunc i64 %indvars.iv.next39.i35 to i32, 
+  switch i32 %154, label %170 [
+    i32 99, label %162
+    i32 0, label %162
+  ], 
+</pre>

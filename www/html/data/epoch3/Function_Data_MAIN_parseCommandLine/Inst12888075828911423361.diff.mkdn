@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4dc08b0) <br /><pre class="prettyprint lang-llvm ">  %6 = tail call i32 @atoi(i8* %5) #9, </pre>
+< Operand # 1 (0x4dc0988) <br /><pre class="prettyprint lang-llvm ">  %7 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, </pre>
+---
+> <br/>Operand # 0 (0x4f858f0) <br /><pre class="prettyprint lang-llvm ">  %6 = tail call i32 @atoi(i8* %5) #9, </pre>
+> Operand # 1 (0x4f859c8) <br /><pre class="prettyprint lang-llvm ">  %7 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, </pre>

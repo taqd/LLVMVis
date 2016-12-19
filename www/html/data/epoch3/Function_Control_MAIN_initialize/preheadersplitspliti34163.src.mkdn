@@ -1,0 +1,11 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+preheadersplitspliti34163 (.preheader.split.split.i34.163):
+L159,C4:  %indvars.iv.next39.i35 = or i64 %indvars.iv38.i33, 1, !dbg !334
+L160,C16:  %154 = trunc i64 %indvars.iv.next39.i35 to i32, !dbg !333
+L160,C16:  switch i32 %154, label %170 [
+    i32 99, label %162
+    i32 0, label %162
+  ], !dbg !333
+

@@ -1,0 +1,20 @@
+;; Line: 77, Column: 27
+  store i8* %40, i8** %42, align 8, 
+</pre>
+<br/>Operand # 0 (0x5db3778) <br /><pre class="prettyprint lang-llvm ">  %40 = load i8*, i8** %39, align 8, </pre>
+Operand # 1 (0x5db3898) <br /><pre class="prettyprint lang-llvm ">  %42 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %41, i32 0, i32 4, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:37                                      ; preds = %11
+  %38 = load i8**, i8*** %2, align 8, 
+  %39 = getelementptr inbounds i8*, i8** %38, i64 5, 
+  %40 = load i8*, i8** %39, align 8, 
+  %41 = load %struct.MAIN_Param*, %struct.MAIN_Param** %3, align 8, 
+  %42 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %41, i32 0, i32 4, 
+  store i8* %40, i8** %42, align 8, 
+  %43 = load %struct.MAIN_Param*, %struct.MAIN_Param** %3, align 8, 
+  %44 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %43, i32 0, i32 4, 
+  %45 = load i8*, i8** %44, align 8, 
+  %46 = call i32 @stat(i8* %45, %struct.stat* %fileStat) #8, 
+  %47 = icmp ne i32 %46, 0, 
+  br i1 %47, label %48, label %53, 
+</pre>

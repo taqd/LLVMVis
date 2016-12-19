@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
-require_once 'markdown/Markdown.inc.php';
-use \Michelf\Markdown;
+require_once 'markdown/MarkdownExtra.inc.php';
+use \Michelf\MarkdownExtra;
 
 $dataset    = 'default';
 $dataset_qs = ''; //Query string
@@ -37,6 +37,8 @@ function get_html_docs($obj) {
 
     $name = str_replace('/', '_', $obj['name']);
     $filename = "data/$epoch/$dataset/$name.mkdn";
+    $src_filename = "data/$epoch/$dataset/$name.src.mkdn";
+    $diff_filename = "data/$epoch/$dataset/$name.diff.mkdn";    
 
     $name = str_replace('_', '\_', $obj['name']);
     $type = $obj['type'];
@@ -50,22 +52,41 @@ function get_html_docs($obj) {
     }
     
     //Beginning of markdown
-    $markdown = "##<center>$name</center>\n";
+    $markdown = file_get_contents("markdown_header.html");
+    
+    $markdown .= "##<center>$name</center>\n";
     $markdown .= "<b>Type:</b> $type<br />";
-    $markdown .= "<b>Group:</b> $group<br />\n\n";
+    $markdown .= "<b>Group:</b> $group<hr>";
+
 
     if ($obj) {
         $markdown .= get_depends_markdown('<b>Depends on:</b> ',     $obj['depends'])."<br />";
         $markdown .= get_depends_markdown('<b>Depended on by:</b> ', $obj['dependedOnBy'])."<br />\n\n";
-        $markdown .= get_epochs($obj['name'])."<br />\n\n";                
+        $markdown .= get_epochs($obj['name'])."<br />";                
     }
 
+    
     //Read in the data from the .mkdn file
     if (file_exists($filename)) {
+        $markdown .= file_get_contents("markdown_tabs.html");
+        
+        $markdown .= "<div id=\"IR\" class=\"tabcontent show\"> <pre class=\"prettyprint lang-llvm \">";
         $markdown .= file_get_contents($filename);
+        $markdown .= "</pre></div>\n";
+
+        $markdown .= "<div id=\"Source\" class=\"tabcontent\"><pre class=\"prettyprint lang-llvm \">";
+        $markdown .= file_get_contents($src_filename);        
+        $markdown .= "</pre></div>\n";
+
+        $markdown .= "<div id=\"Diff\" class=\"tabcontent\"><pre class=\"prettyprint lang-llvm \">";
+        $markdown .= file_get_contents($diff_filename);        
+        $markdown .= "</pre></div>\n";
+
     } else {
         $markdown .= "<div class=\"alert alert-warning\">No documentation for this object</div>";
     }
+
+    $markdown .= get_views();
 
     // Use {{object_id}} to link to an object in the markdown
     $arr      = explode('{{', $markdown);
@@ -84,7 +105,7 @@ function get_html_docs($obj) {
         $markdown .= $pieces[1];
     }
 
-    $html = Markdown::defaultTransform($markdown);
+    $html = MarkdownExtra::defaultTransform($markdown);
     
     // IE can't handle <pre><code> (it eats all the line breaks)
     $html = str_replace('<pre><code>'  , '<pre>' , $html);
@@ -120,6 +141,23 @@ function get_epochs() {
     $markdown .= "]";    
     return $markdown;
 }
+
+//Get the list of epochs available from the data/ directory
+function get_views() {
+    global $dataset, $epoch;
+
+    $directory = "data/".$epoch."/*";
+    $phpfiles = glob($directory);
+
+    $markdown = "<b>Views:</b><br />";    
+    foreach ($phpfiles as $phpfile) {
+        $name = str_replace('_', '\_', basename($phpfile));
+        $markdown .= "<a href=graph.php?dataset=".basename($phpfile)."&epoch=".$epoch.">".$name."</a><br /> ";
+    }
+
+    return $markdown;
+}
+                  
 
 //Create a list of all the dependencies. Make them clickable.
 function get_depends_markdown($header, $arr) {

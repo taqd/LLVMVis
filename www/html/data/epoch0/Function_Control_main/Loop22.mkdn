@@ -1,0 +1,42 @@
+
+; label:6                                       ; preds = %32, %0
+  %7 = load i32, i32* %t, align 4, 
+  %8 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i32 0, i32 0, 
+  %9 = load i32, i32* %8, align 8, 
+  %10 = icmp sle i32 %7, %9, 
+  br i1 %10, label %11, label %35, 
+<br/>; label:11                                      ; preds = %6
+  %12 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i32 0, i32 3, 
+  %13 = load i32, i32* %12, align 4, 
+  %14 = icmp eq i32 %13, 1, 
+  br i1 %14, label %15, label %18, 
+<br/>; label:15                                      ; preds = %11
+  %16 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %17 = getelementptr inbounds [26000000 x double], [26000000 x double]* %16, i32 0, i32 0, 
+  call void @LBM_handleInOutFlow(double* %17), 
+  br label %18, 
+<br/>; label:18                                      ; preds = %15, %11
+  %19 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %20 = getelementptr inbounds [26000000 x double], [26000000 x double]* %19, i32 0, i32 0, 
+  %21 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i32 0, i32 0, 
+  call void @LBM_performStreamCollide(double* %20, double* %22), 
+  call void @LBM_swapGrids([26000000 x double]** @srcGrid, [26000000 x double]** @dstGrid), 
+  %23 = load i32, i32* %t, align 4, 
+  %24 = and i32 %23, 63, 
+  %25 = icmp eq i32 %24, 0, 
+  br i1 %25, label %26, label %31, 
+<br/>; label:26                                      ; preds = %18
+  %27 = load i32, i32* %t, align 4, 
+  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i32 0, i32 0), i32 %27), 
+  %29 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %30 = getelementptr inbounds [26000000 x double], [26000000 x double]* %29, i32 0, i32 0, 
+  call void @LBM_showGridStatistics(double* %30), 
+  br label %31, 
+<br/>; label:31                                      ; preds = %26, %18
+  br label %32, 
+<br/>; label:32                                      ; preds = %31
+  %33 = load i32, i32* %t, align 4, 
+  %34 = add nsw i32 %33, 1, 
+  store i32 %34, i32* %t, align 4, 
+  br label %6, 

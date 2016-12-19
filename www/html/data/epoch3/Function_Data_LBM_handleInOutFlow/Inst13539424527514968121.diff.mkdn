@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d6e390) <br /><pre class="prettyprint lang-llvm ">  %542 = fsub double -0.000000e+00, %483, </pre>
+< Operand # 1 (0x4d90380) <br /><pre class="prettyprint lang-llvm ">  %495 = extractelement <2 x double> %492, i32 0, </pre>
+---
+> <br/>Operand # 0 (0x4f30cd0) <br /><pre class="prettyprint lang-llvm ">  %542 = fsub double -0.000000e+00, %483, </pre>
+> Operand # 1 (0x4f52c20) <br /><pre class="prettyprint lang-llvm ">  %495 = extractelement <2 x double> %492, i32 0, </pre>

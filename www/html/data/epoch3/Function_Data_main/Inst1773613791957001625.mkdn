@@ -1,0 +1,16 @@
+;; Line: 47, Column: 10
+  %44 = and i32 %t.04, 63, 
+</pre>
+<br/>Operand # 0 (0x4f81d08) <br /><pre class="prettyprint lang-llvm ">  %t.04 = phi i32 [ %51, %50 ], [ 1, %.lr.ph.split.preheader ]</pre>
+Operand # 1 (0x4f731b0) <br /><pre class="prettyprint lang-llvm ">i32 63</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.lr.ph.split:                                     ; preds = %.lr.ph.split.preheader, %50
+  %t.04 = phi i32 [ %51, %50 ], [ 1, %.lr.ph.split.preheader ]
+  %38 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %39 = getelementptr inbounds [26000000 x double], [26000000 x double]* %38, i64 0, i64 0, 
+  %40 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %41 = getelementptr inbounds [26000000 x double], [26000000 x double]* %40, i64 0, i64 0, 
+  tail call void @LBM_performStreamCollide(double* %39, double* %41), 
+  %42 = load i64, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, 
+  %43 = load i64, i64* bitcast ([26000000 x double]** @
+... (TRIMMED)</pre>

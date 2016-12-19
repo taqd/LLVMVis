@@ -1,0 +1,14 @@
+
+; Function Attrs: nounwind uwtable
+define void @MAIN_parseCommandLine(i32 %nArgs, i8** nocapture readonly %arg, %struct.MAIN_Param* nocapture %param) #0 {
+  %fileStat = alloca %struct.stat, align 8
+  %nArgs.off = add i32 %nArgs, -5, 
+  %1 = icmp ugt i32 %nArgs.off, 1, 
+  br i1 %1, label %2, label %3, 
+<br/>; label:2                                       ; preds = %0
+  %puts = tail call i32 @puts(i8* nonnull getelementptr inbounds ([108 x i8], [108 x i8]* @str, i64 0, i64 0)), 
+  tail call void @exit(i32 1) #8, 
+  unreachable, 
+<br/>; label:3                                       ; preds = %0
+  %4 = 
+... (TRIMMED)

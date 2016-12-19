@@ -1,0 +1,7 @@
+File: main.c, Lines: 85,88,90, Cols: 4,19,37,
+; label:35                                      ; preds = %31
+  %36 = load i8*, i8** %25, align 8, 
+  %37 = trunc i64 %33 to i32, 
+  %38 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([82 x i8], [82 x i8]* @.str.3.3, i64 0, i64 0), i8* %36, i32 %37, i32 1313130), 
+  tail call void @exit(i32 1) #8, 
+  unreachable, 

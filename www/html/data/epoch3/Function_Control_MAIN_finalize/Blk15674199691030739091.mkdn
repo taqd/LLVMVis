@@ -1,0 +1,9 @@
+File: main.c, Lines: 154,155 Cols: 3,13,29,30-46,
+; label:6                                       ; preds = %0
+  %7 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %8 = getelementptr inbounds [26000000 x double], [26000000 x double]* %7, i64 0, i64 0, 
+  %9 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, 
+  %10 = load i8*, i8** %9, align 8, 
+  tail call void @LBM_compareVelocityField(double* %8, i8* %10, i32 -1), 
+  %.pr = load i32, i32* %3, align 8, 
+  br label %11, 

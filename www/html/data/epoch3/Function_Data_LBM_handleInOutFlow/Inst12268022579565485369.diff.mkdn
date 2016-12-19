@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4d53d10) <br /><pre class="prettyprint lang-llvm "><2 x double> undef</pre>
+< Operand # 1 (0x4d6e390) <br /><pre class="prettyprint lang-llvm ">  %542 = fsub double -0.000000e+00, %483, </pre>
+< Operand # 2 (0x4d2a9e0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+---
+> <br/>Operand # 0 (0x4f17390) <br /><pre class="prettyprint lang-llvm "><2 x double> undef</pre>
+> Operand # 1 (0x4f30cd0) <br /><pre class="prettyprint lang-llvm ">  %542 = fsub double -0.000000e+00, %483, </pre>
+> Operand # 2 (0x4ee7750) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>

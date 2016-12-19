@@ -1,0 +1,9 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk13147000476712438706 ():
+L81,C20:  %29 = load i8*, i8** %25, align 8, !dbg !273
+L80,C4:  %30 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([55 x i8], [55 x i8]* @.str.2.2, i64 0, i64 0), i8* %29), !dbg !275
+L82,C4:  tail call void @exit(i32 1) #8, !dbg !276
+L82,C4:  unreachable, !dbg !276
+

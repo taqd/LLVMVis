@@ -1,0 +1,17 @@
+1,8c1,7
+< File: main.c, Lines: 138,159,161,162 Cols: 3,4-6,11,21,
+< .preheader.i8:                                    ; preds = %64, %.preheader28.i6
+<   %indvars.iv32.i7 = phi i64 [ 0, %.preheader28.i6 ], [ %indvars.iv.next33.i15, %64 ], 
+<   %48 = icmp eq i64 %indvars.iv32.i7, 0, 
+<   %49 = icmp eq i64 %indvars.iv32.i7, 99, 
+<   %50 = mul nuw nsw i64 %indvars.iv32.i7, 100, 
+<   %51 = add nsw i64 %50, %47, 
+<   br label %52, 
+---
+> File: main.c, Lines: 104,105-133, Cols: 3,4-9,32,
+> .preheader.i8:                                    ; preds = %60, %.preheader10.i6
+>   %indvars.iv14.i7 = phi i64 [ 0, %.preheader10.i6 ], [ %indvars.iv.next15.i12, %60 ], 
+>   %44 = tail call i32 @fgetc(%struct._IO_FILE* %42) #7, 
+>   %45 = mul nuw nsw i64 %indvars.iv14.i7, 100, 
+>   %46 = add nuw nsw i64 %45, %43, 
+>   br label %47, 

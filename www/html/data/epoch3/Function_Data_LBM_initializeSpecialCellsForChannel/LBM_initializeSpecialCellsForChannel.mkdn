@@ -1,0 +1,16 @@
+
+; Function Attrs: norecurse nounwind uwtable
+define void @LBM_initializeSpecialCellsForChannel(double* nocapture %grid) #4 {
+  br label %.preheader28, 
+<br/>.preheader28:                                     ; preds = %43, %0
+  %indvars.iv44 = phi i64 [ -2, %0 ], [ %indvars.iv.next45, %43 ]
+  %1 = mul nsw i64 %indvars.iv44, 10000, 
+  br label %.preheader, 
+<br/>.preheader:                                       ; preds = %.us-lcssa.us, %.preheader28
+  %indvars.iv41 = phi i64 [ 0, %.preheader28 ], [ %indvars.iv.next42, %.us-lcssa.us ]
+  %2 = mul nuw nsw i64 %indvars.iv41, 100, 
+  %3 = add nsw i64 %2, %1, 
+  %4 = trunc i64 %indvars.iv41 to i32, 
+  switch i32 %4, label %.preheader.split.split.preheader [
+    i32 99, label %.preheader.sp
+... (TRIMMED)

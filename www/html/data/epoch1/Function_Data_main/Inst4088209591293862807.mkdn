@@ -1,0 +1,32 @@
+;; Line: 44, Column: 3
+  tail call void @LBM_performStreamCollide(double* %14, double* %16), 
+</pre>
+<br/>Operand # 0 (0x4fc0178) <br /><pre class="prettyprint lang-llvm ">  %14 = getelementptr inbounds [26000000 x double], [26000000 x double]* %13, i64 0, i64 0, </pre>
+Operand # 1 (0x4fc02d8) <br /><pre class="prettyprint lang-llvm ">  %16 = getelementptr inbounds [26000000 x double], [26000000 x double]* %15, i64 0, i64 0, </pre>
+Operand # 2 (0x4f189f8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: norecurse nounwind uwtable
+define void @LBM_performStreamCollide(double* readonly %srcGrid, double* %dstGrid) #4 {
+  br label %1, 
+<br/>; label:1                                       ; preds = %0, %466
+  %indvars.iv = phi i64 [ 0, %0 ], [ %indvars.iv.next, %466 ]
+  %2 = add nuw nsw i64 %indvars.iv, 19, 
+  %3 = getelementptr inbounds double, double* %srcGrid, i64 %2, 
+  %4 = bitcast double* %3 to i32*, 
+  %5 = load i32, i32* %4, align 4, 
+  %6 = and i32 %5, 1, 
+  %7 = icmp eq i32 %6, 0, 
+  %8 = getelementptr inbounds double, double* %srcGrid, i64 %indvars.iv, 
+  %9 = load double, do
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:12                                      ; preds = %9, %8
+  %13 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %14 = getelementptr inbounds [26000000 x double], [26000000 x double]* %13, i64 0, i64 0, 
+  %15 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %16 = getelementptr inbounds [26000000 x double], [26000000 x double]* %15, i64 0, i64 0, 
+  tail call void @LBM_performStreamCollide(double* %14, double* %16), 
+  tail call void @LBM_swapGrids([26000000 x double]** nonnull @srcGrid, [26000000 x double]** nonnull @dstGrid), 
+  %17 = and i32 %t.04, 63, 
+  %18 = icmp eq i32 %17, 0, 
+  br i1 %18, label %19, label %23, 
+</pre>

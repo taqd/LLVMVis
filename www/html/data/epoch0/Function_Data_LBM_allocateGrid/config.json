@@ -1,0 +1,225 @@
+{
+	"title" : "LBM_allocateGrid",
+	"graph" : {
+		"linkDistance" : 20,
+		"charge" : -400,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 8,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "LBM_allocateGrid" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "LBM_allocateGrid" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "ptr" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "ptr" },
+			"type" : "position",
+			"x" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Inst8941144301653849455" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst8345546715889741562" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst13785291328385987137" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst6328490158429725915" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst9839248928725635714" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst15858672513105667152" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst3916819891067747243" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst15809830032315593457" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst13539573956326959825" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst10069124134962701430" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

@@ -1,0 +1,8 @@
+File: lbm.c, Lines: 614,615-620,622,624, Cols: 2,8,12,15,26,33,40,41-59,
+  %fileUx = alloca float, align 4
+  %fileUy = alloca float, align 4
+  %fileUz = alloca float, align 4
+  %1 = icmp ne i32 %binary, 0, 
+  %2 = select i1 %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.6, i64 0, i64 0), 
+  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), 
+... (TRIMMED)

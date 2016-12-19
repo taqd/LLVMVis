@@ -1,0 +1,12 @@
+;; Line: 471, Column: 11
+  %146 = fcmp ogt double %144, %145, 
+</pre>
+<br/>Operand # 0 (0x5d643b8) <br /><pre class="prettyprint lang-llvm ">  %144 = load double, double* %rho, align 8, </pre>
+Operand # 1 (0x5d64448) <br /><pre class="prettyprint lang-llvm ">  %145 = load double, double* %maxRho, align 8, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:143                                     ; preds = %141, %5
+  %144 = load double, double* %rho, align 8, 
+  %145 = load double, double* %maxRho, align 8, 
+  %146 = fcmp ogt double %144, %145, 
+  br i1 %146, label %147, label %149, 
+</pre>

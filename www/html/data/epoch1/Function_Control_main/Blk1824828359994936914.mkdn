@@ -1,0 +1,6 @@
+File: main.c, Lines: 41,42 Cols: 3,4-25,26
+; label:9                                       ; preds = %8
+  %10 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %11 = getelementptr inbounds [26000000 x double], [26000000 x double]* %10, i64 0, i64 0, 
+  tail call void @LBM_handleInOutFlow(double* %11), 
+  br label %12, 

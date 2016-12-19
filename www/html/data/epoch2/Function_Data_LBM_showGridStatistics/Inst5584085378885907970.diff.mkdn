@@ -1,0 +1,26 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4fa3640) <br /><pre class="prettyprint lang-llvm ">  %84 = icmp eq i32 %83, 0, </pre>
+< Operand # 1 (0x4f96530) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4da0e30) <br /><pre class="prettyprint lang-llvm ">  %84 = icmp eq i32 %83, 0, </pre>
+> Operand # 1 (0x4d663e0) <br /><pre class="prettyprint lang-llvm ">
+10c10
+< Operand # 2 (0x4f96580) <br /><pre class="prettyprint lang-llvm ">
+---
+> Operand # 2 (0x4d66430) <br /><pre class="prettyprint lang-llvm ">
+12,13c12,13
+<   %88 = and i32 %82, 2, 
+<   %.lobit = lshr exact i32 %88, 1, 
+---
+>   %88 = lshr i32 %82, 1, 
+>   %.lobit = and i32 %88, 1, 
+16,17c16
+<   %.lobit123 = lshr exact i32 %88, 1, 
+<   %nAccelCells.1 = add nsw i32 %.lobit123, %nAccelCells.0127, 
+---
+>   %nAccelCells.1 = add nsw i32 %.lobit, %nAccelCells.0127, 
+31c30,31
+<   %103 =
+---
+>   %103 = fsub double %102, %42, 
+>   %104 = fadd double %1

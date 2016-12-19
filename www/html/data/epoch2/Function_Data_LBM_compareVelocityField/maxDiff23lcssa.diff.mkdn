@@ -1,0 +1,18 @@
+2c2
+<   %maxDiff2.3.lcssa = phi float [ %maxDiff2.3, %117 ]
+---
+>   %maxDiff2.3.lcssa = phi float [ %maxDiff2.3, %123 ]
+4c4
+< <br/>Operand # 0 (0x4fbbe28) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3 = select i1 %135, float %134, float %maxDiff2.2215, </pre>
+---
+> <br/>Operand # 0 (0x4d25f88) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3 = select i1 %141, float %140, float %maxDiff2.2215, </pre>
+6,7c6,7
+< ; label:136                                     ; preds = %117
+<   %maxDiff2.3.lcssa = phi float [ %maxDiff2.3, %117 ]
+---
+> ; label:142                                     ; preds = %123
+>   %maxDiff2.3.lcssa = phi float [ %maxDiff2.3, %123 ]
+10c10
+<   br i1 %exitcond223, label %137, label %.preheader, 
+---
+>   br i1 %exitcond223, label %143, label %.preheader, 

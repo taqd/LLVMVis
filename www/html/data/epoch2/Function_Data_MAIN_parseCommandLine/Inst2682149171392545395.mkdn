@@ -1,0 +1,15 @@
+;; Line: 77, Column: 29
+  %23 = getelementptr inbounds i8*, i8** %arg, i64 5, 
+</pre>
+<br/>Operand # 0 (0x4d53220) <br /><pre class="prettyprint lang-llvm ">i8** %arg</pre>
+Operand # 1 (0x4d378f0) <br /><pre class="prettyprint lang-llvm ">i64 5</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:22                                      ; preds = %3
+  %23 = getelementptr inbounds i8*, i8** %arg, i64 5, 
+  %24 = load i8*, i8** %23, align 8, 
+  %25 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 4, 
+  store i8* %24, i8** %25, align 8, 
+  %26 = call i32 @stat(i8* %24, %struct.stat* nonnull %fileStat) #7, 
+  %27 = icmp eq i32 %26, 0, 
+  br i1 %27, label %31, label %28, 
+</pre>

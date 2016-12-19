@@ -1,0 +1,28 @@
+File: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+Blk16208705788572878124 ():
+L523,C15:  %11 = load i32, i32* %i, align 4, !dbg !225
+L523,C15:  %12 = sext i32 %11 to i64, !dbg !225
+L523,C17:  %13 = icmp ult i64 %12, 4, !dbg !228
+L523,C3:  br i1 %13, label %14, label %28, !dbg !229
+
+Blk336035276577837398 ():
+L524,C50:  %15 = load i32, i32* %i, align 4, !dbg !230
+L524,C50:  %16 = sext i32 %15 to i64, !dbg !230
+L524,C48:  %17 = sub i64 4, %16, !dbg !231
+L524,C52:  %18 = sub i64 %17, 1, !dbg !232
+L524,C16:  %19 = load i8*, i8** %vPtr, align 8, !dbg !233
+L524,C16:  %20 = getelementptr inbounds i8, i8* %19, i64 %18, !dbg !233
+L524,C16:  %21 = load i8, i8* %20, align 1, !dbg !233
+L524,C11:  %22 = load i32, i32* %i, align 4, !dbg !234
+L524,C4:  %23 = sext i32 %22 to i64, !dbg !235
+L524,C4:  %24 = getelementptr inbounds [4 x i8], [4 x i8]* %buffer, i64 0, i64 %23, !dbg !235
+L524,C14:  store i8 %21, i8* %24, align 1, !dbg !236
+L524,C4:  br label %25, !dbg !235
+
+Blk16149230692697713364 ():
+L523,C48:  %26 = load i32, i32* %i, align 4, !dbg !237
+L523,C48:  %27 = add nsw i32 %26, 1, !dbg !237
+L523,C48:  store i32 %27, i32* %i, align 4, !dbg !237
+L523,C3:  br label %10, !dbg !239
+

@@ -1,0 +1,17 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk17777871389236543238 ():
+L554,C39:  tail call void @llvm.dbg.value(metadata double* %grid, i64 0, metadata !1291, metadata !199), !dbg !1292
+L554,C57:  tail call void @llvm.dbg.value(metadata i8* %filename, i64 0, metadata !1293, metadata !199), !dbg !1294
+L555,C40:  tail call void @llvm.dbg.value(metadata i32 %binary, i64 0, metadata !1295, metadata !199), !dbg !1296
+L559,C33:  %1 = icmp ne i32 %binary, 0, !dbg !205
+L559,C33:  %2 = select i1 %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.3, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.4, i64 0, i64 0), !dbg !205
+L559,C15:  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), !dbg !206
+L559,C8:  tail call void @llvm.dbg.value(metadata %struct._IO_FILE* %3, i64 0, metadata !1299, metadata !199), !dbg !1300
+L556,C12:  tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !1301, metadata !199), !dbg !1302
+L519,C22:  %4 = bitcast float* %ux to i8*, !dbg !211
+L519,C22:  %5 = bitcast float* %uy to i8*, !dbg !226
+L519,C22:  %6 = bitcast float* %uz to i8*, !dbg !228
+L561,C2:  br label %.preheader206, !dbg !230
+

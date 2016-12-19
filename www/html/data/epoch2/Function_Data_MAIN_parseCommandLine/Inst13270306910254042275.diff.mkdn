@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4fc2b98) <br /><pre class="prettyprint lang-llvm ">  %14 = load i8*, i8** %13, align 8, </pre>
+< Operand # 1 (0x4f12da8) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4dc0ef8) <br /><pre class="prettyprint lang-llvm ">  %14 = load i8*, i8** %13, align 8, </pre>
+> Operand # 1 (0x4d24a08) <br /><pre class="prettyprint lang-llvm ">

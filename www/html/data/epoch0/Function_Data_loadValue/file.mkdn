@@ -1,0 +1,4 @@
+
+%struct._IO_FILE* %file
+</pre>
+<br/>

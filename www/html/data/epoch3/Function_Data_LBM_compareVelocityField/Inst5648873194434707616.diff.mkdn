@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4db10d0) <br /><pre class="prettyprint lang-llvm ">  %9 = add nuw nsw i64 %8, %7, </pre>
+< Operand # 1 (0x4db11b8) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %123 ]</pre>
+---
+> <br/>Operand # 0 (0x4f74950) <br /><pre class="prettyprint lang-llvm ">  %9 = add nuw nsw i64 %8, %7, </pre>
+> Operand # 1 (0x4f74a38) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %123 ]</pre>

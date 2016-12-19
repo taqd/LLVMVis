@@ -1,0 +1,7 @@
+File: lbm.c, Lines: 39,40 Cols: 1,3,7,
+; label:10                                      ; preds = %0
+  %11 = load double**, double*** %1, align 8, 
+  %12 = load double*, double** %11, align 8, 
+  %13 = getelementptr inbounds double, double* %12, i64 400000, 
+  store double* %13, double** %11, align 8, 
+  ret void, 

@@ -1,0 +1,27 @@
+;; Line: 138, Column: 7
+  store i32 %86, i32* %84, align 4, 
+</pre>
+<br/>Operand # 0 (0x5cc5d60) <br /><pre class="prettyprint lang-llvm ">  %86 = or i32 %85, 2, </pre>
+Operand # 1 (0x5cc5c88) <br /><pre class="prettyprint lang-llvm ">  %84 = load i32*, i32** %_aux_1, align 8, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:68                                      ; preds = %65
+  %69 = load i32, i32* %x, align 4, 
+  %70 = load i32, i32* %y, align 4, 
+  %71 = mul nsw i32 %70, 100, 
+  %72 = add nsw i32 %69, %71, 
+  %73 = load i32, i32* %z, align 4, 
+  %74 = mul nsw i32 %73, 100, 
+  %75 = mul nsw i32 %74, 100, 
+  %76 = add nsw i32 %72, %75, 
+  %77 = mul nsw i32 20, %76, 
+  %78 = add nsw i32 19, %77, 
+  %79 = sext i32 %78 to i64, 
+  %80 = load double*, double** %1, align 8, 
+  %81 = getelementptr inbounds double, double* %80, i64 %79, 
+  %82 = bitcast double* %81 to i8*, 
+  %83 = bitcast i8* %82 to i32*, 
+  store i32* %83, i32** %_aux_1, align 8, 
+  %84 = load i32*, i32** %_aux_1, align 8, 
+  %85 = load i32, i32* %84, align 4, 
+  %86 = or i32 %85,
+... (TRIMMED)</pre>

@@ -1,0 +1,14 @@
+;; Line: 681, Column: 16
+  %815 = load float, float* %maxDiff2, align 4, 
+</pre>
+<br/>Operand # 0 (0x5d8e618) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2 = alloca float, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:814                                     ; preds = %9
+  %815 = load float, float* %maxDiff2, align 4, 
+  %816 = fpext float %815 to double, 
+  %817 = call double @sqrt(double %816) #6, 
+  %818 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([43 x i8], [43 x i8]* @.str.8, i32 0, i32 0), double %817), 
+  %819 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %820 = call i32 @fclose(%struct._IO_FILE* %819), 
+  ret void, 
+</pre>

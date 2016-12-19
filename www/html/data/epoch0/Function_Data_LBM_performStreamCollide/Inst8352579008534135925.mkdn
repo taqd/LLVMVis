@@ -1,0 +1,18 @@
+;; Line: 186, Column: 2
+  store i32 0, i32* %i, align 4, 
+</pre>
+<br/>Operand # 0 (0x5c9cec0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Operand # 1 (0x5ca46c8) <br /><pre class="prettyprint lang-llvm ">  %i = alloca i32, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = alloca double*, align 8
+  %2 = alloca double*, align 8
+  %i = alloca i32, align 4
+  %ux = alloca double, align 8
+  %uy = alloca double, align 8
+  %uz = alloca double, align 8
+  %u2 = alloca double, align 8
+  %rho = alloca double, align 8
+  store double* %srcGrid, double** %1, align 8
+  store double* %dstGrid, double** %2, align 8
+  call void @
+... (TRIMMED)</pre>

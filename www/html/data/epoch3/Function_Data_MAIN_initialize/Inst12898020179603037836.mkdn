@@ -1,0 +1,22 @@
+;; Line: 102, Column: 2
+  br i1 %exitcond19.i15, label %LBM_loadObstacleFile.exit16, label %.preheader10.i6, 
+</pre>
+<br/>Operand # 0 (0x4f8fdc0) <br /><pre class="prettyprint lang-llvm ">  %exitcond19.i15 = icmp eq i64 %indvars.iv.next18.i14, 130, </pre>
+Operand # 1 (0x4f89890) <br /><pre class="prettyprint lang-llvm ">
+.preheader10.i6:                                  ; preds = %61, %LBM_loadObstacleFile.exit
+  %indvars.iv17.i5 = phi i64 [ 0, %LBM_loadObstacleFile.exit ], [ %indvars.iv.next18.i14, %61 ], 
+  %43 = mul nuw nsw i64 %indvars.iv17.i5, 10000, 
+  br label %.preheader.i8, 
+</pre>
+Operand # 2 (0x4f89ac0) <br /><pre class="prettyprint lang-llvm ">
+LBM_loadObstacleFile.exit16:                      ; preds = %61
+  %63 = tail call i32 @fclose(%struct._IO_FILE* %42) #7, 
+  br label %64, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:61                                      ; preds = %60
+  %62 = tail call i32 @fgetc(%struct._IO_FILE* %42) #7, 
+  %indvars.iv.next18.i14 = add nuw nsw i64 %indvars.iv17.i5, 1, 
+  %exitcond19.i15 = icmp eq i64 %indvars.iv.next18.i14, 130, 
+  br i1 %exitcond19.i15, label %LBM_loadObstacleFile.exit16, label %.preheader10.i6, 
+</pre>

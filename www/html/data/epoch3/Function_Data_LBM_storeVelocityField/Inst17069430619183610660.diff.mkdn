@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4da6b20) <br /><pre class="prettyprint lang-llvm ">  %11 = add nuw nsw i64 %9, %indvars.iv, </pre>
+< Operand # 1 (0x4d37000) <br /><pre class="prettyprint lang-llvm ">i64 20</pre>
+---
+> <br/>Operand # 0 (0x4f6a3a0) <br /><pre class="prettyprint lang-llvm ">  %11 = add nuw nsw i64 %9, %indvars.iv, </pre>
+> Operand # 1 (0x4ef4340) <br /><pre class="prettyprint lang-llvm ">i64 20</pre>

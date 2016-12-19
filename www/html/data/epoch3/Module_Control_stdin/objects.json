@@ -1,0 +1,126 @@
+[
+	{
+		"type" : "void",
+		"name" : "LBM_allocateGrid",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_freeGrid",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_initializeGrid",
+		"group" : "",
+		"depends" : [
+			"MAIN_initialize"
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_swapGrids",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_loadObstacleFile",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_initializeSpecialCellsForLDC",
+		"group" : "",
+		"depends" : [
+			"MAIN_initialize"
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_initializeSpecialCellsForChannel",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_performStreamCollide",
+		"group" : "",
+		"depends" : [
+			"main"
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_handleInOutFlow",
+		"group" : "",
+		"depends" : [
+			"main"
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_showGridStatistics",
+		"group" : "",
+		"depends" : [
+			"main",
+			"MAIN_initialize",
+			"MAIN_finalize"
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_storeVelocityField",
+		"group" : "",
+		"depends" : [
+			"main",
+			"MAIN_finalize"
+		]
+	}, {
+		"type" : "void",
+		"name" : "LBM_compareVelocityField",
+		"group" : "",
+		"depends" : [
+			"main",
+			"MAIN_finalize"
+		]
+	}, {
+		"type" : "i32",
+		"name" : "main",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "void",
+		"name" : "MAIN_parseCommandLine",
+		"group" : "",
+		"depends" : [
+			"main"
+		]
+	}, {
+		"type" : "void",
+		"name" : "MAIN_printInfo",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "void",
+		"name" : "MAIN_initialize",
+		"group" : "",
+		"depends" : [
+			"main"
+		]
+	}, {
+		"type" : "void",
+		"name" : "MAIN_finalize",
+		"group" : "",
+		"depends" : [
+
+		]
+	}
+]

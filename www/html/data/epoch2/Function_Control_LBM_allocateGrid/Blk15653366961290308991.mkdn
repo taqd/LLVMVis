@@ -1,0 +1,5 @@
+File: lbm.c, Lines: 31,33, Cols: 3,
+; label:4                                       ; preds = %0
+  %5 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([49 x i8], [49 x i8]* @.str, i64 0, i64 0), double 0x40698EF800000000), 
+  tail call void @exit(i32 1) #8, 
+  unreachable, 

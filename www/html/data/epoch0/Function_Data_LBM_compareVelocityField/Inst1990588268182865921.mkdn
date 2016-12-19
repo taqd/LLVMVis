@@ -1,0 +1,26 @@
+;; Line: 674, Column: 9
+  %797 = load float, float* %diff2, align 4, 
+</pre>
+<br/>Operand # 0 (0x5d8e5a8) <br /><pre class="prettyprint lang-llvm ">  %diff2 = alloca float, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:770                                     ; preds = %767, %763
+  %771 = load double, double* %ux, align 8, 
+  %772 = load float, float* %fileUx, align 4, 
+  %773 = fpext float %772 to double, 
+  %774 = fsub double %771, %773, 
+  %775 = fptrunc double %774 to float, 
+  store float %775, float* %dUx, align 4, 
+  %776 = load double, double* %uy, align 8, 
+  %777 = load float, float* %fileUy, align 4, 
+  %778 = fpext float %777 to double, 
+  %779 = fsub double %776, %778, 
+  %780 = fptrunc double %779 to float, 
+  store float %780, float* %dUy, align 4, 
+  %781 = load double, double* %uz, align 8, 
+  %782 = load float, float* %fileUz, align 4, 
+  %783 = fpext float %782 to double, 
+  %784 = fsub double %781, %783, 
+  %785 = fptrunc double %784 to float, 
+  store float %785, float* %dUz, align 4, 
+  %786 = load float, floa
+... (TRIMMED)</pre>

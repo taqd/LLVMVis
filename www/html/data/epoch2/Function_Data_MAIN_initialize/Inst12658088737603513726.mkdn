@@ -1,0 +1,15 @@
+;; Line: 142, Column: 37
+  %69 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 0, 
+</pre>
+<br/>Operand # 0 (0x4dc9c78) <br /><pre class="prettyprint lang-llvm ">  %68 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, </pre>
+Operand # 1 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 2 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:66                                      ; preds = %22
+  %67 = getelementptr inbounds [26000000 x double], [26000000 x double]* %26, i64 0, i64 0, 
+  tail call void @LBM_initializeSpecialCellsForLDC(double* %67), 
+  %68 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %69 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 0, 
+  tail call void @LBM_initializeSpecialCellsForLDC(double* %69), 
+  br label %LBM_initializeSpecialCellsForChannel.exit19
+</pre>

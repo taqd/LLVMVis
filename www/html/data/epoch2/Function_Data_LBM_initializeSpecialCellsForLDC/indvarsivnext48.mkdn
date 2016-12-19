@@ -1,0 +1,11 @@
+;; Line: 127, Column: 3
+  %indvars.iv.next48 = add nuw nsw i64 %indvars.iv47, 1, 
+</pre>
+<br/>Operand # 0 (0x4d4dde8) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv47 = phi i64 [ 0, %.preheader42 ], [ %indvars.iv.next48, %40 ]</pre>
+Operand # 1 (0x4d4aac0) <br /><pre class="prettyprint lang-llvm ">i64 1</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:40                                      ; preds = %39
+  %indvars.iv.next48 = add nuw nsw i64 %indvars.iv47, 1, 
+  %exitcond50 = icmp eq i64 %indvars.iv.next48, 100, 
+  br i1 %exitcond50, label %41, label %.preheader, 
+</pre>

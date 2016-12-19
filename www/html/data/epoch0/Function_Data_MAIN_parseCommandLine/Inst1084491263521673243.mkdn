@@ -1,0 +1,23 @@
+;; Line: 71, Column: 32
+  %14 = load i8*, i8** %13, align 8, 
+</pre>
+<br/>Operand # 0 (0x5db2480) <br /><pre class="prettyprint lang-llvm ">  %13 = getelementptr inbounds i8*, i8** %12, i64 1, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:11                                      ; preds = %6
+  %12 = load i8**, i8*** %2, align 8, 
+  %13 = getelementptr inbounds i8*, i8** %12, i64 1, 
+  %14 = load i8*, i8** %13, align 8, 
+  %15 = call i32 @atoi(i8* %14) #7, 
+  %16 = load %struct.MAIN_Param*, %struct.MAIN_Param** %3, align 8, 
+  %17 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %16, i32 0, i32 0, 
+  store i32 %15, i32* %17, align 8, 
+  %18 = load i8**, i8*** %2, align 8, 
+  %19 = getelementptr inbounds i8*, i8** %18, i64 2, 
+  %20 = load i8*, i8** %19, align 8, 
+  %21 = load %struct.MAIN_Param*, %struct.MAIN_Param** %3, align 8, 
+  %22 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %21, i32 0, i32 1, 
+  store i8* %20, i8** %22, align 8, 
+  %23 = load i8**, i8*** %2, align 8, 
+  %24 = getelementptr inbounds i8*, i8** %23, i64 3, 
+  %25 = load i8
+... (TRIMMED)</pre>

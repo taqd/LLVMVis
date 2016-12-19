@@ -1,0 +1,17 @@
+4,12c4,9
+<   tail call void @LBM_allocateGrid(double** bitcast ([26000000 x double]** @srcGrid to double**)), 
+<   tail call void @LBM_allocateGrid(double** bitcast ([26000000 x double]** @dstGrid to double**)), 
+<   %1 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+<   %2 = getelementptr inbounds [26000000 x double], [26000000 x double]* %1, i64 0, i64 0, 
+<   tail call void @LBM_initializeGrid(double* %2), 
+<   %3 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+<   %4 = getelementptr inbounds [26000000 x double], [26000000 x double]* %3, i64 0, i64 0, 
+<   tail call void @LBM_initializeGrid(double* %4), 
+<   %5 = getelementptr inbounds %struct
+---
+>   %1 = tail call noalias i8* @malloc(i64 214400000) #7, 
+>   store i8* %1, i8** bitcast ([26000000 x double]** @srcGrid to i8**), align 8, 
+>   %2 = icmp eq i8* %1, null, 
+>   br i1 %2, label %3, label %LBM_allocateGrid.exit, 
+> <br/>; label:3                                       ; preds = %0
+>   %4 = tail call i32 (i8*, ...) @printf(i8* nonnull gete

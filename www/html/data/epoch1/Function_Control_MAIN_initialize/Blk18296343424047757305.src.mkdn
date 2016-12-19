@@ -1,0 +1,13 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk18296343424047757305 ():
+L132,C26:  %9 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !213
+L132,C25:  %10 = getelementptr inbounds [26000000 x double], [26000000 x double]* %9, i64 0, i64 0, !dbg !215
+L132,C3:  tail call void @LBM_loadObstacleFile(double* %10, i8* nonnull %6), !dbg !216
+L133,C26:  %11 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !217
+L133,C25:  %12 = getelementptr inbounds [26000000 x double], [26000000 x double]* %11, i64 0, i64 0, !dbg !218
+L133,C42:  %13 = load i8*, i8** %5, align 8, !dbg !219
+L133,C3:  tail call void @LBM_loadObstacleFile(double* %12, i8* %13), !dbg !220
+L134,C2:  br label %14, !dbg !221
+

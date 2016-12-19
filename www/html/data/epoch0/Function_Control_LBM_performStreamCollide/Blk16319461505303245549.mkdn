@@ -1,0 +1,13 @@
+File: lbm.c, Lines: 175,176-178,186, Cols: 2,9,13,17,21,25,41,59,
+  %1 = alloca double*, align 8
+  %2 = alloca double*, align 8
+  %i = alloca i32, align 4
+  %ux = alloca double, align 8
+  %uy = alloca double, align 8
+  %uz = alloca double, align 8
+  %u2 = alloca double, align 8
+  %rho = alloca double, align 8
+  store double* %srcGrid, double** %1, align 8
+  store double* %dstGrid, double** %2, align 8
+  call void @
+... (TRIMMED)

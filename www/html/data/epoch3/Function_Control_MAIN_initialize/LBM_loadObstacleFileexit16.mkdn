@@ -1,0 +1,4 @@
+File: main.c, Lines: 112,134, Cols: 2,
+LBM_loadObstacleFile.exit16:                      ; preds = %61
+  %63 = tail call i32 @fclose(%struct._IO_FILE* %42) #7, 
+  br label %64, 

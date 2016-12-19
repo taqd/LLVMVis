@@ -1,0 +1,10 @@
+;; Line: 132, Column: 26
+  %17 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+</pre>
+<br/>Operand # 0 (0x4edf238) <br /><pre class="prettyprint lang-llvm ">@srcGrid = internal global [26000000 x double]* null, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:16                                      ; preds = %LBM_allocateGrid.exit4
+  %17 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %18 = tail call %struct._IO_FILE* @fopen(i8* nonnull %14, i8* nonnull getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0)) #7, 
+  br label %.preheader10.i, 
+</pre>

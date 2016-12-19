@@ -1,0 +1,54 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk11888748483773820277 ():
+L478,C8:  %88 = and i32 %82, 2, !dbg !276
+L478,C8:  %.lobit = lshr exact i32 %88, 1, !dbg !279
+L478,C8:  %89 = xor i32 %.lobit, 1, !dbg !279
+L478,C8:  %nFluidCells.1 = add nsw i32 %89, %nFluidCells.0124, !dbg !279
+L478,C8:  %.lobit123 = lshr exact i32 %88, 1, !dbg !279
+L478,C8:  %nAccelCells.1 = add nsw i32 %.lobit123, %nAccelCells.0127, !dbg !279
+L483,C29:  %90 = fsub double %14, %18, !dbg !280
+L484,C9:  %91 = fadd double %90, %30, !dbg !281
+L484,C29:  %92 = fsub double %91, %34, !dbg !282
+L485,C9:  %93 = fadd double %92, %38, !dbg !283
+L485,C29:  %94 = fsub double %93, %42, !dbg !284
+L486,C9:  %95 = fadd double %94, %62, !dbg !285
+L486,C29:  %96 = fadd double %95, %66, !dbg !286
+L487,C9:  %97 = fsub double %96, %70, !dbg !287
+L487,C29:  %98 = fsub double %97, %74, !dbg !288
+L452,C9:  tail call void @llvm.dbg.value(metadata double %98, i64 0, metadata !1366, metadata !199), !dbg !1367
+L488,C29:  %99 = fsub double %6, %10, !dbg !291
+L489,C9:  %100 = fadd double %99, %30, !dbg !292
+L489,C29:  %101 = fadd double %100, %34, !dbg !293
+L490,C9:  %102 = fsub double %101, %38, !dbg !294
+L490,C29:  %103 = fsub double %102, %42, !dbg !295
+L491,C9:  %104 = fadd double %103, %46, !dbg !296
+L491,C29:  %105 = fadd double %104, %50, !dbg !297
+L492,C9:  %106 = fsub double %105, %54, !dbg !298
+L492,C29:  %107 = fsub double %106, %58, !dbg !299
+L452,C13:  tail call void @llvm.dbg.value(metadata double %107, i64 0, metadata !1377, metadata !199), !dbg !1378
+L493,C29:  %108 = fsub double %22, %26, !dbg !302
+L494,C9:  %109 = fadd double %108, %46, !dbg !303
+L494,C29:  %110 = fsub double %109, %50, !dbg !304
+L495,C9:  %111 = fadd double %110, %54, !dbg !305
+L495,C29:  %112 = fsub double %111, %58, !dbg !306
+L496,C9:  %113 = fadd double %112, %62, !dbg !307
+L496,C29:  %114 = fsub double %113, %66, !dbg !308
+L497,C9:  %115 = fadd double %114, %70, !dbg !309
+L497,C29:  %116 = fsub double %115, %74, !dbg !310
+L452,C17:  tail call void @llvm.dbg.value(metadata double %116, i64 0, metadata !1388, metadata !199), !dbg !1389
+L498,C12:  %117 = fmul double %98, %98, !dbg !313
+L498,C20:  %118 = fmul double %107, %107, !dbg !314
+L498,C16:  %119 = fadd double %118, %117, !dbg !315
+L498,C28:  %120 = fmul double %116, %116, !dbg !316
+L498,C24:  %121 = fadd double %120, %119, !dbg !317
+L498,C39:  %122 = fmul double %75, %75, !dbg !318
+L498,C33:  %123 = fdiv double %121, %122, !dbg !319
+L453,C42:  tail call void @llvm.dbg.value(metadata double %123, i64 0, metadata !1397, metadata !199), !dbg !1398
+L499,C11:  %124 = fcmp olt double %123, %minU2.0125, !dbg !322
+L453,C9:  tail call void @llvm.dbg.value(metadata double %123, i64 0, metadata !1284, metadata !199), !dbg !1285
+L499,C8:  %minU2.1 = select i1 %124, double %123, double %minU2.0125, !dbg !324
+L500,C11:  %125 = fcmp ogt double %123, %maxU2.0126, !dbg !325
+L500,C8:  br i1 %125, label %126, label %127, !dbg !327
+

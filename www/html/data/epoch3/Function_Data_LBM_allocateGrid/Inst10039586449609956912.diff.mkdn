@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d34930) <br /><pre class="prettyprint lang-llvm ">  %7 = getelementptr inbounds i8, i8* %1, i64 3200000, </pre>
+< Operand # 1 (0x4d33d78) <br /><pre class="prettyprint lang-llvm ">  %2 = bitcast double** %ptr to i8**, </pre>
+---
+> <br/>Operand # 0 (0x4ef0f90) <br /><pre class="prettyprint lang-llvm ">  %7 = getelementptr inbounds i8, i8* %1, i64 3200000, </pre>
+> Operand # 1 (0x4ef0398) <br /><pre class="prettyprint lang-llvm ">  %2 = bitcast double** %ptr to i8**, </pre>

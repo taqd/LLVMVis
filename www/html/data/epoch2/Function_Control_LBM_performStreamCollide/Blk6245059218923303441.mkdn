@@ -1,0 +1,21 @@
+File: lbm.c, Lines: 178,210,211-213,214-216,217-219,221,222-224,225-227,228-230,231-233,234-237,238-241,247,248-250,251-253,254-257,258-260,261-263,264-266,267-269, Cols: 2,3-6,7-9,11,12-17,21,25,28,29-31,33,34-65,69,75,78,81,85,90,100,107,
+; label:138                                     ; preds = %1
+  %139 = or i64 %indvars.iv, 1, 
+  %140 = getelementptr inbounds double, double* %srcGrid, i64 %139, 
+  %141 = load double, double* %140, align 8, 
+  %142 = fadd double %9, %141, 
+  %143 = or i64 %indvars.iv, 2, 
+  %144 = getelementptr inbounds double, double* %srcGrid, i64 %143, 
+  %145 = load double, double* %144, align 8, 
+  %146 = fadd double %142, %145, 
+  %147 = or i64 %indvars.iv, 3, 
+  %148 = getelementptr inbounds double, double* %srcGrid, i64 %147, 
+  %149 = load double, double* %148, align 8, 
+  %150 = fadd double %146, %149, 
+  %151 = add nuw nsw i64 %indvars.iv, 4, 
+  %152 = getelementptr inbounds double, double* %srcGrid, i64 %151, 
+  %153 = load double, double* %152, align 8, 
+  %154 = fadd double %150, %153, 
+  %155 = add nuw nsw i64 %indvars.iv, 5, 
+  %156
+... (TRIMMED)

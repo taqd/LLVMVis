@@ -1,0 +1,33 @@
+;; Line: 657, Column: 6
+  call void @loadValue(%struct._IO_FILE* %764, float* %fileUx), 
+</pre>
+<br/>Operand # 0 (0x5da83a8) <br /><pre class="prettyprint lang-llvm ">  %764 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, </pre>
+Operand # 1 (0x5d8e308) <br /><pre class="prettyprint lang-llvm ">  %fileUx = alloca float, align 4</pre>
+Operand # 2 (0x5c91868) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define internal void @loadValue(%struct._IO_FILE* %file, float* %v) #0 {
+  %1 = alloca %struct._IO_FILE*, align 8
+  %2 = alloca float*, align 8
+  %litteBigEndianTest = alloca i32, align 4
+  %vPtr = alloca i8*, align 8
+  %buffer = alloca [4 x i8], align 1
+  %i = alloca i32, align 4
+  store %struct._IO_FILE* %file, %struct._IO_FILE** %1, align 8
+  store float* %v, float** %2, align 8
+  store i32 1, i32* %litteBigEndianTest, align 4, 
+  %3 = bitcast i32* %litteBigEndianTest to i8*, 
+  %4 = load i8, i8* %3, align 4, 
+  %5 = zext i8 %4 to i32, 
+  %6 = icmp eq i32 %5, 0, 
+  br i1 %6, label %7, la
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:763                                     ; preds = %20
+  %764 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  call void @loadValue(%struct._IO_FILE* %764, float* %fileUx), 
+  %765 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  call void @loadValue(%struct._IO_FILE* %765, float* %fileUy), 
+  %766 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  call void @loadValue(%struct._IO_FILE* %766, float* %fileUz), 
+  br label %770, 
+</pre>

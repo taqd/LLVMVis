@@ -1,0 +1,34 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f37540) <br /><pre class="prettyprint lang-llvm ">double* %grid</pre>
+< Operand # 1 (0x4f29228) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv = phi i64 [ -400000, %0 ], [ %indvars.iv.next, %1 ]</pre>
+---
+> <br/>Operand # 0 (0x4d302c0) <br /><pre class="prettyprint lang-llvm ">double* %grid</pre>
+> Operand # 1 (0x4d3b818) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv = phi i64 [ -400000, %0 ], [ %indvars.iv.next, %1 ]</pre>
+10,17c10,16
+<   store double 0x3FD5555555555555, double* %2, align 8, 
+<   %3 = or i64 %indvars.iv, 1, 
+<   %4 = getelementptr inbounds double, double* %grid, i64 %3, 
+<   store double 0x3FAC71C71C71C71C, double* %4, align 8, 
+<   %5 = or i64 %indvars.iv, 2, 
+<   %6 = getelementptr inbounds double, double* %grid, i64 %5, 
+<   store double 0x3FAC71C71C71C71C, double* %6, align 8, 
+<   %7 = or i64 %indvars.iv, 3, 
+---
+>   %3 = bitcast double* %2 to <2 x double>*, 
+>   store <2 x double> <double 0x3FD5555555555555, double 0x3FAC71C71C71C71C>, <2 x double>* %3, align 8, 
+>   %4 = or i64 %indvars.iv, 2, 
+>   %5 = getelementptr inbounds double, double* %grid, i64 %4, 
+>   %6 = bitcast double* %5 to <2 x double>*, 
+>   store <2 x double> <double 0x3FAC71C71C71C71C, double 0x3FAC71C71C71C71C>, <2 x double>* %6, align 8, 
+>   %7 = add nsw i64 %indvars.iv, 4, 
+19,23c18,21
+<   store double 0x3FAC71C71C71C71C, double* %8, align 8, 
+<   %9 = add nsw i64 %indvars.iv, 4, 
+<   %10 = getelementptr inbounds double, double* %grid, i64 %9, 
+<   store double 0x3FAC71C71C71C71C, double* %10, align 8, 
+<   %11
+---
+>   %9 = bitcast double* %8 to <2 x double>*, 
+>   store <2 x double> <double 0x3FAC71C71C71C71C, double 0x3FAC71C71C71C71C>, <2 x double>* %9, align 8, 
+>   %10 = add nsw i64 %indvars.iv, 6, 
+>   %11 = g

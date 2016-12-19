@@ -1,0 +1,36 @@
+;; Line: 129, Column: 16
+  switch i32 %2, label %.preheader.split.split.preheader [
+    i32 129, label %.preheader.split.us
+    i32 0, label %.preheader.split.split.us.preheader
+  ], 
+</pre>
+<br/>Operand # 0 (0x4f0ae88) <br /><pre class="prettyprint lang-llvm ">  %2 = trunc i64 %indvars.iv65 to i32, </pre>
+Operand # 1 (0x4f09e30) <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split.preheader:                 ; preds = %.preheader
+  br label %.preheader.split.split, 
+</pre>
+Operand # 2 (0x4f0a460) <br /><pre class="prettyprint lang-llvm ">i32 129</pre>
+Operand # 3 (0x4f09e80) <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.us:                              ; preds = %.preheader
+  br i1 %11, label %.preheader.split.us.split.us.preheader, label %.preheader.split.us.split.preheader, 
+</pre>
+Operand # 4 (0x4ee7750) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Operand # 5 (0x4f09de0) <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split.us.preheader:              ; preds = %.preheader
+  br label %.preheader.split.split.us, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader:                                       ; preds = %.us-lcssa.us, %.preheader42
+  %indvars.iv61 = phi i64 [ 0, %.preheader42 ], [ %indvars.iv.next62, %.us-lcssa.us ]
+  %5 = icmp eq i64 %indvars.iv61, 0, 
+  %6 = icmp eq i64 %indvars.iv61, 99, 
+  %7 = mul nuw nsw i64 %indvars.iv61, 100, 
+  %8 = add nsw i64 %7, %1, 
+  %9 = add i64 %indvars.iv61, 4294967294, 
+  %10 = trunc i64 %9 to i32, 
+  %11 = icmp ult i32 %10, 96, 
+  switch i32 %2, label %.preheader.split.split.preheader [
+    i32 129, label %.preheader.split.us
+    i32 0, label %.preheader.split.split.us.preheader
+  ], 
+</pre>

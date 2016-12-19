@@ -1,0 +1,15 @@
+;; Line: 160, Column: 11
+  %33 = icmp eq i64 %indvars.iv.i, 0, 
+</pre>
+<br/>Operand # 0 (0x4dc75a8) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.i = phi i64 [ 0, %.preheader.i ], [ %indvars.iv.next.i, %43 ], </pre>
+Operand # 1 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:32                                      ; preds = %43, %.preheader.i
+  %indvars.iv.i = phi i64 [ 0, %.preheader.i ], [ %indvars.iv.next.i, %43 ], 
+  %33 = icmp eq i64 %indvars.iv.i, 0, 
+  %34 = icmp eq i64 %indvars.iv.i, 99, 
+  %or.cond.i = or i1 %33, %34, 
+  %or.cond3.i = or i1 %28, %or.cond.i, 
+  %or.cond5.i = or i1 %29, %or.cond3.i, 
+  br i1 %or.cond5.i, label %35, label %43, 
+</pre>

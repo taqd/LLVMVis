@@ -24,21 +24,21 @@ read_config();
             must use Internet Explorer, make it version 9 or greater).
         </div>
         <![endif]-->
-	
-	
-    
+
         <script src="jquery/jquery-1.10.2.min.js"></script>
         <script src="jquery/jquery.browser.min.js"></script>
         <script src="d3/d3.v3.min.js"></script>
         <script src="colorbrewer.js"></script>
         <script src="lib/geometry.js"></script>
-        <script src="seedrandom.js"></script>    
-        <script>
+    <script src="seedrandom.js"></script>
+
+
+    <script>
             var config = <?php echo json_encode($config); ?>;
         </script>
-	<script src="code-prettify/loader/run_prettify.js"></script>
-	<script src="code-prettify/src/lang-llvm.js"></script>
         <script src="script.js"></script>
+        <script src = "http://axc.net/code_libraries/lasso/lasso.min.js"></script>
+    
 
 
         <div id="split-container">

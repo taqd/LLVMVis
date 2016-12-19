@@ -1,0 +1,7 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk10274160027849173333 ():
+L666,C15:  %768 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, !dbg !382
+L666,C7:  %769 = call i32 (%struct._IO_FILE*, i8*, ...) @__isoc99_fscanf(%struct._IO_FILE* %768, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i32 0, i32 0), float* %fileUx, float* %fileUy, float* %fileUz), !dbg !386
+

@@ -1,0 +1,20 @@
+2c2
+<   %maxDiff2.0220 = phi float [ 0xC6293E5940000000, %0 ], [ %maxDiff2.3.lcssa.lcssa, %137 ]
+---
+>   %maxDiff2.0220 = phi float [ 0xC6293E5940000000, %0 ], [ %maxDiff2.3.lcssa.lcssa, %143 ]
+4,5c4,5
+< <br/>Operand # 0 (0x4f19af0) <br /><pre class="prettyprint lang-llvm ">float 0xC6293E5940000000</pre>
+< Operand # 1 (0x4fbc258) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa, %136 ]</pre>
+---
+> <br/>Operand # 0 (0x4d24b70) <br /><pre class="prettyprint lang-llvm ">float 0xC6293E5940000000</pre>
+> Operand # 1 (0x4dba028) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa, %142 ]</pre>
+7,10c7,10
+< .preheader214:                                    ; preds = %137, %0
+<   %indvars.iv224 = phi i64 [ 0, %0 ], [ %indvars.iv.next225, %137 ]
+<   %maxDiff2.0220 = phi float [ 0xC6293E5940000000, %0 ], [ %maxDiff2.3.lcssa.lcssa, %137 ]
+<   %4 = mul nuw nsw i64 %indvars.iv224, 10000, 
+---
+> .preheader214:                                    ; preds = %143, %0
+>   %indvars.iv224 = phi i64 [ 0, %0 ], [ %indvars.iv.next225, %143 ]
+>   %maxDiff2.0220 = phi float [ 0xC6293E5940000000, %0 ], [ %maxDiff2.3.lcssa.lcssa, %143 ]
+>   %7 = mul nuw nsw i64 %indvars.iv224, 10000, 

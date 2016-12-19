@@ -1,0 +1,34 @@
+2c2
+<   %maxDiff2.3 = select i1 %135, float %134, float %maxDiff2.2215, 
+---
+>   %maxDiff2.3 = select i1 %141, float %140, float %maxDiff2.2215, 
+4,6c4,6
+< <br/>Operand # 0 (0x4fbbc90) <br /><pre class="prettyprint lang-llvm ">  %135 = fcmp ogt float %134, %maxDiff2.2215, </pre>
+< Operand # 1 (0x4fbba80) <br /><pre class="prettyprint lang-llvm ">  %134 = fadd float %132, %133, </pre>
+< Operand # 2 (0x4fb45e8) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.2215 = phi float [ %maxDiff2.1218, %.preheader ], [ %maxDiff2.3, %117 ]</pre>
+---
+> <br/>Operand # 0 (0x4d8f900) <br /><pre class="prettyprint lang-llvm ">  %141 = fcmp ogt float %140, %maxDiff2.2215, </pre>
+> Operand # 1 (0x4d8f6f0) <br /><pre class="prettyprint lang-llvm ">  %140 = fadd float %138, %139, </pre>
+> Operand # 2 (0x4db12a8) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.2215 = phi float [ %maxDiff2.1218, %.preheader ], [ %maxDiff2.3, %123 ]</pre>
+8,17c8,17
+< ; label:117                                     ; preds = %115, %114
+<   %118 = load float, float* %fileUx, align 4, 
+<   %119 = fpext float %118 to double, 
+<   %120 = fsub double %111, %119, 
+<   %121 = fptrunc double %120 to float, 
+<   %122 = load float, float* %fileUy, align 4, 
+<   %123 = fpext float %122 to double, 
+<   %124 = fsub double %112, %123, 
+<   %125 = fptrunc double %124 to float, 
+<   %126 = load float, float* %fileUz, align 4, 
+---
+> ; label:123                                     ; preds = %121, %117
+>   %124 = load float, float* %fileUx, align 4, 
+>   %125 = fpext float %124 to double, 
+>   %126 = fsub double %114, %125, 
+>   %127 = fptrunc double %126 to float, 
+>   %128 = load float, float* %fileUy, align 4, 
+>   %129 = fpext float %128 to double, 
+>   %130 = fsub double %115, %129, 
+>   %131 = fptrunc double %130 to float, 
+>   %132 = load float, float* %fileUz, align 4, 

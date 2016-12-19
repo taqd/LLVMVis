@@ -1,0 +1,13 @@
+;; Line: 156, Column: 26
+  %59 = getelementptr inbounds [26000000 x double], [26000000 x double]* %58, i64 0, i64 0, 
+</pre>
+<br/>Operand # 0 (0x4f832a8) <br /><pre class="prettyprint lang-llvm ">  %58 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, </pre>
+Operand # 1 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 2 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:57                                      ; preds = %._crit_edge
+  %58 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %59 = getelementptr inbounds [26000000 x double], [26000000 x double]* %58, i64 0, i64 0, 
+  tail call void @LBM_storeVelocityField(double* %59, i8* %4, i32 -1) #7, 
+  br label %MAIN_finalize.exit, 
+</pre>

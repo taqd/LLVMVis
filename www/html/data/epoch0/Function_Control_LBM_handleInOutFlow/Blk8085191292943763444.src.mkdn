@@ -1,0 +1,24 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk8085191292943763444 ():
+L274,C36:  call void @llvm.dbg.declare(metadata double** %1, metadata !1126, metadata !199), !dbg !1127
+L275,C9:  call void @llvm.dbg.declare(metadata double* %ux, metadata !1128, metadata !199), !dbg !1129
+L275,C14:  call void @llvm.dbg.declare(metadata double* %uy, metadata !1130, metadata !199), !dbg !1131
+L275,C19:  call void @llvm.dbg.declare(metadata double* %uz, metadata !1132, metadata !199), !dbg !1133
+L275,C24:  call void @llvm.dbg.declare(metadata double* %rho, metadata !1134, metadata !199), !dbg !1135
+L276,C9:  call void @llvm.dbg.declare(metadata double* %ux1, metadata !1136, metadata !199), !dbg !1137
+L276,C14:  call void @llvm.dbg.declare(metadata double* %uy1, metadata !1138, metadata !199), !dbg !1139
+L276,C19:  call void @llvm.dbg.declare(metadata double* %uz1, metadata !1140, metadata !199), !dbg !1141
+L276,C24:  call void @llvm.dbg.declare(metadata double* %rho1, metadata !1142, metadata !199), !dbg !1143
+L277,C9:  call void @llvm.dbg.declare(metadata double* %ux2, metadata !1144, metadata !199), !dbg !1145
+L277,C14:  call void @llvm.dbg.declare(metadata double* %uy2, metadata !1146, metadata !199), !dbg !1147
+L277,C19:  call void @llvm.dbg.declare(metadata double* %uz2, metadata !1148, metadata !199), !dbg !1149
+L277,C24:  call void @llvm.dbg.declare(metadata double* %rho2, metadata !1150, metadata !199), !dbg !1151
+L278,C9:  call void @llvm.dbg.declare(metadata double* %u2, metadata !1152, metadata !199), !dbg !1153
+L278,C13:  call void @llvm.dbg.declare(metadata double* %px, metadata !1154, metadata !199), !dbg !1155
+L278,C17:  call void @llvm.dbg.declare(metadata double* %py, metadata !1156, metadata !199), !dbg !1157
+L279,C2:  call void @llvm.dbg.declare(metadata i32* %i, metadata !1158, metadata !199), !dbg !1159
+L289,C2:  store i32 0, i32* %i, align 4, !dbg !233
+L289,C2:  br label %2, !dbg !233
+

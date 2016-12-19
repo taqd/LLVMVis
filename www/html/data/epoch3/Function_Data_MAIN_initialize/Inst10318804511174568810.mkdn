@@ -1,0 +1,13 @@
+;; Line: 145, Column: 26
+  %161 = getelementptr inbounds [26000000 x double], [26000000 x double]* %160, i64 0, i64 0, 
+</pre>
+<br/>Operand # 0 (0x4f96468) <br /><pre class="prettyprint lang-llvm ">  %160 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, </pre>
+Operand # 1 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 2 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+LBM_initializeSpecialCellsForChannel.exit42:      ; preds = %LBM_initializeSpecialCellsForChannel.exit42.loopexit, %156
+  %160 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %161 = getelementptr inbounds [26000000 x double], [26000000 x double]* %160, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %161), 
+  ret void, 
+</pre>

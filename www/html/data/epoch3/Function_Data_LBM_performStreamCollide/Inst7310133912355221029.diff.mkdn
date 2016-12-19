@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d5c9f8) <br /><pre class="prettyprint lang-llvm ">  %. = select i1 %242, double %239, double 2.000000e-03, </pre>
+< Operand # 1 (0x4d67de0) <br /><pre class="prettyprint lang-llvm ">  %269 = fadd double %258, -3.000000e+00, </pre>
+---
+> <br/>Operand # 0 (0x4f10008) <br /><pre class="prettyprint lang-llvm ">  %. = select i1 %242, double %239, double 2.000000e-03, </pre>
+> Operand # 1 (0x4f2a720) <br /><pre class="prettyprint lang-llvm ">  %269 = fadd double %258, -3.000000e+00, </pre>

@@ -1,0 +1,38 @@
+;; Line: 161, Column: 16
+  br i1 %21, label %25, label %22, 
+</pre>
+<br/>Operand # 0 (0x5cc9290) <br /><pre class="prettyprint lang-llvm ">  %21 = icmp eq i32 %20, 0, </pre>
+Operand # 1 (0x5cc7420) <br /><pre class="prettyprint lang-llvm ">
+; label:22                                      ; preds = %19
+  %23 = load i32, i32* %y, align 4, 
+  %24 = icmp eq i32 %23, 99, 
+  br i1 %24, label %25, label %88, 
+</pre>
+Operand # 2 (0x5cc7470) <br /><pre class="prettyprint lang-llvm ">
+; label:25                                      ; preds = %22, %19, %16, %13
+  %26 = load i32, i32* %x, align 4, 
+  %27 = load i32, i32* %y, align 4, 
+  %28 = mul nsw i32 %27, 100, 
+  %29 = add nsw i32 %26, %28, 
+  %30 = load i32, i32* %z, align 4, 
+  %31 = mul nsw i32 %30, 100, 
+  %32 = mul nsw i32 %31, 100, 
+  %33 = add nsw i32 %29, %32, 
+  %34 = mul nsw i32 20, %33, 
+  %35 = add nsw i32 19, %34, 
+  %36 = sext i32 %35 to i64, 
+  %37 = load double*, double** %1, align 8, 
+  %38 = getelementptr inbounds double, double* %37, i64 %36, 
+  %39 = bitcast double* %38 to i8*, 
+  %40 = bitcast i8* %39 to i32*, 
+  store i32* %40, i32** %_aux_, align 8, 
+  %41 = load i32*, i32** %_aux_, align 8, 
+  %42 = load i32, i32* %41, align 4, 
+  %43 =
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:19                                      ; preds = %16
+  %20 = load i32, i32* %y, align 4, 
+  %21 = icmp eq i32 %20, 0, 
+  br i1 %21, label %25, label %22, 
+</pre>

@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4d5c660) <br /><pre class="prettyprint lang-llvm ">  %242 = icmp eq i32 %241, 0, </pre>
+< Operand # 1 (0x4d5dfc0) <br /><pre class="prettyprint lang-llvm ">  %240 = fdiv double %237, %210, </pre>
+< Operand # 2 (0x4d2b2f0) <br /><pre class="prettyprint lang-llvm ">double 0.000000e+00</pre>
+---
+> <br/>Operand # 0 (0x4f0fc70) <br /><pre class="prettyprint lang-llvm ">  %242 = icmp eq i32 %241, 0, </pre>
+> Operand # 1 (0x4f10db0) <br /><pre class="prettyprint lang-llvm ">  %240 = fdiv double %237, %210, </pre>
+> Operand # 2 (0x4ee8060) <br /><pre class="prettyprint lang-llvm ">double 0.000000e+00</pre>

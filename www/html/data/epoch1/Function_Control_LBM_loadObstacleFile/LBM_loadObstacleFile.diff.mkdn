@@ -1,0 +1,21 @@
+3,13c3,10
+< define void @LBM_loadObstacleFile(double* %grid, i8* %filename) #0 {
+<   %1 = alloca double*, align 8
+<   %2 = alloca i8*, align 8
+<   %x = alloca i32, align 4
+<   %y = alloca i32, align 4
+<   %z = alloca i32, align 4
+<   %file = alloca %struct._IO_FILE*, align 8
+<   %_aux_ = alloca i32*, align 8
+<   store double* %grid, double** %1, align 8
+<   store i8* %filename, i8** %2, align 8
+<   %3 = load i8*, i8** %2, align 
+---
+> define void @LBM_loadObstacleFile(double* nocapture %grid, i8* nocapture readonly %filename) #0 {
+>   %1 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0)), 
+>   br label %.preheader10, 
+> <br/>.preheader10:                                     ; preds = %20, %0
+>   %indvars.iv17 = phi i64 [ 0, %0 ], [ %indvars.iv.next18, %20 ]
+>   %2 = mul nuw nsw i64 %indvars.iv17, 10000, 
+>   br label %.preheader, 
+> <br/>.preheader:                           

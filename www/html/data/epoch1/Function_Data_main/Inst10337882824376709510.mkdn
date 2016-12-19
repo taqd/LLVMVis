@@ -1,0 +1,12 @@
+;; Line: 49, Column: 29
+  %21 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+</pre>
+<br/>Operand # 0 (0x4f16ae8) <br /><pre class="prettyprint lang-llvm ">@srcGrid = internal global [26000000 x double]* null, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:19                                      ; preds = %12
+  %20 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i32 %t.04), 
+  %21 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %22), 
+  br label %23, 
+</pre>

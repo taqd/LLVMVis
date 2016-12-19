@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d6ee98) <br /><pre class="prettyprint lang-llvm ">  %558 = shufflevector <2 x double> %481, <2 x double> %492, <2 x i32> <i32 0, i32 2>, </pre>
+< Operand # 1 (0x4d6f7d8) <br /><pre class="prettyprint lang-llvm ">  %572 = shufflevector <2 x double> %492, <2 x double> %481, <2 x i32> <i32 0, i32 2>, </pre>
+---
+> <br/>Operand # 0 (0x4f317d8) <br /><pre class="prettyprint lang-llvm ">  %558 = shufflevector <2 x double> %481, <2 x double> %492, <2 x i32> <i32 0, i32 2>, </pre>
+> Operand # 1 (0x4f32118) <br /><pre class="prettyprint lang-llvm ">  %572 = shufflevector <2 x double> %492, <2 x double> %481, <2 x i32> <i32 0, i32 2>, </pre>

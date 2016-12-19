@@ -1,0 +1,21 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4fc8d70) <br /><pre class="prettyprint lang-llvm ">  %13 = icmp eq i32 %12, 2, </pre>
+< Operand # 1 (0x4fc8100) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4dcb8b0) <br /><pre class="prettyprint lang-llvm ">  %13 = icmp eq i32 %12, 2, </pre>
+> Operand # 1 (0x4dcac80) <br /><pre class="prettyprint lang-llvm ">
+7,11c7,14
+<   tail call void @LBM_freeGrid(double** nonnull bitcast ([26000000 x double]** @srcGrid to double**)), 
+<   tail call void @LBM_freeGrid(double** nonnull bitcast ([26000000 x double]** @dstGrid to double**)), 
+<   ret void, 
+< </pre>
+< Operand # 2 (0x4fc80b0) <br /><pre class="prettyprint lang-llvm ">
+---
+>   %20 = load double*, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, 
+>   %21 = getelementptr inbounds double, double* %20, i64 -400000, 
+>   %22 = bitcast double* %21 to i8*, 
+>   tail call void @free(i8* %22) #7, 
+>   store double* null, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, 
+>   %23 = load double*, double** bi
+> ... (TRIMMED)</pre>
+> Operand # 2 (0x4dcac30) <br /><pre class="prettyprint lang-llvm ">

@@ -7,14 +7,14 @@
 
 vector<int> get_config(int nodes) {
   //Create different configurations based on number of nodes
-  int huge_graph = 1000;
+  int huge_graph = 500;
   int large_graph = 80;
   int medium_graph = 20;
   vector<int> config;
     
   if (nodes < medium_graph) {
     int linkDistance = 100; config.push_back(linkDistance);
-    int charge = -1000; config.push_back(charge);
+    int charge = -600; config.push_back(charge);
     int ticksWithoutCollisions = 100; config.push_back(ticksWithoutCollisions);
     int maxLineChars = 32; config.push_back(maxLineChars);
   } else if (nodes < large_graph) {
@@ -24,7 +24,7 @@ vector<int> get_config(int nodes) {
     int maxLineChars = 8; config.push_back(maxLineChars);     
   } else if (nodes < huge_graph) {
     int linkDistance = 5; config.push_back(linkDistance);
-    int charge = -200; config.push_back(charge);
+    int charge = -300; config.push_back(charge);
     int ticksWithoutCollisions = 100; config.push_back(ticksWithoutCollisions);
     int maxLineChars = 4; config.push_back(maxLineChars); 
   } else {
@@ -59,55 +59,99 @@ string create_object(node *n) {
 			    n->depends);
 }
 
-//Standardized format for getting names of things
+//Standardized format for getting names of things If the value doesn't
+//already have a name, generate a hash for the block contents and let
+//that be the name.
+
 string get_name(Value *v) {
+  if (nameMap[v].size() > 0)
+    return nameMap[v];
+  
+  //Try to get LLVM's name
   string obj_name = v->getName();
+
+  // //See if we have already previously given it a name
+  // if (obj_name == "")
+  //   obj_name = nameMap[v];
+
+  //No name? Take a hash of the contents, and that is its name
   if (obj_name == "") {
+    size_t val_hash = hash<string>{}(print(v));
+    string hash_str = to_string(val_hash);
+    
+    if (isa<Function>(v)) 
+      nameMap[v] = "Fun" + hash_str;
+    else if (isa<BasicBlock>(v))
+      nameMap[v] = "Blk" + hash_str;
+    else if (isa<Instruction>(v)) 
+      nameMap[v] = "Inst" + hash_str;      
+    else 
+      nameMap[v] = "Val" + hash_str;     
 
-    //Name unnamed objects after their instruction opcode if they are
-    //an instruction
-    if (Instruction *i = dyn_cast<Instruction>(v)) {
-      string group = i->getOpcodeName();
-      obj_name = group + nameMap[v];
-    }
+    obj_name = nameMap[v];
 
-    //Name them after their 'print' function,
-    //TODO: Sanitize this
-    if (obj_name == "") {
-      //If opcode, then try to get its type
-      string tmp;
-      raw_string_ostream rso(tmp);
-      v->getType()->print(rso);
-      string type = rso.str();    
-      obj_name = type + nameMap[v];
-    }
+  } 
 
-    //If all else fails, use a ID number
-    if (obj_name == "") 
-      obj_name = nameMap[v];
-  }  
-  return obj_name;
+  nameMap[v] = sanitize(obj_name);
+  return nameMap[v];    
 }
 
 string get_name(BasicBlock *b) {
-  string obj_name = b->getName();  
-  return obj_name;
+  if (nameMap[b].size() > 0)
+    return nameMap[b];
+  
+  string obj_name = b->getName();
+  if (obj_name == "")
+    obj_name = get_name((Value*)b);
+  
+  nameMap[b] = sanitize(obj_name);
+  return nameMap[b];    
 }
 
 string get_name(Loop *l) {
   BasicBlock *block_in_loop = l->getBlocks().front();  
-  string obj_name = "Loop #" + loopIDs[block_in_loop];
-  return obj_name;
+  string obj_name = "Loop" + loopIDs[block_in_loop];
+  if (obj_name == "")
+    obj_name = get_name((Value*)l);  
+  return sanitize(obj_name);
 }
 
 string get_name(Function *f) {
-  string obj_name = f->getName();  
-  return obj_name;
+  if (nameMap[f].size() > 0)
+    return nameMap[f];
+
+  string obj_name = f->getName();
+  if (obj_name == "")
+    obj_name = get_name((Value*)f);
+
+  nameMap[f] = sanitize(obj_name);
+  return nameMap[f];  
 }
 
 string get_name(Module *m) {
-  string obj_name = m->getName();  
-  return obj_name;
+  if (nameMap[(Value*)m].size() > 0)
+    return nameMap[(Value*)m];
+
+  //Name the module after the file of the largest function
+  string obj_name = "";
+  // int biggest_function = 0;
+  // for (Function &f : *m) {
+  //   int num_instructions = 0;
+  //   for (BasicBlock &b : f) 
+  //     num_instructions += b.size();
+  //   if (num_instructions > biggest_function) {
+  //     biggest_function = num_instructions;
+  //     obj_name = get_file(&f);
+  //   }	
+  // }
+
+  if (obj_name == "")
+    obj_name = m->getName(); //Always returns stdin
+  if (obj_name == "")
+    obj_name = get_name((Value*)m);
+
+  nameMap[(Value*)m] = sanitize(obj_name);
+  return nameMap[(Value*)m];
 }
 
 
@@ -127,7 +171,7 @@ string get_type(Value *v) {
       Instruction *i = dyn_cast<Instruction>(v);
       BasicBlock *parent = i->getParent();
       if (loopIDs[parent].size() > 0)
-	type = "Loop #" + loopIDs[parent];
+	type = "Loop" + loopIDs[parent];
     } 
   }  
   return type;
@@ -137,7 +181,7 @@ string get_type(Value *v) {
 string get_type(BasicBlock *b) {
   string type = "Not in loop";
   if (loopIDs[b].size() > 0)
-    type = "Loop #" + loopIDs[b];
+    type = "Loop" + loopIDs[b];
   return type;
 }
 
@@ -209,45 +253,44 @@ node* create_function_node(Function *f, vector<string> folders, bool links) {
   n->name = get_name(f);
   n->type = "Helper";
   n->group = "";
-  n->metadata = get_metadata(f,folders); //Borrowed from CF Module view  
-
-  //Change basic block names to clickable links
-  if (links)
-    n->metadata = change_blocks_to_links(f,n->metadata);
+  n->metadata = get_ir(f); //Borrowed from CF Module view
+  n->src = get_debug(f);
 
   vector<string> depends;
   n->depends = depends;  
   n->json = create_object(n);
 
-    //Place at top left
+  //Place at top left
   set_Y_position(n,0,1);
   set_X_position(n,1,1);
-
 
   return n;
 }
 
 //Metadata for a loop
-string get_metadata(Loop *l, vector<string> folders, bool update) {
-  string header = "<b>Loop data:</b>\n";
-  Function *parentFun = NULL; //FIXME, this breaks build_metadata
+string get_ir(Loop *l) {
+  if (!ENABLE_IR) return "Disabled";
   
-  //Create the syntax highlight code region
-  string code = header + syntax_beg;
-  for (BasicBlock *b : l->getBlocks()) {
+  string code = "";
+  for (BasicBlock *b : l->getBlocks()) 
     code += print(b);
-    if (parentFun == NULL)
-      parentFun = b->getParent();
-  }
-  code += syntax_end;
-
-  //Transform basicblock names to links to click on
-  replaceAll(code,"_","\\_");
-  if (update)
-    code = change_blocks_to_links(l->getBlocks().front()->getParent(),code);
-   
-  return build_metadata(parentFun,code,folders);
+  
+  return prep_metadata(code);
 }
+
+//Metadata for a loop
+string get_debug(Loop *l) {
+  if (!ENABLE_DEBUG) return "Disabled";
+  Function *parent = l->getBlocks().front()->getParent();
+  string debug_header = "File: " + get_file(parent) + "\nDirectory: " + get_dir(parent);
+  string debug_content = "";
+  
+  for (BasicBlock *b : l->getBlocks())
+    debug_content += get_blk_metadata(b);
+  
+  return debug_header + "\n" + debug_content;  
+}
+
 
 //Create helpful/additional loop nodes. These are placed in the top
 //right and corner and are used to access more metadata
@@ -257,8 +300,8 @@ node *create_loop_node(Loop *l, vector<string> folders, bool control_flow) {
   n->name = get_name(l);
   n->type = n->name;
   n->group = "";
-  n->metadata = get_metadata(l,folders,control_flow);  
-
+  n->metadata = get_ir(l);
+  n->src = get_debug(l);
   string name = n->name;
 
   //Connect the basic blocks this loop with white lines. We don't
@@ -270,10 +313,10 @@ node *create_loop_node(Loop *l, vector<string> folders, bool control_flow) {
     for (BasicBlock *b : l->getBlocks()) {
       depends.push_back(get_name(b));
 
-      node *dep = new node();
+      node *dep = new node(b);
       dep->name = get_name(b);
       set_link_strength(dep,n,0.0);      
-      set_link_color(dep,n,"white");
+      set_link_color(dep,n,"invisible");
 
       for (auto *dep_const : dep->constraints)
 	n->constraints.push_back(dep_const);
@@ -286,10 +329,10 @@ node *create_loop_node(Loop *l, vector<string> folders, bool control_flow) {
 	
 	depends.push_back(get_name(&i));
 
-	node *dep = new node();
+	node *dep = new node(b);
 	dep->name = get_name(&i);
 	set_link_strength(dep,n,0.0);      
-	set_link_color(dep,n,"white");
+	set_link_color(dep,n,"invisible");
 
 	for (auto *dep_const : dep->constraints)
 	  n->constraints.push_back(dep_const);
@@ -340,21 +383,85 @@ string get_all_views(vector<string> folders) {
   return views;
 }
 
+
 //Metadata for a function
-string build_metadata(Function *f, string code, vector<string> folders) {
-  //Link to enter/open this function
-  string links;
-  if (f && !f->isDeclaration()) 
-    links = go_to_related(f);
-  
-  //Create a list of other views to other functions
-  string views = get_all_views(folders);
-  
-  //Finally create the big metadata string to be saved in .mkdn
-  string metadata = mkdn_header + "\n" + links + "\n<br />" + code + "<br />"  + views;
-   
-  return metadata;
+string prep_metadata(string code) {
+
+  if (REMOVE_DBG_FROM_IR) {
+    //Remove metadata calls (eg. llvm.dbg.value)
+    regex e(".*llvm.dbg.*\n");
+    code = regex_replace(code,e,"");
+    
+    //Remove additional metadata information (eg. !dbg !40)
+    regex e2 ("![a-zA-Z0-9 !]+");
+    code = regex_replace(code,e2,"");
+  }
+
+  //The markdown script doesn't like <label>, so escape them in this
+  //odd way
+  replaceAll(code,"<label>","label");
+  //  replaceAll(code,"<","\\<"); //This generates a warning :(
+  //replaceAll(code,">","\\>");
+
+  //Remove some unncessary space
+  replaceAll(code,"\n\n","\n<br/>");
+  return code;
 }
+
+//Find what file this function comes from
+string get_file(Function *f) {
+  SmallVector<std::pair<unsigned, MDNode *>, 4> MDs;
+  f->getAllMetadata(MDs);
+
+  string debug_content = "", file_str = "";
+  //Get Filename and Directory 
+  for (auto M : MDs) {
+    for (uint i=0;i<M.second->getNumOperands();++i) {
+      if (M.second->getOperand(i)) {
+	if (DIScope* file = dyn_cast<DIScope>(M.second->getOperand(i))) {
+	  return file->getFilename();
+	}
+      }
+    }
+  }
+  return "Unknown\n";
+}
+
+//Find the directory that this functions source code was in
+string get_dir(Function *f) {
+ SmallVector<std::pair<unsigned, MDNode *>, 4> MDs;
+  f->getAllMetadata(MDs);
+
+  string debug_content = "", file_str = "";
+  //Get Filename and Directory 
+  for (auto M : MDs) {
+    for (uint i=0;i<M.second->getNumOperands();++i) {
+      if (M.second->getOperand(i)) {
+	if (DIScope* file = dyn_cast<DIScope>(M.second->getOperand(i))) {
+	  return file->getDirectory();
+	}
+      }
+    }
+  }
+  return "Unknown";
+}
+
+//Get the metadata associated to every instruction in this block
+string get_blk_metadata(BasicBlock *b) {
+  string data = get_name(b) + " (" + (string)b->getName() + "):\n";
+  for (Instruction &i : *b) {
+    if (i.getMetadata("dbg")) {  
+      DebugLoc loc = i.getDebugLoc();
+      int line = loc.getLine();
+      int col = loc.getCol();
+      data += "L" + to_string(line) + ",C" + to_string(col) + ":";
+      data += print(&i) + "\n";
+    }
+  }
+  data += "\n";
+  return data;
+}
+
 
  
 ////////////////////////////////////////////////////////
@@ -479,7 +586,7 @@ string format_as_range(vector<int> lines) {
 }
 
 //Return true for instructions we wish to hide
-bool hide(Instruction &i) {
+bool hide(Value &i) {
   //Hide unconditional branches
   if (isa<BranchInst>(i)) { 
     BranchInst *tmp = dyn_cast<BranchInst>(&i);
@@ -490,16 +597,24 @@ bool hide(Instruction &i) {
   //Hide calls to hidden functions
   if (CallInst *ci = dyn_cast<CallInst>(&i)) { 
     Value *called = ci->getCalledValue()->stripPointerCasts();
-    string called_name = dyn_cast<Function>(called)->getName();
-    if (hideCallsTo.find(called_name) != string::npos)
-      return true;
+    Function *called_fun = dyn_cast<Function>(called);
+    if (called_fun && called_fun->hasName()) {
+      string called_name = dyn_cast<Function>(called)->getName();
+      if (hideCallsTo.find(called_name) != string::npos)
+	return true;
+    }
   }
 
   //Hide unreachable instructions
   if (isa<UnreachableInst>(i)) 
     return true;
 
-  //Todo: Hide metadata nodes
+  //Hide metadata nodes
+  if (i.isUsedByMetadata())
+    return true;
+
+  if (isa<MetadataAsValue>(i))
+    return true;
   
   return false;
 }
@@ -548,6 +663,7 @@ void findInputOutputs(Function *f, vector<Value*> &Inputs, vector<Value*> &Outpu
   
   for (BasicBlock &b : *f) {
     for (Instruction &i : b) {
+      if (hide(i)) continue;
       if (CallInst *ci = dyn_cast<CallInst>(&i)) {
 	Value *called = ci->getCalledValue()->stripPointerCasts();
 	string called_name = dyn_cast<Function>(called)->getName();
@@ -557,7 +673,9 @@ void findInputOutputs(Function *f, vector<Value*> &Inputs, vector<Value*> &Outpu
 	if (isa<Function>(op)) continue;
 	if (isa<BasicBlock>(op)) continue;
 	//	if (!SHOW_GLOBAL_VALUES && isa<Constant>(op)) continue; //Do not show constants as inputs if set
-	if (isa<Constant>(op) && !isa<GlobalValue>(op)) continue; 
+	if (isa<Constant>(op) && !isa<GlobalValue>(op)) continue;
+	if (dyn_cast<Value>(op)->isUsedByMetadata()) continue;
+	if (isa<MetadataAsValue>(op)) continue;
 	if (!definedInRegion(Blocks, op))
 	  Inputs.push_back(op);
       }
@@ -565,6 +683,7 @@ void findInputOutputs(Function *f, vector<Value*> &Inputs, vector<Value*> &Outpu
       if (i.user_empty()) {
 	if (isa<BranchInst>(i)) continue;
 	if (isa<UnreachableInst>(i)) continue;
+
 	Outputs.push_back(&i);
       }
     }    
@@ -577,13 +696,16 @@ void findInputOutputs(Function *f, vector<Value*> &Inputs, vector<Value*> &Outpu
 ////////////////////////////////////
 
 //Make nice strings
+
 string sanitize(string name)
 {
   name.erase(remove(name.begin(), name.end(),'"'), name.end());
   name.erase(remove(name.begin(), name.end(),'.'), name.end());
   name.erase(remove(name.begin(), name.end(),'<'), name.end());
   name.erase(remove(name.begin(), name.end(),'>'), name.end());
-  //  name = name.substr(0,100);
+  name.erase(remove(name.begin(), name.end(),'#'), name.end());
+  name.erase(remove(name.begin(), name.end(),' '), name.end());  
+  //name = name.substr(0,100);
   return name;
 }
 
@@ -598,7 +720,7 @@ void replaceAll(std::string& str, const std::string& from, const std::string& to
     }
 }
 
-//Returns the print() of an object. This is used in metadata creation
+ //Returns the print() of an object. This is used in metadata creation
 string print(Value *i)
 {
   string tmp;
@@ -606,6 +728,12 @@ string print(Value *i)
   raw_string_ostream rso(tmp);
   i->print(rso);
   string rso_str = rso.str();
+
+  //Limit the size of print out
+  if (rso_str.size() > MAX_CODE_LENGTH) {
+    rso_str = rso_str.substr(0,MAX_CODE_LENGTH);
+    rso_str += "\n... (TRIMMED)";
+  }  
 
   return rso_str;
 }
@@ -615,8 +743,14 @@ string print(Metadata *m)
   string tmp;
   
   raw_string_ostream rso(tmp);
-  m->print(rso,nullptr,true);
+  m->print(rso,nullptr,false);
   string rso_str = rso.str();
+
+  //Limit the size of print out
+  if (rso_str.size() > MAX_CODE_LENGTH) {
+    rso_str = rso_str.substr(0,MAX_CODE_LENGTH);
+    rso_str += "\n... (TRIMMED)";
+  }
 
   return rso_str;
 }
@@ -685,6 +819,10 @@ vector<Function*> find_called(Function *source)
       CallSite cs(&i);
       if (!cs.getInstruction()) continue;
       Function *called = cs.getCalledFunction();
+      if (!called) {
+	//outs() << "Function pointer found, skipping : " << i << "\n";
+	continue;
+      }
       if (!SHOW_FUNCTION_DECLARATIONS && called->isDeclaration()) continue;
       if (find(WL.begin(),WL.end(),source) == WL.end())
 	WL.push_back(called);
@@ -819,7 +957,7 @@ void create_config_file(vector<int> config,
 			string folder,
 			string title,
 			vector<node*> nodes) {
-    
+
   fstream File;
   File.open (folder + "config.json", fstream::out);
 
@@ -875,10 +1013,36 @@ void create_config_file(vector<int> config,
 void create_data_files(string folder, vector<node*> nodes) {
   fstream File;
   for (node *n : nodes) {
+
+    //First metadown file (IR)
     string obj_name = n->name;
     string filename = folder + obj_name + ".mkdn";
     File.open (filename, fstream::out);
     File << n->metadata;
     File.close();
+
+    //Second metadata file (Source)
+    string src_filename = folder + obj_name + ".src.mkdn";
+    File.open (src_filename, fstream::out);
+    File << n->src;
+    File.close();
+
+    //Third metadata file (Diff), find the diff between the last epoch
+    //and this one
+    if (ENABLE_DIFF && current_epoch > 0) {
+      int this_epoch = current_epoch;
+      int last_epoch = current_epoch - 1;
+      
+      string this_epoch_file = filename;
+      string last_epoch_file = "/var/www/html/" +folder + obj_name + ".mkdn";
+      replaceAll(last_epoch_file,"epoch" + to_string(this_epoch), "epoch" + to_string(last_epoch));
+
+      string diff_command = "diff  " + last_epoch_file + " " + this_epoch_file + " > " + folder + obj_name + ".diff.mkdn 2> /dev/null";
+      //string diff_command = "ls -alsh > " + folder + obj_name + ".diff.mkdn";
+
+
+      system(diff_command.c_str());
+    }
   }
 }
+

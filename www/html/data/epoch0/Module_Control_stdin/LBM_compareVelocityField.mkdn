@@ -1,0 +1,25 @@
+
+; Function Attrs: nounwind uwtable
+define void @LBM_compareVelocityField(double* %grid, i8* %filename, i32 %binary) #0 {
+  %1 = alloca double*, align 8
+  %2 = alloca i8*, align 8
+  %3 = alloca i32, align 4
+  %x = alloca i32, align 4
+  %y = alloca i32, align 4
+  %z = alloca i32, align 4
+  %rho = alloca double, align 8
+  %ux = alloca double, align 8
+  %uy = alloca double, align 8
+  %uz = alloca double, align 8
+  %fileUx = alloca float, align 4
+  %fileUy = alloca float, align 4
+  %fileUz = alloca float, align 4
+  %dUx = alloca float, align 4
+  %dUy = alloca float, align 4
+  %dUz = alloca float, align 4
+  %diff2 = alloca float, align 4
+  %maxDiff2 = alloca float, align 4
+  %file = alloca %struct._IO_FILE*, align 8
+  store double* %grid, double** %1, align 8
+  store i8* %filename, i8** %2, align 8
+<br/>... (TRIMMED)

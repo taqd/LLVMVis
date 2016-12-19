@@ -1,0 +1,17 @@
+;; Line: 99, Column: 3
+  call void @exit(i32 1) #6, 
+</pre>
+<br/>Operand # 0 (0x5c9c610) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+Operand # 1 (0x5c901e8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: noreturn nounwind
+declare void @exit(i32) #4
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:80                                      ; preds = %74
+  %81 = load %struct.MAIN_Param*, %struct.MAIN_Param** %3, align 8, 
+  %82 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %81, i32 0, i32 1, 
+  %83 = load i8*, i8** %82, align 8, 
+  %84 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([53 x i8], [53 x i8]* @.str.4.4, i32 0, i32 0), i8* %83), 
+  call void @exit(i32 1) #6, 
+  unreachable, 
+</pre>

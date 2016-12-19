@@ -1,0 +1,27 @@
+;; Line: 158, Column: 3
+  br i1 %exitcond43, label %43, label %.preheader, 
+</pre>
+<br/>Operand # 0 (0x4f15c60) <br /><pre class="prettyprint lang-llvm ">  %exitcond43 = icmp eq i64 %indvars.iv.next42, 100, </pre>
+Operand # 1 (0x4ef4c70) <br /><pre class="prettyprint lang-llvm ">
+.preheader:                                       ; preds = %.us-lcssa.us, %.preheader28
+  %indvars.iv41 = phi i64 [ 0, %.preheader28 ], [ %indvars.iv.next42, %.us-lcssa.us ]
+  %2 = mul nuw nsw i64 %indvars.iv41, 100, 
+  %3 = add nsw i64 %2, %1, 
+  %4 = trunc i64 %indvars.iv41 to i32, 
+  switch i32 %4, label %.preheader.split.split.preheader [
+    i32 99, label %.preheader.split.us.preheader
+    i32 0, label %.preheader.split.split.us.preheader
+  ], 
+</pre>
+Operand # 2 (0x4f12670) <br /><pre class="prettyprint lang-llvm ">
+; label:43                                      ; preds = %.us-lcssa.us
+  %indvars.iv.next45 = add nsw i64 %indvars.iv44, 1, 
+  %exitcond46 = icmp eq i64 %indvars.iv.next45, 132, 
+  br i1 %exitcond46, label %44, label %.preheader28, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.us-lcssa.us:                                     ; preds = %.us-lcssa.us.loopexit52, %.us-lcssa.us.loopexit51, %.us-lcssa.us.loopexit
+  %indvars.iv.next42 = add nuw nsw i64 %indvars.iv41, 1, 
+  %exitcond43 = icmp eq i64 %indvars.iv.next42, 100, 
+  br i1 %exitcond43, label %43, label %.preheader, 
+</pre>

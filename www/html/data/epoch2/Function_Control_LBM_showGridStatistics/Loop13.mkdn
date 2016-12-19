@@ -1,0 +1,54 @@
+
+; label:1                                       ; preds = %0, %127
+  %indvars.iv = phi i64 [ 0, %0 ], [ %indvars.iv.next, %127 ]
+  %mass.0131 = phi double [ 0.000000e+00, %0 ], [ %78, %127 ]
+  %nObstacleCells.0130 = phi i32 [ 0, %0 ], [ %nObstacleCells.1, %127 ]
+  %maxRho.0129 = phi double [ -1.000000e+30, %0 ], [ %maxRho.1, %127 ]
+  %minRho.0128 = phi double [ 1.000000e+30, %0 ], [ %minRho.1, %127 ]
+  %nAccelCells.0127 = phi i32 [ 0, %0 ], [ %nAccelCells.2, %127 ]
+  %maxU2.0126 = phi double [ -1.000000e+30, %0 ], [ %maxU2.1, %127 ]
+  %minU2.0125 = phi double [ 1.000000e+30, %0 ], [ %minU2.2, %127 ]
+  %nFluidCells.0124 = phi i32 [ 0, %0 ], [ %nFluidCells.2, %127 ]
+  %2 = getelementptr inbounds double, double* %grid, i64 %indvars.iv, 
+  %3 = load double, double* %2, align 8, 
+  %4 = or i64 %indvars.iv, 1, 
+  %5 = getelementptr inbounds double, double* %grid, i64 %4, 
+  %6 = load double, double* %5, align 8, 
+  %7 = fadd double %3, %6, 
+... (TRIMMED)
+; label:85                                      ; preds = %1
+  %86 = add nsw i32 %nObstacleCells.0130, 1, 
+  br label %127, 
+<br/>; label:87                                      ; preds = %1
+  %88 = lshr i32 %82, 1, 
+  %.lobit = and i32 %88, 1, 
+  %89 = xor i32 %.lobit, 1, 
+  %nFluidCells.1 = add nsw i32 %89, %nFluidCells.0124, 
+  %nAccelCells.1 = add nsw i32 %.lobit, %nAccelCells.0127, 
+  %90 = fsub double %14, %18, 
+  %91 = fadd double %90, %30, 
+  %92 = fsub double %91, %34, 
+  %93 = fadd double %92, %38, 
+  %94 = fsub double %93, %42, 
+  %95 = fadd double %94, %62, 
+  %96 = fadd double %95, %66, 
+  %97 = fsub double %96, %70, 
+  %98 = fsub double %97, %74, 
+  %99 = fsub double %6, %10, 
+  %100 = fadd double %99, %30, 
+  %101 = fadd double %100, %34, 
+  %102 = fsub double %101, %38, 
+  %103 = fsub double %102, %42, 
+  %104 = fadd double %1
+... (TRIMMED)
+; label:126                                     ; preds = %87
+  br label %127, 
+<br/>; label:127                                     ; preds = %85, %126, %87
+  %nFluidCells.2 = phi i32 [ %nFluidCells.0124, %85 ], [ %nFluidCells.1, %126 ], [ %nFluidCells.1, %87 ]
+  %minU2.2 = phi double [ %minU2.0125, %85 ], [ %minU2.1, %126 ], [ %minU2.1, %87 ]
+  %maxU2.1 = phi double [ %maxU2.0126, %85 ], [ %123, %126 ], [ %maxU2.0126, %87 ]
+  %nAccelCells.2 = phi i32 [ %nAccelCells.0127, %85 ], [ %nAccelCells.1, %126 ], [ %nAccelCells.1, %87 ]
+  %nObstacleCells.1 = phi i32 [ %86, %85 ], [ %nObstacleCells.0130, %126 ], [ %nObstacleCells.0130, %87 ]
+  %indvars.iv.next = add nuw nsw i64 %indvars.iv, 20, 
+  %128 = icmp slt i64 %indvars.iv.next, 26000000, 
+  br i1 %128, label %1, label %129, 

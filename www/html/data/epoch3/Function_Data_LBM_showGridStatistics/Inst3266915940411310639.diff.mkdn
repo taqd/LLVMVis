@@ -1,0 +1,10 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4da3260) <br /><pre class="prettyprint lang-llvm ">  %125 = fcmp ogt double %123, %maxU2.0126, </pre>
+< Operand # 1 (0x4d664d0) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f65c70) <br /><pre class="prettyprint lang-llvm ">  %125 = fcmp ogt double %123, %maxU2.0126, </pre>
+> Operand # 1 (0x4f27d00) <br /><pre class="prettyprint lang-llvm ">
+16c16
+< Operand # 2 (0x4d66480) <br /><pre class="prettyprint lang-llvm ">
+---
+> Operand # 2 (0x4f27cb0) <br /><pre class="prettyprint lang-llvm ">

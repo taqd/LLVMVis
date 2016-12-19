@@ -1,0 +1,28 @@
+;; Line: 40, Column: 7
+  br i1 %6, label %9, label %12, 
+</pre>
+<br/>Operand # 0 (0x4fbfb40) <br /><pre class="prettyprint lang-llvm ">  %6 = icmp eq i32 %5, 1, </pre>
+Operand # 1 (0x4f542f0) <br /><pre class="prettyprint lang-llvm ">
+; label:12                                      ; preds = %9, %8
+  %13 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %14 = getelementptr inbounds [26000000 x double], [26000000 x double]* %13, i64 0, i64 0, 
+  %15 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %16 = getelementptr inbounds [26000000 x double], [26000000 x double]* %15, i64 0, i64 0, 
+  tail call void @LBM_performStreamCollide(double* %14, double* %16), 
+  tail call void @LBM_swapGrids([26000000 x double]** nonnull @srcGrid, [26000000 x double]** nonnull @dstGrid), 
+  %17 = and i32 %t.04, 63, 
+  %18 = icmp eq i32 %17, 0, 
+  br i1 %18, label %19, label %23, 
+</pre>
+Operand # 2 (0x4f542a0) <br /><pre class="prettyprint lang-llvm ">
+; label:9                                       ; preds = %8
+  %10 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %11 = getelementptr inbounds [26000000 x double], [26000000 x double]* %10, i64 0, i64 0, 
+  tail call void @LBM_handleInOutFlow(double* %11), 
+  br label %12, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:8                                       ; preds = %23, %.lr.ph
+  %t.04 = phi i32 [ 1, %.lr.ph ], [ %24, %23 ]
+  br i1 %6, label %9, label %12, 
+</pre>

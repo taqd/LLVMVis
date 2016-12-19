@@ -1,0 +1,7 @@
+
+; Function Attrs: nounwind uwtable
+define internal fastcc void @storeValue(%struct._IO_FILE* nocapture %file, float* nocapture %v) unnamed_addr #0 {
+  %1 = bitcast float* %v to i8*, 
+  %2 = tail call i64 @fwrite(i8* %1, i64 4, i64 1, %struct._IO_FILE* %file), 
+  ret void, 
+}

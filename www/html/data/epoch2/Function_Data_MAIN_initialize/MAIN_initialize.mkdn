@@ -1,0 +1,10 @@
+
+; Function Attrs: nounwind uwtable
+define void @MAIN_initialize(%struct.MAIN_Param* nocapture readonly %param) #0 {
+  %1 = tail call noalias i8* @malloc(i64 214400000) #7, 
+  store i8* %1, i8** bitcast ([26000000 x double]** @srcGrid to i8**), align 8, 
+  %2 = icmp eq i8* %1, null, 
+  br i1 %2, label %3, label %LBM_allocateGrid.exit, 
+<br/>; label:3                                       ; preds = %0
+  %4 = tail call i32 (i8*, ...) @printf(i8* nonnull gete
+... (TRIMMED)

@@ -1,0 +1,13 @@
+;; Line: 107, Column: 4
+  %45 = call i32 @fgetc(%struct._IO_FILE* %44), 
+</pre>
+<br/>Operand # 0 (0x5cbffe8) <br /><pre class="prettyprint lang-llvm ">  %44 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, </pre>
+Operand # 1 (0x5c90898) <br /><pre class="prettyprint lang-llvm ">
+declare i32 @fgetc(%struct._IO_FILE*) #3
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:43                                      ; preds = %13
+  %44 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %45 = call i32 @fgetc(%struct._IO_FILE* %44), 
+  br label %46, 
+</pre>

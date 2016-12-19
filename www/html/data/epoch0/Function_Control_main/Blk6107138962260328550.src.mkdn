@@ -1,0 +1,15 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk6107138962260328550 ():
+L44,C30:  %19 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !231
+L44,C29:  %20 = getelementptr inbounds [26000000 x double], [26000000 x double]* %19, i32 0, i32 0, !dbg !232
+L44,C40:  %21 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !233
+L44,C39:  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i32 0, i32 0, !dbg !234
+L44,C3:  call void @LBM_performStreamCollide(double* %20, double* %22), !dbg !235
+L45,C3:  call void @LBM_swapGrids([26000000 x double]** @srcGrid, [26000000 x double]** @dstGrid), !dbg !236
+L47,C8:  %23 = load i32, i32* %t, align 4, !dbg !237
+L47,C10:  %24 = and i32 %23, 63, !dbg !239
+L47,C16:  %25 = icmp eq i32 %24, 0, !dbg !240
+L47,C7:  br i1 %25, label %26, label %31, !dbg !241
+

@@ -1,0 +1,25 @@
+;; Line: 103, Column: 3
+  br i1 %exitcond16, label %20, label %.preheader, 
+</pre>
+<br/>Operand # 0 (0x4f4d7b0) <br /><pre class="prettyprint lang-llvm ">  %exitcond16 = icmp eq i64 %indvars.iv.next15, 100, </pre>
+Operand # 1 (0x4f4b9a0) <br /><pre class="prettyprint lang-llvm ">
+.preheader:                                       ; preds = %19, %.preheader10
+  %indvars.iv14 = phi i64 [ 0, %.preheader10 ], [ %indvars.iv.next15, %19 ]
+  %3 = tail call i32 @fgetc(%struct._IO_FILE* %1), 
+  %4 = mul nuw nsw i64 %indvars.iv14, 100, 
+  %5 = add nuw nsw i64 %4, %2, 
+  br label %6, 
+</pre>
+Operand # 2 (0x4f4bb30) <br /><pre class="prettyprint lang-llvm ">
+; label:20                                      ; preds = %19
+  %21 = tail call i32 @fgetc(%struct._IO_FILE* %1), 
+  %indvars.iv.next18 = add nuw nsw i64 %indvars.iv17, 1, 
+  %exitcond19 = icmp eq i64 %indvars.iv.next18, 130, 
+  br i1 %exitcond19, label %22, label %.preheader10, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:19                                      ; preds = %17
+  %indvars.iv.next15 = add nuw nsw i64 %indvars.iv14, 1, 
+  %exitcond16 = icmp eq i64 %indvars.iv.next15, 100, 
+  br i1 %exitcond16, label %20, label %.preheader, 
+</pre>

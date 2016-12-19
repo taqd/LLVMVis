@@ -1,0 +1,5 @@
+File: main.c, Lines: 63,66, Cols: 16,33,46,65,
+  %fileStat = alloca %struct.stat, align 8
+  %nArgs.off = add i32 %nArgs, -5, 
+  %1 = icmp ugt i32 %nArgs.off, 1, 
+  br i1 %1, label %2, label %3, 

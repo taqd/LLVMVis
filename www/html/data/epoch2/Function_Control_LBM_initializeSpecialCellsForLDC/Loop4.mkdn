@@ -1,0 +1,70 @@
+
+.preheader42:                                     ; preds = %41, %0
+  %indvars.iv51 = phi i64 [ -2, %0 ], [ %indvars.iv.next52, %41 ]
+  %1 = trunc i64 %indvars.iv51 to i32, 
+  %2 = icmp eq i32 %1, 0, 
+  %3 = icmp eq i32 %1, 129, 
+  %4 = mul nsw i64 %indvars.iv51, 10000, 
+  %5 = icmp eq i32 %1, 1, 
+  %6 = icmp eq i32 %1, 128, 
+  %or.cond11 = or i1 %5, %6, 
+  br label %.preheader, 
+<br/>.preheader:                                       ; preds = %40, %.preheader42
+  %indvars.iv47 = phi i64 [ 0, %.preheader42 ], [ %indvars.iv.next48, %40 ]
+  %7 = icmp eq i64 %indvars.iv47, 0, 
+  %8 = icmp eq i64 %indvars.iv47, 99, 
+  %9 = mul nuw nsw i64 %indvars.iv47, 100, 
+  %10 = add nsw i64 %9, %4, 
+  %11 = add i64 %indvars.iv47, 4294967294, 
+  %12 = trunc i64 %11 to i32, 
+  %13 = icmp ult i32 %12, 96, 
+  br label %14, 
+<br/>; label:14                                      ; preds = %39, %.preheader
+  %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %39 ]
+  %15 = icmp eq i64 %indvars.iv, 0, 
+  %16 = icmp eq i64 %indvars.iv, 99, 
+  %or.cond = or i1 %15, %16, 
+  %or.cond3 = or i1 %7, %or.cond, 
+  %or.cond5 = or i1 %8, %or.cond3, 
+  %or.cond7 = or i1 %2, %or.cond5, 
+  %or.cond9 = or i1 %3, %or.cond7, 
+  br i1 %or.cond9, label %17, label %25, 
+<br/>; label:25                                      ; preds = %14
+  %26 = add i64 %indvars.iv, 4294967294, 
+  %27 = trunc i64 %26 to i32, 
+  %28 = icmp ult i32 %27, 96, 
+  %29 = and i1 %or.cond11, %28, 
+  %30 = and i1 %13, %29, 
+  br i1 %30, label %31, label %39, 
+<br/>; label:31                                      ; preds = %25
+  %32 = add nsw i64 %10, %indvars.iv, 
+  %33 = mul nsw i64 %32, 20, 
+  %34 = add nsw i64 %33, 19, 
+  %35 = getelementptr inbounds double, double* %grid, i64 %34, 
+  %36 = bitcast double* %35 to i32*, 
+  %37 = load i32, i32* %36, align 4, 
+  %38 = or i32 %37, 2, 
+  store i32 %38, i32* %36, align 4, 
+  br label %39, 
+<br/>; label:17                                      ; preds = %14
+  %18 = add nsw i64 %10, %indvars.iv, 
+  %19 = mul nsw i64 %18, 20, 
+  %20 = add nsw i64 %19, 19, 
+  %21 = getelementptr inbounds double, double* %grid, i64 %20, 
+  %22 = bitcast double* %21 to i32*, 
+  %23 = load i32, i32* %22, align 4, 
+  %24 = or i32 %23, 1, 
+  store i32 %24, i32* %22, align 4, 
+  br label %39, 
+<br/>; label:39                                      ; preds = %17, %25, %31
+  %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1, 
+  %exitcond = icmp eq i64 %indvars.iv.next, 100, 
+  br i1 %exitcond, label %40, label %14, 
+<br/>; label:40                                      ; preds = %39
+  %indvars.iv.next48 = add nuw nsw i64 %indvars.iv47, 1, 
+  %exitcond50 = icmp eq i64 %indvars.iv.next48, 100, 
+  br i1 %exitcond50, label %41, label %.preheader, 
+<br/>; label:41                                      ; preds = %40
+  %indvars.iv.next52 = add nsw i64 %indvars.iv51, 1, 
+  %exitcond53 = icmp eq i64 %indvars.iv.next52, 132, 
+  br i1 %exitcond53, label %42, label %.preheader42, 

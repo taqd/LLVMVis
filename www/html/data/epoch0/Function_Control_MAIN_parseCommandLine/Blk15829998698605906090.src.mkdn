@@ -1,0 +1,8 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk15829998698605906090 ():
+L67,C3:  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([109 x i8], [109 x i8]* @.str.1.1, i32 0, i32 0)), !dbg !249
+L68,C3:  call void @exit(i32 1) #6, !dbg !251
+L68,C3:  unreachable, !dbg !251
+

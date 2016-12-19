@@ -1,0 +1,29 @@
+;; Line: 39, Column: 2
+  br i1 %16, label %._crit_edge, label %.lr.ph, 
+</pre>
+<br/>Operand # 0 (0x4f80430) <br /><pre class="prettyprint lang-llvm ">  %16 = icmp slt i32 %2, 1, </pre>
+Operand # 1 (0x4f7e490) <br /><pre class="prettyprint lang-llvm ">
+.lr.ph:                                           ; preds = %0
+  %18 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, 
+  %19 = load i32, i32* %18, align 4, 
+  %20 = icmp eq i32 %19, 1, 
+  br i1 %20, label %.lr.ph.split.us.preheader, label %.lr.ph.split.preheader, 
+</pre>
+Operand # 2 (0x4f7e800) <br /><pre class="prettyprint lang-llvm ">
+._crit_edge:                                      ; preds = %._crit_edge.loopexit8, %._crit_edge.loopexit, %0
+  %53 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %54 = getelementptr inbounds [26000000 x double], [26000000 x double]* %53, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %54) #7, 
+  switch i32 %17, label %MAIN_finalize.exit [
+    i32 1, label %.thread
+    i32 2, label %57
+  ], 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %param = alloca %struct.MAIN_Param, align 8
+  call void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* nonnull %param), 
+  %1 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, 
+  %2 = load i32, i32* %1, align 8, 
+  %3 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, 
+  %4 = load i8*, i8** %3, align 8, 
+... (TRIMMED)</pre>

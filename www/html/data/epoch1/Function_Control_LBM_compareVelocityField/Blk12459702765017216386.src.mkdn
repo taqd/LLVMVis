@@ -1,0 +1,15 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk12459702765017216386 ():
+L614,C41:  tail call void @llvm.dbg.value(metadata double* %grid, i64 0, metadata !1569, metadata !199), !dbg !1570
+L614,C59:  tail call void @llvm.dbg.value(metadata i8* %filename, i64 0, metadata !1571, metadata !199), !dbg !1572
+L615,C40:  tail call void @llvm.dbg.value(metadata i32 %binary, i64 0, metadata !1573, metadata !199), !dbg !1574
+L620,C26:  tail call void @llvm.dbg.value(metadata float 0xC6293E5940000000, i64 0, metadata !1575, metadata !199), !dbg !1576
+L622,C33:  %1 = icmp ne i32 %binary, 0, !dbg !207
+L622,C33:  %2 = select i1 %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.6, i64 0, i64 0), !dbg !207
+L622,C15:  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), !dbg !208
+L622,C8:  tail call void @llvm.dbg.value(metadata %struct._IO_FILE* %3, i64 0, metadata !1579, metadata !199), !dbg !1580
+L616,C12:  tail call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !1581, metadata !199), !dbg !1582
+L624,C2:  br label %.preheader214, !dbg !213
+

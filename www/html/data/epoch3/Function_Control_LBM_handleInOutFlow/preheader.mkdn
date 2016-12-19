@@ -1,0 +1,18 @@
+File: lbm.c, Lines: 275,276-278,353,354-356,357-359,360-362,363-365,366-369,370-372,373-375,376-378,381,382-384,385-387,388-390,391-393,394-396,399,400-402,403-405,406-408,411,412-417,418-420,422,424,425-427,428-432,434,436,437-440,442, Cols: 2,3-7,9,10-12,14,17,19,21,23,24-29,33,39,42,45,49,53,54-56,64,71,
+.preheader:                                       ; preds = %.preheader.preheader, %.preheader
+  %indvars.iv = phi i64 [ %indvars.iv.next, %.preheader ], [ 25800000, %.preheader.preheader ]
+  %255 = add nsw i64 %indvars.iv, -200000, 
+  %256 = getelementptr inbounds double, double* %srcGrid, i64 %255, 
+  %257 = load double, double* %256, align 8, 
+  %258 = add nsw i64 %indvars.iv, -199999, 
+  %259 = getelementptr inbounds double, double* %srcGrid, i64 %258, 
+  %260 = load double, double* %259, align 8, 
+  %261 = fadd double %257, %260, 
+  %262 = add nsw i64 %indvars.iv, -199998, 
+  %263 = getelementptr inbounds double, double* %srcGrid, i64 %262, 
+  %264 = load double, double* %263, align 8, 
+  %265 = fadd double %261, %264, 
+  %266 = add nsw i64 %indvars.iv, -199997, 
+  %267 = getelementptr inbounds double, double* %srcGrid, i64 %266, 
+  %268 = load double, double* %267
+... (TRIMMED)

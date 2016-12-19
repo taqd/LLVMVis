@@ -1,0 +1,18 @@
+;; Line: 96, Column: 6
+  %78 = call i32 @stat(i8* %77, %struct.stat* %fileStat) #8, 
+</pre>
+<br/>Operand # 0 (0x5db5148) <br /><pre class="prettyprint lang-llvm ">  %77 = load i8*, i8** %76, align 8, </pre>
+Operand # 1 (0x5db1708) <br /><pre class="prettyprint lang-llvm ">  %fileStat = alloca %struct.stat, align 8</pre>
+Operand # 2 (0x5c8a348) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind
+declare i32 @stat(i8*, %struct.stat*) #2
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:74                                      ; preds = %69
+  %75 = load %struct.MAIN_Param*, %struct.MAIN_Param** %3, align 8, 
+  %76 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %75, i32 0, i32 1, 
+  %77 = load i8*, i8** %76, align 8, 
+  %78 = call i32 @stat(i8* %77, %struct.stat* %fileStat) #8, 
+  %79 = icmp ne i32 %78, 0, 
+  br i1 %79, label %80, label %85, 
+</pre>

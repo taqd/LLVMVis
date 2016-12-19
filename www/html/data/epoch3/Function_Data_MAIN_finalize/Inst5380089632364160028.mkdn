@@ -1,0 +1,17 @@
+;; Line: 47, Column: 2
+  tail call void @free(i8* %22) #7, 
+</pre>
+<br/>Operand # 0 (0x4f99e88) <br /><pre class="prettyprint lang-llvm ">  %22 = bitcast double* %21 to i8*, </pre>
+Operand # 1 (0x4edffb8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind
+declare void @free(i8* nocapture) #2
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:19                                      ; preds = %14, %11
+  %20 = load double*, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, 
+  %21 = getelementptr inbounds double, double* %20, i64 -400000, 
+  %22 = bitcast double* %21 to i8*, 
+  tail call void @free(i8* %22) #7, 
+  store double* null, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, 
+  %23 = load double*, double** bi
+... (TRIMMED)</pre>

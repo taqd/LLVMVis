@@ -1,0 +1,20 @@
+1,8c1,10
+< File: lbm.c, Lines: 159,161,162 Cols: 4,6,11,21,
+< .preheader:                                       ; preds = %18, %.preheader28
+<   %indvars.iv32 = phi i64 [ 0, %.preheader28 ], [ %indvars.iv.next33, %18 ]
+<   %2 = icmp eq i64 %indvars.iv32, 0, 
+<   %3 = icmp eq i64 %indvars.iv32, 99, 
+<   %4 = mul nuw nsw i64 %indvars.iv32, 100, 
+<   %5 = add nsw i64 %4, %1, 
+<   br label %6, 
+---
+> File: lbm.c, Lines: 160,162, Cols: 6,16,
+> .preheader:                                       ; preds = %.us-lcssa.us, %.preheader28
+>   %indvars.iv41 = phi i64 [ 0, %.preheader28 ], [ %indvars.iv.next42, %.us-lcssa.us ]
+>   %2 = mul nuw nsw i64 %indvars.iv41, 100, 
+>   %3 = add nsw i64 %2, %1, 
+>   %4 = trunc i64 %indvars.iv41 to i32, 
+>   switch i32 %4, label %.preheader.split.split.preheader [
+>     i32 99, label %.preheader.split.us.preheader
+>     i32 0, label %.preheader.split.split.us.preheader
+>   ], 

@@ -1,0 +1,26 @@
+;; Line: 154, Column: 3
+  tail call void @LBM_compareVelocityField(double* %8, i8* %10, i32 -1), 
+</pre>
+<br/>Operand # 0 (0x4fc88f8) <br /><pre class="prettyprint lang-llvm ">  %8 = getelementptr inbounds [26000000 x double], [26000000 x double]* %7, i64 0, i64 0, </pre>
+Operand # 1 (0x4fc8a68) <br /><pre class="prettyprint lang-llvm ">  %10 = load i8*, i8** %9, align 8, </pre>
+Operand # 2 (0x4fc8150) <br /><pre class="prettyprint lang-llvm ">i32 -1</pre>
+Operand # 3 (0x4f19208) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define void @LBM_compareVelocityField(double* nocapture readonly %grid, i8* nocapture readonly %filename, i32 %binary) #0 {
+  %fileUx = alloca float, align 4
+  %fileUy = alloca float, align 4
+  %fileUz = alloca float, align 4
+  %1 = icmp ne i32 %binary, 0, 
+  %2 = select i1 %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.6, i64 0, i64 0), 
+  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), 
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:6                                       ; preds = %0
+  %7 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %8 = getelementptr inbounds [26000000 x double], [26000000 x double]* %7, i64 0, i64 0, 
+  %9 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, 
+  %10 = load i8*, i8** %9, align 8, 
+  tail call void @LBM_compareVelocityField(double* %8, i8* %10, i32 -1), 
+  %.pr = load i32, i32* %3, align 8, 
+  br label %11, 
+</pre>

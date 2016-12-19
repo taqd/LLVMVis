@@ -1,0 +1,13 @@
+;; Line: 523, Column: 10
+  store i32 0, i32* %i, align 4, 
+</pre>
+<br/>Operand # 0 (0x5c9cec0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Operand # 1 (0x5ccc908) <br /><pre class="prettyprint lang-llvm ">  %i = alloca i32, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:7                                       ; preds = %0
+  %8 = load float*, float** %2, align 8, 
+  %9 = bitcast float* %8 to i8*, 
+  store i8* %9, i8** %vPtr, align 8, 
+  store i32 0, i32* %i, align 4, 
+  br label %10, 
+</pre>

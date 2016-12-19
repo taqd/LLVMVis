@@ -1,0 +1,11 @@
+;; Line: 479, Column: 16
+  %178 = load i32, i32* %nAccelCells, align 4, 
+</pre>
+<br/>Operand # 0 (0x5d5ddd8) <br /><pre class="prettyprint lang-llvm ">  %nAccelCells = alloca i32, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:177                                     ; preds = %166
+  %178 = load i32, i32* %nAccelCells, align 4, 
+  %179 = add nsw i32 %178, 1, 
+  store i32 %179, i32* %nAccelCells, align 4, 
+  br label %183, 
+</pre>

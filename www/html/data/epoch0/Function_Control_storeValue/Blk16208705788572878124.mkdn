@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 523, Cols: 3,15,17,
+; label:10                                      ; preds = %25, %7
+  %11 = load i32, i32* %i, align 4, 
+  %12 = sext i32 %11 to i64, 
+  %13 = icmp ult i64 %12, 4, 
+  br i1 %13, label %14, label %28, 

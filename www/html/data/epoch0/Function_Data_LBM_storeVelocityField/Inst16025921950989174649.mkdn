@@ -1,0 +1,13 @@
+;; Line: 609, Column: 2
+  %794 = call i32 @fclose(%struct._IO_FILE* %793), 
+</pre>
+<br/>Operand # 0 (0x5d88ca8) <br /><pre class="prettyprint lang-llvm ">  %793 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, </pre>
+Operand # 1 (0x5c90988) <br /><pre class="prettyprint lang-llvm ">
+declare i32 @fclose(%struct._IO_FILE*) #3
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:792                                     ; preds = %9
+  %793 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %794 = call i32 @fclose(%struct._IO_FILE* %793), 
+  ret void, 
+</pre>

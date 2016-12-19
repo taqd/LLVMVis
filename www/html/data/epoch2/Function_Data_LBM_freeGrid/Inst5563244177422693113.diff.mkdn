@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f40800) <br /><pre class="prettyprint lang-llvm ">double* null</pre>
+< Operand # 1 (0x4f3f720) <br /><pre class="prettyprint lang-llvm ">double** %ptr</pre>
+---
+> <br/>Operand # 0 (0x4d301c0) <br /><pre class="prettyprint lang-llvm ">double* null</pre>
+> Operand # 1 (0x4d34c50) <br /><pre class="prettyprint lang-llvm ">double** %ptr</pre>

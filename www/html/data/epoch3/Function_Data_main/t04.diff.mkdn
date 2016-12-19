@@ -1,0 +1,26 @@
+2c2
+<   %t.04 = phi i32 [ 1, %.lr.ph ], [ %38, %37 ]
+---
+>   %t.04 = phi i32 [ %51, %50 ], [ 1, %.lr.ph.split.preheader ]
+4,5c4,5
+< <br/>Operand # 0 (0x4d24bb0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+< Operand # 1 (0x4dbedd0) <br /><pre class="prettyprint lang-llvm ">  %38 = add nuw nsw i32 %t.04, 1, </pre>
+---
+> <br/>Operand # 0 (0x4f82800) <br /><pre class="prettyprint lang-llvm ">  %51 = add nuw nsw i32 %t.04, 1, </pre>
+> Operand # 1 (0x4ee18a0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+7,10c7,16
+< ; label:20                                      ; preds = %37, %.lr.ph
+<   %t.04 = phi i32 [ 1, %.lr.ph ], [ %38, %37 ]
+<   br i1 %19, label %21, label %24, 
+< </pre>
+---
+> .lr.ph.split:                                     ; preds = %.lr.ph.split.preheader, %50
+>   %t.04 = phi i32 [ %51, %50 ], [ 1, %.lr.ph.split.preheader ]
+>   %38 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+>   %39 = getelementptr inbounds [26000000 x double], [26000000 x double]* %38, i64 0, i64 0, 
+>   %40 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+>   %41 = getelementptr inbounds [26000000 x double], [26000000 x double]* %40, i64 0, i64 0, 
+>   tail call void @LBM_performStreamCollide(double* %39, double* %41), 
+>   %42 = load i64, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, 
+>   %43 = load i64, i64* bitcast ([26000000 x double]** @
+> ... (TRIMMED)</pre>

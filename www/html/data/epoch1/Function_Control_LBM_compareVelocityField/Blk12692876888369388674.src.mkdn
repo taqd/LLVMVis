@@ -1,0 +1,11 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk12692876888369388674 ():
+L657,C6:  call fastcc void @loadValue(%struct._IO_FILE* %3, float* nonnull %fileUx), !dbg !307
+L618,C27:  call void @llvm.dbg.value(metadata float* %fileUy, i64 0, metadata !1679, metadata !1542), !dbg !1680
+L658,C6:  call fastcc void @loadValue(%struct._IO_FILE* %3, float* nonnull %fileUy), !dbg !312
+L618,C35:  call void @llvm.dbg.value(metadata float* %fileUz, i64 0, metadata !1682, metadata !1542), !dbg !1683
+L659,C6:  call fastcc void @loadValue(%struct._IO_FILE* %3, float* nonnull %fileUz), !dbg !315
+L660,C5:  br label %117, !dbg !316
+

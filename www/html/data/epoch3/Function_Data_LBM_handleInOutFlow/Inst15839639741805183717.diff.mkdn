@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4d836a8) <br /><pre class="prettyprint lang-llvm ">  %214 = insertelement <2 x double> undef, double %211, i32 0, </pre>
+< Operand # 1 (0x4d834a0) <br /><pre class="prettyprint lang-llvm ">  %211 = fmul double %153, 0x3F9C71C71C71C71C, </pre>
+< Operand # 2 (0x4d24bb0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+---
+> <br/>Operand # 0 (0x4f460a8) <br /><pre class="prettyprint lang-llvm ">  %214 = insertelement <2 x double> undef, double %211, i32 0, </pre>
+> Operand # 1 (0x4f45ea0) <br /><pre class="prettyprint lang-llvm ">  %211 = fmul double %153, 0x3F9C71C71C71C71C, </pre>
+> Operand # 2 (0x4ee18a0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>

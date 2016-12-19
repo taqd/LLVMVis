@@ -1,0 +1,9 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk16998333456792132487 ():
+L84,C16:  %32 = getelementptr inbounds %struct.stat, %struct.stat* %fileStat, i64 0, i32 8, !dbg !277
+L84,C16:  %33 = load i64, i64* %32, align 8, !dbg !277
+L84,C24:  %34 = icmp eq i64 %33, 1313130, !dbg !279
+L84,C7:  br i1 %34, label %41, label %35, !dbg !280
+

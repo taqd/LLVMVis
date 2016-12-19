@@ -1,0 +1,240 @@
+{
+	"title" : "stdin",
+	"graph" : {
+		"linkDistance" : 100,
+		"charge" : -600,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 32,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"i32" : {
+			"short" : "i32",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		},
+		"void" : {
+			"short" : "void",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "main" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkWidth",
+			"target" : "MAIN_parseCommandLine",
+			"width" : 1.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkColor",
+			"target" : "MAIN_parseCommandLine",
+			"color" : "blue"
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkWidth",
+			"target" : "MAIN_initialize",
+			"width" : 1.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkColor",
+			"target" : "MAIN_initialize",
+			"color" : "blue"
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkWidth",
+			"target" : "LBM_handleInOutFlow",
+			"width" : 1.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkColor",
+			"target" : "LBM_handleInOutFlow",
+			"color" : "blue"
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkWidth",
+			"target" : "LBM_performStreamCollide",
+			"width" : 2.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkColor",
+			"target" : "LBM_performStreamCollide",
+			"color" : "blue"
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkWidth",
+			"target" : "LBM_showGridStatistics",
+			"width" : 3.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkColor",
+			"target" : "LBM_showGridStatistics",
+			"color" : "blue"
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkWidth",
+			"target" : "LBM_performStreamCollide",
+			"width" : 2.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkColor",
+			"target" : "LBM_performStreamCollide",
+			"color" : "blue"
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkWidth",
+			"target" : "LBM_showGridStatistics",
+			"width" : 3.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkColor",
+			"target" : "LBM_showGridStatistics",
+			"color" : "blue"
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkWidth",
+			"target" : "LBM_showGridStatistics",
+			"width" : 3.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkColor",
+			"target" : "LBM_showGridStatistics",
+			"color" : "blue"
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkWidth",
+			"target" : "LBM_compareVelocityField",
+			"width" : 1.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkColor",
+			"target" : "LBM_compareVelocityField",
+			"color" : "blue"
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkWidth",
+			"target" : "LBM_storeVelocityField",
+			"width" : 1.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "linkColor",
+			"target" : "LBM_storeVelocityField",
+			"color" : "blue"
+		}, {
+			"has" : { "name" : "MAIN_initialize" },
+			"type" : "linkWidth",
+			"target" : "LBM_initializeGrid",
+			"width" : 2.000000
+		}, {
+			"has" : { "name" : "MAIN_initialize" },
+			"type" : "linkWidth",
+			"target" : "LBM_initializeGrid",
+			"width" : 2.000000
+		}, {
+			"has" : { "name" : "MAIN_initialize" },
+			"type" : "linkWidth",
+			"target" : "LBM_initializeSpecialCellsForLDC",
+			"width" : 2.000000
+		}, {
+			"has" : { "name" : "MAIN_initialize" },
+			"type" : "linkWidth",
+			"target" : "LBM_initializeSpecialCellsForLDC",
+			"width" : 2.000000
+		}, {
+			"has" : { "name" : "MAIN_initialize" },
+			"type" : "linkWidth",
+			"target" : "LBM_showGridStatistics",
+			"width" : 1.000000
+		}, {
+			"has" : { "name" : "MAIN_finalize" },
+			"type" : "linkWidth",
+			"target" : "LBM_showGridStatistics",
+			"width" : 1.000000
+		}, {
+			"has" : { "name" : "MAIN_finalize" },
+			"type" : "linkWidth",
+			"target" : "LBM_compareVelocityField",
+			"width" : 1.000000
+		}, {
+			"has" : { "name" : "MAIN_finalize" },
+			"type" : "linkWidth",
+			"target" : "LBM_storeVelocityField",
+			"width" : 1.000000
+		}	]
+
+}

@@ -1,0 +1,24 @@
+;; Line: 629, Column: 47
+  %30 = load double, double* %29, align 8, 
+</pre>
+<br/>Operand # 0 (0x4fb52e0) <br /><pre class="prettyprint lang-llvm ">  %29 = getelementptr inbounds double, double* %grid, i64 %28, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:7                                       ; preds = %117, %.preheader
+  %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %117 ]
+  %maxDiff2.2215 = phi float [ %maxDiff2.1218, %.preheader ], [ %maxDiff2.3, %117 ]
+  %8 = add nuw nsw i64 %6, %indvars.iv, 
+  %9 = mul nuw nsw i64 %8, 20, 
+  %10 = getelementptr inbounds double, double* %grid, i64 %9, 
+  %11 = load double, double* %10, align 8, 
+  %12 = or i64 %9, 1, 
+  %13 = getelementptr inbounds double, double* %grid, i64 %12, 
+  %14 = load double, double* %13, align 8, 
+  %15 = fadd double %11, %14, 
+  %16 = or i64 %9, 2, 
+  %17 = getelementptr inbounds double, double* %grid, i64 %16, 
+  %18 = load double, double* %17, align 8, 
+  %19 = fadd double %15, %18, 
+  %20 = or i64 %9, 3, 
+  %21 = getelementptr inbounds double, double* %grid, i64 %20, 
+  %22 = load double, double* %21, align 8, 
+... (TRIMMED)</pre>

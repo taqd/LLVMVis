@@ -1,0 +1,6 @@
+File: main.c, Lines: 145,146 Cols: 1,2-26,27
+; label:26                                      ; preds = %23, %20
+  %27 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %28 = getelementptr inbounds [26000000 x double], [26000000 x double]* %27, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %28), 
+  ret void, 

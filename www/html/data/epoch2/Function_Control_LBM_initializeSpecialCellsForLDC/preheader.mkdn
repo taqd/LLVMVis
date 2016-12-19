@@ -1,0 +1,11 @@
+File: lbm.c, Lines: 128,130,132,135, Cols: 4,6,11,18,21,
+.preheader:                                       ; preds = %40, %.preheader42
+  %indvars.iv47 = phi i64 [ 0, %.preheader42 ], [ %indvars.iv.next48, %40 ]
+  %7 = icmp eq i64 %indvars.iv47, 0, 
+  %8 = icmp eq i64 %indvars.iv47, 99, 
+  %9 = mul nuw nsw i64 %indvars.iv47, 100, 
+  %10 = add nsw i64 %9, %4, 
+  %11 = add i64 %indvars.iv47, 4294967294, 
+  %12 = trunc i64 %11 to i32, 
+  %13 = icmp ult i32 %12, 96, 
+  br label %14, 

@@ -1,0 +1,4 @@
+4c4
+< <br/>Operand # 0 (0x4da5a48) <br /><pre class="prettyprint lang-llvm ">  %uy = alloca float, align 4</pre>
+---
+> <br/>Operand # 0 (0x4f121a8) <br /><pre class="prettyprint lang-llvm ">  %uy = alloca float, align 4</pre>

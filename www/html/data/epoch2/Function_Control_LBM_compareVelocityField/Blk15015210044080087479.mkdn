@@ -1,0 +1,12 @@
+File: lbm.c, Lines: 618,619-626,670,671-673,674 Cols: 4,9,11,14,15-19,21,24,26,27-29,31,35,36
+; label:123                                     ; preds = %121, %117
+  %124 = load float, float* %fileUx, align 4, 
+  %125 = fpext float %124 to double, 
+  %126 = fsub double %114, %125, 
+  %127 = fptrunc double %126 to float, 
+  %128 = load float, float* %fileUy, align 4, 
+  %129 = fpext float %128 to double, 
+  %130 = fsub double %115, %129, 
+  %131 = fptrunc double %130 to float, 
+  %132 = load float, float* %fileUz, align 4, 
+... (TRIMMED)

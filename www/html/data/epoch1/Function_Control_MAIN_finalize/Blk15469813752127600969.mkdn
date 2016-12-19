@@ -1,0 +1,5 @@
+File: main.c, Lines: 158,159 Cols: 1,2
+; label:19                                      ; preds = %14, %11
+  tail call void @LBM_freeGrid(double** nonnull bitcast ([26000000 x double]** @srcGrid to double**)), 
+  tail call void @LBM_freeGrid(double** nonnull bitcast ([26000000 x double]** @dstGrid to double**)), 
+  ret void, 

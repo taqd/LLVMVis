@@ -1,0 +1,18 @@
+;; Line: 118, Column: 18
+  %13 = load i8*, i8** %12, align 8, 
+</pre>
+<br/>Operand # 0 (0x4dc3bf8) <br /><pre class="prettyprint lang-llvm ">  %12 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 4, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, 
+  %2 = load i32, i32* %1, align 8, 
+  %3 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, 
+  %4 = load i8*, i8** %3, align 8, 
+  %5 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 2, 
+  %6 = bitcast i32* %5 to i64*, 
+  %7 = load i64, i64* %6, align 8, 
+  %8 = and i64 %7, 4294967295, 
+  %9 = getelementptr inbounds [3 x [32 x i8]], [3 x [32 x i8]]* @MAIN_printInfo.actionString, i64 0, i64 %8, i64 0, 
+  %10 = lshr i64 %7, 32, 
+  %11 = getelementptr inbounds [3 x [32 x i8]], [3 x [32 x i8]]* @MAIN_printInfo.simTypeString, i64 0, i64 %10, i64 0, 
+  %12 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Par
+... (TRIMMED)</pre>

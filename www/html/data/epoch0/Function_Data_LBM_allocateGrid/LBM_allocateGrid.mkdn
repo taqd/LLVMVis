@@ -1,0 +1,18 @@
+
+; Function Attrs: nounwind uwtable
+define void @LBM_allocateGrid(double** %ptr) #0 {
+  %1 = alloca double**, align 8
+  %margin = alloca i64, align 8
+  %size = alloca i64, align 8
+  store double** %ptr, double*** %1, align 8
+  store i64 400000, i64* %margin, align 8, 
+  store i64 214400000, i64* %size, align 8, 
+  %2 = call noalias i8* @malloc(i64 214400000) #6, 
+  %3 = bitcast i8* %2 to double*, 
+  %4 = load double**, double*** %1, align 8, 
+  store double* %3, double** %4, align 8, 
+  %5 = load double**, double*** %1, align 8, 
+  %6 = load double*, double** %5, align 8, 
+  %7 = icmp ne double* %6, null, 
+  br i1 %7, labe
+... (TRIMMED)

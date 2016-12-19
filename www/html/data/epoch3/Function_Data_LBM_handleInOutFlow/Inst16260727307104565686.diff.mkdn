@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d831a0) <br /><pre class="prettyprint lang-llvm ">  %207 = fsub <2 x double> %206, %185, </pre>
+< Operand # 1 (0x4d83268) <br /><pre class="prettyprint lang-llvm ">  %208 = shufflevector <2 x double> %177, <2 x double> undef, <2 x i32> <i32 1, i32 1>, </pre>
+---
+> <br/>Operand # 0 (0x4f45ba0) <br /><pre class="prettyprint lang-llvm ">  %207 = fsub <2 x double> %206, %185, </pre>
+> Operand # 1 (0x4f45c68) <br /><pre class="prettyprint lang-llvm ">  %208 = shufflevector <2 x double> %177, <2 x double> undef, <2 x i32> <i32 1, i32 1>, </pre>

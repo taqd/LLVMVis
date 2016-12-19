@@ -1,0 +1,9 @@
+;; Line: 58, Column: 2
+  ret i32 0, 
+</pre>
+<br/>Operand # 0 (0x4d2a9e0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+._crit_edge:                                      ; preds = %._crit_edge.loopexit, %0
+  call void @MAIN_finalize(%struct.MAIN_Param* nonnull %param), 
+  ret i32 0, 
+</pre>

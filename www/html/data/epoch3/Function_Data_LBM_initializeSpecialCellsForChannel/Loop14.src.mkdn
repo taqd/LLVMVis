@@ -1,0 +1,46 @@
+File: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+preheadersplitsplit (.preheader.split.split):
+L160,C16:  %33 = trunc i64 %indvars.iv38 to i32, !dbg !220
+L160,C16:  switch i32 %33, label %.preheader.split.split.153 [
+    i32 99, label %34
+    i32 0, label %34
+  ], !dbg !220
+
+Blk6552844277536653558 ():
+L162,C6:  %35 = add nsw i64 %3, %indvars.iv38, !dbg !207
+L162,C6:  %36 = mul nsw i64 %35, 20, !dbg !207
+L162,C6:  %37 = add nsw i64 %36, 19, !dbg !207
+L162,C6:  %38 = getelementptr inbounds double, double* %grid, i64 %37, !dbg !207
+L162,C6:  %39 = bitcast double* %38 to i32*, !dbg !207
+L162,C6:  tail call void @llvm.dbg.value(metadata i32* %39, i64 0, metadata !369, metadata !199), !dbg !355
+L162,C6:  %40 = load i32, i32* %39, align 4, !dbg !207
+L162,C6:  %41 = or i32 %40, 1, !dbg !207
+L162,C6:  store i32 %41, i32* %39, align 4, !dbg !207
+L164,C18:  br label %.preheader.split.split.153, !dbg !225
+
+preheadersplitsplit153 (.preheader.split.split.153):
+L159,C4:  %indvars.iv.next39 = or i64 %indvars.iv38, 1, !dbg !223
+L160,C16:  %42 = trunc i64 %indvars.iv.next39 to i32, !dbg !220
+L160,C16:  switch i32 %42, label %53 [
+    i32 99, label %45
+    i32 0, label %45
+  ], !dbg !220
+
+Blk17598223998450098954 ():
+L162,C6:  %46 = add nsw i64 %3, %indvars.iv.next39, !dbg !207
+L162,C6:  %47 = mul nsw i64 %46, 20, !dbg !207
+L162,C6:  %48 = add nsw i64 %47, 19, !dbg !207
+L162,C6:  %49 = getelementptr inbounds double, double* %grid, i64 %48, !dbg !207
+L162,C6:  %50 = bitcast double* %49 to i32*, !dbg !207
+L162,C6:  tail call void @llvm.dbg.value(metadata i32* %39, i64 0, metadata !369, metadata !199), !dbg !355
+L162,C6:  %51 = load i32, i32* %50, align 4, !dbg !207
+L162,C6:  %52 = or i32 %51, 1, !dbg !207
+L162,C6:  store i32 %52, i32* %50, align 4, !dbg !207
+L164,C18:  br label %53, !dbg !225
+
+Blk544095517054095671 ():
+L159,C4:  %indvars.iv.next39.1 = add nsw i64 %indvars.iv38, 2, !dbg !223
+L159,C4:  %exitcond40.1 = icmp eq i64 %indvars.iv.next39.1, 100, !dbg !223
+L159,C4:  br i1 %exitcond40.1, label %.us-lcssa.us.loopexit, label %.preheader.split.split, !dbg !223
+

@@ -1,0 +1,14 @@
+;; Line: 48, Column: 7
+  store double* null, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, 
+</pre>
+<br/>Operand # 0 (0x4d301c0) <br /><pre class="prettyprint lang-llvm ">double* null</pre>
+Operand # 1 (0x4d24c08) <br /><pre class="prettyprint lang-llvm ">double** bitcast ([26000000 x double]** @srcGrid to double**)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:19                                      ; preds = %14, %11
+  %20 = load double*, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, 
+  %21 = getelementptr inbounds double, double* %20, i64 -400000, 
+  %22 = bitcast double* %21 to i8*, 
+  tail call void @free(i8* %22) #7, 
+  store double* null, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, 
+  %23 = load double*, double** bi
+... (TRIMMED)</pre>

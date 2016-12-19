@@ -1,0 +1,5 @@
+File: lbm.c, Lines: 128, Cols: 4,
+; label:78                                      ; preds = %56, %64, %70
+  %indvars.iv.next58 = add nuw nsw i64 %indvars.iv57, 1, 
+  %exitcond60 = icmp eq i64 %indvars.iv.next58, 100, 
+  br i1 %exitcond60, label %.us-lcssa.us.loopexit, label %.preheader.split.split, 

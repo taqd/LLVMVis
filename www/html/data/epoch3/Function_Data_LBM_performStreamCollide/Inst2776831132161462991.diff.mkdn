@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d4fc18) <br /><pre class="prettyprint lang-llvm ">  %113 = load i64, i64* %112, align 8, </pre>
+< Operand # 1 (0x4d4fdb8) <br /><pre class="prettyprint lang-llvm ">  %116 = bitcast double* %115 to i64*, </pre>
+---
+> <br/>Operand # 0 (0x4f20668) <br /><pre class="prettyprint lang-llvm ">  %113 = load i64, i64* %112, align 8, </pre>
+> Operand # 1 (0x4f20808) <br /><pre class="prettyprint lang-llvm ">  %116 = bitcast double* %115 to i64*, </pre>

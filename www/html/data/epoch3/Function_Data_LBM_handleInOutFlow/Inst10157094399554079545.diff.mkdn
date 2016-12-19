@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4d75730) <br /><pre class="prettyprint lang-llvm "><2 x double> <double -3.000000e+00, double undef></pre>
+< Operand # 1 (0x4d63e60) <br /><pre class="prettyprint lang-llvm ">  %522 = fmul <2 x double> %494, <double 4.500000e+00, double 4.500000e+00>, </pre>
+< Operand # 2 (0x4d755e0) <br /><pre class="prettyprint lang-llvm "><2 x i32> <i32 0, i32 2></pre>
+---
+> <br/>Operand # 0 (0x4f38070) <br /><pre class="prettyprint lang-llvm "><2 x double> <double -3.000000e+00, double undef></pre>
+> Operand # 1 (0x4f25680) <br /><pre class="prettyprint lang-llvm ">  %522 = fmul <2 x double> %494, <double 4.500000e+00, double 4.500000e+00>, </pre>
+> Operand # 2 (0x4f37f20) <br /><pre class="prettyprint lang-llvm "><2 x i32> <i32 0, i32 2></pre>

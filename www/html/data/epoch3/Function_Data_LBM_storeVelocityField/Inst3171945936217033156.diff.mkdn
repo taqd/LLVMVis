@@ -1,0 +1,10 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4da5f60) <br /><pre class="prettyprint lang-llvm ">  %1 = icmp ne i32 %binary, 0, </pre>
+< Operand # 1 (0x4da4cf0) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f697e0) <br /><pre class="prettyprint lang-llvm ">  %1 = icmp ne i32 %binary, 0, </pre>
+> Operand # 1 (0x4f11520) <br /><pre class="prettyprint lang-llvm ">
+13c13
+< Operand # 2 (0x4da4ca0) <br /><pre class="prettyprint lang-llvm ">
+---
+> Operand # 2 (0x4f114d0) <br /><pre class="prettyprint lang-llvm ">

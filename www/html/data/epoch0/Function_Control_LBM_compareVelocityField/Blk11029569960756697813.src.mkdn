@@ -1,0 +1,8 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk11029569960756697813 ():
+L674,C39:  %801 = load float, float* %diff2, align 4, !dbg !416
+L674,C37:  store float %801, float* %maxDiff2, align 4, !dbg !418
+L674,C28:  br label %802, !dbg !419
+

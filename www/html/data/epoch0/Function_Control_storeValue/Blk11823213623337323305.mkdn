@@ -1,0 +1,7 @@
+File: lbm.c, Lines: 529, Cols: 3,11,45,
+; label:32                                      ; preds = %0
+  %33 = load float*, float** %2, align 8, 
+  %34 = bitcast float* %33 to i8*, 
+  %35 = load %struct._IO_FILE*, %struct._IO_FILE** %1, align 8, 
+  %36 = call i64 @fwrite(i8* %34, i64 4, i64 1, %struct._IO_FILE* %35), 
+  br label %37

@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d37a30) <br /><pre class="prettyprint lang-llvm ">double -0.000000e+00</pre>
+< Operand # 1 (0x4d5cb48) <br /><pre class="prettyprint lang-llvm ">  %.358 = select i1 %242, double %238, double 5.000000e-03, </pre>
+---
+> <br/>Operand # 0 (0x4f17f20) <br /><pre class="prettyprint lang-llvm ">double -0.000000e+00</pre>
+> Operand # 1 (0x4f10158) <br /><pre class="prettyprint lang-llvm ">  %.358 = select i1 %242, double %238, double 5.000000e-03, </pre>

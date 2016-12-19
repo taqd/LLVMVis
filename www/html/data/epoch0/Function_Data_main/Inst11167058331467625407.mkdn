@@ -1,0 +1,11 @@
+;; Line: 41, Column: 26
+  %16 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+</pre>
+<br/>Operand # 0 (0x5c8abb8) <br /><pre class="prettyprint lang-llvm ">@srcGrid = internal global [26000000 x double]* null, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:15                                      ; preds = %11
+  %16 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %17 = getelementptr inbounds [26000000 x double], [26000000 x double]* %16, i32 0, i32 0, 
+  call void @LBM_handleInOutFlow(double* %17), 
+  br label %18, 
+</pre>

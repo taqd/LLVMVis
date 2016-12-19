@@ -1,0 +1,19 @@
+;; Line: 44, Column: 29
+  %20 = getelementptr inbounds [26000000 x double], [26000000 x double]* %19, i32 0, i32 0, 
+</pre>
+<br/>Operand # 0 (0x5daf9c8) <br /><pre class="prettyprint lang-llvm ">  %19 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, </pre>
+Operand # 1 (0x5c9cec0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Operand # 2 (0x5c9cec0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:18                                      ; preds = %15, %11
+  %19 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %20 = getelementptr inbounds [26000000 x double], [26000000 x double]* %19, i32 0, i32 0, 
+  %21 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i32 0, i32 0, 
+  call void @LBM_performStreamCollide(double* %20, double* %22), 
+  call void @LBM_swapGrids([26000000 x double]** @srcGrid, [26000000 x double]** @dstGrid), 
+  %23 = load i32, i32* %t, align 4, 
+  %24 = and i32 %23, 63, 
+  %25 = icmp eq i32 %24, 0, 
+  br i1 %25, label %26, label %31, 
+</pre>

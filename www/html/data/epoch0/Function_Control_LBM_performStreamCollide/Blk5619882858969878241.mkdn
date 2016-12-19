@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 242,243-245, Cols: 3,7,
+; label:586                                     ; preds = %227
+  store double 5.000000e-03, double* %ux, align 8, 
+  store double 2.000000e-03, double* %uy, align 8, 
+  store double 0.000000e+00, double* %uz, align 8, 
+  br label %587, 

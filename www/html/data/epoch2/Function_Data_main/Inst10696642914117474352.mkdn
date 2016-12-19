@@ -1,0 +1,19 @@
+;; Line: 39, Column: 2
+  br i1 %39, label %20, label %._crit_edge.loopexit, 
+</pre>
+<br/>Operand # 0 (0x4dbef80) <br /><pre class="prettyprint lang-llvm ">  %39 = icmp slt i32 %t.04, %2, </pre>
+Operand # 1 (0x4d52e30) <br /><pre class="prettyprint lang-llvm ">
+._crit_edge.loopexit:                             ; preds = %37
+  br label %._crit_edge, 
+</pre>
+Operand # 2 (0x4d52ca0) <br /><pre class="prettyprint lang-llvm ">
+; label:20                                      ; preds = %37, %.lr.ph
+  %t.04 = phi i32 [ 1, %.lr.ph ], [ %38, %37 ]
+  br i1 %19, label %21, label %24, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:37                                      ; preds = %24, %33
+  %38 = add nuw nsw i32 %t.04, 1, 
+  %39 = icmp slt i32 %t.04, %2, 
+  br i1 %39, label %20, label %._crit_edge.loopexit, 
+</pre>

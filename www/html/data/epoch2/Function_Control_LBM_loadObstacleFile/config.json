@@ -1,0 +1,294 @@
+{
+	"title" : "LBM_loadObstacleFile",
+	"graph" : {
+		"linkDistance" : 100,
+		"charge" : -600,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 32,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop3" : {
+			"short" : "Loop3",
+			"long"  : "" 
+		},
+		"Loop2" : {
+			"short" : "Loop2",
+			"long"  : "" 
+		},
+		"Loop1" : {
+			"short" : "Loop1",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "LBM_loadObstacleFile" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "LBM_loadObstacleFile" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "preheader10" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "preheader10" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "preheader" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "preheader" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk14756287969611586422" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk14756287969611586422" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk13443512608630806476" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk13443512608630806476" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4910880398227813852" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4910880398227813852" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk3748847068237798527" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk3748847068237798527" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk2014462779288182340" },
+			"type" : "linkStrength",
+			"target" : "Loop1",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk2014462779288182340" },
+			"type" : "linkColor",
+			"target" : "Loop1",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop1" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop1" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop1" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "preheader" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "preheader" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk14756287969611586422" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk14756287969611586422" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk13443512608630806476" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk13443512608630806476" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4910880398227813852" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4910880398227813852" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk3748847068237798527" },
+			"type" : "linkStrength",
+			"target" : "Loop2",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk3748847068237798527" },
+			"type" : "linkColor",
+			"target" : "Loop2",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop2" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop2" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop2" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk14756287969611586422" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk14756287969611586422" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk13443512608630806476" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk13443512608630806476" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4910880398227813852" },
+			"type" : "linkStrength",
+			"target" : "Loop3",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4910880398227813852" },
+			"type" : "linkColor",
+			"target" : "Loop3",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop3" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop3" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop3" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk1856716239539029317" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Blk5808077342776796248" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

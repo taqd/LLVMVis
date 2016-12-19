@@ -1,0 +1,18 @@
+2c2
+<   %indvars.iv213 = phi i64 [ 0, %0 ], [ %indvars.iv.next214, %151 ]
+---
+>   %indvars.iv213 = phi i64 [ 0, %0 ], [ %indvars.iv.next214, %132 ]
+4,5c4,5
+< <br/>Operand # 0 (0x4f33330) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+< Operand # 1 (0x4fb0bb0) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.next214 = add nuw nsw i64 %indvars.iv213, 1, </pre>
+---
+> <br/>Operand # 0 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+> Operand # 1 (0x4dadb10) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.next214 = add nuw nsw i64 %indvars.iv213, 1, </pre>
+7,9c7,9
+< .preheader206:                                    ; preds = %151, %0
+<   %indvars.iv213 = phi i64 [ 0, %0 ], [ %indvars.iv.next214, %151 ]
+<   %4 = mul nuw nsw i64 %indvars.iv213, 10000, 
+---
+> .preheader206:                                    ; preds = %132, %0
+>   %indvars.iv213 = phi i64 [ 0, %0 ], [ %indvars.iv.next214, %132 ]
+>   %7 = mul nuw nsw i64 %indvars.iv213, 10000, 

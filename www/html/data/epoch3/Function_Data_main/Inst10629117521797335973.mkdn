@@ -1,0 +1,16 @@
+;; Line: 151, Column: 26
+  %54 = getelementptr inbounds [26000000 x double], [26000000 x double]* %53, i64 0, i64 0, 
+</pre>
+<br/>Operand # 0 (0x4f82d38) <br /><pre class="prettyprint lang-llvm ">  %53 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, </pre>
+Operand # 1 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 2 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+._crit_edge:                                      ; preds = %._crit_edge.loopexit8, %._crit_edge.loopexit, %0
+  %53 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %54 = getelementptr inbounds [26000000 x double], [26000000 x double]* %53, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %54) #7, 
+  switch i32 %17, label %MAIN_finalize.exit [
+    i32 1, label %.thread
+    i32 2, label %57
+  ], 
+</pre>

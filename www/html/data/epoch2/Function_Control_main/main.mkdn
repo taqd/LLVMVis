@@ -1,0 +1,9 @@
+
+; Function Attrs: nounwind uwtable
+define i32 @main(i32 %nArgs, i8** nocapture readonly %arg) #0 {
+  %param = alloca %struct.MAIN_Param, align 8
+  call void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* nonnull %param), 
+  %1 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, 
+  %2 = load i32, i32* %1, align 8, 
+  %3 = getelement
+... (TRIMMED)

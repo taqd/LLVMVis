@@ -1,0 +1,17 @@
+;; Line: 49, Column: 4
+  tail call void @LBM_showGridStatistics(double* %34), 
+</pre>
+<br/>Operand # 0 (0x4f81868) <br /><pre class="prettyprint lang-llvm ">  %34 = getelementptr inbounds [26000000 x double], [26000000 x double]* %33, i64 0, i64 0, </pre>
+Operand # 1 (0x4ee0d98) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define void @LBM_showGridStatistics(double* nocapture readonly %grid) #0 {
+  tail call void @llvm
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:31                                      ; preds = %.lr.ph.split.us
+  %32 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i32 %t.04.us), 
+  %33 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %34 = getelementptr inbounds [26000000 x double], [26000000 x double]* %33, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %34), 
+  br label %35, 
+</pre>

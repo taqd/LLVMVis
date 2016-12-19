@@ -1,0 +1,14 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk5667100830409041905 ():
+L89,C34:  tail call void @llvm.dbg.value(metadata [26000000 x double]** %grid1, i64 0, metadata !277, metadata !199), !dbg !278
+L89,C54:  tail call void @llvm.dbg.value(metadata [26000000 x double]** %grid2, i64 0, metadata !279, metadata !199), !dbg !280
+L90,C20:  %1 = bitcast [26000000 x double]** %grid1 to i64*, !dbg !203
+L90,C20:  %2 = load i64, i64* %1, align 8, !dbg !203
+L91,C11:  %3 = bitcast [26000000 x double]** %grid2 to i64*, !dbg !204
+L91,C11:  %4 = load i64, i64* %3, align 8, !dbg !204
+L91,C9:  store i64 %4, i64* %1, align 8, !dbg !205
+L92,C9:  store i64 %2, i64* %3, align 8, !dbg !206
+L93,C1:  ret void, !dbg !207
+

@@ -1,0 +1,82 @@
+
+; label:9                                       ; preds = %789, %0
+  %10 = load i32, i32* %z, align 4, 
+  %11 = icmp slt i32 %10, 130, 
+  br i1 %11, label %12, label %792, 
+<br/>; label:12                                      ; preds = %9
+  store i32 0, i32* %y, align 4, 
+  br label %13, 
+<br/>; label:13                                      ; preds = %785, %12
+  %14 = load i32, i32* %y, align 4, 
+  %15 = icmp slt i32 %14, 100, 
+  br i1 %15, label %16, label %788, 
+<br/>; label:788                                     ; preds = %13
+  br label %789, 
+<br/>; label:789                                     ; preds = %788
+  %790 = load i32, i32* %z, align 4, 
+  %791 = add nsw i32 %790, 1, 
+  store i32 %791, i32* %z, align 4, 
+  br label %9, 
+<br/>; label:16                                      ; preds = %13
+  store i32 0, i32* %x, align 4, 
+  br label %17, 
+<br/>; label:17                                      ; preds = %781, %16
+  %18 = load i32, i32* %x, align 4, 
+  %19 = icmp slt i32 %18, 100, 
+  br i1 %19, label %20, label %784, 
+<br/>; label:784                                     ; preds = %17
+  br label %785, 
+<br/>; label:785                                     ; preds = %784
+  %786 = load i32, i32* %y, align 4, 
+  %787 = add nsw i32 %786, 1, 
+  store i32 %787, i32* %y, align 4, 
+  br label %13, 
+<br/>; label:20                                      ; preds = %17
+  %21 = load i32, i32* %x, align 4, 
+  %22 = load i32, i32* %y, align 4, 
+  %23 = mul nsw i32 %22, 100, 
+  %24 = add nsw i32 %21, %23, 
+  %25 = load i32, i32* %z, align 4, 
+  %26 = mul nsw i32 %25, 100, 
+  %27 = mul nsw i32 %26, 100, 
+  %28 = add nsw i32 %24, %27, 
+  %29 = mul nsw i32 20, %28, 
+  %30 = add nsw i32 0, %29, 
+  %31 = sext i32 %30 to i64, 
+  %32 = load double*, double** %1, align 8, 
+  %33 = getelementptr inbounds double, double* %32, i64 %31, 
+  %34 = load double, double* %33, align 8, 
+  %35 = load i32, i32* %x, align 4, 
+  %36 = load i32, i32* %y, align 4, 
+  %37 = mul nsw i32 %36, 100, 
+  %38 = add nsw i32 %35, %37, 
+  %39 = load i32, i32* %z, align 4, 
+  %40 = mul nsw i32 %39, 100, 
+  %41 = mul nsw i32 %40, 100, 
+  %42
+... (TRIMMED)
+; label:771                                     ; preds = %20
+  %772 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %773 = load float, float* %ux, align 4, 
+  %774 = fpext float %773 to double, 
+  %775 = load float, float* %uy, align 4, 
+  %776 = fpext float %775 to double, 
+  %777 = load float, float* %uz, align 4, 
+  %778 = fpext float %777 to double, 
+  %779 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %772, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.5, i32 0, i32 0), double %774, double %776, double %778), 
+  br label %780
+<br/>; label:767                                     ; preds = %20
+  %768 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  call void @storeValue(%struct._IO_FILE* %768, float* %ux), 
+  %769 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  call void @storeValue(%struct._IO_FILE* %769, float* %uy), 
+  %770 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  call void @storeValue(%struct._IO_FILE* %770, float* %uz), 
+  br label %780, 
+<br/>; label:780                                     ; preds = %771, %767
+  br label %781, 
+<br/>; label:781                                     ; preds = %780
+  %782 = load i32, i32* %x, align 4, 
+  %783 = add nsw i32 %782, 1, 
+  store i32 %783, i32* %x, align 4, 
+  br label %17, 

@@ -1,0 +1,16 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4fc4410) <br /><pre class="prettyprint lang-llvm ">  %43 = icmp eq i32 %42, 1, </pre>
+< Operand # 1 (0x4fc15d0) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4dc2880) <br /><pre class="prettyprint lang-llvm ">  %43 = icmp eq i32 %42, 1, </pre>
+> Operand # 1 (0x4dbf990) <br /><pre class="prettyprint lang-llvm ">
+9c9
+< Operand # 2 (0x4fc1530) <br /><pre class="prettyprint lang-llvm ">
+---
+> Operand # 2 (0x4dbf8f0) <br /><pre class="prettyprint lang-llvm ">
+17,18c17,18
+< ; label:41                                      ; preds = %31, %39
+<   %42 = load i32, i32* %16, align 8, 
+---
+> ; label:41                                      ; preds = %._crit_edge, %39
+>   %42 = phi i32 [ %.pre, %._crit_edge ], [ %15, %39 ], 

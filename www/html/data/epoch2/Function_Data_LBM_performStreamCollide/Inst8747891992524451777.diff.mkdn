@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f611e0) <br /><pre class="prettyprint lang-llvm ">  %399 = fmul double %396, %398, </pre>
+< Operand # 1 (0x4f2b780) <br /><pre class="prettyprint lang-llvm ">double 1.000000e+00</pre>
+---
+> <br/>Operand # 0 (0x4d6da00) <br /><pre class="prettyprint lang-llvm ">  %399 = fmul double %396, %398, </pre>
+> Operand # 1 (0x4d2b770) <br /><pre class="prettyprint lang-llvm ">double 1.000000e+00</pre>

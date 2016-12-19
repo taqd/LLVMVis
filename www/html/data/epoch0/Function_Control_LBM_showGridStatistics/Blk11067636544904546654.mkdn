@@ -1,0 +1,13 @@
+File: lbm.c, Lines: 478, Cols: 8,
+; label:166                                     ; preds = %149
+  %167 = load i32, i32* %i, align 4, 
+  %168 = add nsw i32 19, %167, 
+  %169 = sext i32 %168 to i64, 
+  %170 = load double*, double** %1, align 8, 
+  %171 = getelementptr inbounds double, double* %170, i64 %169, 
+  %172 = bitcast double* %171 to i8*, 
+  %173 = bitcast i8* %172 to i32*, 
+  %174 = load i32, i32* %173, align 4, 
+  %175 = and i32 %174, 2, 
+  %176 = icmp ne i32 %175, 0, 
+  br i1 %176, label %177, label %180, 

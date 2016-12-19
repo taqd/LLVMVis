@@ -1,0 +1,25 @@
+;; Line: 136, Column: 6
+  br i1 %67, label %.preheader28.i.preheader, label %156, 
+</pre>
+<br/>Operand # 0 (0x4f90150) <br /><pre class="prettyprint lang-llvm ">  %67 = icmp eq i32 %66, 1, </pre>
+Operand # 1 (0x4f8a560) <br /><pre class="prettyprint lang-llvm ">
+; label:156                                     ; preds = %64
+  %157 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 0, 
+  tail call void @LBM_initializeSpecialCellsForLDC(double* %157), 
+  %158 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %159 = getelementptr inbounds [26000000 x double], [26000000 x double]* %158, i64 0, i64 0, 
+  tail call void @LBM_initializeSpecialCellsForLDC(double* %159), 
+  br label %LBM_initializeSpecialCellsForChannel.exit42
+</pre>
+Operand # 2 (0x4f89b60) <br /><pre class="prettyprint lang-llvm ">
+.preheader28.i.preheader:                         ; preds = %64
+  br label %.preheader28.i, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:64                                      ; preds = %LBM_allocateGrid.exit4, %LBM_loadObstacleFile.exit16
+  %65 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, 
+  %66 = load i32, i32* %65, align 4, 
+  %67 = icmp eq i32 %66, 1, 
+  %68 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  br i1 %67, label %.preheader28.i.preheader, label %156, 
+</pre>

@@ -1,0 +1,4 @@
+4c4
+< <br/>Operand # 0 (0x4d80c60) <br /><pre class="prettyprint lang-llvm ">  %161 = srem i32 %160, 100, </pre>
+---
+> <br/>Operand # 0 (0x4f43570) <br /><pre class="prettyprint lang-llvm ">  %161 = srem i32 %160, 100, </pre>

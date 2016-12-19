@@ -1,0 +1,11 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+preheaderi8 (.preheader.i8):
+L138,C3:  %indvars.iv32.i7 = phi i64 [ 0, %.preheader28.i6 ], [ %indvars.iv.next33.i15, %64 ], !dbg !288
+L161,C11:  %48 = icmp eq i64 %indvars.iv32.i7, 0, !dbg !291
+L161,C21:  %49 = icmp eq i64 %indvars.iv32.i7, 99, !dbg !292
+L162,C6:  %50 = mul nuw nsw i64 %indvars.iv32.i7, 100, !dbg !289
+L162,C6:  %51 = add nsw i64 %50, %47, !dbg !289
+L159,C4:  br label %52, !dbg !293
+

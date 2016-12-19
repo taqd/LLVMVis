@@ -1,0 +1,10 @@
+
+  %t.04 = phi i32 [ 1, %.lr.ph ], [ %38, %37 ]
+</pre>
+<br/>Operand # 0 (0x4d24bb0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+Operand # 1 (0x4dbedd0) <br /><pre class="prettyprint lang-llvm ">  %38 = add nuw nsw i32 %t.04, 1, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:20                                      ; preds = %37, %.lr.ph
+  %t.04 = phi i32 [ 1, %.lr.ph ], [ %38, %37 ]
+  br i1 %19, label %21, label %24, 
+</pre>

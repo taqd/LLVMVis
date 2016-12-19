@@ -1,0 +1,8 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk10942419622140016145 ():
+L475,C18:  %86 = add nsw i32 %nObstacleCells.0130, 1, !dbg !273
+L449,C6:  tail call void @llvm.dbg.value(metadata i32 %86, i64 0, metadata !1278, metadata !199), !dbg !1279
+L476,C3:  br label %127, !dbg !275
+

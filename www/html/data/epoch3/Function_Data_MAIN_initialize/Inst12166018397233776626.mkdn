@@ -1,0 +1,17 @@
+;; Line: 162, Column: 6
+  %178 = or i32 %177, 1, 
+</pre>
+<br/>Operand # 0 (0x4f970c8) <br /><pre class="prettyprint lang-llvm ">  %177 = load i32, i32* %176, align 4, </pre>
+Operand # 1 (0x4ee18a0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:171                                     ; preds = %.preheader.split.split.i.164, %.preheader.split.split.i.164
+  %172 = add nsw i64 %indvars.iv.next39.i, %71, 
+  %173 = mul nsw i64 %172, 20, 
+  %174 = add nsw i64 %173, 19, 
+  %175 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 %174, 
+  %176 = bitcast double* %175 to i32*, 
+  %177 = load i32, i32* %176, align 4, 
+  %178 = or i32 %177, 1, 
+  store i32 %178, i32* %176, align 4, 
+  br label %179, 
+</pre>

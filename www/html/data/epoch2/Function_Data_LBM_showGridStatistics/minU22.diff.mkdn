@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4f9ff68) <br /><pre class="prettyprint lang-llvm ">  %minU2.0125 = phi double [ 1.000000e+30, %0 ], [ %minU2.2, %127 ]</pre>
+< Operand # 1 (0x4fa5b98) <br /><pre class="prettyprint lang-llvm ">  %minU2.1 = select i1 %124, double %123, double %minU2.0125, </pre>
+< Operand # 2 (0x4fa5b98) <br /><pre class="prettyprint lang-llvm ">  %minU2.1 = select i1 %124, double %123, double %minU2.0125, </pre>
+---
+> <br/>Operand # 0 (0x4d91728) <br /><pre class="prettyprint lang-llvm ">  %minU2.0125 = phi double [ 1.000000e+30, %0 ], [ %minU2.2, %127 ]</pre>
+> Operand # 1 (0x4da31b8) <br /><pre class="prettyprint lang-llvm ">  %minU2.1 = select i1 %124, double %123, double %minU2.0125, </pre>
+> Operand # 2 (0x4da31b8) <br /><pre class="prettyprint lang-llvm ">  %minU2.1 = select i1 %124, double %123, double %minU2.0125, </pre>

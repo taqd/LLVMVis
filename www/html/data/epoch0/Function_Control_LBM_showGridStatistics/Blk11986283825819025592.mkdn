@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 471, Cols: 7,11,13,
+; label:143                                     ; preds = %141, %5
+  %144 = load double, double* %rho, align 8, 
+  %145 = load double, double* %maxRho, align 8, 
+  %146 = fcmp ogt double %144, %145, 
+  br i1 %146, label %147, label %149, 

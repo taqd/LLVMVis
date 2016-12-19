@@ -1,0 +1,13 @@
+;; Line: 40, Column: 13
+  %17 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, 
+</pre>
+<br/>Operand # 0 (0x4d533f8) <br /><pre class="prettyprint lang-llvm ">  %param = alloca %struct.MAIN_Param, align 8</pre>
+Operand # 1 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 2 (0x4d29d80) <br /><pre class="prettyprint lang-llvm ">i32 3</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.lr.ph:                                           ; preds = %0
+  %17 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, 
+  %18 = load i32, i32* %17, align 4, 
+  %19 = icmp eq i32 %18, 1, 
+  br label %20, 
+</pre>

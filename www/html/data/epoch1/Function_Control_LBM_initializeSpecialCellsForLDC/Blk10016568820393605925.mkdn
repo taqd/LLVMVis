@@ -1,0 +1,5 @@
+File: lbm.c, Lines: 128, Cols: 4,
+; label:45                                      ; preds = %23, %31, %37
+  %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1, 
+  %exitcond = icmp eq i64 %indvars.iv.next, 100, 
+  br i1 %exitcond, label %46, label %20, 

@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d5cab8) <br /><pre class="prettyprint lang-llvm ">  %.357 = select i1 %242, double %240, double 0.000000e+00, </pre>
+< Operand # 1 (0x4d69bc0) <br /><pre class="prettyprint lang-llvm ">  %311 = fadd double %300, -3.000000e+00, </pre>
+---
+> <br/>Operand # 0 (0x4f100c8) <br /><pre class="prettyprint lang-llvm ">  %.357 = select i1 %242, double %240, double 0.000000e+00, </pre>
+> Operand # 1 (0x4f2c500) <br /><pre class="prettyprint lang-llvm ">  %311 = fadd double %300, -3.000000e+00, </pre>

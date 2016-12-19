@@ -1,0 +1,13 @@
+;; Line: 142, Column: 38
+  %158 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+</pre>
+<br/>Operand # 0 (0x4edec78) <br /><pre class="prettyprint lang-llvm ">@dstGrid = internal global [26000000 x double]* null, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:156                                     ; preds = %64
+  %157 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 0, 
+  tail call void @LBM_initializeSpecialCellsForLDC(double* %157), 
+  %158 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %159 = getelementptr inbounds [26000000 x double], [26000000 x double]* %158, i64 0, i64 0, 
+  tail call void @LBM_initializeSpecialCellsForLDC(double* %159), 
+  br label %LBM_initializeSpecialCellsForChannel.exit42
+</pre>

@@ -1,0 +1,6 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+us-lcssausloopexit76 (.us-lcssa.us.loopexit76):
+L127,C3:  br label %.us-lcssa.us, !dbg !224
+

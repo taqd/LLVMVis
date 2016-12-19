@@ -1,0 +1,54 @@
+
+; label:9                                       ; preds = %46, %8
+  %10 = load i32, i32* %y, align 4, 
+  %11 = icmp slt i32 %10, 100, 
+  br i1 %11, label %12, label %49, 
+<br/>; label:12                                      ; preds = %9
+  store i32 0, i32* %x, align 4, 
+  br label %13, 
+<br/>; label:13                                      ; preds = %40, %12
+  %14 = load i32, i32* %x, align 4, 
+  %15 = icmp slt i32 %14, 100, 
+  br i1 %15, label %16, label %43, 
+<br/>; label:43                                      ; preds = %13
+  %44 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %45 = call i32 @fgetc(%struct._IO_FILE* %44), 
+  br label %46, 
+<br/>; label:46                                      ; preds = %43
+  %47 = load i32, i32* %y, align 4, 
+  %48 = add nsw i32 %47, 1, 
+  store i32 %48, i32* %y, align 4, 
+  br label %9, 
+<br/>; label:16                                      ; preds = %13
+  %17 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %18 = call i32 @fgetc(%struct._IO_FILE* %17), 
+  %19 = icmp ne i32 %18, 46, 
+  br i1 %19, label %20, label %39, 
+<br/>; label:20                                      ; preds = %16
+  %21 = load i32, i32* %x, align 4, 
+  %22 = load i32, i32* %y, align 4, 
+  %23 = mul nsw i32 %22, 100, 
+  %24 = add nsw i32 %21, %23, 
+  %25 = load i32, i32* %z, align 4, 
+  %26 = mul nsw i32 %25, 100, 
+  %27 = mul nsw i32 %26, 100, 
+  %28 = add nsw i32 %24, %27, 
+  %29 = mul nsw i32 20, %28, 
+  %30 = add nsw i32 19, %29, 
+  %31 = sext i32 %30 to i64, 
+  %32 = load double*, double** %1, align 8, 
+  %33 = getelementptr inbounds double, double* %32, i64 %31, 
+  %34 = bitcast double* %33 to i8*, 
+  %35 = bitcast i8* %34 to i32*, 
+  store i32* %35, i32** %_aux_, align 8, 
+  %36 = load i32*, i32** %_aux_, align 8, 
+  %37 = load i32, i32* %36, align 4, 
+  %38 = or i32 %37, 1,
+... (TRIMMED)
+; label:39                                      ; preds = %20, %16
+  br label %40, 
+<br/>; label:40                                      ; preds = %39
+  %41 = load i32, i32* %x, align 4, 
+  %42 = add nsw i32 %41, 1, 
+  store i32 %42, i32* %x, align 4, 
+  br label %13, 

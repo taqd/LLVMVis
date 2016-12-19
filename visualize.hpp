@@ -13,14 +13,20 @@
 #include <unordered_map>
 #include <sys/stat.h>
 #include <unistd.h>
-
+#include <regex>
+#include <linux/limits.h>
 
 using namespace std;
 using namespace llvm;
 
 /* General view settings */
-#define TRUNCATE_CODE_MKDN true
-#define TRUNCATE_AT 1000
+#define DO_SYNC true
+#define VERBOSE true
+#define REMOVE_DBG_FROM_IR true
+#define ENABLE_IR true /* Warning: +4x slow down */
+#define ENABLE_DEBUG true /* Warning: +6x slow down */
+#define ENABLE_DIFF true
+#define MAX_CODE_LENGTH 1000 /*Characters*/
 
 /* View settings for MODULE CONTROL FLOW view */
 #define CREATE_CF_MODULE_VIEW true
@@ -40,20 +46,27 @@ using namespace llvm;
 //The root address used in hyperlinks
 static string root_address = "http://137.82.252.51/graph.php?dataset=";
 static string dataFolder = "data/";
-static string epochFile = "data/count.txt";
+
+//Other addresses
+static string epochFile = "/var/www/html/data/count.txt";
+static string webFolder = "/var/www/html/data/";
+static string syncCommand = "rsync -az " + dataFolder + " " + webFolder;
+
+//Only make views of particular functions (enter "all" to do all)
+static string onlyDoFuns = "all";
 
 //List of functions names that will be hidden from all views
 static string hideCallsTo = "puts,printf,llvm.dbg.value";
 
 //Header in the markdown file to provide syntax highlighting
-static string prettify_theme = "default"; //Options found in code-prettify/styles/
-static string mkdn_header = "<script src=\"code-prettify/loader/run_prettify.js?autoload=true&skin="+prettify_theme+"\" ></script> \n <script src=\"code-prettify/src/lang-llvm.js\"></script>\n";
+static string prettify_theme = "default"; //Options found in code-prettify/styles
 static string syntax_beg = "<pre class=\"prettyprint lang-llvm \">";
 static string syntax_end = "</pre>\n";
 
 //Names for loops and he unnamed
 extern unordered_map<BasicBlock*,string> loopIDs;
 extern unordered_map<Value*,string> nameMap;
+extern int current_epoch;
 
 //Container for node position, and various link settings such as edge
 //width, and color. Constraints are optional, but without them nodes
@@ -65,7 +78,7 @@ struct constraint {
 //Container to hold the nodes and various properties about them. Todo:
 //more documentation here.
 struct node {
-  string name, type, group, metadata, json;
+  string name, type, group, metadata, src, json;
   vector<string> depends;
   vector<constraint*> constraints;
   Value *original;
@@ -101,9 +114,13 @@ string get_group(Function *f);
 string get_group(Value *v);
 
 //Create the metadata shown on the right side bar, code is user defined.
-string get_metadata(Function *f, vector<string> folders);
-string get_metadata(BasicBlock*b, vector<string> folders);
-string build_metadata(Function *f, string code, vector<string> folders);
+string get_ir(Function *f);
+string get_ir(BasicBlock*b);
+string get_debug(Function *f);
+string get_blk_metadata(BasicBlock *b);
+string get_file(Function *f);
+string get_dir(Function *f);
+string prep_metadata(string code);
 
 //Set constraints on where the nodes are placed
 void set_Y_position(node *n, float loc, float weight);
@@ -144,7 +161,7 @@ void create_self_loop(node *n);
 string change_blocks_to_links(Function *f, string input);
 
 //Return true for instructions we wish to hide
-bool hide(Instruction &i);
+bool hide(Value &i);
 
 
 /* 

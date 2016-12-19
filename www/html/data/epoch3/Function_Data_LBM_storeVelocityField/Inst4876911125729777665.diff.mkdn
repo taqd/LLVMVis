@@ -1,0 +1,4 @@
+4c4
+< <br/>Operand # 0 (0x4dab1d0) <br /><pre class="prettyprint lang-llvm ">  %118 = fdiv float %97, %87, </pre>
+---
+> <br/>Operand # 0 (0x4f6ea50) <br /><pre class="prettyprint lang-llvm ">  %118 = fdiv float %97, %87, </pre>

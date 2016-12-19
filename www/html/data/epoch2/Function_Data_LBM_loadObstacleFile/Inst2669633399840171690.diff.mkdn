@@ -1,0 +1,10 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f4d620) <br /><pre class="prettyprint lang-llvm ">  %exitcond = icmp eq i64 %indvars.iv.next, 100, </pre>
+< Operand # 1 (0x4f4b9f0) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4d4c410) <br /><pre class="prettyprint lang-llvm ">  %exitcond = icmp eq i64 %indvars.iv.next, 100, </pre>
+> Operand # 1 (0x4d4a7a0) <br /><pre class="prettyprint lang-llvm ">
+12c12
+< Operand # 2 (0x4f4bae0) <br /><pre class="prettyprint lang-llvm ">
+---
+> Operand # 2 (0x4d4a890) <br /><pre class="prettyprint lang-llvm ">

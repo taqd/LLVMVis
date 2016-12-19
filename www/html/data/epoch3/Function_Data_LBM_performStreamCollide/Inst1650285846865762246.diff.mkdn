@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d6d7f0) <br /><pre class="prettyprint lang-llvm ">  %396 = fsub double %.357, %., </pre>
+< Operand # 1 (0x4d6d950) <br /><pre class="prettyprint lang-llvm ">  %398 = fadd double %397, 3.000000e+00, </pre>
+---
+> <br/>Operand # 0 (0x4f30130) <br /><pre class="prettyprint lang-llvm ">  %396 = fsub double %.357, %., </pre>
+> Operand # 1 (0x4f30290) <br /><pre class="prettyprint lang-llvm ">  %398 = fadd double %397, 3.000000e+00, </pre>

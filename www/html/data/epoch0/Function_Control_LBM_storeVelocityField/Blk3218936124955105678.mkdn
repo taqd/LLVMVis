@@ -1,0 +1,17 @@
+File: lbm.c, Lines: 554,555-557,559,561, Cols: 6,7-9,12,15,19,22,24,28,32,33-39,40-57,
+  %1 = alloca double*, align 8
+  %2 = alloca i8*, align 8
+  %3 = alloca i32, align 4
+  %x = alloca i32, align 4
+  %y = alloca i32, align 4
+  %z = alloca i32, align 4
+  %rho = alloca float, align 4
+  %ux = alloca float, align 4
+  %uy = alloca float, align 4
+  %uz = alloca float, align 4
+  %file = alloca %struct._IO_FILE*, align 8
+  store double* %grid, double** %1, align 8
+  store i8* %filename, i8** %2, align 8
+  store i32 %binary, i32* %3, align 4
+  call v
+... (TRIMMED)

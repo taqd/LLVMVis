@@ -1,0 +1,31 @@
+File: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+lrphsplit (.lr.ph.split):
+L44,C30:  %38 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !239
+L44,C29:  %39 = getelementptr inbounds [26000000 x double], [26000000 x double]* %38, i64 0, i64 0, !dbg !244
+L44,C40:  %40 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !245
+L44,C39:  %41 = getelementptr inbounds [26000000 x double], [26000000 x double]* %40, i64 0, i64 0, !dbg !246
+L44,C3:  tail call void @LBM_performStreamCollide(double* %39, double* %41), !dbg !247
+L89,C34:  tail call void @llvm.dbg.value(metadata [26000000 x double]** @srcGrid, i64 0, metadata !259, metadata !199), !dbg !1647
+L89,C54:  tail call void @llvm.dbg.value(metadata [26000000 x double]** @dstGrid, i64 0, metadata !261, metadata !199), !dbg !1649
+L90,C20:  %42 = load i64, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, !dbg !253
+L91,C11:  %43 = load i64, i64* bitcast ([26000000 x double]** @dstGrid to i64*), align 8, !dbg !254
+L91,C9:  store i64 %43, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, !dbg !255
+L92,C9:  store i64 %42, i64* bitcast ([26000000 x double]** @dstGrid to i64*), align 8, !dbg !256
+L47,C10:  %44 = and i32 %t.04, 63, !dbg !257
+L47,C16:  %45 = icmp eq i32 %44, 0, !dbg !259
+L47,C7:  br i1 %45, label %46, label %50, !dbg !260
+
+Blk4400766303217007779 ():
+L48,C4:  %47 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i32 %t.04), !dbg !261
+L49,C29:  %48 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !263
+L49,C28:  %49 = getelementptr inbounds [26000000 x double], [26000000 x double]* %48, i64 0, i64 0, !dbg !264
+L49,C4:  tail call void @LBM_showGridStatistics(double* %49), !dbg !265
+L50,C3:  br label %50, !dbg !266
+
+Blk2118776025086998414 ():
+L39,C38:  %51 = add nuw nsw i32 %t.04, 1, !dbg !267
+L30,C6:  tail call void @llvm.dbg.value(metadata i32 %51, i64 0, metadata !1627, metadata !199), !dbg !1628
+L39,C16:  %52 = icmp slt i32 %t.04, %2, !dbg !230
+L39,C2:  br i1 %52, label %.lr.ph.split, label %._crit_edge.loopexit8, !dbg !233
+

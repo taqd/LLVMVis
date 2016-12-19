@@ -1,0 +1,8 @@
+File: main.c, Lines: 159,160 Cols: 4,16,
+.preheader.split.split.i.164:                     ; preds = %102, %.preheader.split.split.i
+  %indvars.iv.next39.i = or i64 %indvars.iv38.i, 1, 
+  %110 = trunc i64 %indvars.iv.next39.i to i32, 
+  switch i32 %110, label %179 [
+    i32 99, label %171
+    i32 0, label %171
+  ], 

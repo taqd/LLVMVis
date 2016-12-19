@@ -1,0 +1,13 @@
+;; Line: 526, Column: 11
+  %29 = getelementptr inbounds [4 x i8], [4 x i8]* %buffer, i32 0, i32 0, 
+</pre>
+<br/>Operand # 0 (0x5d89b98) <br /><pre class="prettyprint lang-llvm ">  %buffer = alloca [4 x i8], align 1</pre>
+Operand # 1 (0x5c9cec0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Operand # 2 (0x5c9cec0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:28                                      ; preds = %10
+  %29 = getelementptr inbounds [4 x i8], [4 x i8]* %buffer, i32 0, i32 0, 
+  %30 = load %struct._IO_FILE*, %struct._IO_FILE** %1, align 8, 
+  %31 = call i64 @fwrite(i8* %29, i64 4, i64 1, %struct._IO_FILE* %30), 
+  br label %37, 
+</pre>

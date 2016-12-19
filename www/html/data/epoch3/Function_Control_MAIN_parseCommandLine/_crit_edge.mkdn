@@ -1,0 +1,4 @@
+File: main.c, Lines: 84,95, Cols: 7,13,
+._crit_edge:                                      ; preds = %31
+  %.pre = load i32, i32* %16, align 8, 
+  br label %41, 

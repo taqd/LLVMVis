@@ -1,0 +1,5 @@
+File: lbm.c, Lines: 157, Cols: 2,15,17,
+; label:2                                       ; preds = %97, %0
+  %3 = load i32, i32* %z, align 4, 
+  %4 = icmp slt i32 %3, 132, 
+  br i1 %4, label %5, label %100, 

@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 105, Cols: 9,16,23,
+; label:16                                      ; preds = %13
+  %17 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %18 = call i32 @fgetc(%struct._IO_FILE* %17), 
+  %19 = icmp ne i32 %18, 46, 
+  br i1 %19, label %20, label %39, 

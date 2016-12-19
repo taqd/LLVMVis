@@ -1,0 +1,14 @@
+;; Line: 49, Column: 28
+  %49 = getelementptr inbounds [26000000 x double], [26000000 x double]* %48, i64 0, i64 0, 
+</pre>
+<br/>Operand # 0 (0x4f825f8) <br /><pre class="prettyprint lang-llvm ">  %48 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, </pre>
+Operand # 1 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 2 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:46                                      ; preds = %.lr.ph.split
+  %47 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i32 %t.04), 
+  %48 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %49 = getelementptr inbounds [26000000 x double], [26000000 x double]* %48, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %49), 
+  br label %50, 
+</pre>

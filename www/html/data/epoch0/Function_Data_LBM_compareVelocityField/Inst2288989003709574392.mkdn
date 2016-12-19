@@ -1,0 +1,10 @@
+;; Line: 625, Column: 15
+  %14 = load i32, i32* %y, align 4, 
+</pre>
+<br/>Operand # 0 (0x5d8e068) <br /><pre class="prettyprint lang-llvm ">  %y = alloca i32, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:13                                      ; preds = %807, %12
+  %14 = load i32, i32* %y, align 4, 
+  %15 = icmp slt i32 %14, 100, 
+  br i1 %15, label %16, label %810, 
+</pre>

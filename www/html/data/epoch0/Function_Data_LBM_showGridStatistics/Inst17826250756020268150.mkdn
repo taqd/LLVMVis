@@ -1,0 +1,12 @@
+;; Line: 459, Column: 2
+  store i32 %421, i32* %i, align 4, 
+</pre>
+<br/>Operand # 0 (0x5d6d660) <br /><pre class="prettyprint lang-llvm ">  %421 = add nsw i32 %420, 20, </pre>
+Operand # 1 (0x5d5e318) <br /><pre class="prettyprint lang-llvm ">  %i = alloca i32, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:419                                     ; preds = %418
+  %420 = load i32, i32* %i, align 4, 
+  %421 = add nsw i32 %420, 20, 
+  store i32 %421, i32* %i, align 4, 
+  br label %2, 
+</pre>

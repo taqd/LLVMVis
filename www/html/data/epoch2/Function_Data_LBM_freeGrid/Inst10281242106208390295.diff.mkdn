@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f40848) <br /><pre class="prettyprint lang-llvm ">  %3 = bitcast double* %2 to i8*, </pre>
+< Operand # 1 (0x4f17e48) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4d400e8) <br /><pre class="prettyprint lang-llvm ">  %3 = bitcast double* %2 to i8*, </pre>
+> Operand # 1 (0x4d23298) <br /><pre class="prettyprint lang-llvm ">

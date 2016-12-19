@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 625,627, Cols: 3,13,
+.preheader214:                                    ; preds = %143, %0
+  %indvars.iv224 = phi i64 [ 0, %0 ], [ %indvars.iv.next225, %143 ]
+  %maxDiff2.0220 = phi float [ 0xC6293E5940000000, %0 ], [ %maxDiff2.3.lcssa.lcssa, %143 ]
+  %7 = mul nuw nsw i64 %indvars.iv224, 10000, 
+  br label %.preheader, 

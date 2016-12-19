@@ -1,0 +1,12 @@
+
+  %indvars.iv224 = phi i64 [ 0, %0 ], [ %indvars.iv.next225, %143 ]
+</pre>
+<br/>Operand # 0 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 1 (0x4dba0b0) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.next225 = add nuw nsw i64 %indvars.iv224, 1, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader214:                                    ; preds = %143, %0
+  %indvars.iv224 = phi i64 [ 0, %0 ], [ %indvars.iv.next225, %143 ]
+  %maxDiff2.0220 = phi float [ 0xC6293E5940000000, %0 ], [ %maxDiff2.3.lcssa.lcssa, %143 ]
+  %7 = mul nuw nsw i64 %indvars.iv224, 10000, 
+  br label %.preheader, 
+</pre>

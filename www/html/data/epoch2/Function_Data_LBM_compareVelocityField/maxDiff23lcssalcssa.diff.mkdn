@@ -1,0 +1,18 @@
+2c2
+<   %maxDiff2.3.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa, %136 ]
+---
+>   %maxDiff2.3.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa, %142 ]
+4c4
+< <br/>Operand # 0 (0x4fbc038) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3.lcssa = phi float [ %maxDiff2.3, %117 ]</pre>
+---
+> <br/>Operand # 0 (0x4d8fc18) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3.lcssa = phi float [ %maxDiff2.3, %123 ]</pre>
+6,7c6,7
+< ; label:137                                     ; preds = %136
+<   %maxDiff2.3.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa, %136 ]
+---
+> ; label:143                                     ; preds = %142
+>   %maxDiff2.3.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa, %142 ]
+10c10
+<   br i1 %exitcond226, label %138, label %.preheader214, 
+---
+>   br i1 %exitcond226, label %144, label %.preheader214, 

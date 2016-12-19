@@ -1,0 +1,9 @@
+File: lbm.c, Lines: 657,658-660, Cols: 5,6-17,
+; label:763                                     ; preds = %20
+  %764 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  call void @loadValue(%struct._IO_FILE* %764, float* %fileUx), 
+  %765 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  call void @loadValue(%struct._IO_FILE* %765, float* %fileUy), 
+  %766 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  call void @loadValue(%struct._IO_FILE* %766, float* %fileUz), 
+  br label %770, 

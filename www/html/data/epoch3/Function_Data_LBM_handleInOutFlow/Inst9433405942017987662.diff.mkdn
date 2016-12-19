@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d83860) <br /><pre class="prettyprint lang-llvm ">  %217 = extractelement <2 x double> %216, i32 0, </pre>
+< Operand # 1 (0x4d83a40) <br /><pre class="prettyprint lang-llvm ">  %219 = getelementptr inbounds double, double* %srcGrid, i64 %218, </pre>
+---
+> <br/>Operand # 0 (0x4f46260) <br /><pre class="prettyprint lang-llvm ">  %217 = extractelement <2 x double> %216, i32 0, </pre>
+> Operand # 1 (0x4f46440) <br /><pre class="prettyprint lang-llvm ">  %219 = getelementptr inbounds double, double* %srcGrid, i64 %218, </pre>

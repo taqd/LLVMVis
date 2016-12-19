@@ -1,0 +1,4 @@
+File: lbm.c, Lines: 449,475,476 Cols: 3,6,18,
+; label:85                                      ; preds = %1
+  %86 = add nsw i32 %nObstacleCells.0130, 1, 
+  br label %127, 

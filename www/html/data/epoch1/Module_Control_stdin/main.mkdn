@@ -1,0 +1,9 @@
+
+; Function Attrs: nounwind uwtable
+define i32 @main(i32 %nArgs, i8** nocapture readonly %arg) #0 {
+  %param = alloca %struct.MAIN_Param, align 8
+  call void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* nonnull %param), 
+  call void @MAIN_printInfo(%struct.MAIN_Param* nonnull %param), 
+  call void @MAIN_initialize(%struct.MAIN_Param* nonnull %param), 
+  tail call voi
+... (TRIMMED)

@@ -1,0 +1,12 @@
+;; Line: 105, Column: 23
+  %25 = icmp eq i32 %24, 46, 
+</pre>
+<br/>Operand # 0 (0x4f8d6d8) <br /><pre class="prettyprint lang-llvm ">  %24 = phi i32 [ %20, %.preheader.i ], [ %35, %34 ], </pre>
+Operand # 1 (0x4f07890) <br /><pre class="prettyprint lang-llvm ">i32 46</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:23                                      ; preds = %34, %.preheader.i
+  %indvars.iv.i = phi i64 [ 0, %.preheader.i ], [ %indvars.iv.next.i, %34 ], 
+  %24 = phi i32 [ %20, %.preheader.i ], [ %35, %34 ], 
+  %25 = icmp eq i32 %24, 46, 
+  br i1 %25, label %34, label %26, 
+</pre>

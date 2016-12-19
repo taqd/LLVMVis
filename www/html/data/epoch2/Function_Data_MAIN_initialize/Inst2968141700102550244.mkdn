@@ -1,0 +1,36 @@
+;; Line: 131, Column: 6
+  br i1 %15, label %22, label %16, 
+</pre>
+<br/>Operand # 0 (0x4dc6510) <br /><pre class="prettyprint lang-llvm ">  %15 = icmp eq i8* %14, null, </pre>
+Operand # 1 (0x4dc43e0) <br /><pre class="prettyprint lang-llvm ">
+; label:16                                      ; preds = %LBM_allocateGrid.exit4
+  %17 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %18 = getelementptr inbounds [26000000 x double], [26000000 x double]* %17, i64 0, i64 0, 
+  tail call void @LBM_loadObstacleFile(double* %18, i8* nonnull %14), 
+  %19 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %20 = getelementptr inbounds [26000000 x double], [26000000 x double]* %19, i64 0, i64 0, 
+  %21 = load i8*, i8** %13, align 8, 
+  tail call void @LBM_loadObstacleFile(double* %20, i8* %21), 
+  br label %22, 
+</pre>
+Operand # 2 (0x4dc4430) <br /><pre class="prettyprint lang-llvm ">
+; label:22                                      ; preds = %LBM_allocateGrid.exit4, %16
+  %23 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, 
+  %24 = load i32, i32* %23, align 4, 
+  %25 = icmp eq i32 %24, 1, 
+  %26 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  br i1 %25, label %.preheader28.i.preheader, label %66, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+LBM_allocateGrid.exit4:                           ; preds = %LBM_allocateGrid.exit
+  %10 = getelementptr inbounds i8, i8* %6, i64 3200000, 
+  store i8* %10, i8** bitcast ([26000000 x double]** @dstGrid to i8**), align 8, 
+  %11 = bitcast i8* %5 to double*, 
+  tail call void @LBM_initializeGrid(double* %11), 
+  %12 = bitcast i8* %10 to double*, 
+  tail call void @LBM_initializeGrid(double* %12), 
+  %13 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 4, 
+  %14 = load i8*, i8** %13, align 8, 
+  %15 = icmp eq i8* %14, null, 
+  br i1 %15, label %22, label %16, 
+</pre>

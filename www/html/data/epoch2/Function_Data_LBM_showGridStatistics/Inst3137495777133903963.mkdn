@@ -1,0 +1,28 @@
+;; Line: 498, Column: 16
+  %119 = fadd double %118, %117, 
+</pre>
+<br/>Operand # 0 (0x4da2aa0) <br /><pre class="prettyprint lang-llvm ">  %118 = fmul double %107, %107, </pre>
+Operand # 1 (0x4da29f0) <br /><pre class="prettyprint lang-llvm ">  %117 = fmul double %98, %98, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:87                                      ; preds = %1
+  %88 = lshr i32 %82, 1, 
+  %.lobit = and i32 %88, 1, 
+  %89 = xor i32 %.lobit, 1, 
+  %nFluidCells.1 = add nsw i32 %89, %nFluidCells.0124, 
+  %nAccelCells.1 = add nsw i32 %.lobit, %nAccelCells.0127, 
+  %90 = fsub double %14, %18, 
+  %91 = fadd double %90, %30, 
+  %92 = fsub double %91, %34, 
+  %93 = fadd double %92, %38, 
+  %94 = fsub double %93, %42, 
+  %95 = fadd double %94, %62, 
+  %96 = fadd double %95, %66, 
+  %97 = fsub double %96, %70, 
+  %98 = fsub double %97, %74, 
+  %99 = fsub double %6, %10, 
+  %100 = fadd double %99, %30, 
+  %101 = fadd double %100, %34, 
+  %102 = fsub double %101, %38, 
+  %103 = fsub double %102, %42, 
+  %104 = fadd double %1
+... (TRIMMED)</pre>

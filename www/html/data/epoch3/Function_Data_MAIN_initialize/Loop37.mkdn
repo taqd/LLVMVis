@@ -1,0 +1,39 @@
+
+.preheader.split.split.i:                         ; preds = %179, %.preheader.split.split.i.preheader
+  %indvars.iv38.i = phi i64 [ 0, %.preheader.split.split.i.preheader ], [ %indvars.iv.next39.i.1, %179 ], 
+  %101 = trunc i64 %indvars.iv38.i to i32, 
+  switch i32 %101, label %.preheader.split.split.i.164 [
+    i32 99, label %102
+    i32 0, label %102
+  ], 
+<br/>; label:102                                     ; preds = %.preheader.split.split.i, %.preheader.split.split.i
+  %103 = add nsw i64 %indvars.iv38.i, %71, 
+  %104 = mul nsw i64 %103, 20, 
+  %105 = add nsw i64 %104, 19, 
+  %106 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 %105, 
+  %107 = bitcast double* %106 to i32*, 
+  %108 = load i32, i32* %107, align 4, 
+  %109 = or i32 %108, 1, 
+  store i32 %109, i32* %107, align 4, 
+  br label %.preheader.split.split.i.164, 
+<br/>.preheader.split.split.i.164:                     ; preds = %102, %.preheader.split.split.i
+  %indvars.iv.next39.i = or i64 %indvars.iv38.i, 1, 
+  %110 = trunc i64 %indvars.iv.next39.i to i32, 
+  switch i32 %110, label %179 [
+    i32 99, label %171
+    i32 0, label %171
+  ], 
+<br/>; label:171                                     ; preds = %.preheader.split.split.i.164, %.preheader.split.split.i.164
+  %172 = add nsw i64 %indvars.iv.next39.i, %71, 
+  %173 = mul nsw i64 %172, 20, 
+  %174 = add nsw i64 %173, 19, 
+  %175 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 %174, 
+  %176 = bitcast double* %175 to i32*, 
+  %177 = load i32, i32* %176, align 4, 
+  %178 = or i32 %177, 1, 
+  store i32 %178, i32* %176, align 4, 
+  br label %179, 
+<br/>; label:179                                     ; preds = %171, %.preheader.split.split.i.164
+  %indvars.iv.next39.i.1 = add nsw i64 %indvars.iv38.i, 2, 
+  %exitcond40.i.1 = icmp eq i64 %indvars.iv.next39.i.1, 100, 
+  br i1 %exitcond40.i.1, label %.us-lcssa.us.i.loopexit, label %.preheader.split.split.i, 

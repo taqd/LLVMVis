@@ -1,0 +1,14 @@
+;; Line: 603, Column: 35
+  %144 = fpext float %143 to double, 
+</pre>
+<br/>Operand # 0 (0x4fb0288) <br /><pre class="prettyprint lang-llvm ">  %143 = load float, float* %ux, align 4, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:142                                     ; preds = %7
+  %143 = load float, float* %ux, align 4, 
+  %144 = fpext float %143 to double, 
+  %145 = load float, float* %uy, align 4, 
+  %146 = fpext float %145 to double, 
+  %147 = fpext float %140 to double, 
+  %148 = tail call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3, i8* nonnull getelementptr inbounds ([10 x i8], [10 x i8]* @.str.5, i64 0, i64 0), double %144, double %146, double %147), 
+  br label %149
+</pre>

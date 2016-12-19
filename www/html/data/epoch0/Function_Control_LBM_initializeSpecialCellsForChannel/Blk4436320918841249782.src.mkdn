@@ -1,0 +1,8 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk4436320918841249782 ():
+L157,C15:  %3 = load i32, i32* %z, align 4, !dbg !210
+L157,C17:  %4 = icmp slt i32 %3, 132, !dbg !213
+L157,C2:  br i1 %4, label %5, label %100, !dbg !214
+

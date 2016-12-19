@@ -1,0 +1,5 @@
+File: main.c, Lines: 155, Cols: 6,13,20,
+; label:11                                      ; preds = %6, %0
+  %12 = phi i32 [ %.pr, %6 ], [ %4, %0 ], 
+  %13 = icmp eq i32 %12, 2, 
+  br i1 %13, label %14, label %19, 

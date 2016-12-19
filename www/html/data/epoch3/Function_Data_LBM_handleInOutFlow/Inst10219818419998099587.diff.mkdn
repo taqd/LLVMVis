@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d26880) <br /><pre class="prettyprint lang-llvm ">  %485 = extractelement <2 x double> %481, i32 0, </pre>
+< Operand # 1 (0x4d630b0) <br /><pre class="prettyprint lang-llvm ">  %502 = fadd double %501, 3.000000e+00, </pre>
+---
+> <br/>Operand # 0 (0x4f52640) <br /><pre class="prettyprint lang-llvm ">  %485 = extractelement <2 x double> %481, i32 0, </pre>
+> Operand # 1 (0x4f531d0) <br /><pre class="prettyprint lang-llvm ">  %502 = fadd double %501, 3.000000e+00, </pre>

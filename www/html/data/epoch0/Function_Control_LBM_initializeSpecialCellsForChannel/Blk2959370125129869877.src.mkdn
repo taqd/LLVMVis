@@ -1,0 +1,24 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk2959370125129869877 ():
+L165,C12:  %50 = load i32, i32* %x, align 4, !dbg !262
+L165,C12:  %51 = load i32, i32* %y, align 4, !dbg !262
+L165,C12:  %52 = mul nsw i32 %51, 100, !dbg !262
+L165,C12:  %53 = add nsw i32 %50, %52, !dbg !262
+L165,C12:  %54 = load i32, i32* %z, align 4, !dbg !262
+L165,C12:  %55 = mul nsw i32 %54, 100, !dbg !262
+L165,C12:  %56 = mul nsw i32 %55, 100, !dbg !262
+L165,C12:  %57 = add nsw i32 %53, %56, !dbg !262
+L165,C12:  %58 = mul nsw i32 20, %57, !dbg !262
+L165,C12:  %59 = add nsw i32 19, %58, !dbg !262
+L165,C12:  %60 = sext i32 %59 to i64, !dbg !262
+L165,C12:  %61 = load double*, double** %1, align 8, !dbg !262
+L165,C12:  %62 = getelementptr inbounds double, double* %61, i64 %60, !dbg !262
+L165,C12:  %63 = bitcast double* %62 to i8*, !dbg !262
+L165,C12:  %64 = bitcast i8* %63 to i32*, !dbg !262
+L165,C12:  %65 = load i32, i32* %64, align 4, !dbg !262
+L165,C12:  %66 = and i32 %65, 1, !dbg !262
+L165,C12:  %67 = icmp ne i32 %66, 0, !dbg !262
+L164,C10:  br i1 %67, label %87, label %68, !dbg !263
+

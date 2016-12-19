@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4dcc138) <br /><pre class="prettyprint lang-llvm ">  %22 = bitcast double* %21 to i8*, </pre>
+< Operand # 1 (0x4d23298) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f99e88) <br /><pre class="prettyprint lang-llvm ">  %22 = bitcast double* %21 to i8*, </pre>
+> Operand # 1 (0x4edffb8) <br /><pre class="prettyprint lang-llvm ">

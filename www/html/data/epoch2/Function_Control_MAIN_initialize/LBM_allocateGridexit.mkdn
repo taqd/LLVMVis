@@ -1,0 +1,8 @@
+File: main.c, Lines: 25,26-29,30-39, Cols: 6,7-9,15,33,
+LBM_allocateGrid.exit:                            ; preds = %0
+  %5 = getelementptr inbounds i8, i8* %1, i64 3200000, 
+  store i8* %5, i8** bitcast ([26000000 x double]** @srcGrid to i8**), align 8, 
+  %6 = tail call noalias i8* @malloc(i64 214400000) #7, 
+  store i8* %6, i8** bitcast ([26000000 x double]** @dstGrid to i8**), align 8, 
+  %7 = icmp eq i8* %6, null, 
+  br i1 %7, label %8, label %LBM_allocateGrid.exit4, 

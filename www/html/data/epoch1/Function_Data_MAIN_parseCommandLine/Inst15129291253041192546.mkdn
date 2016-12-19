@@ -1,0 +1,35 @@
+;; Line: 66, Column: 16
+  br i1 %1, label %2, label %3, 
+</pre>
+<br/>Operand # 0 (0x4fc2150) <br /><pre class="prettyprint lang-llvm ">  %1 = icmp ugt i32 %nArgs.off, 1, </pre>
+Operand # 1 (0x4fc1300) <br /><pre class="prettyprint lang-llvm ">
+; label:3                                       ; preds = %0
+  %4 = getelementptr inbounds i8*, i8** %arg, i64 1, 
+  %5 = load i8*, i8** %4, align 8, 
+  %6 = tail call i32 @atoi(i8* %5) #9, 
+  %7 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, 
+  store i32 %6, i32* %7, align 8, 
+  %8 = getelementptr inbounds i8*, i8** %arg, i64 2, 
+  %9 = bitcast i8** %8 to i64*, 
+  %10 = load i64, i64* %9, align 8, 
+  %11 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, 
+  %12 = bitcast i8** %11 to i64*, 
+  store i64 %10, i64* %12, align 8, 
+  %13 = getelementptr inbounds i8*, i8** %arg, i64 3, 
+  %14 = load i8*, i8** %13, align 8, 
+  %15 = tail call i32 @atoi(i8* %14) #9, 
+  %16 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 2, 
+  store i32 %15, i32* %1
+... (TRIMMED)</pre>
+Operand # 2 (0x4fc12b0) <br /><pre class="prettyprint lang-llvm ">
+; label:2                                       ; preds = %0
+  %puts = tail call i32 @puts(i8* nonnull getelementptr inbounds ([108 x i8], [108 x i8]* @str, i64 0, i64 0)), 
+  tail call void @exit(i32 1) #8, 
+  unreachable, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %fileStat = alloca %struct.stat, align 8
+  %nArgs.off = add i32 %nArgs, -5, 
+  %1 = icmp ugt i32 %nArgs.off, 1, 
+  br i1 %1, label %2, label %3, 
+</pre>

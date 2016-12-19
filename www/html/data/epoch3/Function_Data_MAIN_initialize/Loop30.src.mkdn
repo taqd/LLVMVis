@@ -1,0 +1,49 @@
+File: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+preheader10i6 (.preheader10.i6):
+L133,C3:  %indvars.iv17.i5 = phi i64 [ 0, %LBM_loadObstacleFile.exit ], [ %indvars.iv.next18.i14, %61 ], !dbg !283
+L105,C32:  %43 = mul nuw nsw i64 %indvars.iv17.i5, 10000, !dbg !284
+L103,C3:  br label %.preheader.i8, !dbg !285
+
+preheaderi8 (.preheader.i8):
+L133,C3:  %indvars.iv14.i7 = phi i64 [ 0, %.preheader10.i6 ], [ %indvars.iv.next15.i12, %60 ], !dbg !283
+L105,C9:  %44 = tail call i32 @fgetc(%struct._IO_FILE* %42) #7, !dbg !286
+L105,C32:  %45 = mul nuw nsw i64 %indvars.iv14.i7, 100, !dbg !284
+L105,C32:  %46 = add nuw nsw i64 %45, %43, !dbg !284
+L104,C4:  br label %47, !dbg !287
+
+Blk11492476472389549466 ():
+L133,C3:  %indvars.iv.i9 = phi i64 [ 0, %.preheader.i8 ], [ %indvars.iv.next.i10, %58 ], !dbg !283
+L133,C3:  %48 = phi i32 [ %44, %.preheader.i8 ], [ %59, %58 ], !dbg !283
+L105,C23:  %49 = icmp eq i32 %48, 46, !dbg !288
+L105,C9:  br i1 %49, label %58, label %50, !dbg !289
+
+Blk2421501873523411517 ():
+L105,C32:  %51 = add nuw nsw i64 %46, %indvars.iv.i9, !dbg !284
+L105,C32:  %52 = mul nuw nsw i64 %51, 20, !dbg !284
+L105,C32:  %53 = add nuw nsw i64 %52, 19, !dbg !284
+L105,C32:  %54 = getelementptr inbounds [26000000 x double], [26000000 x double]* %40, i64 0, i64 %53, !dbg !284
+L105,C32:  %55 = bitcast double* %54 to i32*, !dbg !284
+L105,C32:  tail call void @llvm.dbg.value(metadata i32* %55, i64 0, metadata !299, metadata !199) #7, !dbg !1873
+L105,C32:  %56 = load i32, i32* %55, align 4, !dbg !284
+L105,C32:  %57 = or i32 %56, 1, !dbg !284
+L105,C32:  store i32 %57, i32* %55, align 4, !dbg !284
+L105,C32:  br label %58, !dbg !284
+
+Blk15930303136230767499 ():
+L104,C4:  %indvars.iv.next.i10 = add nuw nsw i64 %indvars.iv.i9, 1, !dbg !287
+L105,C9:  %59 = tail call i32 @fgetc(%struct._IO_FILE* %42) #7, !dbg !286
+L104,C4:  %exitcond.i11 = icmp eq i64 %indvars.iv.next.i10, 100, !dbg !287
+L104,C4:  br i1 %exitcond.i11, label %60, label %47, !dbg !287
+
+Blk7591741346169269799 ():
+L103,C3:  %indvars.iv.next15.i12 = add nuw nsw i64 %indvars.iv14.i7, 1, !dbg !285
+L103,C3:  %exitcond16.i13 = icmp eq i64 %indvars.iv.next15.i12, 100, !dbg !285
+L103,C3:  br i1 %exitcond16.i13, label %61, label %.preheader.i8, !dbg !285
+
+Blk12827254840156195939 ():
+L109,C3:  %62 = tail call i32 @fgetc(%struct._IO_FILE* %42) #7, !dbg !291
+L102,C2:  %indvars.iv.next18.i14 = add nuw nsw i64 %indvars.iv17.i5, 1, !dbg !282
+L102,C2:  %exitcond19.i15 = icmp eq i64 %indvars.iv.next18.i14, 130, !dbg !282
+L102,C2:  br i1 %exitcond19.i15, label %LBM_loadObstacleFile.exit16, label %.preheader10.i6, !dbg !282
+

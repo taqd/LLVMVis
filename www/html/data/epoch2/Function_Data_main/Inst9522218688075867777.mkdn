@@ -1,0 +1,17 @@
+;; Line: 44, Column: 39
+  %28 = getelementptr inbounds [26000000 x double], [26000000 x double]* %27, i64 0, i64 0, 
+</pre>
+<br/>Operand # 0 (0x4dbe108) <br /><pre class="prettyprint lang-llvm ">  %27 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, </pre>
+Operand # 1 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 2 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:24                                      ; preds = %21, %20
+  %25 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %26 = getelementptr inbounds [26000000 x double], [26000000 x double]* %25, i64 0, i64 0, 
+  %27 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %28 = getelementptr inbounds [26000000 x double], [26000000 x double]* %27, i64 0, i64 0, 
+  tail call void @LBM_performStreamCollide(double* %26, double* %28), 
+  %29 = load i64, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, 
+  %30 = load i64, i64* bitcast ([26000000 x double]** @dstGrid to i64*), align 8, 
+  store i64 %30, i64* bitcast ([26000000 x dou
+... (TRIMMED)</pre>

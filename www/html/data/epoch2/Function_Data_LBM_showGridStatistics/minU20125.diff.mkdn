@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f2b7c0) <br /><pre class="prettyprint lang-llvm ">double 1.000000e+30</pre>
+< Operand # 1 (0x4fa5fb8) <br /><pre class="prettyprint lang-llvm ">  %minU2.2 = phi double [ %minU2.0125, %85 ], [ %minU2.1, %126 ], [ %minU2.1, %87 ]</pre>
+---
+> <br/>Operand # 0 (0x4d2b7b0) <br /><pre class="prettyprint lang-llvm ">double 1.000000e+30</pre>
+> Operand # 1 (0x4da35d8) <br /><pre class="prettyprint lang-llvm ">  %minU2.2 = phi double [ %minU2.0125, %85 ], [ %minU2.1, %126 ], [ %minU2.1, %87 ]</pre>

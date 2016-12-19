@@ -1,0 +1,16 @@
+;; Line: 112, Column: 2
+  %39 = tail call i32 @fclose(%struct._IO_FILE* %18) #7, 
+</pre>
+<br/>Operand # 0 (0x4f8cd78) <br /><pre class="prettyprint lang-llvm ">  %18 = tail call %struct._IO_FILE* @fopen(i8* nonnull %14, i8* nonnull getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0)) #7, </pre>
+Operand # 1 (0x4ee0548) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind
+declare i32 @fclose(%struct._IO_FILE* nocapture) #2
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+LBM_loadObstacleFile.exit:                        ; preds = %37
+  %39 = tail call i32 @fclose(%struct._IO_FILE* %18) #7, 
+  %40 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %41 = load i8*, i8** %13, align 8, 
+  %42 = tail call %struct._IO_FILE* @fopen(i8* %41, i8* nonnull getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0)) #7, 
+  br label %.preheader10.i6, 
+</pre>

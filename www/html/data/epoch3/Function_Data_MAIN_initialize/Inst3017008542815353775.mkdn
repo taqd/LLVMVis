@@ -1,0 +1,13 @@
+;; Line: 160, Column: 16
+  %101 = trunc i64 %indvars.iv38.i to i32, 
+</pre>
+<br/>Operand # 0 (0x4f922d8) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv38.i = phi i64 [ 0, %.preheader.split.split.i.preheader ], [ %indvars.iv.next39.i.1, %179 ], </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split.i:                         ; preds = %179, %.preheader.split.split.i.preheader
+  %indvars.iv38.i = phi i64 [ 0, %.preheader.split.split.i.preheader ], [ %indvars.iv.next39.i.1, %179 ], 
+  %101 = trunc i64 %indvars.iv38.i to i32, 
+  switch i32 %101, label %.preheader.split.split.i.164 [
+    i32 99, label %102
+    i32 0, label %102
+  ], 
+</pre>

@@ -1,0 +1,5 @@
+File: main.c, Lines: 30,39, Cols: 2,6,16,38,
+; label:50                                      ; preds = %.lr.ph.split, %46
+  %51 = add nuw nsw i32 %t.04, 1, 
+  %52 = icmp slt i32 %t.04, %2, 
+  br i1 %52, label %.lr.ph.split, label %._crit_edge.loopexit8, 

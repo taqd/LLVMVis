@@ -1,0 +1,156 @@
+{
+	"title" : "main",
+	"graph" : {
+		"linkDistance" : 100,
+		"charge" : -600,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 32,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Loop20" : {
+			"short" : "Loop20",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Loop20" : {
+			"short" : "Loop20",
+			"long"  : "" 
+		},
+		"Loop20" : {
+			"short" : "Loop20",
+			"long"  : "" 
+		},
+		"Loop20" : {
+			"short" : "Loop20",
+			"long"  : "" 
+		},
+		"Loop20" : {
+			"short" : "Loop20",
+			"long"  : "" 
+		},
+		"Loop20" : {
+			"short" : "Loop20",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "main" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "main" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Blk17795881077624661491" },
+			"type" : "linkStrength",
+			"target" : "Loop20",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk17795881077624661491" },
+			"type" : "linkColor",
+			"target" : "Loop20",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk1824828359994936914" },
+			"type" : "linkStrength",
+			"target" : "Loop20",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk1824828359994936914" },
+			"type" : "linkColor",
+			"target" : "Loop20",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk6814015338864779548" },
+			"type" : "linkStrength",
+			"target" : "Loop20",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk6814015338864779548" },
+			"type" : "linkColor",
+			"target" : "Loop20",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk4907874780250948075" },
+			"type" : "linkStrength",
+			"target" : "Loop20",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk4907874780250948075" },
+			"type" : "linkColor",
+			"target" : "Loop20",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk2807155521351051328" },
+			"type" : "linkStrength",
+			"target" : "Loop20",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk2807155521351051328" },
+			"type" : "linkColor",
+			"target" : "Loop20",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop20" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop20" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop20" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk15217770191234007831" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "_crit_edge" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

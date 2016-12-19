@@ -1,0 +1,25 @@
+;; Line: 629, Column: 45
+  %34 = fadd double %30, %33, 
+</pre>
+<br/>Operand # 0 (0x4db1e40) <br /><pre class="prettyprint lang-llvm ">  %30 = fadd double %26, %29, </pre>
+Operand # 1 (0x4db2018) <br /><pre class="prettyprint lang-llvm ">  %33 = load double, double* %32, align 8, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:10                                      ; preds = %123, %.preheader
+  %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %123 ]
+  %maxDiff2.2215 = phi float [ %maxDiff2.1218, %.preheader ], [ %maxDiff2.3, %123 ]
+  %11 = add nuw nsw i64 %9, %indvars.iv, 
+  %12 = mul nuw nsw i64 %11, 20, 
+  %13 = getelementptr inbounds double, double* %grid, i64 %12, 
+  %14 = load double, double* %13, align 8, 
+  %15 = or i64 %12, 1, 
+  %16 = getelementptr inbounds double, double* %grid, i64 %15, 
+  %17 = load double, double* %16, align 8, 
+  %18 = fadd double %14, %17, 
+  %19 = or i64 %12, 2, 
+  %20 = getelementptr inbounds double, double* %grid, i64 %19, 
+  %21 = load double, double* %20, align 8, 
+  %22 = fadd double %18, %21, 
+  %23 = or i64 %12, 3, 
+  %24 = getelementptr inbounds double, double* %grid, i64 %23, 
+  %25 = load double, double* %24, align 8,
+... (TRIMMED)</pre>

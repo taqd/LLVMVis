@@ -1,0 +1,11 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+preheadersplitsplit (.preheader.split.split):
+L129,C11:  %54 = icmp eq i64 %indvars.iv57, 0, !dbg !230
+L129,C21:  %55 = icmp eq i64 %indvars.iv57, 99, !dbg !235
+L129,C16:  %or.cond = or i1 %54, %55, !dbg !229
+L129,C16:  %or.cond3 = or i1 %5, %or.cond, !dbg !229
+L129,C16:  %or.cond5 = or i1 %6, %or.cond3, !dbg !229
+L129,C16:  br i1 %or.cond5, label %56, label %64, !dbg !229
+

@@ -1,0 +1,5 @@
+File: lbm.c, Lines: 674, Cols: 28,37,39,
+; label:800                                     ; preds = %770
+  %801 = load float, float* %diff2, align 4, 
+  store float %801, float* %maxDiff2, align 4, 
+  br label %802, 

@@ -1,0 +1,18 @@
+;; Line: 188, Column: 24
+  %8 = getelementptr inbounds double, double* %srcGrid, i64 %indvars.iv, 
+</pre>
+<br/>Operand # 0 (0x4f09920) <br /><pre class="prettyprint lang-llvm ">double* %srcGrid</pre>
+Operand # 1 (0x4f07018) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv = phi i64 [ 0, %0 ], [ %indvars.iv.next, %466 ]</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:1                                       ; preds = %0, %466
+  %indvars.iv = phi i64 [ 0, %0 ], [ %indvars.iv.next, %466 ]
+  %2 = add nuw nsw i64 %indvars.iv, 19, 
+  %3 = getelementptr inbounds double, double* %srcGrid, i64 %2, 
+  %4 = bitcast double* %3 to i32*, 
+  %5 = load i32, i32* %4, align 4, 
+  %6 = and i32 %5, 1, 
+  %7 = icmp eq i32 %6, 0, 
+  %8 = getelementptr inbounds double, double* %srcGrid, i64 %indvars.iv, 
+  %9 = load double, double* %8, align 8, 
+  br i1 %7, label %138, label %10, 
+</pre>

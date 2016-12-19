@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d806e8) <br /><pre class="prettyprint lang-llvm ">  %154 = trunc i64 %indvars.iv572 to i32, </pre>
+< Operand # 1 (0x4d5c430) <br /><pre class="prettyprint lang-llvm ">i32 20</pre>
+---
+> <br/>Operand # 0 (0x4f42ff8) <br /><pre class="prettyprint lang-llvm ">  %154 = trunc i64 %indvars.iv572 to i32, </pre>
+> Operand # 1 (0x4f0fa20) <br /><pre class="prettyprint lang-llvm ">i32 20</pre>

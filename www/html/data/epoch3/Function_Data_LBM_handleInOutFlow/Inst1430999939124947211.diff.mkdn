@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d8a2f0) <br /><pre class="prettyprint lang-llvm ">  %366 = fdiv double %362, %329, </pre>
+< Operand # 1 (0x4d5c3f0) <br /><pre class="prettyprint lang-llvm ">double 2.000000e+00</pre>
+---
+> <br/>Operand # 0 (0x4f4ccf0) <br /><pre class="prettyprint lang-llvm ">  %366 = fdiv double %362, %329, </pre>
+> Operand # 1 (0x4f0f9e0) <br /><pre class="prettyprint lang-llvm ">double 2.000000e+00</pre>

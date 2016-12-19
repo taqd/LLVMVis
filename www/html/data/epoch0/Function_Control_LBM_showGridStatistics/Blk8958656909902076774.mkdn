@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 475,476 Cols: 3,18,
+; label:163                                     ; preds = %149
+  %164 = load i32, i32* %nObstacleCells, align 4, 
+  %165 = add nsw i32 %164, 1, 
+  store i32 %165, i32* %nObstacleCells, align 4, 
+  br label %418, 

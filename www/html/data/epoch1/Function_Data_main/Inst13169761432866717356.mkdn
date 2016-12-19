@@ -1,0 +1,12 @@
+;; Line: 39, Column: 16
+  %3 = icmp slt i32 %2, 1, 
+</pre>
+<br/>Operand # 0 (0x4fbf828) <br /><pre class="prettyprint lang-llvm ">  %2 = load i32, i32* %1, align 8, </pre>
+Operand # 1 (0x4f19b30) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %param = alloca %struct.MAIN_Param, align 8
+  call void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* nonnull %param), 
+  call void @MAIN_printInfo(%struct.MAIN_Param* nonnull %param), 
+  call void @MAIN_initialize(%struct.MAIN_Param* nonnull %param), 
+  %1 = getelementptr inbounds %struct.MAIN_
+... (TRIMMED)</pre>

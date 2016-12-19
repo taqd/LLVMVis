@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4da6ba0) <br /><pre class="prettyprint lang-llvm ">  %12 = mul nuw nsw i64 %11, 20, </pre>
+< Operand # 1 (0x4d379b0) <br /><pre class="prettyprint lang-llvm ">i64 7</pre>
+---
+> <br/>Operand # 0 (0x4f6a420) <br /><pre class="prettyprint lang-llvm ">  %12 = mul nuw nsw i64 %11, 20, </pre>
+> Operand # 1 (0x4ee70c0) <br /><pre class="prettyprint lang-llvm ">i64 7</pre>

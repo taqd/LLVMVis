@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f52380) <br /><pre class="prettyprint lang-llvm ">  %2 = icmp eq i64 %indvars.iv32, 0, </pre>
+< Operand # 1 (0x4f528c0) <br /><pre class="prettyprint lang-llvm ">  %or.cond = or i1 %7, %8, </pre>
+---
+> <br/>Operand # 0 (0x4d50ed0) <br /><pre class="prettyprint lang-llvm ">  %2 = icmp eq i64 %indvars.iv32, 0, </pre>
+> Operand # 1 (0x4d4a1a0) <br /><pre class="prettyprint lang-llvm ">  %or.cond = or i1 %7, %8, </pre>

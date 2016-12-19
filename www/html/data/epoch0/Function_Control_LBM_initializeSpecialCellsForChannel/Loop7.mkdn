@@ -1,0 +1,124 @@
+
+; label:2                                       ; preds = %97, %0
+  %3 = load i32, i32* %z, align 4, 
+  %4 = icmp slt i32 %3, 132, 
+  br i1 %4, label %5, label %100, 
+<br/>; label:5                                       ; preds = %2
+  store i32 0, i32* %y, align 4, 
+  br label %6, 
+<br/>; label:6                                       ; preds = %93, %5
+  %7 = load i32, i32* %y, align 4, 
+  %8 = icmp slt i32 %7, 100, 
+  br i1 %8, label %9, label %96, 
+<br/>; label:96                                      ; preds = %6
+  br label %97, 
+<br/>; label:97                                      ; preds = %96
+  %98 = load i32, i32* %z, align 4, 
+  %99 = add nsw i32 %98, 1, 
+  store i32 %99, i32* %z, align 4, 
+  br label %2, 
+<br/>; label:9                                       ; preds = %6
+  store i32 0, i32* %x, align 4, 
+  br label %10, 
+<br/>; label:10                                      ; preds = %89, %9
+  %11 = load i32, i32* %x, align 4, 
+  %12 = icmp slt i32 %11, 100, 
+  br i1 %12, label %13, label %92, 
+<br/>; label:92                                      ; preds = %10
+  br label %93, 
+<br/>; label:93                                      ; preds = %92
+  %94 = load i32, i32* %y, align 4, 
+  %95 = add nsw i32 %94, 1, 
+  store i32 %95, i32* %y, align 4, 
+  br label %6, 
+<br/>; label:13                                      ; preds = %10
+  %14 = load i32, i32* %x, align 4, 
+  %15 = icmp eq i32 %14, 0, 
+  br i1 %15, label %25, label %16, 
+<br/>; label:16                                      ; preds = %13
+  %17 = load i32, i32* %x, align 4, 
+  %18 = icmp eq i32 %17, 99, 
+  br i1 %18, label %25, label %19, 
+<br/>; label:19                                      ; preds = %16
+  %20 = load i32, i32* %y, align 4, 
+  %21 = icmp eq i32 %20, 0, 
+  br i1 %21, label %25, label %22, 
+<br/>; label:22                                      ; preds = %19
+  %23 = load i32, i32* %y, align 4, 
+  %24 = icmp eq i32 %23, 99, 
+  br i1 %24, label %25, label %88, 
+<br/>; label:25                                      ; preds = %22, %19, %16, %13
+  %26 = load i32, i32* %x, align 4, 
+  %27 = load i32, i32* %y, align 4, 
+  %28 = mul nsw i32 %27, 100, 
+  %29 = add nsw i32 %26, %28, 
+  %30 = load i32, i32* %z, align 4, 
+  %31 = mul nsw i32 %30, 100, 
+  %32 = mul nsw i32 %31, 100, 
+  %33 = add nsw i32 %29, %32, 
+  %34 = mul nsw i32 20, %33, 
+  %35 = add nsw i32 19, %34, 
+  %36 = sext i32 %35 to i64, 
+  %37 = load double*, double** %1, align 8, 
+  %38 = getelementptr inbounds double, double* %37, i64 %36, 
+  %39 = bitcast double* %38 to i8*, 
+  %40 = bitcast i8* %39 to i32*, 
+  store i32* %40, i32** %_aux_, align 8, 
+  %41 = load i32*, i32** %_aux_, align 8, 
+  %42 = load i32, i32* %41, align 4, 
+  %43 =
+... (TRIMMED)
+; label:46                                      ; preds = %25
+  %47 = load i32, i32* %z, align 4, 
+  %48 = icmp eq i32 %47, 129, 
+  br i1 %48, label %49, label %87, 
+<br/>; label:49                                      ; preds = %46, %25
+  %50 = load i32, i32* %x, align 4, 
+  %51 = load i32, i32* %y, align 4, 
+  %52 = mul nsw i32 %51, 100, 
+  %53 = add nsw i32 %50, %52, 
+  %54 = load i32, i32* %z, align 4, 
+  %55 = mul nsw i32 %54, 100, 
+  %56 = mul nsw i32 %55, 100, 
+  %57 = add nsw i32 %53, %56, 
+  %58 = mul nsw i32 20, %57, 
+  %59 = add nsw i32 19, %58, 
+  %60 = sext i32 %59 to i64, 
+  %61 = load double*, double** %1, align 8, 
+  %62 = getelementptr inbounds double, double* %61, i64 %60, 
+  %63 = bitcast double* %62 to i8*, 
+  %64 = bitcast i8* %63 to i32*, 
+  %65 = load i32, i32* %64, align 4, 
+  %66 = and i32 %65, 1, 
+  %67 = icmp ne i32 %66, 0, 
+  br i1 %67, label %87, label %68, 
+<br/>; label:68                                      ; preds = %49
+  %69 = load i32, i32* %x, align 4, 
+  %70 = load i32, i32* %y, align 4, 
+  %71 = mul nsw i32 %70, 100, 
+  %72 = add nsw i32 %69, %71, 
+  %73 = load i32, i32* %z, align 4, 
+  %74 = mul nsw i32 %73, 100, 
+  %75 = mul nsw i32 %74, 100, 
+  %76 = add nsw i32 %72, %75, 
+  %77 = mul nsw i32 20, %76, 
+  %78 = add nsw i32 19, %77, 
+  %79 = sext i32 %78 to i64, 
+  %80 = load double*, double** %1, align 8, 
+  %81 = getelementptr inbounds double, double* %80, i64 %79, 
+  %82 = bitcast double* %81 to i8*, 
+  %83 = bitcast i8* %82 to i32*, 
+  store i32* %83, i32** %_aux_1, align 8, 
+  %84 = load i32*, i32** %_aux_1, align 8, 
+  %85 = load i32, i32* %84, align 4, 
+  %86 = or i32 %85,
+... (TRIMMED)
+; label:87                                      ; preds = %68, %49, %46
+  br label %88, 
+<br/>; label:88                                      ; preds = %87, %22
+  br label %89, 
+<br/>; label:89                                      ; preds = %88
+  %90 = load i32, i32* %x, align 4, 
+  %91 = add nsw i32 %90, 1, 
+  store i32 %91, i32* %x, align 4, 
+  br label %10, 

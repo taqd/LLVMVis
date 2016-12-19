@@ -1,0 +1,33 @@
+;; Line: 656, Column: 9
+  br i1 %1, label %117, label %121, 
+</pre>
+<br/>Operand # 0 (0x4f73df0) <br /><pre class="prettyprint lang-llvm ">  %1 = icmp ne i32 %binary, 0, </pre>
+Operand # 1 (0x4f71c30) <br /><pre class="prettyprint lang-llvm ">
+; label:121                                     ; preds = %10
+  %122 = call i32 (%struct._IO_FILE*, i8*, ...) @__isoc99_fscanf(%struct._IO_FILE* %3, i8* nonnull getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i64 0, i64 0), float* nonnull %fileUx, float* nonnull %fileUy, float* nonnull %fileUz) #7, 
+  br label %123
+</pre>
+Operand # 2 (0x4f71be0) <br /><pre class="prettyprint lang-llvm ">
+; label:117                                     ; preds = %10
+  %118 = call i64 @fread(i8* %4, i64 4, i64 1, %struct._IO_FILE* %3) #7, 
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:10                                      ; preds = %123, %.preheader
+  %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %123 ]
+  %maxDiff2.2215 = phi float [ %maxDiff2.1218, %.preheader ], [ %maxDiff2.3, %123 ]
+  %11 = add nuw nsw i64 %9, %indvars.iv, 
+  %12 = mul nuw nsw i64 %11, 20, 
+  %13 = getelementptr inbounds double, double* %grid, i64 %12, 
+  %14 = load double, double* %13, align 8, 
+  %15 = or i64 %12, 1, 
+  %16 = getelementptr inbounds double, double* %grid, i64 %15, 
+  %17 = load double, double* %16, align 8, 
+  %18 = fadd double %14, %17, 
+  %19 = or i64 %12, 2, 
+  %20 = getelementptr inbounds double, double* %grid, i64 %19, 
+  %21 = load double, double* %20, align 8, 
+  %22 = fadd double %18, %21, 
+  %23 = or i64 %12, 3, 
+  %24 = getelementptr inbounds double, double* %grid, i64 %23, 
+  %25 = load double, double* %24, align 8,
+... (TRIMMED)</pre>

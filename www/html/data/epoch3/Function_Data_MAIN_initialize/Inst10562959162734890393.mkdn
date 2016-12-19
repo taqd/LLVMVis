@@ -1,0 +1,12 @@
+;; Line: 132, Column: 3
+  %24 = phi i32 [ %20, %.preheader.i ], [ %35, %34 ], 
+</pre>
+<br/>Operand # 0 (0x4f8d3c0) <br /><pre class="prettyprint lang-llvm ">  %20 = tail call i32 @fgetc(%struct._IO_FILE* %18) #7, </pre>
+Operand # 1 (0x4f8df50) <br /><pre class="prettyprint lang-llvm ">  %35 = tail call i32 @fgetc(%struct._IO_FILE* %18) #7, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:23                                      ; preds = %34, %.preheader.i
+  %indvars.iv.i = phi i64 [ 0, %.preheader.i ], [ %indvars.iv.next.i, %34 ], 
+  %24 = phi i32 [ %20, %.preheader.i ], [ %35, %34 ], 
+  %25 = icmp eq i32 %24, 46, 
+  br i1 %25, label %34, label %26, 
+</pre>

@@ -1,0 +1,8 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk4713292511199087841 ():
+L481,C16:  %181 = load i32, i32* %nFluidCells, align 4, !dbg !305
+L481,C16:  %182 = add nsw i32 %181, 1, !dbg !305
+L481,C16:  store i32 %182, i32* %nFluidCells, align 4, !dbg !305
+

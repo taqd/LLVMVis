@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4dbf520) <br /><pre class="prettyprint lang-llvm ">%struct.MAIN_Param* %param</pre>
+< Operand # 1 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+< Operand # 2 (0x4d29d80) <br /><pre class="prettyprint lang-llvm ">i32 3</pre>
+---
+> <br/>Operand # 0 (0x4f7e440) <br /><pre class="prettyprint lang-llvm ">%struct.MAIN_Param* %param</pre>
+> Operand # 1 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+> Operand # 2 (0x4ee6af0) <br /><pre class="prettyprint lang-llvm ">i32 3</pre>

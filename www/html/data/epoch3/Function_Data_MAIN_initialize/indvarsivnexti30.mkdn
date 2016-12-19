@@ -1,0 +1,21 @@
+;; Line: 159, Column: 4
+  %indvars.iv.next.i30 = or i64 %indvars.iv.i29, 1, 
+</pre>
+<br/>Operand # 0 (0x4f945c8) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.i29 = phi i64 [ 0, %.preheader.split.split.us.i32.preheader ], [ %indvars.iv.next.i30.1, %.preheader.split.split.us.i32 ], </pre>
+Operand # 1 (0x4f078d0) <br /><pre class="prettyprint lang-llvm ">i64 1</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split.us.i32:                    ; preds = %.preheader.split.split.us.i32, %.preheader.split.split.us.i32.preheader
+  %indvars.iv.i29 = phi i64 [ 0, %.preheader.split.split.us.i32.preheader ], [ %indvars.iv.next.i30.1, %.preheader.split.split.us.i32 ], 
+  %131 = add nsw i64 %indvars.iv.i29, %115, 
+  %132 = mul nsw i64 %131, 20, 
+  %133 = add nsw i64 %132, 19, 
+  %134 = getelementptr inbounds [26000000 x double], [26000000 x double]* %112, i64 0, i64 %133, 
+  %135 = bitcast double* %134 to i32*, 
+  %136 = load i32, i32* %135, align 4, 
+  %137 = or i32 %136, 1, 
+  store i32 %137, i32* %135, align 4, 
+  %indvars.iv.next.i30 = or i64 %indvars.iv.i29, 1, 
+  %138 = add nsw i64 %indvars.iv.next.i30, %115, 
+  %139 = mul nsw i64 %138, 20, 
+  %140 = add nsw i64 %139, 19, !
+... (TRIMMED)</pre>

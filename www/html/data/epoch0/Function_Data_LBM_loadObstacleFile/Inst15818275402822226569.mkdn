@@ -1,0 +1,21 @@
+;; Line: 102, Column: 2
+  br i1 %7, label %8, label %55, 
+</pre>
+<br/>Operand # 0 (0x5cbe510) <br /><pre class="prettyprint lang-llvm ">  %7 = icmp slt i32 %6, 130, </pre>
+Operand # 1 (0x5cbce30) <br /><pre class="prettyprint lang-llvm ">
+; label:55                                      ; preds = %5
+  %56 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %57 = call i32 @fclose(%struct._IO_FILE* %56), 
+  ret void, 
+</pre>
+Operand # 2 (0x5cbca70) <br /><pre class="prettyprint lang-llvm ">
+; label:8                                       ; preds = %5
+  store i32 0, i32* %y, align 4, 
+  br label %9, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:5                                       ; preds = %52, %0
+  %6 = load i32, i32* %z, align 4, 
+  %7 = icmp slt i32 %6, 130, 
+  br i1 %7, label %8, label %55, 
+</pre>

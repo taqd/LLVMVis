@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d69f30) <br /><pre class="prettyprint lang-llvm ">  %316 = fsub double %315, %310, </pre>
+< Operand # 1 (0x4d6a060) <br /><pre class="prettyprint lang-llvm ">  %318 = getelementptr inbounds double, double* %dstGrid, i64 %317, </pre>
+---
+> <br/>Operand # 0 (0x4f2c870) <br /><pre class="prettyprint lang-llvm ">  %316 = fsub double %315, %310, </pre>
+> Operand # 1 (0x4f2c9a0) <br /><pre class="prettyprint lang-llvm ">  %318 = getelementptr inbounds double, double* %dstGrid, i64 %317, </pre>

@@ -1,0 +1,10 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4dc1b50) <br /><pre class="prettyprint lang-llvm ">  %27 = icmp eq i32 %26, 0, </pre>
+< Operand # 1 (0x4dbf710) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f86b90) <br /><pre class="prettyprint lang-llvm ">  %27 = icmp eq i32 %26, 0, </pre>
+> Operand # 1 (0x4f84720) <br /><pre class="prettyprint lang-llvm ">
+12c12
+< Operand # 2 (0x4dbf760) <br /><pre class="prettyprint lang-llvm ">
+---
+> Operand # 2 (0x4f84770) <br /><pre class="prettyprint lang-llvm ">

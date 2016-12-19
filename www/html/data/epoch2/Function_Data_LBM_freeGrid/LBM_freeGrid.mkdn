@@ -1,0 +1,10 @@
+
+; Function Attrs: nounwind uwtable
+define void @LBM_freeGrid(double** nocapture %ptr) #0 {
+  %1 = load double*, double** %ptr, align 8, 
+  %2 = getelementptr inbounds double, double* %1, i64 -400000, 
+  %3 = bitcast double* %2 to i8*, 
+  tail call void @free(i8* %3) #7, 
+  store double* null, double** %ptr, align 8, 
+  ret void, 
+}

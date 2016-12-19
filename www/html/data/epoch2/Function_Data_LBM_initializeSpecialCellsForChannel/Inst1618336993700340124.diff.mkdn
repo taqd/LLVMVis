@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f52f00) <br /><pre class="prettyprint lang-llvm ">  %16 = or i32 %15, 1, </pre>
+< Operand # 1 (0x4f52cf8) <br /><pre class="prettyprint lang-llvm ">  %14 = bitcast double* %13 to i32*, </pre>
+---
+> <br/>Operand # 0 (0x4d2bb40) <br /><pre class="prettyprint lang-llvm ">  %16 = or i32 %15, 1, </pre>
+> Operand # 1 (0x4d2b938) <br /><pre class="prettyprint lang-llvm ">  %14 = bitcast double* %13 to i32*, </pre>

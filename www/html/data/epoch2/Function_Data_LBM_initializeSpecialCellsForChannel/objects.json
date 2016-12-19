@@ -1,0 +1,336 @@
+[
+	{
+		"type" : "Helper",
+		"name" : "LBM_initializeSpecialCellsForChannel",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop7",
+		"name" : "Loop7",
+		"group" : "",
+		"depends" : [
+			"indvarsiv35",
+			"Inst13198504832668543170",
+			"indvarsiv32",
+			"Inst9181237938608883377",
+			"Inst9106505790887225752",
+			"Inst1653942000038211393",
+			"Inst11955788435441326592",
+			"indvarsiv",
+			"Inst3010484612291092288",
+			"Inst4902653306631937268",
+			"orcond",
+			"orcond3",
+			"orcond5",
+			"Inst10768866626490126121",
+			"Inst11866445639738093040",
+			"Inst14598635037542740197",
+			"Inst2045398343092257933",
+			"Inst4418460464267745786",
+			"Inst6516785708290550183",
+			"Inst8384887674285308830",
+			"Inst1618336993700340124",
+			"indvarsivnext",
+			"exitcond",
+			"Inst4552500049754876338",
+			"indvarsivnext33",
+			"exitcond34",
+			"Inst12642470760340069890",
+			"indvarsivnext36",
+			"exitcond37",
+			"Inst1573253657820904823"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "Loop8",
+		"group" : "",
+		"depends" : [
+			"indvarsiv32",
+			"Inst9181237938608883377",
+			"Inst9106505790887225752",
+			"Inst1653942000038211393",
+			"Inst11955788435441326592",
+			"indvarsiv",
+			"Inst3010484612291092288",
+			"Inst4902653306631937268",
+			"orcond",
+			"orcond3",
+			"orcond5",
+			"Inst10768866626490126121",
+			"Inst11866445639738093040",
+			"Inst14598635037542740197",
+			"Inst2045398343092257933",
+			"Inst4418460464267745786",
+			"Inst6516785708290550183",
+			"Inst8384887674285308830",
+			"Inst1618336993700340124",
+			"indvarsivnext",
+			"exitcond",
+			"Inst4552500049754876338",
+			"indvarsivnext33",
+			"exitcond34",
+			"Inst12642470760340069890"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Loop9",
+		"group" : "",
+		"depends" : [
+			"indvarsiv",
+			"Inst3010484612291092288",
+			"Inst4902653306631937268",
+			"orcond",
+			"orcond3",
+			"orcond5",
+			"Inst10768866626490126121",
+			"Inst11866445639738093040",
+			"Inst14598635037542740197",
+			"Inst2045398343092257933",
+			"Inst4418460464267745786",
+			"Inst6516785708290550183",
+			"Inst8384887674285308830",
+			"Inst1618336993700340124",
+			"indvarsivnext",
+			"exitcond",
+			"Inst4552500049754876338"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst1618336993700340124",
+		"group" : "",
+		"depends" : [
+			"Inst8384887674285308830"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "Inst5018592692366112860",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop7",
+		"name" : "indvarsiv35",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext36"
+		]
+	}, {
+		"type" : "Loop7",
+		"name" : "Inst13198504832668543170",
+		"group" : "",
+		"depends" : [
+			"indvarsiv35"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "indvarsiv32",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext33"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "Inst9181237938608883377",
+		"group" : "",
+		"depends" : [
+			"indvarsiv32"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "Inst9106505790887225752",
+		"group" : "",
+		"depends" : [
+			"indvarsiv32"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "Inst1653942000038211393",
+		"group" : "",
+		"depends" : [
+			"indvarsiv32"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "Inst11955788435441326592",
+		"group" : "",
+		"depends" : [
+			"Inst1653942000038211393",
+			"Inst13198504832668543170"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "indvarsiv",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst3010484612291092288",
+		"group" : "",
+		"depends" : [
+			"indvarsiv"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst4902653306631937268",
+		"group" : "",
+		"depends" : [
+			"indvarsiv"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "orcond",
+		"group" : "",
+		"depends" : [
+			"Inst3010484612291092288",
+			"Inst4902653306631937268"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "orcond3",
+		"group" : "",
+		"depends" : [
+			"Inst9181237938608883377",
+			"orcond"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "orcond5",
+		"group" : "",
+		"depends" : [
+			"Inst9106505790887225752",
+			"orcond3"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst10768866626490126121",
+		"group" : "",
+		"depends" : [
+			"orcond5"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst11866445639738093040",
+		"group" : "",
+		"depends" : [
+			"Inst11955788435441326592",
+			"indvarsiv"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst14598635037542740197",
+		"group" : "",
+		"depends" : [
+			"Inst11866445639738093040"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst2045398343092257933",
+		"group" : "",
+		"depends" : [
+			"Inst14598635037542740197"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst4418460464267745786",
+		"group" : "",
+		"depends" : [
+			"Inst2045398343092257933"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst6516785708290550183",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst8384887674285308830",
+		"group" : "",
+		"depends" : [
+			"Inst6516785708290550183"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst1618336993700340124",
+		"group" : "",
+		"depends" : [
+			"Inst8384887674285308830"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "indvarsivnext",
+		"group" : "",
+		"depends" : [
+			"indvarsiv"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "exitcond",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Inst4552500049754876338",
+		"group" : "",
+		"depends" : [
+			"exitcond"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "indvarsivnext33",
+		"group" : "",
+		"depends" : [
+			"indvarsiv32"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "exitcond34",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext33"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "Inst12642470760340069890",
+		"group" : "",
+		"depends" : [
+			"exitcond34"
+		]
+	}, {
+		"type" : "Loop7",
+		"name" : "indvarsivnext36",
+		"group" : "",
+		"depends" : [
+			"indvarsiv35"
+		]
+	}, {
+		"type" : "Loop7",
+		"name" : "exitcond37",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext36"
+		]
+	}, {
+		"type" : "Loop7",
+		"name" : "Inst1573253657820904823",
+		"group" : "",
+		"depends" : [
+			"exitcond37"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "Inst5018592692366112860",
+		"group" : "",
+		"depends" : [
+
+		]
+	}
+]

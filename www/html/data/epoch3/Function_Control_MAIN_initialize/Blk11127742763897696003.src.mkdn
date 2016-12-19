@@ -1,0 +1,9 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk11127742763897696003 ():
+L109,C3:  %38 = tail call i32 @fgetc(%struct._IO_FILE* %18) #7, !dbg !273
+L102,C2:  %indvars.iv.next18.i = add nuw nsw i64 %indvars.iv17.i, 1, !dbg !247
+L102,C2:  %exitcond19.i = icmp eq i64 %indvars.iv.next18.i, 130, !dbg !247
+L102,C2:  br i1 %exitcond19.i, label %LBM_loadObstacleFile.exit, label %.preheader10.i, !dbg !247
+

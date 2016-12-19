@@ -1,0 +1,127 @@
+2,42c2,19
+< ; label:13                                      ; preds = %807, %12
+<   %14 = load i32, i32* %y, align 4, 
+<   %15 = icmp slt i32 %14, 100, 
+<   br i1 %15, label %16, label %810, 
+< <br/>; label:16                                      ; preds = %13
+<   store i32 0, i32* %x, align 4, 
+<   br label %17, 
+< <br/>; label:17                                      ; preds = %803, %16
+<   %18 = load i32, i32* %x, align 4, 
+<   %19 = icmp slt i32 %18, 100, 
+<   br i1 %19, label %20, label %806, 
+< <br/>; label:806                                     ; preds = %17
+<   br label %807, 
+< <br/>; label:807                                     ; preds = %806
+<   %808 = load i32, i32* %y, align 4, 
+<   %809 = add nsw i32 %808, 1, 
+<   store i32 %809, i32* %y, align 4, 
+<   br label %13, 
+< <br/>; label:20                                      ; preds = %17
+<   %21 = load i32, i32* %x, align 4, 
+<   %22 = load i32, i32* %y, align 4, 
+<   %23 = mul nsw i32 %22, 100, 
+<   %24 = add nsw i32 %21, %23, 
+<   %25 = load i32, i32* %z, align 4, 
+<   %26 = mul nsw i32 %25, 100, 
+<   %27 = mul nsw i32 %26, 100, 
+<   %28 = add nsw i32 %24, %27, 
+<   %29 = mul nsw i32 20, %28, 
+<   %30 = add nsw i32 0, %29, 
+<   %31 = sext i32 %30 to i64, 
+<   %32 = load double*, double** %1, align 8, 
+<   %33 = getelementptr inbounds double, double* %32, i64 %31, 
+<   %34 = load double, double* %33, align 8, 
+<   %35 = load i32, i32* %x, align 4, 
+<   %36 = load i32, i32* %y, align 4, 
+<   %37 = mul nsw i32 %36, 100, 
+<   %38 = add nsw i32 %35, %37, 
+<   %39 = load i32, i32* %z, align 4, 
+<   %40 = mul nsw i32 %39, 100, 
+<   %41 = mul nsw i32 %40, 100, 
+<   %42
+---
+> ; label:7                                       ; preds = %117, %.preheader
+>   %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %117 ]
+>   %maxDiff2.2215 = phi float [ %maxDiff2.1218, %.preheader ], [ %maxDiff2.3, %117 ]
+>   %8 = add nuw nsw i64 %6, %indvars.iv, 
+>   %9 = mul nuw nsw i64 %8, 20, 
+>   %10 = getelementptr inbounds double, double* %grid, i64 %9, 
+>   %11 = load double, double* %10, align 8, 
+>   %12 = or i64 %9, 1, 
+>   %13 = getelementptr inbounds double, double* %grid, i64 %12, 
+>   %14 = load double, double* %13, align 8, 
+>   %15 = fadd double %11, %14, 
+>   %16 = or i64 %9, 2, 
+>   %17 = getelementptr inbounds double, double* %grid, i64 %16, 
+>   %18 = load double, double* %17, align 8, 
+>   %19 = fadd double %15, %18, 
+>   %20 = or i64 %9, 3, 
+>   %21 = getelementptr inbounds double, double* %grid, i64 %20, 
+>   %22 = load double, double* %21, align 8, 
+44,87c21,39
+< ; label:767                                     ; preds = %20
+<   %768 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+<   %769 = call i32 (%struct._IO_FILE*, i8*, ...) @__isoc99_fscanf(%struct._IO_FILE* %768, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i32 0, i32 0), float* %fileUx, float* %fileUy, float* %fileUz), 
+<   br label %770
+< <br/>; label:763                                     ; preds = %20
+<   %764 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+<   call void @loadValue(%struct._IO_FILE* %764, float* %fileUx), 
+<   %765 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+<   call void @loadValue(%struct._IO_FILE* %765, float* %fileUy), 
+<   %766 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+<   call void @loadValue(%struct._IO_FILE* %766, float* %fileUz), 
+<   br label %770, 
+< <br/>; label:770                                     ; preds = %767, %763
+<   %771 = load double, double* %ux, align 8, 
+<   %772 = load float, float* %fileUx, align 4, 
+<   %773 = fpext float %772 to double, 
+<   %774 = fsub double %771, %773, 
+<   %775 = fptrunc double %774 to float, 
+<   store float %775, float* %dUx, align 4, 
+<   %776 = load double, double* %uy, align 8, 
+<   %777 = load float, float* %fileUy, align 4, 
+<   %778 = fpext float %777 to double, 
+<   %779 = fsub double %776, %778, 
+<   %780 = fptrunc double %779 to float, 
+<   store float %780, float* %dUy, align 4, 
+<   %781 = load double, double* %uz, align 8, 
+<   %782 = load float, float* %fileUz, align 4, 
+<   %783 = fpext float %782 to double, 
+<   %784 = fsub double %781, %783, 
+<   %785 = fptrunc double %784 to float, 
+<   store float %785, float* %dUz, align 4, 
+<   %786 = load float, floa
+< ... (TRIMMED)
+< ; label:800                                     ; preds = %770
+<   %801 = load float, float* %diff2, align 4, 
+<   store float %801, float* %maxDiff2, align 4, 
+<   br label %802, 
+< <br/>; label:802                                     ; preds = %800, %770
+<   br label %803, 
+< <br/>; label:803                                     ; preds = %802
+<   %804 = load i32, i32* %x, align 4, 
+<   %805 = add nsw i32 %804, 1, 
+<   store i32 %805, i32* %x, align 4, 
+<   br label %17, 
+---
+> ; label:115                                     ; preds = %7
+>   %116 = call i32 (%struct._IO_FILE*, i8*, ...) @__isoc99_fscanf(%struct._IO_FILE* %3, i8* nonnull getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i64 0, i64 0), float* nonnull %fileUx, float* nonnull %fileUy, float* nonnull %fileUz) #7, 
+>   br label %117
+> <br/>; label:114                                     ; preds = %7
+>   call fastcc void @loadValue(%struct._IO_FILE* %3, float* nonnull %fileUx), 
+>   call fastcc void @loadValue(%struct._IO_FILE* %3, float* nonnull %fileUy), 
+>   call fastcc void @loadValue(%struct._IO_FILE* %3, float* nonnull %fileUz), 
+>   br label %117, 
+> <br/>; label:117                                     ; preds = %115, %114
+>   %118 = load float, float* %fileUx, align 4, 
+>   %119 = fpext float %118 to double, 
+>   %120 = fsub double %111, %119, 
+>   %121 = fptrunc double %120 to float, 
+>   %122 = load float, float* %fileUy, align 4, 
+>   %123 = fpext float %122 to double, 
+>   %124 = fsub double %112, %123, 
+>   %125 = fptrunc double %124 to float, 
+>   %126 = load float, float* %fileUz, align 4, 
+> ... (TRIMMED)
+\ No newline at end of file

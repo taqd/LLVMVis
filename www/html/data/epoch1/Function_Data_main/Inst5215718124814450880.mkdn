@@ -1,0 +1,16 @@
+;; Line: 44, Column: 40
+  %15 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+</pre>
+<br/>Operand # 0 (0x4f11378) <br /><pre class="prettyprint lang-llvm ">@dstGrid = internal global [26000000 x double]* null, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:12                                      ; preds = %9, %8
+  %13 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %14 = getelementptr inbounds [26000000 x double], [26000000 x double]* %13, i64 0, i64 0, 
+  %15 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %16 = getelementptr inbounds [26000000 x double], [26000000 x double]* %15, i64 0, i64 0, 
+  tail call void @LBM_performStreamCollide(double* %14, double* %16), 
+  tail call void @LBM_swapGrids([26000000 x double]** nonnull @srcGrid, [26000000 x double]** nonnull @dstGrid), 
+  %17 = and i32 %t.04, 63, 
+  %18 = icmp eq i32 %17, 0, 
+  br i1 %18, label %19, label %23, 
+</pre>

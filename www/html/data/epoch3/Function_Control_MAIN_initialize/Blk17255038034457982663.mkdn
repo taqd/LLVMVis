@@ -1,0 +1,6 @@
+File: main.c, Lines: 105,132, Cols: 3,9,23,
+; label:23                                      ; preds = %34, %.preheader.i
+  %indvars.iv.i = phi i64 [ 0, %.preheader.i ], [ %indvars.iv.next.i, %34 ], 
+  %24 = phi i32 [ %20, %.preheader.i ], [ %35, %34 ], 
+  %25 = icmp eq i32 %24, 46, 
+  br i1 %25, label %34, label %26, 

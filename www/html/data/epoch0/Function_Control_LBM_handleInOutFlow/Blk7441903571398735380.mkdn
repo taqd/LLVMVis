@@ -1,0 +1,22 @@
+File: lbm.c, Lines: 290,291-293,294-296,297-299,300-302,303-305,306-308,309-311,313,314-316,317-319,321,323,324-326,327-330,331-333,334-336,337-339,340-342, Cols: 2,3-6,7-9,10-12,13-15,17,18-20,21-23,25,26-29,30-33,34-36,37-39,42,43-45,46-49,53,54-56,57-59,60-64,71,73,
+; label:5                                       ; preds = %2
+  %6 = load i32, i32* %i, align 4, 
+  %7 = add nsw i32 200000, %6, 
+  %8 = sext i32 %7 to i64, 
+  %9 = load double*, double** %1, align 8, 
+  %10 = getelementptr inbounds double, double* %9, i64 %8, 
+  %11 = load double, double* %10, align 8, 
+  %12 = load i32, i32* %i, align 4, 
+  %13 = add nsw i32 200001, %12, 
+  %14 = sext i32 %13 to i64, 
+  %15 = load double*, double** %1, align 8, 
+  %16 = getelementptr inbounds double, double* %15, i64 %14, 
+  %17 = load double, double* %16, align 8, 
+  %18 = fadd double %11, %17, 
+  %19 = load i32, i32* %i, align 4, 
+  %20 = add nsw i32 200002, %19, 
+  %21 = sext i32 %20 to i64, 
+  %22 = load double*, double** %1, align 8, 
+  %23 = getelementptr inbounds double, double* %22, i64 %21, 
+  %24 = load double, double* %23, align
+... (TRIMMED)

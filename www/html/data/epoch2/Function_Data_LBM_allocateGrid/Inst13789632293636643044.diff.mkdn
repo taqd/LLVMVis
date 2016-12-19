@@ -1,0 +1,10 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f34180) <br /><pre class="prettyprint lang-llvm ">  %3 = icmp eq i8* %1, null, </pre>
+< Operand # 1 (0x4f334a0) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4d34090) <br /><pre class="prettyprint lang-llvm ">  %3 = icmp eq i8* %1, null, </pre>
+> Operand # 1 (0x4d31b40) <br /><pre class="prettyprint lang-llvm ">
+11c11
+< Operand # 2 (0x4f332e0) <br /><pre class="prettyprint lang-llvm ">
+---
+> Operand # 2 (0x4d31a10) <br /><pre class="prettyprint lang-llvm ">

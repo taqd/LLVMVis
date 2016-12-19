@@ -1,0 +1,12 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk5709414691915650834 ():
+L657,C17:  %764 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, !dbg !374
+L657,C6:  call void @loadValue(%struct._IO_FILE* %764, float* %fileUx), !dbg !376
+L658,C17:  %765 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, !dbg !377
+L658,C6:  call void @loadValue(%struct._IO_FILE* %765, float* %fileUy), !dbg !378
+L659,C17:  %766 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, !dbg !379
+L659,C6:  call void @loadValue(%struct._IO_FILE* %766, float* %fileUz), !dbg !380
+L660,C5:  br label %770, !dbg !381
+

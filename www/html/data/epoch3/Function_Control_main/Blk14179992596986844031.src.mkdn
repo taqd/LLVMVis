@@ -1,0 +1,33 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk14179992596986844031 ():
+L25,C15:  tail call void @llvm.dbg.value(metadata i32 %nArgs, i64 0, metadata !1599, metadata !199), !dbg !1600
+L25,C28:  tail call void @llvm.dbg.value(metadata i8** %arg, i64 0, metadata !1601, metadata !199), !dbg !1602
+L26,C13:  tail call void @llvm.dbg.value(metadata %struct.MAIN_Param* %param, i64 0, metadata !1603, metadata !1403), !dbg !1604
+L32,C2:  call void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* nonnull %param), !dbg !206
+L26,C13:  tail call void @llvm.dbg.value(metadata %struct.MAIN_Param* %param, i64 0, metadata !1603, metadata !1403), !dbg !1604
+L105,C40:  tail call void @llvm.dbg.value(metadata %struct.MAIN_Param* %param, i64 0, metadata !1606, metadata !199) #7, !dbg !1607
+L116,C17:  %1 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, !dbg !210
+L39,C25:  %2 = load i32, i32* %1, align 8, !dbg !211
+L116,C36:  %3 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, !dbg !215
+L156,C43:  %4 = load i8*, i8** %3, align 8, !dbg !216
+L117,C30:  %5 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 2, !dbg !219
+L117,C30:  %6 = bitcast i32* %5 to i64*, !dbg !219
+L117,C30:  %7 = load i64, i64* %6, align 8, !dbg !219
+L117,C10:  %8 = and i64 %7, 4294967295, !dbg !220
+L117,C10:  %9 = getelementptr inbounds [3 x [32 x i8]], [3 x [32 x i8]]* @MAIN_printInfo.actionString, i64 0, i64 %8, i64 0, !dbg !220
+L117,C60:  %10 = lshr i64 %7, 32, !dbg !221
+L117,C39:  %11 = getelementptr inbounds [3 x [32 x i8]], [3 x [32 x i8]]* @MAIN_printInfo.simTypeString, i64 0, i64 %10, i64 0, !dbg !222
+L118,C18:  %12 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 4, !dbg !223
+L118,C18:  %13 = load i8*, i8** %12, align 8, !dbg !223
+L118,C35:  %14 = icmp eq i8* %13, null, !dbg !224
+L118,C10:  %..i = select i1 %14, i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.6.5, i64 0, i64 0), i8* %13, !dbg !225
+L108,C2:  %15 = tail call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([174 x i8], [174 x i8]* @.str.5.6, i64 0, i64 0), i32 100, i32 100, i32 130, double 0x3FF4CCCCCCCCCCCC, i32 %2, i8* %4, i8* %9, i8* %11, i8* %..i) #7, !dbg !226
+L26,C13:  tail call void @llvm.dbg.value(metadata %struct.MAIN_Param* %param, i64 0, metadata !1603, metadata !1403), !dbg !1604
+L34,C2:  call void @MAIN_initialize(%struct.MAIN_Param* nonnull %param), !dbg !227
+L30,C6:  tail call void @llvm.dbg.value(metadata i32 1, i64 0, metadata !1627, metadata !199), !dbg !1628
+L39,C16:  %16 = icmp slt i32 %2, 1, !dbg !230
+L153,C13:  %17 = trunc i64 %7 to i32, !dbg !231
+L39,C2:  br i1 %16, label %._crit_edge, label %.lr.ph, !dbg !233
+

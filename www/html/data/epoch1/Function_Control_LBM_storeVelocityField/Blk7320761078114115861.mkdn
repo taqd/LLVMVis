@@ -1,0 +1,8 @@
+File: lbm.c, Lines: 554,555-559,561, Cols: 2,8,12,15,33,39,40-57,
+  %ux = alloca float, align 4
+  %uy = alloca float, align 4
+  %uz = alloca float, align 4
+  %1 = icmp ne i32 %binary, 0, 
+  %2 = select i1 %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.3, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.4, i64 0, i64 0), 
+  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), 
+  br label %.preheader206, 

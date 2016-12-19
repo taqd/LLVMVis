@@ -1,0 +1,25 @@
+;; Line: 459, Column: 2
+  store i32 0, i32* %i, align 4, 
+</pre>
+<br/>Operand # 0 (0x5c9cec0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Operand # 1 (0x5d5e318) <br /><pre class="prettyprint lang-llvm ">  %i = alloca i32, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = alloca double*, align 8
+  %nObstacleCells = alloca i32, align 4
+  %nAccelCells = alloca i32, align 4
+  %nFluidCells = alloca i32, align 4
+  %ux = alloca double, align 8
+  %uy = alloca double, align 8
+  %uz = alloca double, align 8
+  %minU2 = alloca double, align 8
+  %maxU2 = alloca double, align 8
+  %u2 = alloca double, align 8
+  %minRho = alloca double, align 8
+  %maxRho = alloca double, align 8
+  %rho = alloca double, align 8
+  %mass = alloca double, align 8
+  %i = alloca i32, align 4
+  store double* %grid, double** %1, align 8
+  store i32 0, i32* %nObstacleCells, align 4, 
+  store i32 0, i32* %nAccelCells, align 4, 
+... (TRIMMED)</pre>

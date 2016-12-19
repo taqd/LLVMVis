@@ -1,0 +1,22 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+lrphsplitus (.lr.ph.split.us):
+L41,C26:  %21 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !240
+L41,C25:  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i64 0, i64 0, !dbg !242
+L41,C4:  tail call void @LBM_handleInOutFlow(double* %22), !dbg !243
+L44,C30:  %23 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !239
+L44,C29:  %24 = getelementptr inbounds [26000000 x double], [26000000 x double]* %23, i64 0, i64 0, !dbg !244
+L44,C40:  %25 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !245
+L44,C39:  %26 = getelementptr inbounds [26000000 x double], [26000000 x double]* %25, i64 0, i64 0, !dbg !246
+L44,C3:  tail call void @LBM_performStreamCollide(double* %24, double* %26), !dbg !247
+L89,C34:  tail call void @llvm.dbg.value(metadata [26000000 x double]** @srcGrid, i64 0, metadata !259, metadata !199), !dbg !1647
+L89,C54:  tail call void @llvm.dbg.value(metadata [26000000 x double]** @dstGrid, i64 0, metadata !261, metadata !199), !dbg !1649
+L90,C20:  %27 = load i64, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, !dbg !253
+L91,C11:  %28 = load i64, i64* bitcast ([26000000 x double]** @dstGrid to i64*), align 8, !dbg !254
+L91,C9:  store i64 %28, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, !dbg !255
+L92,C9:  store i64 %27, i64* bitcast ([26000000 x double]** @dstGrid to i64*), align 8, !dbg !256
+L47,C10:  %29 = and i32 %t.04.us, 63, !dbg !257
+L47,C16:  %30 = icmp eq i32 %29, 0, !dbg !259
+L47,C7:  br i1 %30, label %31, label %35, !dbg !260
+

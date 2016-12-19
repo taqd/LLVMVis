@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 562, Cols: 3,28,
+; label:785                                     ; preds = %784
+  %786 = load i32, i32* %y, align 4, 
+  %787 = add nsw i32 %786, 1, 
+  store i32 %787, i32* %y, align 4, 
+  br label %13, 

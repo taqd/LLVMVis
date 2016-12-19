@@ -1,0 +1,35 @@
+File: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+Blk17795881077624661491 ():
+L40,C7:  br i1 %6, label %9, label %12, !dbg !221
+
+Blk1824828359994936914 ():
+L41,C26:  %10 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !222
+L41,C25:  %11 = getelementptr inbounds [26000000 x double], [26000000 x double]* %10, i64 0, i64 0, !dbg !224
+L41,C4:  tail call void @LBM_handleInOutFlow(double* %11), !dbg !225
+L42,C3:  br label %12, !dbg !226
+
+Blk6814015338864779548 ():
+L44,C30:  %13 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !227
+L44,C29:  %14 = getelementptr inbounds [26000000 x double], [26000000 x double]* %13, i64 0, i64 0, !dbg !228
+L44,C40:  %15 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !229
+L44,C39:  %16 = getelementptr inbounds [26000000 x double], [26000000 x double]* %15, i64 0, i64 0, !dbg !230
+L44,C3:  tail call void @LBM_performStreamCollide(double* %14, double* %16), !dbg !231
+L45,C3:  tail call void @LBM_swapGrids([26000000 x double]** nonnull @srcGrid, [26000000 x double]** nonnull @dstGrid), !dbg !232
+L47,C10:  %17 = and i32 %t.04, 63, !dbg !233
+L47,C16:  %18 = icmp eq i32 %17, 0, !dbg !235
+L47,C7:  br i1 %18, label %19, label %23, !dbg !236
+
+Blk4907874780250948075 ():
+L48,C4:  %20 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i32 %t.04), !dbg !237
+L49,C29:  %21 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !239
+L49,C28:  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i64 0, i64 0, !dbg !240
+L49,C4:  tail call void @LBM_showGridStatistics(double* %22), !dbg !241
+L50,C3:  br label %23, !dbg !242
+
+Blk2807155521351051328 ():
+L39,C38:  %24 = add nuw nsw i32 %t.04, 1, !dbg !243
+L30,C6:  tail call void @llvm.dbg.value(metadata i32 %24, i64 0, metadata !1741, metadata !199), !dbg !1742
+L39,C16:  %25 = icmp slt i32 %t.04, %7, !dbg !215
+L39,C2:  br i1 %25, label %8, label %._crit_edge.loopexit, !dbg !216
+

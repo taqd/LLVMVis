@@ -1,0 +1,13 @@
+;; Line: 84, Column: 16
+  %32 = getelementptr inbounds %struct.stat, %struct.stat* %fileStat, i64 0, i32 8, 
+</pre>
+<br/>Operand # 0 (0x4fc1c58) <br /><pre class="prettyprint lang-llvm ">  %fileStat = alloca %struct.stat, align 8</pre>
+Operand # 1 (0x4f33330) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 2 (0x4fc17c0) <br /><pre class="prettyprint lang-llvm ">i32 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:31                                      ; preds = %22
+  %32 = getelementptr inbounds %struct.stat, %struct.stat* %fileStat, i64 0, i32 8, 
+  %33 = load i64, i64* %32, align 8, 
+  %34 = icmp eq i64 %33, 1313130, 
+  br i1 %34, label %41, label %35, 
+</pre>

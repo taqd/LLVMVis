@@ -1,0 +1,158 @@
+File: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+Blk12733382829782843273 ():
+L460,C11:  %2 = getelementptr inbounds double, double* %grid, i64 %indvars.iv, !dbg !223
+L460,C11:  %3 = load double, double* %2, align 8, !dbg !223
+L460,C31:  %4 = or i64 %indvars.iv, 1, !dbg !225
+L460,C31:  %5 = getelementptr inbounds double, double* %grid, i64 %4, !dbg !225
+L460,C31:  %6 = load double, double* %5, align 8, !dbg !225
+L460,C29:  %7 = fadd double %3, %6, !dbg !226
+L461,C11:  %8 = or i64 %indvars.iv, 2, !dbg !227
+L461,C11:  %9 = getelementptr inbounds double, double* %grid, i64 %8, !dbg !227
+L461,C11:  %10 = load double, double* %9, align 8, !dbg !227
+L461,C9:  %11 = fadd double %7, %10, !dbg !228
+L461,C31:  %12 = or i64 %indvars.iv, 3, !dbg !229
+L461,C31:  %13 = getelementptr inbounds double, double* %grid, i64 %12, !dbg !229
+L461,C31:  %14 = load double, double* %13, align 8, !dbg !229
+L461,C29:  %15 = fadd double %11, %14, !dbg !230
+L462,C11:  %16 = add nuw nsw i64 %indvars.iv, 4, !dbg !231
+L462,C11:  %17 = getelementptr inbounds double, double* %grid, i64 %16, !dbg !231
+L462,C11:  %18 = load double, double* %17, align 8, !dbg !231
+L462,C9:  %19 = fadd double %15, %18, !dbg !232
+L462,C31:  %20 = add nuw nsw i64 %indvars.iv, 5, !dbg !233
+L462,C31:  %21 = getelementptr inbounds double, double* %grid, i64 %20, !dbg !233
+L462,C31:  %22 = load double, double* %21, align 8, !dbg !233
+L462,C29:  %23 = fadd double %19, %22, !dbg !234
+L463,C11:  %24 = add nuw nsw i64 %indvars.iv, 6, !dbg !235
+L463,C11:  %25 = getelementptr inbounds double, double* %grid, i64 %24, !dbg !235
+L463,C11:  %26 = load double, double* %25, align 8, !dbg !235
+L463,C9:  %27 = fadd double %23, %26, !dbg !236
+L463,C31:  %28 = add nuw nsw i64 %indvars.iv, 7, !dbg !237
+L463,C31:  %29 = getelementptr inbounds double, double* %grid, i64 %28, !dbg !237
+L463,C31:  %30 = load double, double* %29, align 8, !dbg !237
+L463,C29:  %31 = fadd double %27, %30, !dbg !238
+L464,C11:  %32 = add nuw nsw i64 %indvars.iv, 8, !dbg !239
+L464,C11:  %33 = getelementptr inbounds double, double* %grid, i64 %32, !dbg !239
+L464,C11:  %34 = load double, double* %33, align 8, !dbg !239
+L464,C9:  %35 = fadd double %31, %34, !dbg !240
+L464,C31:  %36 = add nuw nsw i64 %indvars.iv, 9, !dbg !241
+L464,C31:  %37 = getelementptr inbounds double, double* %grid, i64 %36, !dbg !241
+L464,C31:  %38 = load double, double* %37, align 8, !dbg !241
+L464,C29:  %39 = fadd double %35, %38, !dbg !242
+L465,C11:  %40 = add nuw nsw i64 %indvars.iv, 10, !dbg !243
+L465,C11:  %41 = getelementptr inbounds double, double* %grid, i64 %40, !dbg !243
+L465,C11:  %42 = load double, double* %41, align 8, !dbg !243
+L465,C9:  %43 = fadd double %39, %42, !dbg !244
+L465,C31:  %44 = add nuw nsw i64 %indvars.iv, 11, !dbg !245
+L465,C31:  %45 = getelementptr inbounds double, double* %grid, i64 %44, !dbg !245
+L465,C31:  %46 = load double, double* %45, align 8, !dbg !245
+L465,C29:  %47 = fadd double %43, %46, !dbg !246
+L466,C11:  %48 = add nuw nsw i64 %indvars.iv, 12, !dbg !247
+L466,C11:  %49 = getelementptr inbounds double, double* %grid, i64 %48, !dbg !247
+L466,C11:  %50 = load double, double* %49, align 8, !dbg !247
+L466,C9:  %51 = fadd double %47, %50, !dbg !248
+L466,C31:  %52 = add nuw nsw i64 %indvars.iv, 13, !dbg !249
+L466,C31:  %53 = getelementptr inbounds double, double* %grid, i64 %52, !dbg !249
+L466,C31:  %54 = load double, double* %53, align 8, !dbg !249
+L466,C29:  %55 = fadd double %51, %54, !dbg !250
+L467,C11:  %56 = add nuw nsw i64 %indvars.iv, 14, !dbg !251
+L467,C11:  %57 = getelementptr inbounds double, double* %grid, i64 %56, !dbg !251
+L467,C11:  %58 = load double, double* %57, align 8, !dbg !251
+L467,C9:  %59 = fadd double %55, %58, !dbg !252
+L467,C31:  %60 = add nuw nsw i64 %indvars.iv, 15, !dbg !253
+L467,C31:  %61 = getelementptr inbounds double, double* %grid, i64 %60, !dbg !253
+L467,C31:  %62 = load double, double* %61, align 8, !dbg !253
+L467,C29:  %63 = fadd double %59, %62, !dbg !254
+L468,C11:  %64 = add nuw nsw i64 %indvars.iv, 16, !dbg !255
+L468,C11:  %65 = getelementptr inbounds double, double* %grid, i64 %64, !dbg !255
+L468,C11:  %66 = load double, double* %65, align 8, !dbg !255
+L468,C9:  %67 = fadd double %63, %66, !dbg !256
+L468,C31:  %68 = add nuw nsw i64 %indvars.iv, 17, !dbg !257
+L468,C31:  %69 = getelementptr inbounds double, double* %grid, i64 %68, !dbg !257
+L468,C31:  %70 = load double, double* %69, align 8, !dbg !257
+L468,C29:  %71 = fadd double %67, %70, !dbg !258
+L469,C11:  %72 = add nuw nsw i64 %indvars.iv, 18, !dbg !259
+L469,C11:  %73 = getelementptr inbounds double, double* %grid, i64 %72, !dbg !259
+L469,C11:  %74 = load double, double* %73, align 8, !dbg !259
+L469,C9:  %75 = fadd double %71, %74, !dbg !260
+L454,C42:  tail call void @llvm.dbg.value(metadata double %75, i64 0, metadata !1219, metadata !199), !dbg !1220
+L470,C11:  %76 = fcmp olt double %75, %minRho.0128, !dbg !263
+L454,C9:  tail call void @llvm.dbg.value(metadata double %75, i64 0, metadata !1169, metadata !199), !dbg !1170
+L470,C7:  %minRho.1 = select i1 %76, double %75, double %minRho.0128, !dbg !265
+L471,C11:  %77 = fcmp ogt double %75, %maxRho.0129, !dbg !266
+L454,C25:  tail call void @llvm.dbg.value(metadata double %75, i64 0, metadata !1171, metadata !199), !dbg !1172
+L471,C7:  %maxRho.1 = select i1 %77, double %75, double %maxRho.0129, !dbg !268
+L472,C8:  %78 = fadd double %mass.0131, %75, !dbg !269
+L455,C9:  tail call void @llvm.dbg.value(metadata double %78, i64 0, metadata !1173, metadata !199), !dbg !1174
+L474,C7:  %79 = add nuw nsw i64 %indvars.iv, 19, !dbg !270
+L474,C7:  %80 = getelementptr inbounds double, double* %grid, i64 %79, !dbg !270
+L474,C7:  %81 = bitcast double* %80 to i32*, !dbg !270
+L474,C7:  %82 = load i32, i32* %81, align 4, !dbg !270
+L474,C7:  %83 = and i32 %82, 1, !dbg !270
+L474,C7:  %84 = icmp eq i32 %83, 0, !dbg !270
+L474,C7:  br i1 %84, label %87, label %85, !dbg !272
+
+Blk10942419622140016145 ():
+L475,C18:  %86 = add nsw i32 %nObstacleCells.0130, 1, !dbg !273
+L449,C6:  tail call void @llvm.dbg.value(metadata i32 %86, i64 0, metadata !1159, metadata !199), !dbg !1160
+L476,C3:  br label %127, !dbg !275
+
+Blk6195810627528635629 ():
+L478,C8:  %88 = lshr i32 %82, 1, !dbg !276
+L478,C8:  %.lobit = and i32 %88, 1, !dbg !276
+L478,C8:  %89 = xor i32 %.lobit, 1, !dbg !276
+L478,C8:  %nFluidCells.1 = add nsw i32 %89, %nFluidCells.0124, !dbg !276
+L478,C8:  %nAccelCells.1 = add nsw i32 %.lobit, %nAccelCells.0127, !dbg !276
+L483,C29:  %90 = fsub double %14, %18, !dbg !278
+L484,C9:  %91 = fadd double %90, %30, !dbg !279
+L484,C29:  %92 = fsub double %91, %34, !dbg !280
+L485,C9:  %93 = fadd double %92, %38, !dbg !281
+L485,C29:  %94 = fsub double %93, %42, !dbg !282
+L486,C9:  %95 = fadd double %94, %62, !dbg !283
+L486,C29:  %96 = fadd double %95, %66, !dbg !284
+L487,C9:  %97 = fsub double %96, %70, !dbg !285
+L487,C29:  %98 = fsub double %97, %74, !dbg !286
+L452,C9:  tail call void @llvm.dbg.value(metadata double %98, i64 0, metadata !1245, metadata !199), !dbg !1246
+L488,C29:  %99 = fsub double %6, %10, !dbg !289
+L489,C9:  %100 = fadd double %99, %30, !dbg !290
+L489,C29:  %101 = fadd double %100, %34, !dbg !291
+L490,C9:  %102 = fsub double %101, %38, !dbg !292
+L490,C29:  %103 = fsub double %102, %42, !dbg !293
+L491,C9:  %104 = fadd double %103, %46, !dbg !294
+L491,C29:  %105 = fadd double %104, %50, !dbg !295
+L492,C9:  %106 = fsub double %105, %54, !dbg !296
+L492,C29:  %107 = fsub double %106, %58, !dbg !297
+L452,C13:  tail call void @llvm.dbg.value(metadata double %107, i64 0, metadata !1256, metadata !199), !dbg !1257
+L493,C29:  %108 = fsub double %22, %26, !dbg !300
+L494,C9:  %109 = fadd double %108, %46, !dbg !301
+L494,C29:  %110 = fsub double %109, %50, !dbg !302
+L495,C9:  %111 = fadd double %110, %54, !dbg !303
+L495,C29:  %112 = fsub double %111, %58, !dbg !304
+L496,C9:  %113 = fadd double %112, %62, !dbg !305
+L496,C29:  %114 = fsub double %113, %66, !dbg !306
+L497,C9:  %115 = fadd double %114, %70, !dbg !307
+L497,C29:  %116 = fsub double %115, %74, !dbg !308
+L452,C17:  tail call void @llvm.dbg.value(metadata double %116, i64 0, metadata !1267, metadata !199), !dbg !1268
+L498,C12:  %117 = fmul double %98, %98, !dbg !311
+L498,C20:  %118 = fmul double %107, %107, !dbg !312
+L498,C16:  %119 = fadd double %118, %117, !dbg !313
+L498,C28:  %120 = fmul double %116, %116, !dbg !314
+L498,C24:  %121 = fadd double %120, %119, !dbg !315
+L498,C39:  %122 = fmul double %75, %75, !dbg !316
+L498,C33:  %123 = fdiv double %121, %122, !dbg !317
+L453,C42:  tail call void @llvm.dbg.value(metadata double %123, i64 0, metadata !1276, metadata !199), !dbg !1277
+L499,C11:  %124 = fcmp olt double %123, %minU2.0125, !dbg !320
+L453,C9:  tail call void @llvm.dbg.value(metadata double %123, i64 0, metadata !1165, metadata !199), !dbg !1166
+L499,C8:  %minU2.1 = select i1 %124, double %123, double %minU2.0125, !dbg !322
+L500,C11:  %125 = fcmp ogt double %123, %maxU2.0126, !dbg !323
+L500,C8:  br i1 %125, label %126, label %127, !dbg !325
+
+Blk1253246827568467504 ():
+L453,C25:  tail call void @llvm.dbg.value(metadata double %123, i64 0, metadata !1167, metadata !199), !dbg !1168
+L500,C21:  br label %127, !dbg !326
+
+Blk14205873304189230058 ():
+L459,C2:  %indvars.iv.next = add nuw nsw i64 %indvars.iv, 20, !dbg !219
+L459,C2:  %128 = icmp slt i64 %indvars.iv.next, 26000000, !dbg !219
+L459,C2:  br i1 %128, label %1, label %129, !dbg !219
+

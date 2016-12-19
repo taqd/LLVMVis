@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4d8dc68) <br /><pre class="prettyprint lang-llvm ">  %458 = insertelement <2 x double> undef, double %416, i32 0, </pre>
+< Operand # 1 (0x4d8ca18) <br /><pre class="prettyprint lang-llvm ">  %432 = load double, double* %431, align 8, </pre>
+< Operand # 2 (0x4d24bb0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+---
+> <br/>Operand # 0 (0x4f50dd8) <br /><pre class="prettyprint lang-llvm ">  %458 = insertelement <2 x double> undef, double %416, i32 0, </pre>
+> Operand # 1 (0x4f4f418) <br /><pre class="prettyprint lang-llvm ">  %432 = load double, double* %431, align 8, </pre>
+> Operand # 2 (0x4ee18a0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>

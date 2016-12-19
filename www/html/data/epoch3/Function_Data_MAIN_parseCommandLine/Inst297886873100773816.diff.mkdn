@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4dc0018) <br /><pre class="prettyprint lang-llvm ">  %fileStat = alloca %struct.stat, align 8</pre>
+< Operand # 1 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+< Operand # 2 (0x4dbfb80) <br /><pre class="prettyprint lang-llvm ">i32 8</pre>
+---
+> <br/>Operand # 0 (0x4f85028) <br /><pre class="prettyprint lang-llvm ">  %fileStat = alloca %struct.stat, align 8</pre>
+> Operand # 1 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+> Operand # 2 (0x4f84b90) <br /><pre class="prettyprint lang-llvm ">i32 8</pre>

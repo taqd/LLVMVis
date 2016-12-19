@@ -1,0 +1,18 @@
+2c2
+<   %t.04 = phi i32 [ 1, %.lr.ph ], [ %24, %23 ]
+---
+>   %t.04 = phi i32 [ 1, %.lr.ph ], [ %38, %37 ]
+4,5c4,5
+< <br/>Operand # 0 (0x4f19b30) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+< Operand # 1 (0x4fc0ad0) <br /><pre class="prettyprint lang-llvm ">  %24 = add nuw nsw i32 %t.04, 1, </pre>
+---
+> <br/>Operand # 0 (0x4d24bb0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+> Operand # 1 (0x4dbedd0) <br /><pre class="prettyprint lang-llvm ">  %38 = add nuw nsw i32 %t.04, 1, </pre>
+7,9c7,9
+< ; label:8                                       ; preds = %23, %.lr.ph
+<   %t.04 = phi i32 [ 1, %.lr.ph ], [ %24, %23 ]
+<   br i1 %6, label %9, label %12, 
+---
+> ; label:20                                      ; preds = %37, %.lr.ph
+>   %t.04 = phi i32 [ 1, %.lr.ph ], [ %38, %37 ]
+>   br i1 %19, label %21, label %24, 

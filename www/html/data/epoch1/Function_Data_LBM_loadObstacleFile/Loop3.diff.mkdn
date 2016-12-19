@@ -1,0 +1,59 @@
+2,38c2,21
+< ; label:13                                      ; preds = %40, %12
+<   %14 = load i32, i32* %x, align 4, 
+<   %15 = icmp slt i32 %14, 100, 
+<   br i1 %15, label %16, label %43, 
+< <br/>; label:16                                      ; preds = %13
+<   %17 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+<   %18 = call i32 @fgetc(%struct._IO_FILE* %17), 
+<   %19 = icmp ne i32 %18, 46, 
+<   br i1 %19, label %20, label %39, 
+< <br/>; label:20                                      ; preds = %16
+<   %21 = load i32, i32* %x, align 4, 
+<   %22 = load i32, i32* %y, align 4, 
+<   %23 = mul nsw i32 %22, 100, 
+<   %24 = add nsw i32 %21, %23, 
+<   %25 = load i32, i32* %z, align 4, 
+<   %26 = mul nsw i32 %25, 100, 
+<   %27 = mul nsw i32 %26, 100, 
+<   %28 = add nsw i32 %24, %27, 
+<   %29 = mul nsw i32 20, %28, 
+<   %30 = add nsw i32 19, %29, 
+<   %31 = sext i32 %30 to i64, 
+<   %32 = load double*, double** %1, align 8, 
+<   %33 = getelementptr inbounds double, double* %32, i64 %31, 
+<   %34 = bitcast double* %33 to i8*, 
+<   %35 = bitcast i8* %34 to i32*, 
+<   store i32* %35, i32** %_aux_, align 8, 
+<   %36 = load i32*, i32** %_aux_, align 8, 
+<   %37 = load i32, i32* %36, align 4, 
+<   %38 = or i32 %37, 1,
+< ... (TRIMMED)
+< ; label:39                                      ; preds = %20, %16
+<   br label %40, 
+< <br/>; label:40                                      ; preds = %39
+<   %41 = load i32, i32* %x, align 4, 
+<   %42 = add nsw i32 %41, 1, 
+<   store i32 %42, i32* %x, align 4, 
+<   br label %13, 
+---
+> ; label:6                                       ; preds = %17, %.preheader
+>   %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %17 ]
+>   %7 = phi i32 [ %3, %.preheader ], [ %18, %17 ]
+>   %8 = icmp eq i32 %7, 46, 
+>   br i1 %8, label %17, label %9, 
+> <br/>; label:9                                       ; preds = %6
+>   %10 = add nuw nsw i64 %5, %indvars.iv, 
+>   %11 = mul nuw nsw i64 %10, 20, 
+>   %12 = add nuw nsw i64 %11, 19, 
+>   %13 = getelementptr inbounds double, double* %grid, i64 %12, 
+>   %14 = bitcast double* %13 to i32*, 
+>   %15 = load i32, i32* %14, align 4, 
+>   %16 = or i32 %15, 1, 
+>   store i32 %16, i32* %14, align 4, 
+>   br label %17, 
+> <br/>; label:17                                      ; preds = %6, %9
+>   %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1, 
+>   %18 = tail call i32 @fgetc(%struct._IO_FILE* %1), 
+>   %exitcond = icmp eq i64 %indvars.iv.next, 100, 
+>   br i1 %exitcond, label %19, label %6, 

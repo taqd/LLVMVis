@@ -1,0 +1,14 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk6708800256328591244 ():
+L516,C31:  call void @llvm.dbg.declare(metadata %struct._IO_FILE** %1, metadata !2541, metadata !199), !dbg !2542
+L516,C55:  call void @llvm.dbg.declare(metadata float** %2, metadata !2543, metadata !199), !dbg !2544
+L517,C12:  call void @llvm.dbg.declare(metadata i32* %litteBigEndianTest, metadata !2545, metadata !199), !dbg !2546
+L517,C12:  store i32 1, i32* %litteBigEndianTest, align 4, !dbg !204
+L518,C7:  %3 = bitcast i32* %litteBigEndianTest to i8*, !dbg !205
+L518,C7:  %4 = load i8, i8* %3, align 4, !dbg !205
+L518,C6:  %5 = zext i8 %4 to i32, !dbg !207
+L518,C48:  %6 = icmp eq i32 %5, 0, !dbg !208
+L518,C6:  br i1 %6, label %7, label %32, !dbg !209
+

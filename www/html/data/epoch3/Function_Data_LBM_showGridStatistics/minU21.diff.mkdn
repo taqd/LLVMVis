@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4da3020) <br /><pre class="prettyprint lang-llvm ">  %124 = fcmp olt double %123, %minU2.0125, </pre>
+< Operand # 1 (0x4da2e10) <br /><pre class="prettyprint lang-llvm ">  %123 = fdiv double %121, %122, </pre>
+< Operand # 2 (0x4d91728) <br /><pre class="prettyprint lang-llvm ">  %minU2.0125 = phi double [ 1.000000e+30, %0 ], [ %minU2.2, %127 ]</pre>
+---
+> <br/>Operand # 0 (0x4f65a30) <br /><pre class="prettyprint lang-llvm ">  %124 = fcmp olt double %123, %minU2.0125, </pre>
+> Operand # 1 (0x4f65820) <br /><pre class="prettyprint lang-llvm ">  %123 = fdiv double %121, %122, </pre>
+> Operand # 2 (0x4f60048) <br /><pre class="prettyprint lang-llvm ">  %minU2.0125 = phi double [ 1.000000e+30, %0 ], [ %minU2.2, %127 ]</pre>

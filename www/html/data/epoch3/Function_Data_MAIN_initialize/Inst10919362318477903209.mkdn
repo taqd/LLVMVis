@@ -1,0 +1,13 @@
+;; Line: 105, Column: 32
+  %21 = mul nuw nsw i64 %indvars.iv14.i, 100, 
+</pre>
+<br/>Operand # 0 (0x4f8d2e8) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv14.i = phi i64 [ 0, %.preheader10.i ], [ %indvars.iv.next15.i, %36 ], </pre>
+Operand # 1 (0x4f07850) <br /><pre class="prettyprint lang-llvm ">i64 100</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader.i:                                     ; preds = %36, %.preheader10.i
+  %indvars.iv14.i = phi i64 [ 0, %.preheader10.i ], [ %indvars.iv.next15.i, %36 ], 
+  %20 = tail call i32 @fgetc(%struct._IO_FILE* %18) #7, 
+  %21 = mul nuw nsw i64 %indvars.iv14.i, 100, 
+  %22 = add nuw nsw i64 %21, %19, 
+  br label %23, 
+</pre>

@@ -1,0 +1,14 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4dc5cb0) <br /><pre class="prettyprint lang-llvm ">  %7 = icmp eq i8* %6, null, </pre>
+< Operand # 1 (0x4dc4390) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f8c1d0) <br /><pre class="prettyprint lang-llvm ">  %7 = icmp eq i8* %6, null, </pre>
+> Operand # 1 (0x4f89570) <br /><pre class="prettyprint lang-llvm ">
+16c16
+<   br i1 %15, label %22, label %16, 
+---
+>   br i1 %15, label %64, label %16, 
+18c18
+< Operand # 2 (0x4dc4340) <br /><pre class="prettyprint lang-llvm ">
+---
+> Operand # 2 (0x4f89520) <br /><pre class="prettyprint lang-llvm ">

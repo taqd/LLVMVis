@@ -1,0 +1,12 @@
+;; Line: 40, Column: 21
+  %20 = icmp eq i32 %19, 1, 
+</pre>
+<br/>Operand # 0 (0x4f806e8) <br /><pre class="prettyprint lang-llvm ">  %19 = load i32, i32* %18, align 4, </pre>
+Operand # 1 (0x4ee18a0) <br /><pre class="prettyprint lang-llvm ">i32 1</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.lr.ph:                                           ; preds = %0
+  %18 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, 
+  %19 = load i32, i32* %18, align 4, 
+  %20 = icmp eq i32 %19, 1, 
+  br i1 %20, label %.lr.ph.split.us.preheader, label %.lr.ph.split.preheader, 
+</pre>

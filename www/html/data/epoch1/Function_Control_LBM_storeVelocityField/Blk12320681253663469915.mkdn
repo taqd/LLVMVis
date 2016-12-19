@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 557,599,600-602, Cols: 5,6-24,28,32,
+; label:141                                     ; preds = %7
+  call fastcc void @storeValue(%struct._IO_FILE* %3, float* nonnull %ux), 
+  call fastcc void @storeValue(%struct._IO_FILE* %3, float* nonnull %uy), 
+  call fastcc void @storeValue(%struct._IO_FILE* %3, float* nonnull %uz), 
+  br label %149, 

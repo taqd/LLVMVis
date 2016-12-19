@@ -1,0 +1,14 @@
+;; Line: 137, Column: 3
+  %indvars.iv32.i = phi i64 [ 0, %.preheader28.i ], [ %indvars.iv.next33.i, %44 ], 
+</pre>
+<br/>Operand # 0 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 1 (0x4dc8160) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.next33.i = add nuw nsw i64 %indvars.iv32.i, 1, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader.i:                                     ; preds = %44, %.preheader28.i
+  %indvars.iv32.i = phi i64 [ 0, %.preheader28.i ], [ %indvars.iv.next33.i, %44 ], 
+  %28 = icmp eq i64 %indvars.iv32.i, 0, 
+  %29 = icmp eq i64 %indvars.iv32.i, 99, 
+  %30 = mul nuw nsw i64 %indvars.iv32.i, 100, 
+  %31 = add nsw i64 %30, %27, 
+  br label %32, 
+</pre>

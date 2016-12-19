@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4db5ac0) <br /><pre class="prettyprint lang-llvm ">  %116 = fdiv double %113, %86, </pre>
+< Operand # 1 (0x4d8f118) <br /><pre class="prettyprint lang-llvm ">  %133 = fpext float %132 to double, </pre>
+---
+> <br/>Operand # 0 (0x4f79340) <br /><pre class="prettyprint lang-llvm ">  %116 = fdiv double %113, %86, </pre>
+> Operand # 1 (0x4f7ca68) <br /><pre class="prettyprint lang-llvm ">  %133 = fpext float %132 to double, </pre>

@@ -1,0 +1,9 @@
+;; Line: 610, Column: 1
+  ret void, 
+</pre>
+<br/>Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:792                                     ; preds = %9
+  %793 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %794 = call i32 @fclose(%struct._IO_FILE* %793), 
+  ret void, 
+</pre>

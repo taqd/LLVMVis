@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4da1260) <br /><pre class="prettyprint lang-llvm ">  %.lobit = and i32 %88, 1, </pre>
+< Operand # 1 (0x4d91548) <br /><pre class="prettyprint lang-llvm ">  %nAccelCells.0127 = phi i32 [ 0, %0 ], [ %nAccelCells.2, %127 ]</pre>
+---
+> <br/>Operand # 0 (0x4f63b50) <br /><pre class="prettyprint lang-llvm ">  %.lobit = and i32 %88, 1, </pre>
+> Operand # 1 (0x4f5feb8) <br /><pre class="prettyprint lang-llvm ">  %nAccelCells.0127 = phi i32 [ 0, %0 ], [ %nAccelCells.2, %127 ]</pre>

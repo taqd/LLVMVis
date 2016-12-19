@@ -1,0 +1,10 @@
+4,7c4,7
+< <br/>Operand # 0 (0x4d22298) <br /><pre class="prettyprint lang-llvm ">@MAIN_printInfo.actionString = internal constant [3 x [32 x i8]] [[32 x i8] c"nothing\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00", [32 x i8] c"compare\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00", [32 x i8] c"store\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00"], align 16</pre>
+< Operand # 1 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+< Operand # 2 (0x4dc38d0) <br /><pre class="prettyprint lang-llvm ">  %8 = and i64 %7, 4294967295, </pre>
+< Operand # 3 (0x4d313c0) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+---
+> <br/>Operand # 0 (0x4edefb8) <br /><pre class="prettyprint lang-llvm ">@MAIN_printInfo.actionString = internal constant [3 x [32 x i8]] [[32 x i8] c"nothing\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00", [32 x i8] c"compare\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00", [32 x i8] c"store\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00"], align 16</pre>
+> Operand # 1 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+> Operand # 2 (0x4f88940) <br /><pre class="prettyprint lang-llvm ">  %8 = and i64 %7, 4294967295, </pre>
+> Operand # 3 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>

@@ -1,0 +1,11 @@
+;; Line: 39, Column: 16
+  %37 = icmp slt i32 %t.04.us, %2, 
+</pre>
+<br/>Operand # 0 (0x4f809c8) <br /><pre class="prettyprint lang-llvm ">  %t.04.us = phi i32 [ %36, %35 ], [ 1, %.lr.ph.split.us.preheader ]</pre>
+Operand # 1 (0x4f66cc8) <br /><pre class="prettyprint lang-llvm ">  %2 = load i32, i32* %1, align 8, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:35                                      ; preds = %31, %.lr.ph.split.us
+  %36 = add nuw nsw i32 %t.04.us, 1, 
+  %37 = icmp slt i32 %t.04.us, %2, 
+  br i1 %37, label %.lr.ph.split.us, label %._crit_edge.loopexit, 
+</pre>

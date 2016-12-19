@@ -1,0 +1,28 @@
+2c2
+<   %. = select i1 %15, i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.6.5, i64 0, i64 0), i8* %14, 
+---
+>   %. = select i1 %14, i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.6.5, i64 0, i64 0), i8* %13, 
+4,6c4,6
+< <br/>Operand # 0 (0x4fc5a90) <br /><pre class="prettyprint lang-llvm ">  %15 = icmp eq i8* %14, null, </pre>
+< Operand # 1 (0x4fc4e98) <br /><pre class="prettyprint lang-llvm ">i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.6.5, i64 0, i64 0)</pre>
+< Operand # 2 (0x4fc5a18) <br /><pre class="prettyprint lang-llvm ">  %14 = load i8*, i8** %13, align 8, </pre>
+---
+> <br/>Operand # 0 (0x4dc3d10) <br /><pre class="prettyprint lang-llvm ">  %14 = icmp eq i8* %13, null, </pre>
+> Operand # 1 (0x4d52f68) <br /><pre class="prettyprint lang-llvm ">i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.6.5, i64 0, i64 0)</pre>
+> Operand # 2 (0x4dc3c98) <br /><pre class="prettyprint lang-llvm ">  %13 = load i8*, i8** %12, align 8, </pre>
+13,19c13,19
+<   %6 = load i32, i32* %5, align 8, 
+<   %7 = zext i32 %6 to i64, 
+<   %8 = getelementptr inbounds [3 x [32 x i8]], [3 x [32 x i8]]* @MAIN_printInfo.actionString, i64 0, i64 %7, i64 0, 
+<   %9 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 3, 
+<   %10 = load i32, i32* %9, align 4, 
+<   %11 = zext i32 %10 to i64, 
+<   %12 = getelementptr inbounds [3 x [32 x i8]], [3 x [32 x i8]]* @MAIN_printInfo.simTypeSt
+---
+>   %6 = bitcast i32* %5 to i64*, 
+>   %7 = load i64, i64* %6, align 8, 
+>   %8 = and i64 %7, 4294967295, 
+>   %9 = getelementptr inbounds [3 x [32 x i8]], [3 x [32 x i8]]* @MAIN_printInfo.actionString, i64 0, i64 %8, i64 0, 
+>   %10 = lshr i64 %7, 32, 
+>   %11 = getelementptr inbounds [3 x [32 x i8]], [3 x [32 x i8]]* @MAIN_printInfo.simTypeString, i64 0, i64 %10, i64 0, 
+>   %12 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Par

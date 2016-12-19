@@ -1,0 +1,29 @@
+;; Line: 585, Column: 12
+  %645 = sext i32 %644 to i64, 
+</pre>
+<br/>Operand # 0 (0x5d83c80) <br /><pre class="prettyprint lang-llvm ">  %644 = add nsw i32 11, %643, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:20                                      ; preds = %17
+  %21 = load i32, i32* %x, align 4, 
+  %22 = load i32, i32* %y, align 4, 
+  %23 = mul nsw i32 %22, 100, 
+  %24 = add nsw i32 %21, %23, 
+  %25 = load i32, i32* %z, align 4, 
+  %26 = mul nsw i32 %25, 100, 
+  %27 = mul nsw i32 %26, 100, 
+  %28 = add nsw i32 %24, %27, 
+  %29 = mul nsw i32 20, %28, 
+  %30 = add nsw i32 0, %29, 
+  %31 = sext i32 %30 to i64, 
+  %32 = load double*, double** %1, align 8, 
+  %33 = getelementptr inbounds double, double* %32, i64 %31, 
+  %34 = load double, double* %33, align 8, 
+  %35 = load i32, i32* %x, align 4, 
+  %36 = load i32, i32* %y, align 4, 
+  %37 = mul nsw i32 %36, 100, 
+  %38 = add nsw i32 %35, %37, 
+  %39 = load i32, i32* %z, align 4, 
+  %40 = mul nsw i32 %39, 100, 
+  %41 = mul nsw i32 %40, 100, 
+  %42
+... (TRIMMED)</pre>

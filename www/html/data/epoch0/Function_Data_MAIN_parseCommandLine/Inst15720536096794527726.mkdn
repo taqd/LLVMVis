@@ -1,0 +1,12 @@
+;; Line: 84, Column: 24
+  %56 = icmp ne i64 %55, 1313130, 
+</pre>
+<br/>Operand # 0 (0x5db4258) <br /><pre class="prettyprint lang-llvm ">  %55 = load i64, i64* %54, align 8, </pre>
+Operand # 1 (0x5db10a0) <br /><pre class="prettyprint lang-llvm ">i64 1313130</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:53                                      ; preds = %37
+  %54 = getelementptr inbounds %struct.stat, %struct.stat* %fileStat, i32 0, i32 8, 
+  %55 = load i64, i64* %54, align 8, 
+  %56 = icmp ne i64 %55, 1313130, 
+  br i1 %56, label %57, label %65, 
+</pre>

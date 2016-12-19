@@ -1,0 +1,5 @@
+File: main.c, Lines: 67,68 Cols: 3,
+; label:2                                       ; preds = %0
+  %puts = tail call i32 @puts(i8* nonnull getelementptr inbounds ([108 x i8], [108 x i8]* @str, i64 0, i64 0)), 
+  tail call void @exit(i32 1) #8, 
+  unreachable, 

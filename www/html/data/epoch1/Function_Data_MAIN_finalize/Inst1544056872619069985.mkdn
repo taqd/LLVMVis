@@ -1,0 +1,13 @@
+;; Line: 153, Column: 13
+  %4 = load i32, i32* %3, align 8, 
+</pre>
+<br/>Operand # 0 (0x4fc85c8) <br /><pre class="prettyprint lang-llvm ">  %3 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 2, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %2 = getelementptr inbounds [26000000 x double], [26000000 x double]* %1, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %2), 
+  %3 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 2, 
+  %4 = load i32, i32* %3, align 8, 
+  %5 = icmp eq i32 %4, 1, 
+  br i1 %5, label %6, label %11, 
+</pre>

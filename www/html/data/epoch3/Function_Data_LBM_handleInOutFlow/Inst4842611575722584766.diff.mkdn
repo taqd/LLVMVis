@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4d6ef10) <br /><pre class="prettyprint lang-llvm ">  %559 = fsub <2 x double> %557, %558, </pre>
+< Operand # 1 (0x4d6ef90) <br /><pre class="prettyprint lang-llvm ">  %560 = fadd <2 x double> %557, %558, </pre>
+< Operand # 2 (0x4d75570) <br /><pre class="prettyprint lang-llvm "><2 x i32> <i32 0, i32 3></pre>
+---
+> <br/>Operand # 0 (0x4f31850) <br /><pre class="prettyprint lang-llvm ">  %559 = fsub <2 x double> %557, %558, </pre>
+> Operand # 1 (0x4f318d0) <br /><pre class="prettyprint lang-llvm ">  %560 = fadd <2 x double> %557, %558, </pre>
+> Operand # 2 (0x4f37eb0) <br /><pre class="prettyprint lang-llvm "><2 x i32> <i32 0, i32 3></pre>

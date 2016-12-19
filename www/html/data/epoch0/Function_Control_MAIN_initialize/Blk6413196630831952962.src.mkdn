@@ -1,0 +1,18 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk6413196630831952962 ():
+L132,C26:  %11 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !214
+L132,C25:  %12 = getelementptr inbounds [26000000 x double], [26000000 x double]* %11, i32 0, i32 0, !dbg !216
+L132,C35:  %13 = load %struct.MAIN_Param*, %struct.MAIN_Param** %1, align 8, !dbg !217
+L132,C42:  %14 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %13, i32 0, i32 4, !dbg !218
+L132,C42:  %15 = load i8*, i8** %14, align 8, !dbg !218
+L132,C3:  call void @LBM_loadObstacleFile(double* %12, i8* %15), !dbg !219
+L133,C26:  %16 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !220
+L133,C25:  %17 = getelementptr inbounds [26000000 x double], [26000000 x double]* %16, i32 0, i32 0, !dbg !221
+L133,C35:  %18 = load %struct.MAIN_Param*, %struct.MAIN_Param** %1, align 8, !dbg !222
+L133,C42:  %19 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %18, i32 0, i32 4, !dbg !223
+L133,C42:  %20 = load i8*, i8** %19, align 8, !dbg !223
+L133,C3:  call void @LBM_loadObstacleFile(double* %17, i8* %20), !dbg !224
+L134,C2:  br label %21, !dbg !225
+

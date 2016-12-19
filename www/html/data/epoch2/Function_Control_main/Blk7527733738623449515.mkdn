@@ -1,0 +1,11 @@
+File: main.c, Lines: 44,47,89,90-92, Cols: 3,7,9,10-16,20,29,30-34,39,40-54,
+; label:24                                      ; preds = %21, %20
+  %25 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %26 = getelementptr inbounds [26000000 x double], [26000000 x double]* %25, i64 0, i64 0, 
+  %27 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %28 = getelementptr inbounds [26000000 x double], [26000000 x double]* %27, i64 0, i64 0, 
+  tail call void @LBM_performStreamCollide(double* %26, double* %28), 
+  %29 = load i64, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, 
+  %30 = load i64, i64* bitcast ([26000000 x double]** @dstGrid to i64*), align 8, 
+  store i64 %30, i64* bitcast ([26000000 x dou
+... (TRIMMED)

@@ -1,0 +1,132 @@
+{
+	"title" : "loadValue",
+	"graph" : {
+		"linkDistance" : 100,
+		"charge" : -600,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 32,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "loadValue" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "loadValue" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Blk17465840096546337593" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk17465840096546337593" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk88861287804412785" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk88861287804412785" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk10708936897671740592" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk10708936897671740592" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop21" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop21" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop21" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk6708800256328591244" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Blk5714048204816580279" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

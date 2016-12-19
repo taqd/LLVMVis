@@ -1,0 +1,15 @@
+4c4
+< <br/>Operand # 0 (0x4d22518) <br /><pre class="prettyprint lang-llvm ">@srcGrid = internal global [26000000 x double]* null, align 8</pre>
+---
+> <br/>Operand # 0 (0x4edf238) <br /><pre class="prettyprint lang-llvm ">@srcGrid = internal global [26000000 x double]* null, align 8</pre>
+8,14c8,9
+<   %18 = getelementptr inbounds [26000000 x double], [26000000 x double]* %17, i64 0, i64 0, 
+<   tail call void @LBM_loadObstacleFile(double* %18, i8* nonnull %14), 
+<   %19 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+<   %20 = getelementptr inbounds [26000000 x double], [26000000 x double]* %19, i64 0, i64 0, 
+<   %21 = load i8*, i8** %13, align 8, 
+<   tail call void @LBM_loadObstacleFile(double* %20, i8* %21), 
+<   br label %22, 
+---
+>   %18 = tail call %struct._IO_FILE* @fopen(i8* nonnull %14, i8* nonnull getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0)) #7, 
+>   br label %.preheader10.i, 

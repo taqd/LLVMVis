@@ -1,0 +1,17 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk6196308932056799552 ():
+L508,C9:  %423 = load i32, i32* %nObstacleCells, align 4, !dbg !403
+L508,C25:  %424 = load i32, i32* %nAccelCells, align 4, !dbg !404
+L508,C38:  %425 = load i32, i32* %nFluidCells, align 4, !dbg !405
+L509,C9:  %426 = load double, double* %minRho, align 8, !dbg !406
+L509,C17:  %427 = load double, double* %maxRho, align 8, !dbg !407
+L509,C25:  %428 = load double, double* %mass, align 8, !dbg !408
+L510,C15:  %429 = load double, double* %minU2, align 8, !dbg !409
+L510,C9:  %430 = call double @sqrt(double %429) #6, !dbg !410
+L510,C30:  %431 = load double, double* %maxU2, align 8, !dbg !411
+L510,C24:  %432 = call double @sqrt(double %431) #6, !dbg !412
+L504,C9:  %433 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([138 x i8], [138 x i8]* @.str.2, i32 0, i32 0), i32 %423, i32 %424, i32 %425, double %426, double %427, double %428, double %430, double %432), !dbg !414
+L512,C1:  ret void, !dbg !415
+

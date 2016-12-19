@@ -1,0 +1,12 @@
+;; Line: 519, Column: 30
+  %8 = load float*, float** %2, align 8, 
+</pre>
+<br/>Operand # 0 (0x5d89a48) <br /><pre class="prettyprint lang-llvm ">  %2 = alloca float*, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:7                                       ; preds = %0
+  %8 = load float*, float** %2, align 8, 
+  %9 = bitcast float* %8 to i8*, 
+  store i8* %9, i8** %vPtr, align 8, 
+  store i32 0, i32* %i, align 4, 
+  br label %10, 
+</pre>

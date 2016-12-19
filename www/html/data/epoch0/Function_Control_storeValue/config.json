@@ -1,0 +1,132 @@
+{
+	"title" : "storeValue",
+	"graph" : {
+		"linkDistance" : 100,
+		"charge" : -600,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 32,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Loop17" : {
+			"short" : "Loop17",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Loop17" : {
+			"short" : "Loop17",
+			"long"  : "" 
+		},
+		"Loop17" : {
+			"short" : "Loop17",
+			"long"  : "" 
+		},
+		"Loop17" : {
+			"short" : "Loop17",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		},
+		"Not in loop" : {
+			"short" : "Not in loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "storeValue" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "storeValue" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Blk16208705788572878124" },
+			"type" : "linkStrength",
+			"target" : "Loop17",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk16208705788572878124" },
+			"type" : "linkColor",
+			"target" : "Loop17",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk336035276577837398" },
+			"type" : "linkStrength",
+			"target" : "Loop17",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk336035276577837398" },
+			"type" : "linkColor",
+			"target" : "Loop17",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Blk16149230692697713364" },
+			"type" : "linkStrength",
+			"target" : "Loop17",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Blk16149230692697713364" },
+			"type" : "linkColor",
+			"target" : "Loop17",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop17" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop17" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop17" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "Blk6708800256328591244" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Blk2857722367661657264" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

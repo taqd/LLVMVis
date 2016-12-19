@@ -1,0 +1,11 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk3680901285069660805 ():
+L63,C33:  tail call void @llvm.dbg.value(metadata i32 %nArgs, i64 0, metadata !1694, metadata !199), !dbg !1695
+L63,C46:  tail call void @llvm.dbg.value(metadata i8** %arg, i64 0, metadata !1696, metadata !199), !dbg !1697
+L63,C65:  tail call void @llvm.dbg.value(metadata %struct.MAIN_Param* %param, i64 0, metadata !1698, metadata !199), !dbg !1699
+L66,C16:  %nArgs.off = add i32 %nArgs, -5, !dbg !205
+L66,C16:  %1 = icmp ugt i32 %nArgs.off, 1, !dbg !205
+L66,C16:  br i1 %1, label %2, label %3, !dbg !205
+

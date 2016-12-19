@@ -1,0 +1,5 @@
+File: lbm.c, Lines: 131, Cols: 9,11,16,
+; label:25                                      ; preds = %22
+  %26 = load i32, i32* %z, align 4, 
+  %27 = icmp eq i32 %26, 0, 
+  br i1 %27, label %31, label %28, 

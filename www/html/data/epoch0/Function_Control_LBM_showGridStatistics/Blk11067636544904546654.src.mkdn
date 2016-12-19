@@ -1,0 +1,16 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk11067636544904546654 ():
+L478,C8:  %167 = load i32, i32* %i, align 4, !dbg !299
+L478,C8:  %168 = add nsw i32 19, %167, !dbg !299
+L478,C8:  %169 = sext i32 %168 to i64, !dbg !299
+L478,C8:  %170 = load double*, double** %1, align 8, !dbg !299
+L478,C8:  %171 = getelementptr inbounds double, double* %170, i64 %169, !dbg !299
+L478,C8:  %172 = bitcast double* %171 to i8*, !dbg !299
+L478,C8:  %173 = bitcast i8* %172 to i32*, !dbg !299
+L478,C8:  %174 = load i32, i32* %173, align 4, !dbg !299
+L478,C8:  %175 = and i32 %174, 2, !dbg !299
+L478,C8:  %176 = icmp ne i32 %175, 0, !dbg !299
+L478,C8:  br i1 %176, label %177, label %180, !dbg !302
+

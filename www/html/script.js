@@ -1,7 +1,8 @@
 var graph       = {},
     selected    = {},
     highlighted = null,
-    isIE        = false;
+    isIE        = false,
+    lasso       = {};
 
 //Show the graph lines. Removing the lines will improve performance on
 //large graphs, while leaving nodes in their regular location.
@@ -140,13 +141,9 @@ function loadGraph() {
 	    });
 
 	    //Set the colors of each line
-	    link.source.linkColors.forEach(function(l) {
-				
+	    link.source.linkColors.forEach(function(l) {				
 		if (l.name == name) {
 	    	    link.color = l.color;
-		    if (l.color == "white") {
-	    		link.color = 'black';
-	     	    }	
 	     	} 
 	    });
 
@@ -206,8 +203,14 @@ function loadGraph() {
 
     //Set the 'brightness?' of the stroke and fill color
     //Roughly: -1=white, 0=pastel, 1=solid, 10=black
-    graph.strokeColor = getColorScale(2);
-    graph.fillColor   = getColorScale(2);
+    //Light theme
+    graph.strokeColor = getColorScale(0);
+    graph.fillColor   = getColorScale(0);
+
+    //Dark theme
+    //graph.strokeColor = getColorScale(2);
+    //graph.fillColor   = getColorScale(2);
+
 
     //Send data to d3
     graph.nodeValues = d3.values(graph.data);
@@ -380,7 +383,7 @@ function drawGraph() {
             if (!dragged(d)) {
                 selectObject(d, this);
             }
-            d.fixed &= ~6;
+            d.fixed = true;
         });
 
     $('#graph-container').on('click', function(e) {
@@ -389,7 +392,6 @@ function drawGraph() {
         }
     });
 
-    //Send object data to d3 for display
     graph.node = graph.svg.selectAll('.node')
         .data(graph.force.nodes())
 	.enter().append('g')
@@ -770,9 +772,24 @@ function resize(showDocs) {
     }
 }
 
-//A simple implementation of zoom, this however kills node selection :(
-var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
-function zoom() {
-    graph.svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-}
+function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
 
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+	tabcontent[i].className = tabcontent[i].className.replace("show", "");
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " show";
+}

@@ -1,0 +1,11 @@
+;; Line: 471, Column: 13
+  %145 = load double, double* %maxRho, align 8, 
+</pre>
+<br/>Operand # 0 (0x5d5e1c8) <br /><pre class="prettyprint lang-llvm ">  %maxRho = alloca double, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:143                                     ; preds = %141, %5
+  %144 = load double, double* %rho, align 8, 
+  %145 = load double, double* %maxRho, align 8, 
+  %146 = fcmp ogt double %144, %145, 
+  br i1 %146, label %147, label %149, 
+</pre>

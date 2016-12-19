@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d81cf0) <br /><pre class="prettyprint lang-llvm ">  %178 = fadd double %170, 0.000000e+00, </pre>
+< Operand # 1 (0x4d81e50) <br /><pre class="prettyprint lang-llvm ">  %180 = fadd double %179, 3.000000e+00, </pre>
+---
+> <br/>Operand # 0 (0x4f446f0) <br /><pre class="prettyprint lang-llvm ">  %178 = fadd double %170, 0.000000e+00, </pre>
+> Operand # 1 (0x4f44850) <br /><pre class="prettyprint lang-llvm ">  %180 = fadd double %179, 3.000000e+00, </pre>

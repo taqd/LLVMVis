@@ -1,0 +1,25 @@
+;; Line: 30, Column: 6
+  br i1 %2, label %3, label %LBM_allocateGrid.exit, 
+</pre>
+<br/>Operand # 0 (0x4f8b8d0) <br /><pre class="prettyprint lang-llvm ">  %2 = icmp eq i8* %1, null, </pre>
+Operand # 1 (0x4f894d0) <br /><pre class="prettyprint lang-llvm ">
+LBM_allocateGrid.exit:                            ; preds = %0
+  %5 = getelementptr inbounds i8, i8* %1, i64 3200000, 
+  store i8* %5, i8** bitcast ([26000000 x double]** @srcGrid to i8**), align 8, 
+  %6 = tail call noalias i8* @malloc(i64 214400000) #7, 
+  store i8* %6, i8** bitcast ([26000000 x double]** @dstGrid to i8**), align 8, 
+  %7 = icmp eq i8* %6, null, 
+  br i1 %7, label %8, label %LBM_allocateGrid.exit4, 
+</pre>
+Operand # 2 (0x4f89480) <br /><pre class="prettyprint lang-llvm ">
+; label:3                                       ; preds = %0
+  %4 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([49 x i8], [49 x i8]* @.str, i64 0, i64 0), double 0x40698EF800000000) #7, 
+  tail call void @exit(i32 1) #8, 
+  unreachable, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = tail call noalias i8* @malloc(i64 214400000) #7, 
+  store i8* %1, i8** bitcast ([26000000 x double]** @srcGrid to i8**), align 8, 
+  %2 = icmp eq i8* %1, null, 
+  br i1 %2, label %3, label %LBM_allocateGrid.exit, 
+</pre>

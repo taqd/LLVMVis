@@ -1,0 +1,99 @@
+
+.preheader:                                       ; preds = %.us-lcssa.us, %.preheader28
+  %indvars.iv41 = phi i64 [ 0, %.preheader28 ], [ %indvars.iv.next42, %.us-lcssa.us ]
+  %2 = mul nuw nsw i64 %indvars.iv41, 100, 
+  %3 = add nsw i64 %2, %1, 
+  %4 = trunc i64 %indvars.iv41 to i32, 
+  switch i32 %4, label %.preheader.split.split.preheader [
+    i32 99, label %.preheader.split.us.preheader
+    i32 0, label %.preheader.split.split.us.preheader
+  ], 
+<br/>.preheader.split.split.us.preheader:              ; preds = %.preheader
+  br label %.preheader.split.split.us, 
+<br/>.preheader.split.split.us:                        ; preds = %.preheader.split.split.us, %.preheader.split.split.us.preheader
+  %indvars.iv = phi i64 [ 0, %.preheader.split.split.us.preheader ], [ %indvars.iv.next.1, %.preheader.split.split.us ]
+  %19 = add nsw i64 %3, %indvars.iv, 
+  %20 = mul nsw i64 %19, 20, 
+  %21 = add nsw i64 %20, 19, 
+  %22 = getelementptr inbounds double, double* %grid, i64 %21, 
+  %23 = bitcast double* %22 to i32*, 
+  %24 = load i32, i32* %23, align 4, 
+  %25 = or i32 %24, 1, 
+  store i32 %25, i32* %23, align 4, 
+  %indvars.iv.next = or i64 %indvars.iv, 1, 
+  %26 = add nsw i64 %3, %indvars.iv.next, 
+  %27 = mul nsw i64 %26, 20, 
+  %28 = add nsw i64 %27, 19, 
+  %29 = getelementptr inbounds double, double* %grid, i64 %28, 
+  %30 = bitcast double* %2
+... (TRIMMED)
+.us-lcssa.us.loopexit52:                          ; preds = %.preheader.split.split.us
+  br label %.us-lcssa.us, 
+<br/>.preheader.split.us.preheader:                    ; preds = %.preheader
+  br label %.preheader.split.us, 
+<br/>.preheader.split.us:                              ; preds = %.preheader.split.us, %.preheader.split.us.preheader
+  %indvars.iv35 = phi i64 [ 0, %.preheader.split.us.preheader ], [ %indvars.iv.next36.1, %.preheader.split.us ]
+  %5 = add nsw i64 %3, %indvars.iv35, 
+  %6 = mul nsw i64 %5, 20, 
+  %7 = add nsw i64 %6, 19, 
+  %8 = getelementptr inbounds double, double* %grid, i64 %7, 
+  %9 = bitcast double* %8 to i32*, 
+  %10 = load i32, i32* %9, align 4, 
+  %11 = or i32 %10, 1, 
+  store i32 %11, i32* %9, align 4, 
+  %indvars.iv.next36 = or i64 %indvars.iv35, 1, 
+  %12 = add nsw i64 %3, %indvars.iv.next36, 
+  %13 = mul nsw i64 %12, 20, 
+  %14 = add nsw i64 %13, 19, 
+  %15 = getelementptr inbounds double, double* %grid, i64 %14, 
+  %16 = bitcast double* %15 to i32*, 
+  t
+... (TRIMMED)
+.us-lcssa.us.loopexit51:                          ; preds = %.preheader.split.us
+  br label %.us-lcssa.us, 
+<br/>.preheader.split.split.preheader:                 ; preds = %.preheader
+  br label %.preheader.split.split, 
+<br/>.preheader.split.split:                           ; preds = %53, %.preheader.split.split.preheader
+  %indvars.iv38 = phi i64 [ 0, %.preheader.split.split.preheader ], [ %indvars.iv.next39.1, %53 ]
+  %33 = trunc i64 %indvars.iv38 to i32, 
+  switch i32 %33, label %.preheader.split.split.153 [
+    i32 99, label %34
+    i32 0, label %34
+  ], 
+<br/>; label:34                                      ; preds = %.preheader.split.split, %.preheader.split.split
+  %35 = add nsw i64 %3, %indvars.iv38, 
+  %36 = mul nsw i64 %35, 20, 
+  %37 = add nsw i64 %36, 19, 
+  %38 = getelementptr inbounds double, double* %grid, i64 %37, 
+  %39 = bitcast double* %38 to i32*, 
+  %40 = load i32, i32* %39, align 4, 
+  %41 = or i32 %40, 1, 
+  store i32 %41, i32* %39, align 4, 
+  br label %.preheader.split.split.153, 
+<br/>.preheader.split.split.153:                       ; preds = %.preheader.split.split, %34
+  %indvars.iv.next39 = or i64 %indvars.iv38, 1, 
+  %42 = trunc i64 %indvars.iv.next39 to i32, 
+  switch i32 %42, label %53 [
+    i32 99, label %45
+    i32 0, label %45
+  ], 
+<br/>; label:45                                      ; preds = %.preheader.split.split.153, %.preheader.split.split.153
+  %46 = add nsw i64 %3, %indvars.iv.next39, 
+  %47 = mul nsw i64 %46, 20, 
+  %48 = add nsw i64 %47, 19, 
+  %49 = getelementptr inbounds double, double* %grid, i64 %48, 
+  %50 = bitcast double* %49 to i32*, 
+  %51 = load i32, i32* %50, align 4, 
+  %52 = or i32 %51, 1, 
+  store i32 %52, i32* %50, align 4, 
+  br label %53, 
+<br/>; label:53                                      ; preds = %45, %.preheader.split.split.153
+  %indvars.iv.next39.1 = add nsw i64 %indvars.iv38, 2, 
+  %exitcond40.1 = icmp eq i64 %indvars.iv.next39.1, 100, 
+  br i1 %exitcond40.1, label %.us-lcssa.us.loopexit, label %.preheader.split.split, 
+<br/>.us-lcssa.us.loopexit:                            ; preds = %53
+  br label %.us-lcssa.us, 
+<br/>.us-lcssa.us:                                     ; preds = %.us-lcssa.us.loopexit52, %.us-lcssa.us.loopexit51, %.us-lcssa.us.loopexit
+  %indvars.iv.next42 = add nuw nsw i64 %indvars.iv41, 1, 
+  %exitcond43 = icmp eq i64 %indvars.iv.next42, 100, 
+  br i1 %exitcond43, label %43, label %.preheader, 

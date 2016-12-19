@@ -1,0 +1,5 @@
+File: main.c, Lines: 103,105,132, Cols: 3,32,
+.preheader10.i:                                   ; preds = %37, %16
+  %indvars.iv17.i = phi i64 [ 0, %16 ], [ %indvars.iv.next18.i, %37 ], 
+  %19 = mul nuw nsw i64 %indvars.iv17.i, 10000, 
+  br label %.preheader.i, 

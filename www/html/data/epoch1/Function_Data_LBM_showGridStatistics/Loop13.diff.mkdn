@@ -1,0 +1,180 @@
+2,26c2,17
+< ; label:2                                       ; preds = %419, %0
+<   %3 = load i32, i32* %i, align 4, 
+<   %4 = icmp slt i32 %3, 26000000, 
+<   br i1 %4, label %5, label %422, 
+< <br/>; label:5                                       ; preds = %2
+<   %6 = load i32, i32* %i, align 4, 
+<   %7 = add nsw i32 0, %6, 
+<   %8 = sext i32 %7 to i64, 
+<   %9 = load double*, double** %1, align 8, 
+<   %10 = getelementptr inbounds double, double* %9, i64 %8, 
+<   %11 = load double, double* %10, align 8, 
+<   %12 = load i32, i32* %i, align 4, 
+<   %13 = add nsw i32 1, %12, 
+<   %14 = sext i32 %13 to i64, 
+<   %15 = load double*, double** %1, align 8, 
+<   %16 = getelementptr inbounds double, double* %15, i64 %14, 
+<   %17 = load double, double* %16, align 8, 
+<   %18 = fadd double %11, %17, 
+<   %19 = load i32, i32* %i, align 4, 
+<   %20 = add nsw i32 2, %19, 
+<   %21 = sext i32 %20 to i64, 
+<   %22 = load double*, double** %1, align 8, 
+<   %23 = getelementptr inbounds double, double* %22, i64 %21, 
+<   %24 = load double, double* %23, align 8, 
+<  
+---
+> ; label:1                                       ; preds = %0, %127
+>   %indvars.iv = phi i64 [ 0, %0 ], [ %indvars.iv.next, %127 ]
+>   %mass.0131 = phi double [ 0.000000e+00, %0 ], [ %78, %127 ]
+>   %nObstacleCells.0130 = phi i32 [ 0, %0 ], [ %nObstacleCells.1, %127 ]
+>   %maxRho.0129 = phi double [ -1.000000e+30, %0 ], [ %maxRho.1, %127 ]
+>   %minRho.0128 = phi double [ 1.000000e+30, %0 ], [ %minRho.1, %127 ]
+>   %nAccelCells.0127 = phi i32 [ 0, %0 ], [ %nAccelCells.2, %127 ]
+>   %maxU2.0126 = phi double [ -1.000000e+30, %0 ], [ %maxU2.1, %127 ]
+>   %minU2.0125 = phi double [ 1.000000e+30, %0 ], [ %minU2.2, %127 ]
+>   %nFluidCells.0124 = phi i32 [ 0, %0 ], [ %nFluidCells.2, %127 ]
+>   %2 = getelementptr inbounds double, double* %grid, i64 %indvars.iv, 
+>   %3 = load double, double* %2, align 8, 
+>   %4 = or i64 %indvars.iv, 1, 
+>   %5 = getelementptr inbounds double, double* %grid, i64 %4, 
+>   %6 = load double, double* %5, align 8, 
+>   %7 = fadd double %3, %6, 
+28,98c19,42
+< ; label:141                                     ; preds = %5
+<   %142 = load double, double* %rho, align 8, 
+<   store double %142, double* %minRho, align 8, 
+<   br label %143, 
+< <br/>; label:143                                     ; preds = %141, %5
+<   %144 = load double, double* %rho, align 8, 
+<   %145 = load double, double* %maxRho, align 8, 
+<   %146 = fcmp ogt double %144, %145, 
+<   br i1 %146, label %147, label %149, 
+< <br/>; label:147                                     ; preds = %143
+<   %148 = load double, double* %rho, align 8, 
+<   store double %148, double* %maxRho, align 8, 
+<   br label %149, 
+< <br/>; label:149                                     ; preds = %147, %143
+<   %150 = load double, double* %rho, align 8, 
+<   %151 = load double, double* %mass, align 8, 
+<   %152 = fadd double %151, %150, 
+<   store double %152, double* %mass, align 8, 
+<   %153 = load i32, i32* %i, align 4, 
+<   %154 = add nsw i32 19, %153, 
+<   %155 = sext i32 %154 to i64, 
+<   %156 = load double*, double** %1, align 8, 
+<   %157 = getelementptr inbounds double, double* %156, i64 %155, 
+<   %158 = bitcast double* %157 to i8*, 
+<   %159 = bitcast i8* %158 to i32*, 
+<   %160 = load i32, i32* %159, align 4, 
+<   %161 = and i32 %160, 1, 
+<   %162 = icmp ne i32 %161, 0, 
+<   br i1 %162, label %163, label %166, 
+< <br/>; label:166                                     ; preds = %149
+<   %167 = load i32, i32* %i, align 4, 
+<   %168 = add nsw i32 19, %167, 
+<   %169 = sext i32 %168 to i64, 
+<   %170 = load double*, double** %1, align 8, 
+<   %171 = getelementptr inbounds double, double* %170, i64 %169, 
+<   %172 = bitcast double* %171 to i8*, 
+<   %173 = bitcast i8* %172 to i32*, 
+<   %174 = load i32, i32* %173, align 4, 
+<   %175 = and i32 %174, 2, 
+<   %176 = icmp ne i32 %175, 0, 
+<   br i1 %176, label %177, label %180, 
+< <br/>; label:180                                     ; preds = %166
+<   %181 = load i32, i32* %nFluidCells, align 4, 
+<   %182 = add nsw i32 %181, 1, 
+<   store i32 %182, i32* %nFluidCells, align 4, 
+<   br label %183
+< <br/>; label:177                                     ; preds = %166
+<   %178 = load i32, i32* %nAccelCells, align 4, 
+<   %179 = add nsw i32 %178, 1, 
+<   store i32 %179, i32* %nAccelCells, align 4, 
+<   br label %183, 
+< <br/>; label:183                                     ; preds = %180, %177
+<   %184 = load i32, i32* %i, align 4, 
+<   %185 = add nsw i32 3, %184, 
+<   %186 = sext i32 %185 to i64, 
+<   %187 = load double*, double** %1, align 8, 
+<   %188 = getelementptr inbounds double, double* %187, i64 %186, 
+<   %189 = load double, double* %188, align 8, 
+<   %190 = load i32, i32* %i, align 4, 
+<   %191 = add nsw i32 4, %190, 
+<   %192 = sext i32 %191 to i64, 
+<   %193 = load double*, double** %1, align 8, 
+<   %194 = getelementptr inbounds double, double* %193, i64 %192, 
+<   %195 = load double, double* %194, align 8, 
+<   %196 = fsub double %189, %195, 
+<   %197 = load i32, i32* %i, align 4, 
+<   %198 = add nsw i32 7, %197, 
+<   %199 = sext i32 %198 to i64, 
+<   %200 = load double*, double** %1, align 8, 
+<   %201 = getelementptr inbounds double, double* %200, i64 %199, 
+<   %2
+---
+> ; label:85                                      ; preds = %1
+>   %86 = add nsw i32 %nObstacleCells.0130, 1, 
+>   br label %127, 
+> <br/>; label:87                                      ; preds = %1
+>   %88 = and i32 %82, 2, 
+>   %.lobit = lshr exact i32 %88, 1, 
+>   %89 = xor i32 %.lobit, 1, 
+>   %nFluidCells.1 = add nsw i32 %89, %nFluidCells.0124, 
+>   %.lobit123 = lshr exact i32 %88, 1, 
+>   %nAccelCells.1 = add nsw i32 %.lobit123, %nAccelCells.0127, 
+>   %90 = fsub double %14, %18, 
+>   %91 = fadd double %90, %30, 
+>   %92 = fsub double %91, %34, 
+>   %93 = fadd double %92, %38, 
+>   %94 = fsub double %93, %42, 
+>   %95 = fadd double %94, %62, 
+>   %96 = fadd double %95, %66, 
+>   %97 = fsub double %96, %70, 
+>   %98 = fsub double %97, %74, 
+>   %99 = fsub double %6, %10, 
+>   %100 = fadd double %99, %30, 
+>   %101 = fadd double %100, %34, 
+>   %102 = fsub double %101, %38, 
+>   %103 =
+100,126c44,54
+< ; label:409                                     ; preds = %183
+<   %410 = load double, double* %u2, align 8, 
+<   store double %410, double* %minU2, align 8, 
+<   br label %411, 
+< <br/>; label:411                                     ; preds = %409, %183
+<   %412 = load double, double* %u2, align 8, 
+<   %413 = load double, double* %maxU2, align 8, 
+<   %414 = fcmp ogt double %412, %413, 
+<   br i1 %414, label %415, label %417, 
+< <br/>; label:415                                     ; preds = %411
+<   %416 = load double, double* %u2, align 8, 
+<   store double %416, double* %maxU2, align 8, 
+<   br label %417, 
+< <br/>; label:417                                     ; preds = %415, %411
+<   br label %418
+< <br/>; label:163                                     ; preds = %149
+<   %164 = load i32, i32* %nObstacleCells, align 4, 
+<   %165 = add nsw i32 %164, 1, 
+<   store i32 %165, i32* %nObstacleCells, align 4, 
+<   br label %418, 
+< <br/>; label:418                                     ; preds = %417, %163
+<   br label %419, 
+< <br/>; label:419                                     ; preds = %418
+<   %420 = load i32, i32* %i, align 4, 
+<   %421 = add nsw i32 %420, 20, 
+<   store i32 %421, i32* %i, align 4, 
+<   br label %2, 
+---
+> ; label:126                                     ; preds = %87
+>   br label %127, 
+> <br/>; label:127                                     ; preds = %85, %126, %87
+>   %nFluidCells.2 = phi i32 [ %nFluidCells.0124, %85 ], [ %nFluidCells.1, %126 ], [ %nFluidCells.1, %87 ]
+>   %minU2.2 = phi double [ %minU2.0125, %85 ], [ %minU2.1, %126 ], [ %minU2.1, %87 ]
+>   %maxU2.1 = phi double [ %maxU2.0126, %85 ], [ %123, %126 ], [ %maxU2.0126, %87 ]
+>   %nAccelCells.2 = phi i32 [ %nAccelCells.0127, %85 ], [ %nAccelCells.1, %126 ], [ %nAccelCells.1, %87 ]
+>   %nObstacleCells.1 = phi i32 [ %86, %85 ], [ %nObstacleCells.0130, %126 ], [ %nObstacleCells.0130, %87 ]
+>   %indvars.iv.next = add nuw nsw i64 %indvars.iv, 20, 
+>   %128 = icmp slt i64 %indvars.iv.next, 26000000, 
+>   br i1 %128, label %1, label %129, 

@@ -1,0 +1,8 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk17532573935770274560 ():
+L618,C27:  call void @llvm.dbg.value(metadata float* %fileUy, i64 0, metadata !1679, metadata !1542), !dbg !1680
+L618,C35:  call void @llvm.dbg.value(metadata float* %fileUz, i64 0, metadata !1682, metadata !1542), !dbg !1683
+L666,C7:  %116 = call i32 (%struct._IO_FILE*, i8*, ...) @__isoc99_fscanf(%struct._IO_FILE* %3, i8* nonnull getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i64 0, i64 0), float* nonnull %fileUx, float* nonnull %fileUy, float* nonnull %fileUz) #7, !dbg !317
+

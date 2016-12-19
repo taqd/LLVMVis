@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4dcb7d8) <br /><pre class="prettyprint lang-llvm ">  %12 = phi i32 [ %.pr, %6 ], [ %4, %0 ], </pre>
+< Operand # 1 (0x4d29d00) <br /><pre class="prettyprint lang-llvm ">i32 2</pre>
+---
+> <br/>Operand # 0 (0x4f99528) <br /><pre class="prettyprint lang-llvm ">  %12 = phi i32 [ %.pr, %6 ], [ %4, %0 ], </pre>
+> Operand # 1 (0x4ee6a70) <br /><pre class="prettyprint lang-llvm ">i32 2</pre>

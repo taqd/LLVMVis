@@ -1,0 +1,22 @@
+;; Line: 102, Column: 2
+  br i1 %exitcond19, label %22, label %.preheader10, 
+</pre>
+<br/>Operand # 0 (0x4f4da00) <br /><pre class="prettyprint lang-llvm ">  %exitcond19 = icmp eq i64 %indvars.iv.next18, 130, </pre>
+Operand # 1 (0x4f4b950) <br /><pre class="prettyprint lang-llvm ">
+.preheader10:                                     ; preds = %20, %0
+  %indvars.iv17 = phi i64 [ 0, %0 ], [ %indvars.iv.next18, %20 ]
+  %2 = mul nuw nsw i64 %indvars.iv17, 10000, 
+  br label %.preheader, 
+</pre>
+Operand # 2 (0x4f4bb80) <br /><pre class="prettyprint lang-llvm ">
+; label:22                                      ; preds = %20
+  %23 = tail call i32 @fclose(%struct._IO_FILE* %1), 
+  ret void, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:20                                      ; preds = %19
+  %21 = tail call i32 @fgetc(%struct._IO_FILE* %1), 
+  %indvars.iv.next18 = add nuw nsw i64 %indvars.iv17, 1, 
+  %exitcond19 = icmp eq i64 %indvars.iv.next18, 130, 
+  br i1 %exitcond19, label %22, label %.preheader10, 
+</pre>

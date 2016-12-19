@@ -1,0 +1,18 @@
+
+; Function Attrs: nounwind uwtable
+define void @LBM_storeVelocityField(double* %grid, i8* %filename, i32 %binary) #0 {
+  %1 = alloca double*, align 8
+  %2 = alloca i8*, align 8
+  %3 = alloca i32, align 4
+  %x = alloca i32, align 4
+  %y = alloca i32, align 4
+  %z = alloca i32, align 4
+  %rho = alloca float, align 4
+  %ux = alloca float, align 4
+  %uy = alloca float, align 4
+  %uz = alloca float, align 4
+  %file = alloca %struct._IO_FILE*, align 8
+  store double* %grid, double** %1, align 8
+  store i8* %filename, i8** %2, align 8
+  store i32 %binary, i32* %3, align 4
+... (TRIMMED)

@@ -1,0 +1,13 @@
+;; Line: 609, Column: 2
+  %134 = tail call i32 @fclose(%struct._IO_FILE* %3), 
+</pre>
+<br/>Operand # 0 (0x4da60b8) <br /><pre class="prettyprint lang-llvm ">  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), </pre>
+Operand # 1 (0x4d23888) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind
+declare i32 @fclose(%struct._IO_FILE* nocapture) #2
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:133                                     ; preds = %132
+  %134 = tail call i32 @fclose(%struct._IO_FILE* %3), 
+  ret void, 
+</pre>

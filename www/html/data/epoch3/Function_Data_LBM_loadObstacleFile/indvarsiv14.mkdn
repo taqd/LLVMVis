@@ -1,0 +1,13 @@
+
+  %indvars.iv14 = phi i64 [ 0, %.preheader10 ], [ %indvars.iv.next15, %19 ]
+</pre>
+<br/>Operand # 0 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 1 (0x4f09330) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.next15 = add nuw nsw i64 %indvars.iv14, 1, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader:                                       ; preds = %19, %.preheader10
+  %indvars.iv14 = phi i64 [ 0, %.preheader10 ], [ %indvars.iv.next15, %19 ]
+  %3 = tail call i32 @fgetc(%struct._IO_FILE* %1), 
+  %4 = mul nuw nsw i64 %indvars.iv14, 100, 
+  %5 = add nuw nsw i64 %4, %2, 
+  br label %6, 
+</pre>

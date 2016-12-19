@@ -1,0 +1,13 @@
+;; Line: 118, Column: 35
+  %14 = icmp eq i8* %13, null, 
+</pre>
+<br/>Operand # 0 (0x4dbd188) <br /><pre class="prettyprint lang-llvm ">  %13 = load i8*, i8** %12, align 8, </pre>
+Operand # 1 (0x4d31a60) <br /><pre class="prettyprint lang-llvm ">i8* null</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %param = alloca %struct.MAIN_Param, align 8
+  call void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* nonnull %param), 
+  %1 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, 
+  %2 = load i32, i32* %1, align 8, 
+  %3 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, 
+  %4 = load i8*, i8** %3, align 8, 
+... (TRIMMED)</pre>

@@ -1,0 +1,6 @@
+File: main.c, Lines: 145,146 Cols: 1,2-26,27
+LBM_initializeSpecialCellsForChannel.exit19:      ; preds = %LBM_initializeSpecialCellsForChannel.exit19.loopexit, %66
+  %70 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %71 = getelementptr inbounds [26000000 x double], [26000000 x double]* %70, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %71), 
+  ret void, 

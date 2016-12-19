@@ -1,0 +1,7 @@
+File: lbm.c, Lines: 557,603, Cols: 6,24,28,35,39,43,
+; label:125                                     ; preds = %10
+  %126 = fpext float %118 to double, 
+  %127 = fpext float %119 to double, 
+  %128 = fpext float %120 to double, 
+  %129 = tail call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3, i8* nonnull getelementptr inbounds ([10 x i8], [10 x i8]* @.str.5, i64 0, i64 0), double %126, double %127, double %128), 
+  br label %130

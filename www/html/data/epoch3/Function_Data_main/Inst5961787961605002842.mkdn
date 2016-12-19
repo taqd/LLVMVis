@@ -1,0 +1,18 @@
+;; Line: 47, Column: 16
+  %30 = icmp eq i32 %29, 0, 
+</pre>
+<br/>Operand # 0 (0x4f814d0) <br /><pre class="prettyprint lang-llvm ">  %29 = and i32 %t.04.us, 63, </pre>
+Operand # 1 (0x4ee7750) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.lr.ph.split.us:                                  ; preds = %.lr.ph.split.us.preheader, %35
+  %t.04.us = phi i32 [ %36, %35 ], [ 1, %.lr.ph.split.us.preheader ]
+  %21 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i64 0, i64 0, 
+  tail call void @LBM_handleInOutFlow(double* %22), 
+  %23 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %24 = getelementptr inbounds [26000000 x double], [26000000 x double]* %23, i64 0, i64 0, 
+  %25 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %26 = getelementptr inbounds [26000000 x double], [26000000 x double]* %25, i64 0, i64 0, 
+  tail call void @LBM_performStreamCollide(double* %24, double* %26), 
+  tail cal
+... (TRIMMED)</pre>

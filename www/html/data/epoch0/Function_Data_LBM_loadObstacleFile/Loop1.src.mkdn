@@ -1,0 +1,86 @@
+File: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+Blk14275152742162452257 ():
+L102,C14:  %6 = load i32, i32* %z, align 4, !dbg !216
+L102,C16:  %7 = icmp slt i32 %6, 130, !dbg !219
+L102,C2:  br i1 %7, label %8, label %55, !dbg !220
+
+Blk13806658340516879024 ():
+L103,C10:  store i32 0, i32* %y, align 4, !dbg !221
+L103,C8:  br label %9, !dbg !224
+
+Blk9020940179342420911 ():
+L103,C15:  %10 = load i32, i32* %y, align 4, !dbg !225
+L103,C17:  %11 = icmp slt i32 %10, 100, !dbg !228
+L103,C3:  br i1 %11, label %12, label %49, !dbg !229
+
+Blk4583095678146368382 ():
+L109,C10:  %50 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, !dbg !261
+L109,C3:  %51 = call i32 @fgetc(%struct._IO_FILE* %50), !dbg !262
+L110,C2:  br label %52, !dbg !263
+
+Blk13570592547260730670 ():
+L102,C27:  %53 = load i32, i32* %z, align 4, !dbg !264
+L102,C27:  %54 = add nsw i32 %53, 1, !dbg !264
+L102,C27:  store i32 %54, i32* %z, align 4, !dbg !264
+L102,C2:  br label %5, !dbg !266
+
+Blk3322244997388056544 ():
+L104,C11:  store i32 0, i32* %x, align 4, !dbg !230
+L104,C9:  br label %13, !dbg !233
+
+Blk2568666883656750418 ():
+L104,C16:  %14 = load i32, i32* %x, align 4, !dbg !234
+L104,C18:  %15 = icmp slt i32 %14, 100, !dbg !237
+L104,C4:  br i1 %15, label %16, label %43, !dbg !238
+
+Blk5741609804127089472 ():
+L107,C11:  %44 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, !dbg !255
+L107,C4:  %45 = call i32 @fgetc(%struct._IO_FILE* %44), !dbg !256
+L108,C3:  br label %46, !dbg !257
+
+Blk10958158933144219591 ():
+L103,C28:  %47 = load i32, i32* %y, align 4, !dbg !258
+L103,C28:  %48 = add nsw i32 %47, 1, !dbg !258
+L103,C28:  store i32 %48, i32* %y, align 4, !dbg !258
+L103,C3:  br label %9, !dbg !260
+
+Blk66179935957448882 ():
+L105,C16:  %17 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, !dbg !239
+L105,C9:  %18 = call i32 @fgetc(%struct._IO_FILE* %17), !dbg !242
+L105,C23:  %19 = icmp ne i32 %18, 46, !dbg !243
+L105,C9:  br i1 %19, label %20, label %39, !dbg !244
+
+Blk17905623623472531720 ():
+L105,C32:  call void @llvm.dbg.declare(metadata i32** %_aux_, metadata !348, metadata !199), !dbg !350
+L105,C32:  %21 = load i32, i32* %x, align 4, !dbg !249
+L105,C32:  %22 = load i32, i32* %y, align 4, !dbg !249
+L105,C32:  %23 = mul nsw i32 %22, 100, !dbg !249
+L105,C32:  %24 = add nsw i32 %21, %23, !dbg !249
+L105,C32:  %25 = load i32, i32* %z, align 4, !dbg !249
+L105,C32:  %26 = mul nsw i32 %25, 100, !dbg !249
+L105,C32:  %27 = mul nsw i32 %26, 100, !dbg !249
+L105,C32:  %28 = add nsw i32 %24, %27, !dbg !249
+L105,C32:  %29 = mul nsw i32 20, %28, !dbg !249
+L105,C32:  %30 = add nsw i32 19, %29, !dbg !249
+L105,C32:  %31 = sext i32 %30 to i64, !dbg !249
+L105,C32:  %32 = load double*, double** %1, align 8, !dbg !249
+L105,C32:  %33 = getelementptr inbounds double, double* %32, i64 %31, !dbg !249
+L105,C32:  %34 = bitcast double* %33 to i8*, !dbg !249
+L105,C32:  %35 = bitcast i8* %34 to i32*, !dbg !249
+L105,C32:  store i32* %35, i32** %_aux_, align 8, !dbg !249
+L105,C32:  %36 = load i32*, i32** %_aux_, align 8, !dbg !249
+L105,C32:  %37 = load i32, i32* %36, align 4, !dbg !249
+L105,C32:  %38 = or i32 %37, 1, !dbg !249
+L105,C32:  store i32 %38, i32* %36, align 4, !dbg !249
+L105,C32:  br label %39, !dbg !249
+
+Blk5179005995710562632 ():
+L106,C4:  br label %40, !dbg !251
+
+Blk15754273675092526247 ():
+L104,C29:  %41 = load i32, i32* %x, align 4, !dbg !252
+L104,C29:  %42 = add nsw i32 %41, 1, !dbg !252
+L104,C29:  store i32 %42, i32* %x, align 4, !dbg !252
+L104,C4:  br label %13, !dbg !254
+

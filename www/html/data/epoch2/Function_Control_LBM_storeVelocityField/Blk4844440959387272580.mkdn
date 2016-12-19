@@ -1,0 +1,5 @@
+File: lbm.c, Lines: 516,517-529,557,602, Cols: 3,5,12,24,28,31,32-55,
+; label:121                                     ; preds = %10
+  %122 = call i64 @fwrite(i8* nonnull %4, i64 4, i64 1, %struct._IO_FILE* %3) #7, 
+  tail call voi
+... (TRIMMED)

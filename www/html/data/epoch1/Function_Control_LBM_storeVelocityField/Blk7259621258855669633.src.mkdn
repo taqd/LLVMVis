@@ -1,0 +1,13 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk7259621258855669633 ():
+L603,C35:  %143 = load float, float* %ux, align 4, !dbg !336
+L557,C24:  tail call void @llvm.dbg.value(metadata float %143, i64 0, metadata !1489, metadata !199), !dbg !1490
+L603,C35:  %144 = fpext float %143 to double, !dbg !336
+L603,C39:  %145 = load float, float* %uy, align 4, !dbg !337
+L557,C28:  tail call void @llvm.dbg.value(metadata float %145, i64 0, metadata !1512, metadata !199), !dbg !1513
+L603,C39:  %146 = fpext float %145 to double, !dbg !337
+L603,C43:  %147 = fpext float %140 to double, !dbg !338
+L603,C6:  %148 = tail call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3, i8* nonnull getelementptr inbounds ([10 x i8], [10 x i8]* @.str.5, i64 0, i64 0), double %144, double %146, double %147), !dbg !339
+

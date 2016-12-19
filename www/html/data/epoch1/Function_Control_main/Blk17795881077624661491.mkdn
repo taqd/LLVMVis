@@ -1,0 +1,4 @@
+File: main.c, Lines: 40, Cols: 7,
+; label:8                                       ; preds = %23, %.lr.ph
+  %t.04 = phi i32 [ 1, %.lr.ph ], [ %24, %23 ]
+  br i1 %6, label %9, label %12, 

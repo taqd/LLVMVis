@@ -1,0 +1,12 @@
+;; Line: 529, Column: 45
+  %35 = load %struct._IO_FILE*, %struct._IO_FILE** %1, align 8, 
+</pre>
+<br/>Operand # 0 (0x5d899d8) <br /><pre class="prettyprint lang-llvm ">  %1 = alloca %struct._IO_FILE*, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:32                                      ; preds = %0
+  %33 = load float*, float** %2, align 8, 
+  %34 = bitcast float* %33 to i8*, 
+  %35 = load %struct._IO_FILE*, %struct._IO_FILE** %1, align 8, 
+  %36 = call i64 @fwrite(i8* %34, i64 4, i64 1, %struct._IO_FILE* %35), 
+  br label %37
+</pre>

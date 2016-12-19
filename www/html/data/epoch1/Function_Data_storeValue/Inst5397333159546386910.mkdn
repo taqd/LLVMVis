@@ -1,0 +1,9 @@
+;; Line: 519, Column: 22
+  %1 = bitcast float* %v to i8*, 
+</pre>
+<br/>Operand # 0 (0x4f9ff20) <br /><pre class="prettyprint lang-llvm ">float* %v</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = bitcast float* %v to i8*, 
+  %2 = tail call i64 @fwrite(i8* %1, i64 4, i64 1, %struct._IO_FILE* %file), 
+  ret void, 
+</pre>

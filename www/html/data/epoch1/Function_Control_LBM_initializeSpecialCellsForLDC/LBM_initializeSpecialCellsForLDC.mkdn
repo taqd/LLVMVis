@@ -1,0 +1,19 @@
+
+; Function Attrs: norecurse nounwind uwtable
+define void @LBM_initializeSpecialCellsForLDC(double* nocapture %grid) #4 {
+  br label %.preheader42, 
+<br/>.preheader42:                                     ; preds = %47, %0
+  %indvars.iv51 = phi i64 [ -2, %0 ], [ %indvars.iv.next52, %47 ]
+  %1 = trunc i64 %indvars.iv51 to i32, 
+  %2 = icmp eq i32 %1, 0, 
+  %3 = trunc i64 %indvars.iv51 to i32, 
+  %4 = icmp eq i32 %3, 129, 
+  %5 = mul nsw i64 %indvars.iv51, 10000, 
+  %6 = trunc i64 %indvars.iv51 to i32, 
+  %7 = icmp eq i32 %6, 1, 
+  %8 = trunc i64 %indvars.iv51 to i32, 
+  %9 = icmp eq i32 %8, 128, 
+  %or.cond11 = or i1 %7, %9, 
+  %10 = mul nsw i64 %indvars.iv51, 10000, 
+  br labe
+... (TRIMMED)

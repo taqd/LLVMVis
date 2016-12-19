@@ -1,0 +1,30 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk4844440959387272580 ():
+L557,C24:  tail call void @llvm.dbg.value(metadata float* %ux, i64 0, metadata !1378, metadata !1410), !dbg !1379
+L517,C12:  tail call void @llvm.dbg.declare(metadata [3 x i8]* undef, metadata !1411, metadata !1412) #7, !dbg !1413
+L516,C31:  tail call void @llvm.dbg.value(metadata %struct._IO_FILE* %3, i64 0, metadata !1414, metadata !199) #7, !dbg !1415
+L516,C55:  tail call void @llvm.dbg.value(metadata float* %ux, i64 0, metadata !1416, metadata !199) #7, !dbg !1417
+L517,C12:  tail call void @llvm.dbg.declare(metadata i32* undef, metadata !1411, metadata !199) #7, !dbg !1413
+L517,C12:  tail call void @llvm.dbg.value(metadata i8 1, i64 0, metadata !1411, metadata !1418) #7, !dbg !1413
+L517,C12:  tail call void @llvm.dbg.value(metadata i24 0, i64 0, metadata !1411, metadata !1412) #7, !dbg !1413
+L529,C3:  %122 = call i64 @fwrite(i8* nonnull %4, i64 4, i64 1, %struct._IO_FILE* %3) #7, !dbg !327
+L557,C28:  tail call void @llvm.dbg.value(metadata float* %uy, i64 0, metadata !1390, metadata !1410), !dbg !1391
+L517,C12:  tail call void @llvm.dbg.declare(metadata [3 x i8]* undef, metadata !1411, metadata !1412) #7, !dbg !1421
+L516,C31:  tail call void @llvm.dbg.value(metadata %struct._IO_FILE* %3, i64 0, metadata !1414, metadata !199) #7, !dbg !1422
+L516,C55:  tail call void @llvm.dbg.value(metadata float* %uy, i64 0, metadata !1416, metadata !199) #7, !dbg !1423
+L517,C12:  tail call void @llvm.dbg.declare(metadata i32* undef, metadata !1411, metadata !199) #7, !dbg !1421
+L517,C12:  tail call void @llvm.dbg.value(metadata i8 1, i64 0, metadata !1411, metadata !1418) #7, !dbg !1421
+L517,C12:  tail call void @llvm.dbg.value(metadata i24 0, i64 0, metadata !1411, metadata !1412) #7, !dbg !1421
+L529,C3:  %123 = call i64 @fwrite(i8* nonnull %5, i64 4, i64 1, %struct._IO_FILE* %3) #7, !dbg !332
+L557,C32:  tail call void @llvm.dbg.value(metadata float* %uz, i64 0, metadata !1402, metadata !1410), !dbg !1403
+L517,C12:  tail call void @llvm.dbg.declare(metadata [3 x i8]* undef, metadata !1411, metadata !1412) #7, !dbg !1425
+L516,C31:  tail call void @llvm.dbg.value(metadata %struct._IO_FILE* %3, i64 0, metadata !1414, metadata !199) #7, !dbg !1426
+L516,C55:  tail call void @llvm.dbg.value(metadata float* %uz, i64 0, metadata !1416, metadata !199) #7, !dbg !1427
+L517,C12:  tail call void @llvm.dbg.declare(metadata i32* undef, metadata !1411, metadata !199) #7, !dbg !1425
+L517,C12:  tail call void @llvm.dbg.value(metadata i8 1, i64 0, metadata !1411, metadata !1418) #7, !dbg !1425
+L517,C12:  tail call void @llvm.dbg.value(metadata i24 0, i64 0, metadata !1411, metadata !1412) #7, !dbg !1425
+L529,C3:  %124 = call i64 @fwrite(i8* nonnull %6, i64 4, i64 1, %struct._IO_FILE* %3) #7, !dbg !336
+L602,C5:  br label %130, !dbg !337
+

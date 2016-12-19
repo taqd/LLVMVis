@@ -1,0 +1,20 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk2102160282729969145 ():
+L44,C29:  tail call void @llvm.dbg.value(metadata double** bitcast ([26000000 x double]** @srcGrid to double**), i64 0, metadata !216, metadata !199) #7, !dbg !1929
+L45,C15:  tail call void @llvm.dbg.value(metadata i64 400000, i64 0, metadata !218, metadata !199) #7, !dbg !1931
+L47,C8:  %20 = load double*, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, !dbg !226
+L47,C12:  %21 = getelementptr inbounds double, double* %20, i64 -400000, !dbg !227
+L47,C8:  %22 = bitcast double* %21 to i8*, !dbg !226
+L47,C2:  tail call void @free(i8* %22) #7, !dbg !228
+L48,C7:  store double* null, double** bitcast ([26000000 x double]** @srcGrid to double**), align 8, !dbg !229
+L44,C29:  tail call void @llvm.dbg.value(metadata double** bitcast ([26000000 x double]** @dstGrid to double**), i64 0, metadata !216, metadata !199) #7, !dbg !1936
+L45,C15:  tail call void @llvm.dbg.value(metadata i64 400000, i64 0, metadata !218, metadata !199) #7, !dbg !1938
+L47,C8:  %23 = load double*, double** bitcast ([26000000 x double]** @dstGrid to double**), align 8, !dbg !233
+L47,C12:  %24 = getelementptr inbounds double, double* %23, i64 -400000, !dbg !234
+L47,C8:  %25 = bitcast double* %24 to i8*, !dbg !233
+L47,C2:  tail call void @free(i8* %25) #7, !dbg !235
+L48,C7:  store double* null, double** bitcast ([26000000 x double]** @dstGrid to double**), align 8, !dbg !236
+L160,C1:  ret void, !dbg !237
+

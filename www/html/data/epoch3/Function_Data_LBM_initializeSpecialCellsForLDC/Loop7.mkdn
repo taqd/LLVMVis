@@ -1,0 +1,18 @@
+
+.preheader.split.us.split:                        ; preds = %.preheader.split.us.split, %.preheader.split.us.split.preheader
+  %indvars.iv51 = phi i64 [ 0, %.preheader.split.us.split.preheader ], [ %indvars.iv.next52.1, %.preheader.split.us.split ]
+  %26 = add nsw i64 %8, %indvars.iv51, 
+  %27 = mul nsw i64 %26, 20, 
+  %28 = add nsw i64 %27, 19, 
+  %29 = getelementptr inbounds double, double* %grid, i64 %28, 
+  %30 = bitcast double* %29 to i32*, 
+  %31 = load i32, i32* %30, align 4, 
+  %32 = or i32 %31, 1, 
+  store i32 %32, i32* %30, align 4, 
+  %indvars.iv.next52 = or i64 %indvars.iv51, 1, 
+  %33 = add nsw i64 %8, %indvars.iv.next52, 
+  %34 = mul nsw i64 %33, 20, 
+  %35 = add nsw i64 %34, 19, 
+  %36 = getelementptr inbounds double, double* %grid, i64 %35, 
+  %37 = bitcas
+... (TRIMMED)

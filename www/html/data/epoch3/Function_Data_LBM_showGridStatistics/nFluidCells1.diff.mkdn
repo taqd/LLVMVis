@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4da12e0) <br /><pre class="prettyprint lang-llvm ">  %89 = xor i32 %.lobit, 1, </pre>
+< Operand # 1 (0x4d91818) <br /><pre class="prettyprint lang-llvm ">  %nFluidCells.0124 = phi i32 [ 0, %0 ], [ %nFluidCells.2, %127 ]</pre>
+---
+> <br/>Operand # 0 (0x4f63bd0) <br /><pre class="prettyprint lang-llvm ">  %89 = xor i32 %.lobit, 1, </pre>
+> Operand # 1 (0x4f60138) <br /><pre class="prettyprint lang-llvm ">  %nFluidCells.0124 = phi i32 [ 0, %0 ], [ %nFluidCells.2, %127 ]</pre>

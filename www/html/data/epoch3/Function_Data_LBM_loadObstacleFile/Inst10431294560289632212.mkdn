@@ -1,0 +1,15 @@
+;; Line: 105, Column: 9
+  %18 = tail call i32 @fgetc(%struct._IO_FILE* %1), 
+</pre>
+<br/>Operand # 0 (0x4f07ef8) <br /><pre class="prettyprint lang-llvm ">  %1 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0)), </pre>
+Operand # 1 (0x4ee0458) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind
+declare i32 @fgetc(%struct._IO_FILE* nocapture) #2
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:17                                      ; preds = %6, %9
+  %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1, 
+  %18 = tail call i32 @fgetc(%struct._IO_FILE* %1), 
+  %exitcond = icmp eq i64 %indvars.iv.next, 100, 
+  br i1 %exitcond, label %19, label %6, 
+</pre>

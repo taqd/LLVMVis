@@ -1,0 +1,27 @@
+File: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+preheadersplitusi (.preheader.split.us.i):
+L137,C3:  %indvars.iv35.i = phi i64 [ 0, %.preheader.split.us.i.preheader ], [ %indvars.iv.next36.i.1, %.preheader.split.us.i ], !dbg !314
+L162,C6:  %73 = add nsw i64 %indvars.iv35.i, %71, !dbg !300
+L162,C6:  %74 = mul nsw i64 %73, 20, !dbg !300
+L162,C6:  %75 = add nsw i64 %74, 19, !dbg !300
+L162,C6:  %76 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 %75, !dbg !300
+L162,C6:  %77 = bitcast double* %76 to i32*, !dbg !300
+L162,C6:  tail call void @llvm.dbg.value(metadata i32* %77, i64 0, metadata !369, metadata !199), !dbg !1883
+L162,C6:  %78 = load i32, i32* %77, align 4, !dbg !300
+L162,C6:  %79 = or i32 %78, 1, !dbg !300
+L162,C6:  store i32 %79, i32* %77, align 4, !dbg !300
+L159,C4:  %indvars.iv.next36.i = or i64 %indvars.iv35.i, 1, !dbg !319
+L162,C6:  %80 = add nsw i64 %indvars.iv.next36.i, %71, !dbg !300
+L162,C6:  %81 = mul nsw i64 %80, 20, !dbg !300
+L162,C6:  %82 = add nsw i64 %81, 19, !dbg !300
+L162,C6:  %83 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 %82, !dbg !300
+L162,C6:  %84 = bitcast double* %83 to i32*, !dbg !300
+L162,C6:  tail call void @llvm.dbg.value(metadata i32* %77, i64 0, metadata !369, metadata !199), !dbg !1883
+L162,C6:  %85 = load i32, i32* %84, align 4, !dbg !300
+L162,C6:  %86 = or i32 %85, 1, !dbg !300
+L162,C6:  store i32 %86, i32* %84, align 4, !dbg !300
+L159,C4:  %indvars.iv.next36.i.1 = add nsw i64 %indvars.iv35.i, 2, !dbg !319
+L159,C4:  %exitcond37.i.1 = icmp eq i64 %indvars.iv.next36.i.1, 100, !dbg !319
+L159,C4:  br i1 %exitcond37.i.1, label %.us-lcssa.us.i.loopexit61, label %.preheader.split.us.i, !dbg !319
+

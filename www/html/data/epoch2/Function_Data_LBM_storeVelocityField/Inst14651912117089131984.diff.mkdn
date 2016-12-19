@@ -1,0 +1,6 @@
+5,6c5,6
+< ; label:152                                     ; preds = %151
+<   %153 = tail call i32 @fclose(%struct._IO_FILE* %3), 
+---
+> ; label:133                                     ; preds = %132
+>   %134 = tail call i32 @fclose(%struct._IO_FILE* %3), 

@@ -1,0 +1,8 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk15469813752127600969 ():
+L158,C2:  tail call void @LBM_freeGrid(double** nonnull bitcast ([26000000 x double]** @srcGrid to double**)), !dbg !220
+L159,C2:  tail call void @LBM_freeGrid(double** nonnull bitcast ([26000000 x double]** @dstGrid to double**)), !dbg !221
+L160,C1:  ret void, !dbg !222
+

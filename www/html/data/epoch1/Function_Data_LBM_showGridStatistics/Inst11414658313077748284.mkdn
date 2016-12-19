@@ -1,0 +1,23 @@
+;; Line: 463, Column: 11
+  %25 = getelementptr inbounds double, double* %grid, i64 %24, 
+</pre>
+<br/>Operand # 0 (0x4f76bb0) <br /><pre class="prettyprint lang-llvm ">double* %grid</pre>
+Operand # 1 (0x4fa0e20) <br /><pre class="prettyprint lang-llvm ">  %24 = add nuw nsw i64 %indvars.iv, 6, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:1                                       ; preds = %0, %127
+  %indvars.iv = phi i64 [ 0, %0 ], [ %indvars.iv.next, %127 ]
+  %mass.0131 = phi double [ 0.000000e+00, %0 ], [ %78, %127 ]
+  %nObstacleCells.0130 = phi i32 [ 0, %0 ], [ %nObstacleCells.1, %127 ]
+  %maxRho.0129 = phi double [ -1.000000e+30, %0 ], [ %maxRho.1, %127 ]
+  %minRho.0128 = phi double [ 1.000000e+30, %0 ], [ %minRho.1, %127 ]
+  %nAccelCells.0127 = phi i32 [ 0, %0 ], [ %nAccelCells.2, %127 ]
+  %maxU2.0126 = phi double [ -1.000000e+30, %0 ], [ %maxU2.1, %127 ]
+  %minU2.0125 = phi double [ 1.000000e+30, %0 ], [ %minU2.2, %127 ]
+  %nFluidCells.0124 = phi i32 [ 0, %0 ], [ %nFluidCells.2, %127 ]
+  %2 = getelementptr inbounds double, double* %grid, i64 %indvars.iv, 
+  %3 = load double, double* %2, align 8, 
+  %4 = or i64 %indvars.iv, 1, 
+  %5 = getelementptr inbounds double, double* %grid, i64 %4, 
+  %6 = load double, double* %5, align 8, 
+  %7 = fadd double %3, %6, 
+... (TRIMMED)</pre>

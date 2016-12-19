@@ -1,0 +1,20 @@
+;; Line: 659, Column: 6
+  call fastcc void @loadValue(%struct._IO_FILE* %3, float* nonnull %fileUz), 
+</pre>
+<br/>Operand # 0 (0x4fb3bb8) <br /><pre class="prettyprint lang-llvm ">  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), </pre>
+Operand # 1 (0x4fb34b8) <br /><pre class="prettyprint lang-llvm ">  %fileUz = alloca float, align 4</pre>
+Operand # 2 (0x4f192f8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define internal fastcc void @loadValue(%struct._IO_FILE* nocapture %file, float* nocapture %v) unnamed_addr #0 {
+  %1 = bitcast float* %v to i8*, 
+  %2 = tail call i64 @fread(i8* %1, i64 4, i64 1, %struct._IO_FILE* %file), 
+  ret void, 
+}
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:114                                     ; preds = %7
+  call fastcc void @loadValue(%struct._IO_FILE* %3, float* nonnull %fileUx), 
+  call fastcc void @loadValue(%struct._IO_FILE* %3, float* nonnull %fileUy), 
+  call fastcc void @loadValue(%struct._IO_FILE* %3, float* nonnull %fileUz), 
+  br label %117, 
+</pre>

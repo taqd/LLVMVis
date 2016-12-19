@@ -1,0 +1,9 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk2883330386313427965 ():
+L41,C26:  %16 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !226
+L41,C25:  %17 = getelementptr inbounds [26000000 x double], [26000000 x double]* %16, i32 0, i32 0, !dbg !228
+L41,C4:  call void @LBM_handleInOutFlow(double* %17), !dbg !229
+L42,C3:  br label %18, !dbg !230
+

@@ -1,0 +1,8 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk11436556751562844465 ():
+L118,C10:  %30 = phi i8* [ getelementptr inbounds ([7 x i8], [7 x i8]* @.str.6.5, i32 0, i32 0), %24 ], [ %28, %25 ], !dbg !221
+L108,C2:  %31 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([174 x i8], [174 x i8]* @.str.5.6, i32 0, i32 0), i32 100, i32 100, i32 130, double 0x3FF4CCCCCCCCCCCC, i32 %4, i8* %7, i8* %13, i8* %19, i8* %30), !dbg !223
+L120,C1:  ret void, !dbg !224
+

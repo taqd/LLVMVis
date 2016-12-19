@@ -1,0 +1,19 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk4234737201701997070 ():
+L124,C41:  call void @llvm.dbg.declare(metadata %struct.MAIN_Param** %1, metadata !3083, metadata !199), !dbg !3084
+L125,C2:  call void @LBM_allocateGrid(double** bitcast ([26000000 x double]** @srcGrid to double**)), !dbg !201
+L126,C2:  call void @LBM_allocateGrid(double** bitcast ([26000000 x double]** @dstGrid to double**)), !dbg !202
+L128,C23:  %2 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !203
+L128,C22:  %3 = getelementptr inbounds [26000000 x double], [26000000 x double]* %2, i32 0, i32 0, !dbg !204
+L128,C2:  call void @LBM_initializeGrid(double* %3), !dbg !205
+L129,C23:  %4 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !206
+L129,C22:  %5 = getelementptr inbounds [26000000 x double], [26000000 x double]* %4, i32 0, i32 0, !dbg !207
+L129,C2:  call void @LBM_initializeGrid(double* %5), !dbg !208
+L131,C6:  %6 = load %struct.MAIN_Param*, %struct.MAIN_Param** %1, align 8, !dbg !209
+L131,C13:  %7 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %6, i32 0, i32 4, !dbg !211
+L131,C13:  %8 = load i8*, i8** %7, align 8, !dbg !211
+L131,C30:  %9 = icmp ne i8* %8, null, !dbg !212
+L131,C6:  br i1 %9, label %10, label %21, !dbg !213
+

@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4db7f98) <br /><pre class="prettyprint lang-llvm ">  %131 = fptrunc double %130 to float, </pre>
+< Operand # 1 (0x4db7f98) <br /><pre class="prettyprint lang-llvm ">  %131 = fptrunc double %130 to float, </pre>
+---
+> <br/>Operand # 0 (0x4f7c778) <br /><pre class="prettyprint lang-llvm ">  %131 = fptrunc double %130 to float, </pre>
+> Operand # 1 (0x4f7c778) <br /><pre class="prettyprint lang-llvm ">  %131 = fptrunc double %130 to float, </pre>

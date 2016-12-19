@@ -1,0 +1,8 @@
+4,6c4,6
+< <br/>Operand # 0 (0x4db0570) <br /><pre class="prettyprint lang-llvm ">  %1 = icmp ne i32 %binary, 0, </pre>
+< Operand # 1 (0x4d4a9c8) <br /><pre class="prettyprint lang-llvm ">i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0)</pre>
+< Operand # 2 (0x4dae588) <br /><pre class="prettyprint lang-llvm ">i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.6, i64 0, i64 0)</pre>
+---
+> <br/>Operand # 0 (0x4f73df0) <br /><pre class="prettyprint lang-llvm ">  %1 = icmp ne i32 %binary, 0, </pre>
+> Operand # 1 (0x4f077d8) <br /><pre class="prettyprint lang-llvm ">i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0)</pre>
+> Operand # 2 (0x4f71e08) <br /><pre class="prettyprint lang-llvm ">i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.6, i64 0, i64 0)</pre>

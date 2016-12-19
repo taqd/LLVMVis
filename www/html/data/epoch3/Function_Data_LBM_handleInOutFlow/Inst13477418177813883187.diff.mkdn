@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d890d0) <br /><pre class="prettyprint lang-llvm ">  %344 = fadd <2 x double> %341, %343, </pre>
+< Operand # 1 (0x4d89228) <br /><pre class="prettyprint lang-llvm ">  %346 = insertelement <2 x double> %345, double %320, i32 1, </pre>
+---
+> <br/>Operand # 0 (0x4f4bad0) <br /><pre class="prettyprint lang-llvm ">  %344 = fadd <2 x double> %341, %343, </pre>
+> Operand # 1 (0x4f4bc28) <br /><pre class="prettyprint lang-llvm ">  %346 = insertelement <2 x double> %345, double %320, i32 1, </pre>

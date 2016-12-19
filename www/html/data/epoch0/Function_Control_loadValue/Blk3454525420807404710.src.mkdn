@@ -1,0 +1,16 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk3454525420807404710 ():
+L538,C9:  call void @llvm.dbg.declare(metadata i8** %vPtr, metadata !2841, metadata !199), !dbg !2843
+L538,C24:  %8 = load float*, float** %2, align 8, !dbg !213
+L538,C16:  %9 = bitcast float* %8 to i8*, !dbg !214
+L538,C9:  store i8* %9, i8** %vPtr, align 8, !dbg !212
+L539,C8:  call void @llvm.dbg.declare(metadata [4 x i8]* %buffer, metadata !2846, metadata !199), !dbg !2847
+L540,C7:  call void @llvm.dbg.declare(metadata i32* %i, metadata !2848, metadata !199), !dbg !2849
+L542,C10:  %10 = getelementptr inbounds [4 x i8], [4 x i8]* %buffer, i32 0, i32 0, !dbg !222
+L542,C49:  %11 = load %struct._IO_FILE*, %struct._IO_FILE** %1, align 8, !dbg !223
+L542,C3:  %12 = call i64 @fread(i8* %10, i64 4, i64 1, %struct._IO_FILE* %11), !dbg !224
+L544,C10:  store i32 0, i32* %i, align 4, !dbg !225
+L544,C8:  br label %13, !dbg !227
+

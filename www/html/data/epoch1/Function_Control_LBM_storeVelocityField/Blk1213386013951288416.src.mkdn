@@ -1,0 +1,7 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk1213386013951288416 ():
+L609,C2:  %153 = tail call i32 @fclose(%struct._IO_FILE* %3), !dbg !340
+L610,C1:  ret void, !dbg !341
+

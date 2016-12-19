@@ -1,0 +1,155 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk17322243584880132175 ():
+L564,C13:  %8 = add nuw nsw i64 %6, %indvars.iv, !dbg !215
+L564,C13:  %9 = mul nuw nsw i64 %8, 20, !dbg !215
+L564,C13:  %10 = getelementptr inbounds double, double* %grid, i64 %9, !dbg !215
+L564,C13:  %11 = load double, double* %10, align 8, !dbg !215
+L564,C47:  %12 = or i64 %9, 1, !dbg !227
+L564,C47:  %13 = getelementptr inbounds double, double* %grid, i64 %12, !dbg !227
+L564,C47:  %14 = load double, double* %13, align 8, !dbg !227
+L564,C45:  %15 = fadd double %11, %14, !dbg !228
+L565,C13:  %16 = or i64 %9, 2, !dbg !229
+L565,C13:  %17 = getelementptr inbounds double, double* %grid, i64 %16, !dbg !229
+L565,C13:  %18 = load double, double* %17, align 8, !dbg !229
+L565,C11:  %19 = fadd double %15, %18, !dbg !230
+L565,C47:  %20 = or i64 %9, 3, !dbg !231
+L565,C47:  %21 = getelementptr inbounds double, double* %grid, i64 %20, !dbg !231
+L565,C47:  %22 = load double, double* %21, align 8, !dbg !231
+L565,C45:  %23 = fadd double %19, %22, !dbg !232
+L566,C13:  %24 = add nuw nsw i64 %9, 4, !dbg !233
+L566,C13:  %25 = getelementptr inbounds double, double* %grid, i64 %24, !dbg !233
+L566,C13:  %26 = load double, double* %25, align 8, !dbg !233
+L566,C11:  %27 = fadd double %23, %26, !dbg !234
+L566,C47:  %28 = add nuw nsw i64 %9, 5, !dbg !235
+L566,C47:  %29 = getelementptr inbounds double, double* %grid, i64 %28, !dbg !235
+L566,C47:  %30 = load double, double* %29, align 8, !dbg !235
+L566,C45:  %31 = fadd double %27, %30, !dbg !236
+L567,C13:  %32 = add nuw nsw i64 %9, 6, !dbg !237
+L567,C13:  %33 = getelementptr inbounds double, double* %grid, i64 %32, !dbg !237
+L567,C13:  %34 = load double, double* %33, align 8, !dbg !237
+L567,C11:  %35 = fadd double %31, %34, !dbg !238
+L567,C47:  %36 = add nuw nsw i64 %9, 7, !dbg !239
+L567,C47:  %37 = getelementptr inbounds double, double* %grid, i64 %36, !dbg !239
+L567,C47:  %38 = load double, double* %37, align 8, !dbg !239
+L567,C45:  %39 = fadd double %35, %38, !dbg !240
+L568,C13:  %40 = add nuw nsw i64 %9, 8, !dbg !241
+L568,C13:  %41 = getelementptr inbounds double, double* %grid, i64 %40, !dbg !241
+L568,C13:  %42 = load double, double* %41, align 8, !dbg !241
+L568,C11:  %43 = fadd double %39, %42, !dbg !242
+L568,C47:  %44 = add nuw nsw i64 %9, 9, !dbg !243
+L568,C47:  %45 = getelementptr inbounds double, double* %grid, i64 %44, !dbg !243
+L568,C47:  %46 = load double, double* %45, align 8, !dbg !243
+L568,C45:  %47 = fadd double %43, %46, !dbg !244
+L569,C13:  %48 = add nuw nsw i64 %9, 10, !dbg !245
+L569,C13:  %49 = getelementptr inbounds double, double* %grid, i64 %48, !dbg !245
+L569,C13:  %50 = load double, double* %49, align 8, !dbg !245
+L569,C11:  %51 = fadd double %47, %50, !dbg !246
+L569,C47:  %52 = add nuw nsw i64 %9, 11, !dbg !247
+L569,C47:  %53 = getelementptr inbounds double, double* %grid, i64 %52, !dbg !247
+L569,C47:  %54 = load double, double* %53, align 8, !dbg !247
+L569,C45:  %55 = fadd double %51, %54, !dbg !248
+L570,C13:  %56 = add nuw nsw i64 %9, 12, !dbg !249
+L570,C13:  %57 = getelementptr inbounds double, double* %grid, i64 %56, !dbg !249
+L570,C13:  %58 = load double, double* %57, align 8, !dbg !249
+L570,C11:  %59 = fadd double %55, %58, !dbg !250
+L570,C47:  %60 = add nuw nsw i64 %9, 13, !dbg !251
+L570,C47:  %61 = getelementptr inbounds double, double* %grid, i64 %60, !dbg !251
+L570,C47:  %62 = load double, double* %61, align 8, !dbg !251
+L570,C45:  %63 = fadd double %59, %62, !dbg !252
+L571,C13:  %64 = add nuw nsw i64 %9, 14, !dbg !253
+L571,C13:  %65 = getelementptr inbounds double, double* %grid, i64 %64, !dbg !253
+L571,C13:  %66 = load double, double* %65, align 8, !dbg !253
+L571,C11:  %67 = fadd double %63, %66, !dbg !254
+L571,C47:  %68 = add nuw nsw i64 %9, 15, !dbg !255
+L571,C47:  %69 = getelementptr inbounds double, double* %grid, i64 %68, !dbg !255
+L571,C47:  %70 = load double, double* %69, align 8, !dbg !255
+L571,C45:  %71 = fadd double %67, %70, !dbg !256
+L572,C13:  %72 = add nuw nsw i64 %9, 16, !dbg !257
+L572,C13:  %73 = getelementptr inbounds double, double* %grid, i64 %72, !dbg !257
+L572,C13:  %74 = load double, double* %73, align 8, !dbg !257
+L572,C11:  %75 = fadd double %71, %74, !dbg !258
+L572,C47:  %76 = add nuw nsw i64 %9, 17, !dbg !259
+L572,C47:  %77 = getelementptr inbounds double, double* %grid, i64 %76, !dbg !259
+L572,C47:  %78 = load double, double* %77, align 8, !dbg !259
+L572,C45:  %79 = fadd double %75, %78, !dbg !260
+L573,C13:  %80 = add nuw nsw i64 %9, 18, !dbg !261
+L573,C13:  %81 = getelementptr inbounds double, double* %grid, i64 %80, !dbg !261
+L573,C13:  %82 = load double, double* %81, align 8, !dbg !261
+L573,C11:  %83 = fadd double %79, %82, !dbg !262
+L564,C11:  %84 = fptrunc double %83 to float, !dbg !263
+L557,C19:  tail call void @llvm.dbg.value(metadata float %84, i64 0, metadata !1477, metadata !199), !dbg !1478
+L574,C44:  %85 = fsub double %22, %26, !dbg !266
+L575,C10:  %86 = fadd double %85, %38, !dbg !267
+L575,C44:  %87 = fsub double %86, %42, !dbg !268
+L576,C10:  %88 = fadd double %87, %46, !dbg !269
+L576,C44:  %89 = fsub double %88, %50, !dbg !270
+L577,C10:  %90 = fadd double %89, %70, !dbg !271
+L577,C44:  %91 = fadd double %90, %74, !dbg !272
+L578,C10:  %92 = fsub double %91, %78, !dbg !273
+L578,C44:  %93 = fsub double %92, %82, !dbg !274
+L574,C10:  %94 = fptrunc double %93 to float, !dbg !275
+L557,C24:  tail call void @llvm.dbg.value(metadata float %94, i64 0, metadata !1489, metadata !199), !dbg !1490
+L574,C8:  store float %94, float* %ux, align 4, !dbg !278
+L579,C12:  %95 = load double, double* %13, align 8, !dbg !279
+L579,C46:  %96 = load double, double* %17, align 8, !dbg !280
+L579,C44:  %97 = fsub double %95, %96, !dbg !281
+L580,C12:  %98 = load double, double* %37, align 8, !dbg !282
+L580,C10:  %99 = fadd double %97, %98, !dbg !283
+L580,C46:  %100 = load double, double* %41, align 8, !dbg !284
+L580,C44:  %101 = fadd double %99, %100, !dbg !285
+L581,C12:  %102 = load double, double* %45, align 8, !dbg !286
+L581,C10:  %103 = fsub double %101, %102, !dbg !287
+L581,C46:  %104 = load double, double* %49, align 8, !dbg !288
+L581,C44:  %105 = fsub double %103, %104, !dbg !289
+L582,C12:  %106 = load double, double* %53, align 8, !dbg !290
+L582,C10:  %107 = fadd double %105, %106, !dbg !291
+L582,C46:  %108 = load double, double* %57, align 8, !dbg !292
+L582,C44:  %109 = fadd double %107, %108, !dbg !293
+L583,C12:  %110 = load double, double* %61, align 8, !dbg !294
+L583,C10:  %111 = fsub double %109, %110, !dbg !295
+L583,C46:  %112 = load double, double* %65, align 8, !dbg !296
+L583,C44:  %113 = fsub double %111, %112, !dbg !297
+L579,C10:  %114 = fptrunc double %113 to float, !dbg !298
+L557,C28:  tail call void @llvm.dbg.value(metadata float %114, i64 0, metadata !1512, metadata !199), !dbg !1513
+L579,C8:  store float %114, float* %uy, align 4, !dbg !301
+L584,C12:  %115 = load double, double* %29, align 8, !dbg !302
+L584,C46:  %116 = load double, double* %33, align 8, !dbg !303
+L584,C44:  %117 = fsub double %115, %116, !dbg !304
+L585,C12:  %118 = load double, double* %53, align 8, !dbg !305
+L585,C10:  %119 = fadd double %117, %118, !dbg !306
+L585,C46:  %120 = load double, double* %57, align 8, !dbg !307
+L585,C44:  %121 = fsub double %119, %120, !dbg !308
+L586,C12:  %122 = load double, double* %61, align 8, !dbg !309
+L586,C10:  %123 = fadd double %121, %122, !dbg !310
+L586,C46:  %124 = load double, double* %65, align 8, !dbg !311
+L586,C44:  %125 = fsub double %123, %124, !dbg !312
+L587,C12:  %126 = load double, double* %69, align 8, !dbg !313
+L587,C10:  %127 = fadd double %125, %126, !dbg !314
+L587,C46:  %128 = load double, double* %73, align 8, !dbg !315
+L587,C44:  %129 = fsub double %127, %128, !dbg !316
+L588,C12:  %130 = load double, double* %77, align 8, !dbg !317
+L588,C10:  %131 = fadd double %129, %130, !dbg !318
+L588,C46:  %132 = load double, double* %81, align 8, !dbg !319
+L588,C44:  %133 = fsub double %131, %132, !dbg !320
+L584,C10:  %134 = fptrunc double %133 to float, !dbg !321
+L557,C32:  tail call void @llvm.dbg.value(metadata float %134, i64 0, metadata !1535, metadata !199), !dbg !1536
+L584,C8:  store float %134, float* %uz, align 4, !dbg !324
+L589,C8:  %135 = load float, float* %ux, align 4, !dbg !325
+L557,C24:  tail call void @llvm.dbg.value(metadata float %135, i64 0, metadata !1489, metadata !199), !dbg !1490
+L589,C8:  %136 = fdiv float %135, %84, !dbg !325
+L557,C24:  tail call void @llvm.dbg.value(metadata float %136, i64 0, metadata !1489, metadata !199), !dbg !1490
+L589,C8:  store float %136, float* %ux, align 4, !dbg !325
+L590,C8:  %137 = load float, float* %uy, align 4, !dbg !326
+L557,C28:  tail call void @llvm.dbg.value(metadata float %137, i64 0, metadata !1512, metadata !199), !dbg !1513
+L590,C8:  %138 = fdiv float %137, %84, !dbg !326
+L557,C28:  tail call void @llvm.dbg.value(metadata float %138, i64 0, metadata !1512, metadata !199), !dbg !1513
+L590,C8:  store float %138, float* %uy, align 4, !dbg !326
+L591,C8:  %139 = load float, float* %uz, align 4, !dbg !327
+L557,C32:  tail call void @llvm.dbg.value(metadata float %139, i64 0, metadata !1535, metadata !199), !dbg !1536
+L591,C8:  %140 = fdiv float %139, %84, !dbg !327
+L557,C32:  tail call void @llvm.dbg.value(metadata float %140, i64 0, metadata !1535, metadata !199), !dbg !1536
+L591,C8:  store float %140, float* %uz, align 4, !dbg !327
+L593,C9:  br i1 %1, label %141, label %142, !dbg !328
+

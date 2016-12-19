@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4dab830) <br /><pre class="prettyprint lang-llvm ">  %120 = fdiv float %117, %87, </pre>
+< Operand # 1 (0x4da5ab8) <br /><pre class="prettyprint lang-llvm ">  %uz = alloca float, align 4</pre>
+---
+> <br/>Operand # 0 (0x4f6f0b0) <br /><pre class="prettyprint lang-llvm ">  %120 = fdiv float %117, %87, </pre>
+> Operand # 1 (0x4f12218) <br /><pre class="prettyprint lang-llvm ">  %uz = alloca float, align 4</pre>

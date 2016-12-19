@@ -1,0 +1,7 @@
+File: main.c, Lines: 48,49 Cols: 3,4-28,29
+; label:19                                      ; preds = %12
+  %20 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i32 %t.04), 
+  %21 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %22), 
+  br label %23, 

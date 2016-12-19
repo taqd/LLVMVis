@@ -1,0 +1,8 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk7472954819156959909 ():
+L127,C3:  %indvars.iv.next48 = add nuw nsw i64 %indvars.iv47, 1, !dbg !230
+L127,C3:  %exitcond50 = icmp eq i64 %indvars.iv.next48, 100, !dbg !230
+L127,C3:  br i1 %exitcond50, label %47, label %.preheader, !dbg !230
+

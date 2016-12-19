@@ -1,0 +1,13 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk12170979089247745944 ():
+L150,C39:  tail call void @llvm.dbg.value(metadata %struct.MAIN_Param* %param, i64 0, metadata !1868, metadata !199), !dbg !1869
+L151,C27:  %1 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !201
+L151,C26:  %2 = getelementptr inbounds [26000000 x double], [26000000 x double]* %1, i64 0, i64 0, !dbg !202
+L151,C2:  tail call void @LBM_showGridStatistics(double* %2), !dbg !203
+L153,C13:  %3 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 2, !dbg !204
+L153,C13:  %4 = load i32, i32* %3, align 8, !dbg !204
+L153,C20:  %5 = icmp eq i32 %4, 1, !dbg !206
+L153,C6:  br i1 %5, label %6, label %11, !dbg !207
+

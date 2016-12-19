@@ -1,0 +1,23 @@
+;; Line: 162, Column: 6
+  %20 = mul nsw i64 %19, 20, 
+</pre>
+<br/>Operand # 0 (0x4f14210) <br /><pre class="prettyprint lang-llvm ">  %19 = add nsw i64 %3, %indvars.iv, </pre>
+Operand # 1 (0x4ef4340) <br /><pre class="prettyprint lang-llvm ">i64 20</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split.us:                        ; preds = %.preheader.split.split.us, %.preheader.split.split.us.preheader
+  %indvars.iv = phi i64 [ 0, %.preheader.split.split.us.preheader ], [ %indvars.iv.next.1, %.preheader.split.split.us ]
+  %19 = add nsw i64 %3, %indvars.iv, 
+  %20 = mul nsw i64 %19, 20, 
+  %21 = add nsw i64 %20, 19, 
+  %22 = getelementptr inbounds double, double* %grid, i64 %21, 
+  %23 = bitcast double* %22 to i32*, 
+  %24 = load i32, i32* %23, align 4, 
+  %25 = or i32 %24, 1, 
+  store i32 %25, i32* %23, align 4, 
+  %indvars.iv.next = or i64 %indvars.iv, 1, 
+  %26 = add nsw i64 %3, %indvars.iv.next, 
+  %27 = mul nsw i64 %26, 20, 
+  %28 = add nsw i64 %27, 19, 
+  %29 = getelementptr inbounds double, double* %grid, i64 %28, 
+  %30 = bitcast double* %2
+... (TRIMMED)</pre>

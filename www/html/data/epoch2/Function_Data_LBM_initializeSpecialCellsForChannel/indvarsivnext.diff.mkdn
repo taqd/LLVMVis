@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f52648) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %17 ]</pre>
+< Operand # 1 (0x4f3b640) <br /><pre class="prettyprint lang-llvm ">i64 1</pre>
+---
+> <br/>Operand # 0 (0x4d51198) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %17 ]</pre>
+> Operand # 1 (0x4d4aac0) <br /><pre class="prettyprint lang-llvm ">i64 1</pre>

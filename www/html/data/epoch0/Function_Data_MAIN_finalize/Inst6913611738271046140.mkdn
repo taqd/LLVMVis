@@ -1,0 +1,27 @@
+;; Line: 159, Column: 2
+  call void @LBM_freeGrid(double** bitcast ([26000000 x double]** @dstGrid to double**)), 
+</pre>
+<br/>Operand # 0 (0x5db7568) <br /><pre class="prettyprint lang-llvm ">double** bitcast ([26000000 x double]** @dstGrid to double**)</pre>
+Operand # 1 (0x5c902a8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define void @LBM_freeGrid(double** %ptr) #0 {
+  %1 = alloca double**, align 8
+  %margin = alloca i64, align 8
+  store double** %ptr, double*** %1, align 8
+  store i64 400000, i64* %margin, align 8, 
+  %2 = load double**, double*** %1, align 8, 
+  %3 = load double*, double** %2, align 8, 
+  %4 = getelementptr inbounds double, double* %3, i64 -400000, 
+  %5 = bitcast double* %4 to i8*, 
+  call void @free(i8* %5) #6, 
+  %6 = load double**, double*** %1, align 8, 
+  store double* null, double** %6, align 8, 
+  ret void, 
+}
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:25                                      ; preds = %19, %14
+  call void @LBM_freeGrid(double** bitcast ([26000000 x double]** @srcGrid to double**)), 
+  call void @LBM_freeGrid(double** bitcast ([26000000 x double]** @dstGrid to double**)), 
+  ret void, 
+</pre>

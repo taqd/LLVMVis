@@ -1,0 +1,110 @@
+[
+	{
+		"type" : "Helper",
+		"name" : "LBM_initializeSpecialCellsForChannel",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop7",
+		"name" : "Loop7",
+		"group" : "",
+		"depends" : [
+			"preheader28",
+			"preheader",
+			"Blk8532600031533376256",
+			"Blk9372798179743631882",
+			"Blk8928650248859811527",
+			"Blk13915466159804702580",
+			"Blk15249735189786984734"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "Loop8",
+		"group" : "",
+		"depends" : [
+			"preheader",
+			"Blk8532600031533376256",
+			"Blk9372798179743631882",
+			"Blk8928650248859811527",
+			"Blk13915466159804702580"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Loop9",
+		"group" : "",
+		"depends" : [
+			"Blk8532600031533376256",
+			"Blk9372798179743631882",
+			"Blk8928650248859811527"
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "Blk2493946053728777769",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop7",
+		"name" : "preheader28",
+		"group" : "",
+		"depends" : [
+			"Blk15249735189786984734",
+			"Blk2493946053728777769"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "preheader",
+		"group" : "",
+		"depends" : [
+			"Blk13915466159804702580",
+			"preheader28"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Blk8532600031533376256",
+		"group" : "",
+		"depends" : [
+			"Blk8928650248859811527",
+			"preheader"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Blk9372798179743631882",
+		"group" : "",
+		"depends" : [
+			"Blk8532600031533376256"
+		]
+	}, {
+		"type" : "Loop9",
+		"name" : "Blk8928650248859811527",
+		"group" : "",
+		"depends" : [
+			"Blk9372798179743631882",
+			"Blk8532600031533376256"
+		]
+	}, {
+		"type" : "Loop8",
+		"name" : "Blk13915466159804702580",
+		"group" : "",
+		"depends" : [
+			"Blk8928650248859811527"
+		]
+	}, {
+		"type" : "Loop7",
+		"name" : "Blk15249735189786984734",
+		"group" : "",
+		"depends" : [
+			"Blk13915466159804702580"
+		]
+	}, {
+		"type" : "Not in loop",
+		"name" : "Blk2752091322392749987",
+		"group" : "",
+		"depends" : [
+			"Blk15249735189786984734"
+		]
+	}
+]

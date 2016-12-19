@@ -1,0 +1,9 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk4962489979032973679 ():
+L510,C9:  %130 = tail call double @sqrt(double %minU2.2.lcssa) #7, !dbg !328
+L510,C24:  %131 = tail call double @sqrt(double %maxU2.1.lcssa) #7, !dbg !329
+L504,C9:  %132 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([138 x i8], [138 x i8]* @.str.2, i64 0, i64 0), i32 %nObstacleCells.1.lcssa, i32 %nAccelCells.2.lcssa, i32 %nFluidCells.2.lcssa, double %minRho.1.lcssa, double %maxRho.1.lcssa, double %.lcssa, double %130, double %131), !dbg !331
+L512,C1:  ret void, !dbg !332
+

@@ -1,0 +1,8 @@
+File: lbm.c, Lines: 135, Cols: 18,
+; label:64                                      ; preds = %.preheader.split.split
+  %65 = add i64 %indvars.iv57, 4294967294, 
+  %66 = trunc i64 %65 to i32, 
+  %67 = icmp ult i32 %66, 96, 
+  %68 = and i1 %or.cond11, %67, 
+  %69 = and i1 %11, %68, 
+  br i1 %69, label %70, label %78, 

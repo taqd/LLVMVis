@@ -1,0 +1,10 @@
+;; Line: 470, Column: 31
+  %142 = load double, double* %rho, align 8, 
+</pre>
+<br/>Operand # 0 (0x5d5e238) <br /><pre class="prettyprint lang-llvm ">  %rho = alloca double, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:141                                     ; preds = %5
+  %142 = load double, double* %rho, align 8, 
+  store double %142, double* %minRho, align 8, 
+  br label %143, 
+</pre>

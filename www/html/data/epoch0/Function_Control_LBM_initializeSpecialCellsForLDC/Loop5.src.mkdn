@@ -1,0 +1,144 @@
+File: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+Blk16587413338059628334 ():
+L127,C15:  %7 = load i32, i32* %y, align 4, !dbg !219
+L127,C17:  %8 = icmp slt i32 %7, 100, !dbg !222
+L127,C3:  br i1 %8, label %9, label %96, !dbg !223
+
+Blk4962112767732888095 ():
+L128,C11:  store i32 0, i32* %x, align 4, !dbg !224
+L128,C9:  br label %10, !dbg !227
+
+Blk6340305574289220820 ():
+L128,C16:  %11 = load i32, i32* %x, align 4, !dbg !228
+L128,C18:  %12 = icmp slt i32 %11, 100, !dbg !231
+L128,C4:  br i1 %12, label %13, label %92, !dbg !232
+
+Blk1323873587678248125 ():
+L142,C3:  br label %93, !dbg !292
+
+Blk11958314219814263133 ():
+L127,C28:  %94 = load i32, i32* %y, align 4, !dbg !293
+L127,C28:  %95 = add nsw i32 %94, 1, !dbg !293
+L127,C28:  store i32 %95, i32* %y, align 4, !dbg !293
+L127,C3:  br label %6, !dbg !295
+
+Blk15240644229579536080 ():
+L129,C9:  %14 = load i32, i32* %x, align 4, !dbg !233
+L129,C11:  %15 = icmp eq i32 %14, 0, !dbg !236
+L129,C16:  br i1 %15, label %31, label %16, !dbg !237
+
+Blk5193001629705469324 ():
+L129,C19:  %17 = load i32, i32* %x, align 4, !dbg !238
+L129,C21:  %18 = icmp eq i32 %17, 99, !dbg !240
+L129,C33:  br i1 %18, label %31, label %19, !dbg !241
+
+Blk17089580885167564389 ():
+L130,C9:  %20 = load i32, i32* %y, align 4, !dbg !242
+L130,C11:  %21 = icmp eq i32 %20, 0, !dbg !243
+L130,C16:  br i1 %21, label %31, label %22, !dbg !244
+
+Blk13181378064323782170 ():
+L130,C19:  %23 = load i32, i32* %y, align 4, !dbg !245
+L130,C21:  %24 = icmp eq i32 %23, 99, !dbg !246
+L130,C33:  br i1 %24, label %31, label %25, !dbg !247
+
+Blk3047238571568572204 ():
+L131,C9:  %26 = load i32, i32* %z, align 4, !dbg !248
+L131,C11:  %27 = icmp eq i32 %26, 0, !dbg !249
+L131,C16:  br i1 %27, label %31, label %28, !dbg !250
+
+Blk3777532565097091348 ():
+L131,C19:  %29 = load i32, i32* %z, align 4, !dbg !251
+L131,C21:  %30 = icmp eq i32 %29, 129, !dbg !252
+L129,C9:  br i1 %30, label %31, label %50, !dbg !253
+
+Blk10071762878664867900 ():
+L135,C11:  %51 = load i32, i32* %z, align 4, !dbg !261
+L135,C13:  %52 = icmp eq i32 %51, 1, !dbg !264
+L135,C18:  br i1 %52, label %56, label %53, !dbg !265
+
+Blk796602760940092831 ():
+L135,C21:  %54 = load i32, i32* %z, align 4, !dbg !266
+L135,C23:  %55 = icmp eq i32 %54, 128, !dbg !268
+L135,C36:  br i1 %55, label %56, label %87, !dbg !269
+
+Blk7259914986407070616 ():
+L136,C11:  %57 = load i32, i32* %x, align 4, !dbg !270
+L136,C13:  %58 = icmp sgt i32 %57, 1, !dbg !271
+L136,C17:  br i1 %58, label %59, label %87, !dbg !272
+
+Blk4757695671707608226 ():
+L136,C20:  %60 = load i32, i32* %x, align 4, !dbg !273
+L136,C22:  %61 = icmp slt i32 %60, 98, !dbg !274
+L136,C33:  br i1 %61, label %62, label %87, !dbg !275
+
+Blk1361724552535440175 ():
+L137,C11:  %63 = load i32, i32* %y, align 4, !dbg !276
+L137,C13:  %64 = icmp sgt i32 %63, 1, !dbg !277
+L137,C17:  br i1 %64, label %65, label %87, !dbg !278
+
+Blk2158734265011922458 ():
+L137,C20:  %66 = load i32, i32* %y, align 4, !dbg !279
+L137,C22:  %67 = icmp slt i32 %66, 98, !dbg !280
+L135,C10:  br i1 %67, label %68, label %87, !dbg !281
+
+Blk11731584351027670320 ():
+L138,C7:  call void @llvm.dbg.declare(metadata i32** %_aux_1, metadata !455, metadata !199), !dbg !458
+L138,C7:  %69 = load i32, i32* %x, align 4, !dbg !286
+L138,C7:  %70 = load i32, i32* %y, align 4, !dbg !286
+L138,C7:  %71 = mul nsw i32 %70, 100, !dbg !286
+L138,C7:  %72 = add nsw i32 %69, %71, !dbg !286
+L138,C7:  %73 = load i32, i32* %z, align 4, !dbg !286
+L138,C7:  %74 = mul nsw i32 %73, 100, !dbg !286
+L138,C7:  %75 = mul nsw i32 %74, 100, !dbg !286
+L138,C7:  %76 = add nsw i32 %72, %75, !dbg !286
+L138,C7:  %77 = mul nsw i32 20, %76, !dbg !286
+L138,C7:  %78 = add nsw i32 19, %77, !dbg !286
+L138,C7:  %79 = sext i32 %78 to i64, !dbg !286
+L138,C7:  %80 = load double*, double** %1, align 8, !dbg !286
+L138,C7:  %81 = getelementptr inbounds double, double* %80, i64 %79, !dbg !286
+L138,C7:  %82 = bitcast double* %81 to i8*, !dbg !286
+L138,C7:  %83 = bitcast i8* %82 to i32*, !dbg !286
+L138,C7:  store i32* %83, i32** %_aux_1, align 8, !dbg !286
+L138,C7:  %84 = load i32*, i32** %_aux_1, align 8, !dbg !286
+L138,C7:  %85 = load i32, i32* %84, align 4, !dbg !286
+L138,C7:  %86 = or i32 %85, 2, !dbg !286
+L138,C7:  store i32 %86, i32* %84, align 4, !dbg !286
+L139,C6:  br label %87, !dbg !287
+
+Blk5311339234271797258 ():
+
+Blk4643437854475648146 ():
+L132,C6:  call void @llvm.dbg.declare(metadata i32** %_aux_, metadata !428, metadata !199), !dbg !431
+L132,C6:  %32 = load i32, i32* %x, align 4, !dbg !259
+L132,C6:  %33 = load i32, i32* %y, align 4, !dbg !259
+L132,C6:  %34 = mul nsw i32 %33, 100, !dbg !259
+L132,C6:  %35 = add nsw i32 %32, %34, !dbg !259
+L132,C6:  %36 = load i32, i32* %z, align 4, !dbg !259
+L132,C6:  %37 = mul nsw i32 %36, 100, !dbg !259
+L132,C6:  %38 = mul nsw i32 %37, 100, !dbg !259
+L132,C6:  %39 = add nsw i32 %35, %38, !dbg !259
+L132,C6:  %40 = mul nsw i32 20, %39, !dbg !259
+L132,C6:  %41 = add nsw i32 19, %40, !dbg !259
+L132,C6:  %42 = sext i32 %41 to i64, !dbg !259
+L132,C6:  %43 = load double*, double** %1, align 8, !dbg !259
+L132,C6:  %44 = getelementptr inbounds double, double* %43, i64 %42, !dbg !259
+L132,C6:  %45 = bitcast double* %44 to i8*, !dbg !259
+L132,C6:  %46 = bitcast i8* %45 to i32*, !dbg !259
+L132,C6:  store i32* %46, i32** %_aux_, align 8, !dbg !259
+L132,C6:  %47 = load i32*, i32** %_aux_, align 8, !dbg !259
+L132,C6:  %48 = load i32, i32* %47, align 4, !dbg !259
+L132,C6:  %49 = or i32 %48, 1, !dbg !259
+L132,C6:  store i32 %49, i32* %47, align 4, !dbg !259
+L133,C5:  br label %88, !dbg !260
+
+Blk1149971383400636431 ():
+L141,C4:  br label %89, !dbg !288
+
+Blk7053122985401729424 ():
+L128,C29:  %90 = load i32, i32* %x, align 4, !dbg !289
+L128,C29:  %91 = add nsw i32 %90, 1, !dbg !289
+L128,C29:  store i32 %91, i32* %x, align 4, !dbg !289
+L128,C4:  br label %10, !dbg !291
+

@@ -1,0 +1,27 @@
+;; Line: 241, Column: 7
+  %. = select i1 %242, double %239, double 2.000000e-03, 
+</pre>
+<br/>Operand # 0 (0x4f0fc70) <br /><pre class="prettyprint lang-llvm ">  %242 = icmp eq i32 %241, 0, </pre>
+Operand # 1 (0x4f10c00) <br /><pre class="prettyprint lang-llvm ">  %239 = fdiv double %228, %210, </pre>
+Operand # 2 (0x4ee8020) <br /><pre class="prettyprint lang-llvm ">double 2.000000e-03</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:138                                     ; preds = %1
+  %139 = or i64 %indvars.iv, 1, 
+  %140 = getelementptr inbounds double, double* %srcGrid, i64 %139, 
+  %141 = load double, double* %140, align 8, 
+  %142 = fadd double %9, %141, 
+  %143 = or i64 %indvars.iv, 2, 
+  %144 = getelementptr inbounds double, double* %srcGrid, i64 %143, 
+  %145 = load double, double* %144, align 8, 
+  %146 = fadd double %142, %145, 
+  %147 = or i64 %indvars.iv, 3, 
+  %148 = getelementptr inbounds double, double* %srcGrid, i64 %147, 
+  %149 = load double, double* %148, align 8, 
+  %150 = fadd double %146, %149, 
+  %151 = add nuw nsw i64 %indvars.iv, 4, 
+  %152 = getelementptr inbounds double, double* %srcGrid, i64 %151, 
+  %153 = load double, double* %152, align 8, 
+  %154 = fadd double %150, %153, 
+  %155 = add nuw nsw i64 %indvars.iv, 5, 
+  %156
+... (TRIMMED)</pre>

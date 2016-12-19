@@ -1,0 +1,92 @@
+2,28c2,20
+< ; label:17                                      ; preds = %781, %16
+<   %18 = load i32, i32* %x, align 4, 
+<   %19 = icmp slt i32 %18, 100, 
+<   br i1 %19, label %20, label %784, 
+< <br/>; label:20                                      ; preds = %17
+<   %21 = load i32, i32* %x, align 4, 
+<   %22 = load i32, i32* %y, align 4, 
+<   %23 = mul nsw i32 %22, 100, 
+<   %24 = add nsw i32 %21, %23, 
+<   %25 = load i32, i32* %z, align 4, 
+<   %26 = mul nsw i32 %25, 100, 
+<   %27 = mul nsw i32 %26, 100, 
+<   %28 = add nsw i32 %24, %27, 
+<   %29 = mul nsw i32 20, %28, 
+<   %30 = add nsw i32 0, %29, 
+<   %31 = sext i32 %30 to i64, 
+<   %32 = load double*, double** %1, align 8, 
+<   %33 = getelementptr inbounds double, double* %32, i64 %31, 
+<   %34 = load double, double* %33, align 8, 
+<   %35 = load i32, i32* %x, align 4, 
+<   %36 = load i32, i32* %y, align 4, 
+<   %37 = mul nsw i32 %36, 100, 
+<   %38 = add nsw i32 %35, %37, 
+<   %39 = load i32, i32* %z, align 4, 
+<   %40 = mul nsw i32 %39, 100, 
+<   %41 = mul nsw i32 %40, 100, 
+<   %42
+---
+> ; label:7                                       ; preds = %149, %.preheader
+>   %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %149 ]
+>   %8 = add nuw nsw i64 %6, %indvars.iv, 
+>   %9 = mul nuw nsw i64 %8, 20, 
+>   %10 = getelementptr inbounds double, double* %grid, i64 %9, 
+>   %11 = load double, double* %10, align 8, 
+>   %12 = or i64 %9, 1, 
+>   %13 = getelementptr inbounds double, double* %grid, i64 %12, 
+>   %14 = load double, double* %13, align 8, 
+>   %15 = fadd double %11, %14, 
+>   %16 = or i64 %9, 2, 
+>   %17 = getelementptr inbounds double, double* %grid, i64 %16, 
+>   %18 = load double, double* %17, align 8, 
+>   %19 = fadd double %15, %18, 
+>   %20 = or i64 %9, 3, 
+>   %21 = getelementptr inbounds double, double* %grid, i64 %20, 
+>   %22 = load double, double* %21, align 8, 
+>   %23 = fadd double %19, %22, 
+>   %24 = add nuw nsw i64 %9, 4, 
+30,54c22,38
+< ; label:771                                     ; preds = %20
+<   %772 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+<   %773 = load float, float* %ux, align 4, 
+<   %774 = fpext float %773 to double, 
+<   %775 = load float, float* %uy, align 4, 
+<   %776 = fpext float %775 to double, 
+<   %777 = load float, float* %uz, align 4, 
+<   %778 = fpext float %777 to double, 
+<   %779 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %772, i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.5, i32 0, i32 0), double %774, double %776, double %778), 
+<   br label %780
+< <br/>; label:767                                     ; preds = %20
+<   %768 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+<   call void @storeValue(%struct._IO_FILE* %768, float* %ux), 
+<   %769 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+<   call void @storeValue(%struct._IO_FILE* %769, float* %uy), 
+<   %770 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+<   call void @storeValue(%struct._IO_FILE* %770, float* %uz), 
+<   br label %780, 
+< <br/>; label:780                                     ; preds = %771, %767
+<   br label %781, 
+< <br/>; label:781                                     ; preds = %780
+<   %782 = load i32, i32* %x, align 4, 
+<   %783 = add nsw i32 %782, 1, 
+<   store i32 %783, i32* %x, align 4, 
+<   br label %17, 
+---
+> ; label:142                                     ; preds = %7
+>   %143 = load float, float* %ux, align 4, 
+>   %144 = fpext float %143 to double, 
+>   %145 = load float, float* %uy, align 4, 
+>   %146 = fpext float %145 to double, 
+>   %147 = fpext float %140 to double, 
+>   %148 = tail call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %3, i8* nonnull getelementptr inbounds ([10 x i8], [10 x i8]* @.str.5, i64 0, i64 0), double %144, double %146, double %147), 
+>   br label %149
+> <br/>; label:141                                     ; preds = %7
+>   call fastcc void @storeValue(%struct._IO_FILE* %3, float* nonnull %ux), 
+>   call fastcc void @storeValue(%struct._IO_FILE* %3, float* nonnull %uy), 
+>   call fastcc void @storeValue(%struct._IO_FILE* %3, float* nonnull %uz), 
+>   br label %149, 
+> <br/>; label:149                                     ; preds = %141, %142
+>   %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1, 
+>   %exitcond = icmp eq i64 %indvars.iv.next, 100, 
+>   br i1 %exitcond, label %150, label %7, 

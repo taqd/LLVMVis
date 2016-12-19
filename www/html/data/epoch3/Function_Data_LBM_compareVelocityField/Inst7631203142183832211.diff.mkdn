@@ -1,0 +1,12 @@
+4,8c4,8
+< <br/>Operand # 0 (0x4db0a88) <br /><pre class="prettyprint lang-llvm ">  %5 = bitcast float* %fileUy to i8*, </pre>
+< Operand # 1 (0x4d27e50) <br /><pre class="prettyprint lang-llvm ">i64 4</pre>
+< Operand # 2 (0x4d4aac0) <br /><pre class="prettyprint lang-llvm ">i64 1</pre>
+< Operand # 3 (0x4db06c8) <br /><pre class="prettyprint lang-llvm ">  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), </pre>
+< Operand # 4 (0x4d24648) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f74308) <br /><pre class="prettyprint lang-llvm ">  %5 = bitcast float* %fileUy to i8*, </pre>
+> Operand # 1 (0x4ef5180) <br /><pre class="prettyprint lang-llvm ">i64 4</pre>
+> Operand # 2 (0x4f078d0) <br /><pre class="prettyprint lang-llvm ">i64 1</pre>
+> Operand # 3 (0x4f73f48) <br /><pre class="prettyprint lang-llvm ">  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), </pre>
+> Operand # 4 (0x4ee1338) <br /><pre class="prettyprint lang-llvm ">

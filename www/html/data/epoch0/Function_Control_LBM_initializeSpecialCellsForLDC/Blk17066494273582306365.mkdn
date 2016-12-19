@@ -1,0 +1,4 @@
+File: lbm.c, Lines: 127, Cols: 8,10,
+; label:5                                       ; preds = %2
+  store i32 0, i32* %y, align 4, 
+  br label %6, 

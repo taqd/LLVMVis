@@ -1,0 +1,11 @@
+;; Line: 674, Column: 37
+  store float %801, float* %maxDiff2, align 4, 
+</pre>
+<br/>Operand # 0 (0x5da9e38) <br /><pre class="prettyprint lang-llvm ">  %801 = load float, float* %diff2, align 4, </pre>
+Operand # 1 (0x5d8e618) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2 = alloca float, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:800                                     ; preds = %770
+  %801 = load float, float* %diff2, align 4, 
+  store float %801, float* %maxDiff2, align 4, 
+  br label %802, 
+</pre>

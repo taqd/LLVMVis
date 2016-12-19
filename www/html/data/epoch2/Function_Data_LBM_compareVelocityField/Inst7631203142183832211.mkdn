@@ -1,0 +1,15 @@
+;; Line: 548, Column: 3
+  %119 = call i64 @fread(i8* %5, i64 4, i64 1, %struct._IO_FILE* %3) #7, 
+</pre>
+<br/>Operand # 0 (0x4db0a88) <br /><pre class="prettyprint lang-llvm ">  %5 = bitcast float* %fileUy to i8*, </pre>
+Operand # 1 (0x4d27e50) <br /><pre class="prettyprint lang-llvm ">i64 4</pre>
+Operand # 2 (0x4d4aac0) <br /><pre class="prettyprint lang-llvm ">i64 1</pre>
+Operand # 3 (0x4db06c8) <br /><pre class="prettyprint lang-llvm ">  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), </pre>
+Operand # 4 (0x4d24648) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind
+declare i64 @fread(i8* nocapture, i64, i64, %struct._IO_FILE* nocapture) #2
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:117                                     ; preds = %10
+  %118 = call i64 @fread(i8* %4, i64 4, i64 1, %struct._IO_FILE* %3) #7, 
+... (TRIMMED)</pre>

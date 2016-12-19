@@ -1,0 +1,8 @@
+6,8c6,8
+<   call void @MAIN_printInfo(%struct.MAIN_Param* nonnull %param), 
+<   call void @MAIN_initialize(%struct.MAIN_Param* nonnull %param), 
+<   tail call voi
+---
+>   %1 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, 
+>   %2 = load i32, i32* %1, align 8, 
+>   %3 = getelement

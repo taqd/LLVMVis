@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4db0f78) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.1218 = phi float [ %maxDiff2.0220, %.preheader214 ], [ %maxDiff2.3.lcssa, %142 ]</pre>
+< Operand # 1 (0x4d25f88) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3 = select i1 %141, float %140, float %maxDiff2.2215, </pre>
+---
+> <br/>Operand # 0 (0x4f747f8) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.1218 = phi float [ %maxDiff2.0220, %.preheader214 ], [ %maxDiff2.3.lcssa, %142 ]</pre>
+> Operand # 1 (0x4f7d3e8) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3 = select i1 %141, float %140, float %maxDiff2.2215, </pre>

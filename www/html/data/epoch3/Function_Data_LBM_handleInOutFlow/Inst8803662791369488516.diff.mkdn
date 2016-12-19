@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d83fc0) <br /><pre class="prettyprint lang-llvm ">  %225 = fsub double 0.000000e+00, %170, </pre>
+< Operand # 1 (0x4d2a890) <br /><pre class="prettyprint lang-llvm ">double 4.500000e+00</pre>
+---
+> <br/>Operand # 0 (0x4f469c0) <br /><pre class="prettyprint lang-llvm ">  %225 = fsub double 0.000000e+00, %170, </pre>
+> Operand # 1 (0x4ee7640) <br /><pre class="prettyprint lang-llvm ">double 4.500000e+00</pre>

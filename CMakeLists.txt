@@ -10,4 +10,7 @@ add_llvm_loadable_module( visualize
 
   DEPENDS
   intrinsics_gen
+
+  PLUGIN_TOOL
+  opt
 )

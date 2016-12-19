@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d80878) <br /><pre class="prettyprint lang-llvm ">  %157 = sitofp i32 %156 to double, </pre>
+< Operand # 1 (0x4d53c10) <br /><pre class="prettyprint lang-llvm ">double 4.950000e+01</pre>
+---
+> <br/>Operand # 0 (0x4f43188) <br /><pre class="prettyprint lang-llvm ">  %157 = sitofp i32 %156 to double, </pre>
+> Operand # 1 (0x4f17290) <br /><pre class="prettyprint lang-llvm ">double 4.950000e+01</pre>

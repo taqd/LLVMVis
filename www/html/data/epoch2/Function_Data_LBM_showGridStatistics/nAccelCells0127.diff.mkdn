@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f2ae30) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+< Operand # 1 (0x4fa6158) <br /><pre class="prettyprint lang-llvm ">  %nAccelCells.2 = phi i32 [ %nAccelCells.0127, %85 ], [ %nAccelCells.1, %126 ], [ %nAccelCells.1, %87 ]</pre>
+---
+> <br/>Operand # 0 (0x4d2a9e0) <br /><pre class="prettyprint lang-llvm ">i32 0</pre>
+> Operand # 1 (0x4da3778) <br /><pre class="prettyprint lang-llvm ">  %nAccelCells.2 = phi i32 [ %nAccelCells.0127, %85 ], [ %nAccelCells.1, %126 ], [ %nAccelCells.1, %87 ]</pre>

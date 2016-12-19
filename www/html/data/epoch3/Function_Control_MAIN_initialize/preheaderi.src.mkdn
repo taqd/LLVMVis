@@ -1,0 +1,10 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+preheaderi (.preheader.i):
+L132,C3:  %indvars.iv14.i = phi i64 [ 0, %.preheader10.i ], [ %indvars.iv.next15.i, %36 ], !dbg !251
+L105,C9:  %20 = tail call i32 @fgetc(%struct._IO_FILE* %18) #7, !dbg !265
+L105,C32:  %21 = mul nuw nsw i64 %indvars.iv14.i, 100, !dbg !252
+L105,C32:  %22 = add nuw nsw i64 %21, %19, !dbg !252
+L104,C4:  br label %23, !dbg !266
+

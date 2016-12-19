@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d302c0) <br /><pre class="prettyprint lang-llvm ">double* %grid</pre>
+< Operand # 1 (0x4d28900) <br /><pre class="prettyprint lang-llvm ">  %25 = add nsw i64 %indvars.iv, 16, </pre>
+---
+> <br/>Operand # 0 (0x4efceb0) <br /><pre class="prettyprint lang-llvm ">double* %grid</pre>
+> Operand # 1 (0x4ef3180) <br /><pre class="prettyprint lang-llvm ">  %25 = add nsw i64 %indvars.iv, 16, </pre>

@@ -1,0 +1,5 @@
+File: main.c, Lines: 95, Cols: 13,20,31,
+; label:41                                      ; preds = %31, %39
+  %42 = load i32, i32* %16, align 8, 
+  %43 = icmp eq i32 %42, 1, 
+  br i1 %43, label %44, label %51, 

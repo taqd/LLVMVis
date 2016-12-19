@@ -1,0 +1,6 @@
+File: main.c, Lines: 118,119 Cols: 10,46,53,
+; label:25                                      ; preds = %0
+  %26 = load %struct.MAIN_Param*, %struct.MAIN_Param** %1, align 8, 
+  %27 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %26, i32 0, i32 4, 
+  %28 = load i8*, i8** %27, align 8, 
+  br label %29, 

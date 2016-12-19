@@ -1,0 +1,5 @@
+File: main.c, Lines: 95, Cols: 13,20,31,
+; label:41                                      ; preds = %._crit_edge, %39
+  %42 = phi i32 [ %.pre, %._crit_edge ], [ %15, %39 ], 
+  %43 = icmp eq i32 %42, 1, 
+  br i1 %43, label %44, label %51, 

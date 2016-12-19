@@ -1,0 +1,16 @@
+;; Line: 145, Column: 2
+  tail call void @LBM_showGridStatistics(double* %161), 
+</pre>
+<br/>Operand # 0 (0x4f964f8) <br /><pre class="prettyprint lang-llvm ">  %161 = getelementptr inbounds [26000000 x double], [26000000 x double]* %160, i64 0, i64 0, </pre>
+Operand # 1 (0x4ee0d98) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define void @LBM_showGridStatistics(double* nocapture readonly %grid) #0 {
+  tail call void @llvm
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+LBM_initializeSpecialCellsForChannel.exit42:      ; preds = %LBM_initializeSpecialCellsForChannel.exit42.loopexit, %156
+  %160 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %161 = getelementptr inbounds [26000000 x double], [26000000 x double]* %160, i64 0, i64 0, 
+  tail call void @LBM_showGridStatistics(double* %161), 
+  ret void, 
+</pre>

@@ -1,0 +1,14 @@
+
+  %indvars.iv38 = phi i64 [ 0, %.preheader.split.split.preheader ], [ %indvars.iv.next39.1, %53 ]
+</pre>
+<br/>Operand # 0 (0x4eee060) <br /><pre class="prettyprint lang-llvm ">i64 0</pre>
+Operand # 1 (0x4f16450) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv.next39.1 = add nsw i64 %indvars.iv38, 2, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader.split.split:                           ; preds = %53, %.preheader.split.split.preheader
+  %indvars.iv38 = phi i64 [ 0, %.preheader.split.split.preheader ], [ %indvars.iv.next39.1, %53 ]
+  %33 = trunc i64 %indvars.iv38 to i32, 
+  switch i32 %33, label %.preheader.split.split.153 [
+    i32 99, label %34
+    i32 0, label %34
+  ], 
+</pre>

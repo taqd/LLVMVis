@@ -1,0 +1,14 @@
+;; Line: 135, Column: 18
+  %36 = and i1 %17, %35, 
+</pre>
+<br/>Operand # 0 (0x4f1ac90) <br /><pre class="prettyprint lang-llvm ">  %17 = icmp ult i32 %16, 96, </pre>
+Operand # 1 (0x4f508b0) <br /><pre class="prettyprint lang-llvm ">  %35 = and i1 %or.cond11, %34, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:31                                      ; preds = %20
+  %32 = add i64 %indvars.iv, 4294967294, 
+  %33 = trunc i64 %32 to i32, 
+  %34 = icmp ult i32 %33, 96, 
+  %35 = and i1 %or.cond11, %34, 
+  %36 = and i1 %17, %35, 
+  br i1 %36, label %37, label %45, 
+</pre>

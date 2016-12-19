@@ -1,0 +1,45 @@
+File: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+preheader10 (.preheader10):
+L105,C32:  %2 = mul nuw nsw i64 %indvars.iv17, 10000, !dbg !212
+L103,C3:  br label %.preheader, !dbg !223
+
+preheader (.preheader):
+L105,C9:  %3 = tail call i32 @fgetc(%struct._IO_FILE* %1), !dbg !225
+L105,C32:  %4 = mul nuw nsw i64 %indvars.iv14, 100, !dbg !212
+L105,C32:  %5 = add nuw nsw i64 %4, %2, !dbg !212
+L104,C4:  br label %6, !dbg !226
+
+Blk14756287969611586422 ():
+L105,C23:  %8 = icmp eq i32 %7, 46, !dbg !228
+L105,C9:  br i1 %8, label %17, label %9, !dbg !229
+
+Blk13443512608630806476 ():
+L105,C32:  %10 = add nuw nsw i64 %5, %indvars.iv, !dbg !212
+L105,C32:  %11 = mul nuw nsw i64 %10, 20, !dbg !212
+L105,C32:  %12 = add nuw nsw i64 %11, 19, !dbg !212
+L105,C32:  %13 = getelementptr inbounds double, double* %grid, i64 %12, !dbg !212
+L105,C32:  %14 = bitcast double* %13 to i32*, !dbg !212
+L105,C32:  tail call void @llvm.dbg.value(metadata i32* %14, i64 0, metadata !299, metadata !199), !dbg !300
+L105,C32:  %15 = load i32, i32* %14, align 4, !dbg !212
+L105,C32:  %16 = or i32 %15, 1, !dbg !212
+L105,C32:  store i32 %16, i32* %14, align 4, !dbg !212
+L105,C32:  br label %17, !dbg !212
+
+Blk4910880398227813852 ():
+L104,C4:  %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1, !dbg !226
+L105,C9:  %18 = tail call i32 @fgetc(%struct._IO_FILE* %1), !dbg !225
+L104,C4:  %exitcond = icmp eq i64 %indvars.iv.next, 100, !dbg !226
+L104,C4:  br i1 %exitcond, label %19, label %6, !dbg !226
+
+Blk3748847068237798527 ():
+L103,C3:  %indvars.iv.next15 = add nuw nsw i64 %indvars.iv14, 1, !dbg !223
+L103,C3:  %exitcond16 = icmp eq i64 %indvars.iv.next15, 100, !dbg !223
+L103,C3:  br i1 %exitcond16, label %20, label %.preheader, !dbg !223
+
+Blk2014462779288182340 ():
+L109,C3:  %21 = tail call i32 @fgetc(%struct._IO_FILE* %1), !dbg !233
+L102,C2:  %indvars.iv.next18 = add nuw nsw i64 %indvars.iv17, 1, !dbg !208
+L102,C2:  %exitcond19 = icmp eq i64 %indvars.iv.next18, 130, !dbg !208
+L102,C2:  br i1 %exitcond19, label %22, label %.preheader10, !dbg !208
+

@@ -1,0 +1,882 @@
+[
+	{
+		"type" : "Helper",
+		"name" : "LBM_initializeSpecialCellsForChannel",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop10",
+		"name" : "Loop10",
+		"group" : "",
+		"depends" : [
+			"indvarsiv44",
+			"Inst14817490611356876196",
+			"indvarsiv41",
+			"Inst262335075575916883",
+			"Inst3952059696286451971",
+			"Inst4651321931795271369",
+			"Inst7257144555886730591",
+			"indvarsiv",
+			"Inst18434128278010181224",
+			"Inst7239195068116016041",
+			"Inst1042449367450375695",
+			"Inst3529603554695786898",
+			"Inst8122281347230475583",
+			"Inst5931803229556080515",
+			"Inst10579124189188105214",
+			"indvarsivnext",
+			"Inst6147537570024917800",
+			"Inst8027036356365005512",
+			"Inst9092929028346528052",
+			"Inst15451003696521473823",
+			"Inst14289791401339916532",
+			"Inst11830590396304277338",
+			"Inst15066744494832561348",
+			"Inst16218447365403726327",
+			"indvarsivnext1",
+			"exitcond1",
+			"Inst10863118317985143128",
+			"indvarsiv35",
+			"Inst6801122846699403013",
+			"Inst16671984234341343545",
+			"Inst10773860270388097611",
+			"Inst7293768001210871471",
+			"Inst15184241818691759371",
+			"Inst12229810755147708625",
+			"Inst10747096291395033702",
+			"indvarsivnext36",
+			"Inst4849243275841889605",
+			"Inst7269589191219815304",
+			"Inst5482725957901015613",
+			"Inst1040223125964722640",
+			"Inst6846411034500816988",
+			"Inst16237517350016725009",
+			"Inst16650907716610409853",
+			"Inst3114409592533068001",
+			"indvarsivnext361",
+			"exitcond371",
+			"Inst10559783980783515093",
+			"indvarsiv38",
+			"Inst17791263549169303365",
+			"Inst3436704188395851700",
+			"Inst3418278617095049006",
+			"Inst13159246701875811030",
+			"Inst719645641754007759",
+			"Inst8224292066907117098",
+			"Inst5898323842119456599",
+			"Inst8252967670506178734",
+			"Inst11709108383316136847",
+			"indvarsivnext39",
+			"Inst213828510740769984",
+			"Inst17817343176702111462",
+			"Inst12739993167543264206",
+			"Inst4563753682521737001",
+			"Inst8737483816989470925",
+			"Inst9831345526306672910",
+			"Inst4473312625527465184",
+			"Inst3663733562924071493",
+			"Inst14789849312679100152",
+			"Inst4511022607483699266",
+			"indvarsivnext391",
+			"exitcond401",
+			"Inst5319294113257168420",
+			"indvarsivnext42",
+			"exitcond43",
+			"Inst3785903816891508279",
+			"indvarsivnext45",
+			"exitcond46",
+			"Inst4450503101366087617"
+		]
+	}, {
+		"type" : "Loop11",
+		"name" : "Loop11",
+		"group" : "",
+		"depends" : [
+			"indvarsiv41",
+			"Inst262335075575916883",
+			"Inst3952059696286451971",
+			"Inst4651321931795271369",
+			"Inst7257144555886730591",
+			"indvarsiv",
+			"Inst18434128278010181224",
+			"Inst7239195068116016041",
+			"Inst1042449367450375695",
+			"Inst3529603554695786898",
+			"Inst8122281347230475583",
+			"Inst5931803229556080515",
+			"Inst10579124189188105214",
+			"indvarsivnext",
+			"Inst6147537570024917800",
+			"Inst8027036356365005512",
+			"Inst9092929028346528052",
+			"Inst15451003696521473823",
+			"Inst14289791401339916532",
+			"Inst11830590396304277338",
+			"Inst15066744494832561348",
+			"Inst16218447365403726327",
+			"indvarsivnext1",
+			"exitcond1",
+			"Inst10863118317985143128",
+			"indvarsiv35",
+			"Inst6801122846699403013",
+			"Inst16671984234341343545",
+			"Inst10773860270388097611",
+			"Inst7293768001210871471",
+			"Inst15184241818691759371",
+			"Inst12229810755147708625",
+			"Inst10747096291395033702",
+			"indvarsivnext36",
+			"Inst4849243275841889605",
+			"Inst7269589191219815304",
+			"Inst5482725957901015613",
+			"Inst1040223125964722640",
+			"Inst6846411034500816988",
+			"Inst16237517350016725009",
+			"Inst16650907716610409853",
+			"Inst3114409592533068001",
+			"indvarsivnext361",
+			"exitcond371",
+			"Inst10559783980783515093",
+			"indvarsiv38",
+			"Inst17791263549169303365",
+			"Inst3436704188395851700",
+			"Inst3418278617095049006",
+			"Inst13159246701875811030",
+			"Inst719645641754007759",
+			"Inst8224292066907117098",
+			"Inst5898323842119456599",
+			"Inst8252967670506178734",
+			"Inst11709108383316136847",
+			"indvarsivnext39",
+			"Inst213828510740769984",
+			"Inst17817343176702111462",
+			"Inst12739993167543264206",
+			"Inst4563753682521737001",
+			"Inst8737483816989470925",
+			"Inst9831345526306672910",
+			"Inst4473312625527465184",
+			"Inst3663733562924071493",
+			"Inst14789849312679100152",
+			"Inst4511022607483699266",
+			"indvarsivnext391",
+			"exitcond401",
+			"Inst5319294113257168420",
+			"indvarsivnext42",
+			"exitcond43",
+			"Inst3785903816891508279"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Loop12",
+		"group" : "",
+		"depends" : [
+			"indvarsiv35",
+			"Inst6801122846699403013",
+			"Inst16671984234341343545",
+			"Inst10773860270388097611",
+			"Inst7293768001210871471",
+			"Inst15184241818691759371",
+			"Inst12229810755147708625",
+			"Inst10747096291395033702",
+			"indvarsivnext36",
+			"Inst4849243275841889605",
+			"Inst7269589191219815304",
+			"Inst5482725957901015613",
+			"Inst1040223125964722640",
+			"Inst6846411034500816988",
+			"Inst16237517350016725009",
+			"Inst16650907716610409853",
+			"Inst3114409592533068001",
+			"indvarsivnext361",
+			"exitcond371",
+			"Inst10559783980783515093"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Loop13",
+		"group" : "",
+		"depends" : [
+			"indvarsiv",
+			"Inst18434128278010181224",
+			"Inst7239195068116016041",
+			"Inst1042449367450375695",
+			"Inst3529603554695786898",
+			"Inst8122281347230475583",
+			"Inst5931803229556080515",
+			"Inst10579124189188105214",
+			"indvarsivnext",
+			"Inst6147537570024917800",
+			"Inst8027036356365005512",
+			"Inst9092929028346528052",
+			"Inst15451003696521473823",
+			"Inst14289791401339916532",
+			"Inst11830590396304277338",
+			"Inst15066744494832561348",
+			"Inst16218447365403726327",
+			"indvarsivnext1",
+			"exitcond1",
+			"Inst10863118317985143128"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Loop14",
+		"group" : "",
+		"depends" : [
+			"indvarsiv38",
+			"Inst17791263549169303365",
+			"Inst3436704188395851700",
+			"Inst3418278617095049006",
+			"Inst13159246701875811030",
+			"Inst719645641754007759",
+			"Inst8224292066907117098",
+			"Inst5898323842119456599",
+			"Inst8252967670506178734",
+			"Inst11709108383316136847",
+			"indvarsivnext39",
+			"Inst213828510740769984",
+			"Inst17817343176702111462",
+			"Inst12739993167543264206",
+			"Inst4563753682521737001",
+			"Inst8737483816989470925",
+			"Inst9831345526306672910",
+			"Inst4473312625527465184",
+			"Inst3663733562924071493",
+			"Inst14789849312679100152",
+			"Inst4511022607483699266",
+			"indvarsivnext391",
+			"exitcond401",
+			"Inst5319294113257168420"
+		]
+	}, {
+		"type" : "Loop11",
+		"name" : "Inst7257144555886730591",
+		"group" : "",
+		"depends" : [
+			"Inst4651321931795271369"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst10747096291395033702",
+		"group" : "",
+		"depends" : [
+			"Inst12229810755147708625"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst3114409592533068001",
+		"group" : "",
+		"depends" : [
+			"Inst16650907716610409853",
+			"Inst6846411034500816988"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst10579124189188105214",
+		"group" : "",
+		"depends" : [
+			"Inst5931803229556080515"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst16218447365403726327",
+		"group" : "",
+		"depends" : [
+			"Inst15066744494832561348",
+			"Inst14289791401339916532"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst3436704188395851700",
+		"group" : "",
+		"depends" : [
+			"Inst17791263549169303365"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst11709108383316136847",
+		"group" : "",
+		"depends" : [
+			"Inst8252967670506178734"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst17817343176702111462",
+		"group" : "",
+		"depends" : [
+			"Inst213828510740769984"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "Inst1153146544403972941",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst4511022607483699266",
+		"group" : "",
+		"depends" : [
+			"Inst14789849312679100152",
+			"Inst4473312625527465184"
+		]
+	}, {
+		"type" : "Loop10",
+		"name" : "indvarsiv44",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext45"
+		]
+	}, {
+		"type" : "Loop10",
+		"name" : "Inst14817490611356876196",
+		"group" : "",
+		"depends" : [
+			"indvarsiv44"
+		]
+	}, {
+		"type" : "Loop11",
+		"name" : "indvarsiv41",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext42"
+		]
+	}, {
+		"type" : "Loop11",
+		"name" : "Inst262335075575916883",
+		"group" : "",
+		"depends" : [
+			"indvarsiv41"
+		]
+	}, {
+		"type" : "Loop11",
+		"name" : "Inst3952059696286451971",
+		"group" : "",
+		"depends" : [
+			"Inst262335075575916883",
+			"Inst14817490611356876196"
+		]
+	}, {
+		"type" : "Loop11",
+		"name" : "Inst4651321931795271369",
+		"group" : "",
+		"depends" : [
+			"indvarsiv41"
+		]
+	}, {
+		"type" : "Loop11",
+		"name" : "Inst7257144555886730591",
+		"group" : "",
+		"depends" : [
+			"Inst4651321931795271369"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "indvarsiv35",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext361"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst6801122846699403013",
+		"group" : "",
+		"depends" : [
+			"Inst3952059696286451971",
+			"indvarsiv35"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst16671984234341343545",
+		"group" : "",
+		"depends" : [
+			"Inst6801122846699403013"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst10773860270388097611",
+		"group" : "",
+		"depends" : [
+			"Inst16671984234341343545"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst7293768001210871471",
+		"group" : "",
+		"depends" : [
+			"Inst10773860270388097611"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst15184241818691759371",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst12229810755147708625",
+		"group" : "",
+		"depends" : [
+			"Inst15184241818691759371"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst10747096291395033702",
+		"group" : "",
+		"depends" : [
+			"Inst12229810755147708625"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "indvarsivnext36",
+		"group" : "",
+		"depends" : [
+			"indvarsiv35"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst4849243275841889605",
+		"group" : "",
+		"depends" : [
+			"Inst3952059696286451971",
+			"indvarsivnext36"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst7269589191219815304",
+		"group" : "",
+		"depends" : [
+			"Inst4849243275841889605"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst5482725957901015613",
+		"group" : "",
+		"depends" : [
+			"Inst7269589191219815304"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst1040223125964722640",
+		"group" : "",
+		"depends" : [
+			"Inst5482725957901015613"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst6846411034500816988",
+		"group" : "",
+		"depends" : [
+			"Inst1040223125964722640"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst16237517350016725009",
+		"group" : "",
+		"depends" : [
+			"Inst6846411034500816988"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst16650907716610409853",
+		"group" : "",
+		"depends" : [
+			"Inst16237517350016725009"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst3114409592533068001",
+		"group" : "",
+		"depends" : [
+			"Inst16650907716610409853",
+			"Inst6846411034500816988"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "indvarsivnext361",
+		"group" : "",
+		"depends" : [
+			"indvarsiv35"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "exitcond371",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext361"
+		]
+	}, {
+		"type" : "Loop12",
+		"name" : "Inst10559783980783515093",
+		"group" : "",
+		"depends" : [
+			"exitcond371"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "indvarsiv",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext1"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst18434128278010181224",
+		"group" : "",
+		"depends" : [
+			"Inst3952059696286451971",
+			"indvarsiv"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst7239195068116016041",
+		"group" : "",
+		"depends" : [
+			"Inst18434128278010181224"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst1042449367450375695",
+		"group" : "",
+		"depends" : [
+			"Inst7239195068116016041"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst3529603554695786898",
+		"group" : "",
+		"depends" : [
+			"Inst1042449367450375695"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst8122281347230475583",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst5931803229556080515",
+		"group" : "",
+		"depends" : [
+			"Inst8122281347230475583"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst10579124189188105214",
+		"group" : "",
+		"depends" : [
+			"Inst5931803229556080515"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "indvarsivnext",
+		"group" : "",
+		"depends" : [
+			"indvarsiv"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst6147537570024917800",
+		"group" : "",
+		"depends" : [
+			"Inst3952059696286451971",
+			"indvarsivnext"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst8027036356365005512",
+		"group" : "",
+		"depends" : [
+			"Inst6147537570024917800"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst9092929028346528052",
+		"group" : "",
+		"depends" : [
+			"Inst8027036356365005512"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst15451003696521473823",
+		"group" : "",
+		"depends" : [
+			"Inst9092929028346528052"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst14289791401339916532",
+		"group" : "",
+		"depends" : [
+			"Inst15451003696521473823"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst11830590396304277338",
+		"group" : "",
+		"depends" : [
+			"Inst14289791401339916532"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst15066744494832561348",
+		"group" : "",
+		"depends" : [
+			"Inst11830590396304277338"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst16218447365403726327",
+		"group" : "",
+		"depends" : [
+			"Inst15066744494832561348",
+			"Inst14289791401339916532"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "indvarsivnext1",
+		"group" : "",
+		"depends" : [
+			"indvarsiv"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "exitcond1",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext1"
+		]
+	}, {
+		"type" : "Loop13",
+		"name" : "Inst10863118317985143128",
+		"group" : "",
+		"depends" : [
+			"exitcond1"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "indvarsiv38",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext391"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst17791263549169303365",
+		"group" : "",
+		"depends" : [
+			"indvarsiv38"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst3436704188395851700",
+		"group" : "",
+		"depends" : [
+			"Inst17791263549169303365"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst3418278617095049006",
+		"group" : "",
+		"depends" : [
+			"Inst3952059696286451971",
+			"indvarsiv38"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst13159246701875811030",
+		"group" : "",
+		"depends" : [
+			"Inst3418278617095049006"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst719645641754007759",
+		"group" : "",
+		"depends" : [
+			"Inst13159246701875811030"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst8224292066907117098",
+		"group" : "",
+		"depends" : [
+			"Inst719645641754007759"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst5898323842119456599",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst8252967670506178734",
+		"group" : "",
+		"depends" : [
+			"Inst5898323842119456599"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst11709108383316136847",
+		"group" : "",
+		"depends" : [
+			"Inst8252967670506178734"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "indvarsivnext39",
+		"group" : "",
+		"depends" : [
+			"indvarsiv38"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst213828510740769984",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext39"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst17817343176702111462",
+		"group" : "",
+		"depends" : [
+			"Inst213828510740769984"
+		]
+	}, {
+		"type" : "Loop11",
+		"name" : "indvarsivnext42",
+		"group" : "",
+		"depends" : [
+			"indvarsiv41"
+		]
+	}, {
+		"type" : "Loop11",
+		"name" : "exitcond43",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext42"
+		]
+	}, {
+		"type" : "Loop11",
+		"name" : "Inst3785903816891508279",
+		"group" : "",
+		"depends" : [
+			"exitcond43"
+		]
+	}, {
+		"type" : "Loop10",
+		"name" : "indvarsivnext45",
+		"group" : "",
+		"depends" : [
+			"indvarsiv44"
+		]
+	}, {
+		"type" : "Loop10",
+		"name" : "exitcond46",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext45"
+		]
+	}, {
+		"type" : "Loop10",
+		"name" : "Inst4450503101366087617",
+		"group" : "",
+		"depends" : [
+			"exitcond46"
+		]
+	}, {
+		"type" : "Not in a loop",
+		"name" : "Inst1153146544403972941",
+		"group" : "",
+		"depends" : [
+
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst12739993167543264206",
+		"group" : "",
+		"depends" : [
+			"Inst3952059696286451971",
+			"indvarsivnext39"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst4563753682521737001",
+		"group" : "",
+		"depends" : [
+			"Inst12739993167543264206"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst8737483816989470925",
+		"group" : "",
+		"depends" : [
+			"Inst4563753682521737001"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst9831345526306672910",
+		"group" : "",
+		"depends" : [
+			"Inst8737483816989470925"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst4473312625527465184",
+		"group" : "",
+		"depends" : [
+			"Inst9831345526306672910"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst3663733562924071493",
+		"group" : "",
+		"depends" : [
+			"Inst4473312625527465184"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst14789849312679100152",
+		"group" : "",
+		"depends" : [
+			"Inst3663733562924071493"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst4511022607483699266",
+		"group" : "",
+		"depends" : [
+			"Inst14789849312679100152",
+			"Inst4473312625527465184"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "indvarsivnext391",
+		"group" : "",
+		"depends" : [
+			"indvarsiv38"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "exitcond401",
+		"group" : "",
+		"depends" : [
+			"indvarsivnext391"
+		]
+	}, {
+		"type" : "Loop14",
+		"name" : "Inst5319294113257168420",
+		"group" : "",
+		"depends" : [
+			"exitcond401"
+		]
+	}
+]

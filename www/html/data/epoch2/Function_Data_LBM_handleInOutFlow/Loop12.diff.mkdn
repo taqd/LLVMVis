@@ -1,0 +1,28 @@
+4,7c4
+<   %252 = add nsw i64 %indvars.iv, -200000, 
+<   %253 = getelementptr inbounds double, double* %srcGrid, i64 %252, 
+<   %254 = load double, double* %253, align 8, 
+<   %255 = add nsw i64 %indvars.iv, -199999, 
+---
+>   %255 = add nsw i64 %indvars.iv, -200000, 
+10,17c7,17
+<   %258 = fadd double %254, %257, 
+<   %259 = add nsw i64 %indvars.iv, -199998, 
+<   %260 = getelementptr inbounds double, double* %srcGrid, i64 %259, 
+<   %261 = load double, double* %260, align 8, 
+<   %262 = fadd double %258, %261, 
+<   %263 = add nsw i64 %indvars.iv, -199997, 
+<   %264 = getelementptr inbounds double, double* %srcGrid, i64 %263, 
+<   %265 = load double, double* %264
+---
+>   %258 = add nsw i64 %indvars.iv, -199999, 
+>   %259 = getelementptr inbounds double, double* %srcGrid, i64 %258, 
+>   %260 = load double, double* %259, align 8, 
+>   %261 = fadd double %257, %260, 
+>   %262 = add nsw i64 %indvars.iv, -199998, 
+>   %263 = getelementptr inbounds double, double* %srcGrid, i64 %262, 
+>   %264 = load double, double* %263, align 8, 
+>   %265 = fadd double %261, %264, 
+>   %266 = add nsw i64 %indvars.iv, -199997, 
+>   %267 = getelementptr inbounds double, double* %srcGrid, i64 %266, 
+>   %268 = load double, double* %267

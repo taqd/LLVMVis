@@ -1,0 +1,16 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk16623650151111919446 ():
+L97,C37:  call void @llvm.dbg.declare(metadata double** %1, metadata !302, metadata !199), !dbg !303
+L97,C55:  call void @llvm.dbg.declare(metadata i8** %2, metadata !304, metadata !199), !dbg !305
+L98,C6:  call void @llvm.dbg.declare(metadata i32* %x, metadata !306, metadata !199), !dbg !307
+L98,C10:  call void @llvm.dbg.declare(metadata i32* %y, metadata !308, metadata !199), !dbg !309
+L98,C14:  call void @llvm.dbg.declare(metadata i32* %z, metadata !310, metadata !199), !dbg !311
+L100,C8:  call void @llvm.dbg.declare(metadata %struct._IO_FILE** %file, metadata !312, metadata !199), !dbg !313
+L100,C22:  %3 = load i8*, i8** %2, align 8, !dbg !211
+L100,C15:  %4 = call %struct._IO_FILE* @fopen(i8* %3, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i32 0, i32 0)), !dbg !212
+L100,C8:  store %struct._IO_FILE* %4, %struct._IO_FILE** %file, align 8, !dbg !210
+L102,C9:  store i32 0, i32* %z, align 4, !dbg !213
+L102,C7:  br label %5, !dbg !215
+

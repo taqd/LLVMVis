@@ -1,0 +1,46 @@
+File: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+Blk2568666883656750418 ():
+L104,C16:  %14 = load i32, i32* %x, align 4, !dbg !234
+L104,C18:  %15 = icmp slt i32 %14, 100, !dbg !237
+L104,C4:  br i1 %15, label %16, label %43, !dbg !238
+
+Blk66179935957448882 ():
+L105,C16:  %17 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, !dbg !239
+L105,C9:  %18 = call i32 @fgetc(%struct._IO_FILE* %17), !dbg !242
+L105,C23:  %19 = icmp ne i32 %18, 46, !dbg !243
+L105,C9:  br i1 %19, label %20, label %39, !dbg !244
+
+Blk17905623623472531720 ():
+L105,C32:  call void @llvm.dbg.declare(metadata i32** %_aux_, metadata !348, metadata !199), !dbg !350
+L105,C32:  %21 = load i32, i32* %x, align 4, !dbg !249
+L105,C32:  %22 = load i32, i32* %y, align 4, !dbg !249
+L105,C32:  %23 = mul nsw i32 %22, 100, !dbg !249
+L105,C32:  %24 = add nsw i32 %21, %23, !dbg !249
+L105,C32:  %25 = load i32, i32* %z, align 4, !dbg !249
+L105,C32:  %26 = mul nsw i32 %25, 100, !dbg !249
+L105,C32:  %27 = mul nsw i32 %26, 100, !dbg !249
+L105,C32:  %28 = add nsw i32 %24, %27, !dbg !249
+L105,C32:  %29 = mul nsw i32 20, %28, !dbg !249
+L105,C32:  %30 = add nsw i32 19, %29, !dbg !249
+L105,C32:  %31 = sext i32 %30 to i64, !dbg !249
+L105,C32:  %32 = load double*, double** %1, align 8, !dbg !249
+L105,C32:  %33 = getelementptr inbounds double, double* %32, i64 %31, !dbg !249
+L105,C32:  %34 = bitcast double* %33 to i8*, !dbg !249
+L105,C32:  %35 = bitcast i8* %34 to i32*, !dbg !249
+L105,C32:  store i32* %35, i32** %_aux_, align 8, !dbg !249
+L105,C32:  %36 = load i32*, i32** %_aux_, align 8, !dbg !249
+L105,C32:  %37 = load i32, i32* %36, align 4, !dbg !249
+L105,C32:  %38 = or i32 %37, 1, !dbg !249
+L105,C32:  store i32 %38, i32* %36, align 4, !dbg !249
+L105,C32:  br label %39, !dbg !249
+
+Blk5179005995710562632 ():
+L106,C4:  br label %40, !dbg !251
+
+Blk15754273675092526247 ():
+L104,C29:  %41 = load i32, i32* %x, align 4, !dbg !252
+L104,C29:  %42 = add nsw i32 %41, 1, !dbg !252
+L104,C29:  store i32 %42, i32* %x, align 4, !dbg !252
+L104,C4:  br label %13, !dbg !254
+

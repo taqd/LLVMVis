@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d937b0) <br /><pre class="prettyprint lang-llvm ">  %55 = fadd double %51, %54, </pre>
+< Operand # 1 (0x4d93988) <br /><pre class="prettyprint lang-llvm ">  %58 = load double, double* %57, align 8, </pre>
+---
+> <br/>Operand # 0 (0x4f620d0) <br /><pre class="prettyprint lang-llvm ">  %55 = fadd double %51, %54, </pre>
+> Operand # 1 (0x4f622a8) <br /><pre class="prettyprint lang-llvm ">  %58 = load double, double* %57, align 8, </pre>

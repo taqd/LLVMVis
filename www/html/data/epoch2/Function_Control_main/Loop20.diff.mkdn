@@ -1,0 +1,58 @@
+2,29c2,29
+< ; label:8                                       ; preds = %23, %.lr.ph
+<   %t.04 = phi i32 [ 1, %.lr.ph ], [ %24, %23 ]
+<   br i1 %6, label %9, label %12, 
+< <br/>; label:9                                       ; preds = %8
+<   %10 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+<   %11 = getelementptr inbounds [26000000 x double], [26000000 x double]* %10, i64 0, i64 0, 
+<   tail call void @LBM_handleInOutFlow(double* %11), 
+<   br label %12, 
+< <br/>; label:12                                      ; preds = %9, %8
+<   %13 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+<   %14 = getelementptr inbounds [26000000 x double], [26000000 x double]* %13, i64 0, i64 0, 
+<   %15 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+<   %16 = getelementptr inbounds [26000000 x double], [26000000 x double]* %15, i64 0, i64 0, 
+<   tail call void @LBM_performStreamCollide(double* %14, double* %16), 
+<   tail call void @LBM_swapGrids([26000000 x double]** nonnull @srcGrid, [26000000 x double]** nonnull @dstGrid), 
+<   %17 = and i32 %t.04, 63, 
+<   %18 = icmp eq i32 %17, 0, 
+<   br i1 %18, label %19, label %23, 
+< <br/>; label:19                                      ; preds = %12
+<   %20 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i32 %t.04), 
+<   %21 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+<   %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i64 0, i64 0, 
+<   tail call void @LBM_showGridStatistics(double* %22), 
+<   br label %23, 
+< <br/>; label:23                                      ; preds = %12, %19
+<   %24 = add nuw nsw i32 %t.04, 1, 
+<   %25 = icmp slt i32 %t.04, %7, 
+<   br i1 %25, label %8, label %._crit_edge.loopexit, 
+---
+> ; label:20                                      ; preds = %37, %.lr.ph
+>   %t.04 = phi i32 [ 1, %.lr.ph ], [ %38, %37 ]
+>   br i1 %19, label %21, label %24, 
+> <br/>; label:21                                      ; preds = %20
+>   %22 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+>   %23 = getelementptr inbounds [26000000 x double], [26000000 x double]* %22, i64 0, i64 0, 
+>   tail call void @LBM_handleInOutFlow(double* %23), 
+>   br label %24, 
+> <br/>; label:24                                      ; preds = %21, %20
+>   %25 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+>   %26 = getelementptr inbounds [26000000 x double], [26000000 x double]* %25, i64 0, i64 0, 
+>   %27 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+>   %28 = getelementptr inbounds [26000000 x double], [26000000 x double]* %27, i64 0, i64 0, 
+>   tail call void @LBM_performStreamCollide(double* %26, double* %28), 
+>   %29 = load i64, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, 
+>   %30 = load i64, i64* bitcast ([26000000 x double]** @dstGrid to i64*), align 8, 
+>   store i64 %30, i64* bitcast ([26000000 x dou
+> ... (TRIMMED)
+> ; label:33                                      ; preds = %24
+>   %34 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i32 %t.04), 
+>   %35 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+>   %36 = getelementptr inbounds [26000000 x double], [26000000 x double]* %35, i64 0, i64 0, 
+>   tail call void @LBM_showGridStatistics(double* %36), 
+>   br label %37, 
+> <br/>; label:37                                      ; preds = %24, %33
+>   %38 = add nuw nsw i32 %t.04, 1, 
+>   %39 = icmp slt i32 %t.04, %2, 
+>   br i1 %39, label %20, label %._crit_edge.loopexit, 

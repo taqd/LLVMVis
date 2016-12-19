@@ -1,0 +1,4 @@
+4c4
+< <br/>Operand # 0 (0x4dc3bf8) <br /><pre class="prettyprint lang-llvm ">  %12 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 4, </pre>
+---
+> <br/>Operand # 0 (0x4f88c68) <br /><pre class="prettyprint lang-llvm ">  %12 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 4, </pre>

@@ -1,0 +1,8 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk4583095678146368382 ():
+L109,C10:  %50 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, !dbg !261
+L109,C3:  %51 = call i32 @fgetc(%struct._IO_FILE* %50), !dbg !262
+L110,C2:  br label %52, !dbg !263
+

@@ -1,0 +1,27 @@
+;; Line: 133, Column: 3
+  tail call void @LBM_loadObstacleFile(double* %20, i8* %21), 
+</pre>
+<br/>Operand # 0 (0x4dc6958) <br /><pre class="prettyprint lang-llvm ">  %20 = getelementptr inbounds [26000000 x double], [26000000 x double]* %19, i64 0, i64 0, </pre>
+Operand # 1 (0x4dc69f8) <br /><pre class="prettyprint lang-llvm ">  %21 = load i8*, i8** %13, align 8, </pre>
+Operand # 2 (0x4d23598) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define void @LBM_loadObstacleFile(double* nocapture %grid, i8* nocapture readonly %filename) #0 {
+  %1 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.1, i64 0, i64 0)), 
+  br label %.preheader10, 
+<br/>.preheader10:                                     ; preds = %20, %0
+  %indvars.iv17 = phi i64 [ 0, %0 ], [ %indvars.iv.next18, %20 ]
+  %2 = mul nuw nsw i64 %indvars.iv17, 10000, 
+  br label %.preheader, 
+<br/>.preheader:                           
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:16                                      ; preds = %LBM_allocateGrid.exit4
+  %17 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %18 = getelementptr inbounds [26000000 x double], [26000000 x double]* %17, i64 0, i64 0, 
+  tail call void @LBM_loadObstacleFile(double* %18, i8* nonnull %14), 
+  %19 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %20 = getelementptr inbounds [26000000 x double], [26000000 x double]* %19, i64 0, i64 0, 
+  %21 = load i8*, i8** %13, align 8, 
+  tail call void @LBM_loadObstacleFile(double* %20, i8* %21), 
+  br label %22, 
+</pre>

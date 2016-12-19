@@ -1,0 +1,7 @@
+File: main.c, Lines: 104,105-132, Cols: 3,4-9,32,
+.preheader.i:                                     ; preds = %36, %.preheader10.i
+  %indvars.iv14.i = phi i64 [ 0, %.preheader10.i ], [ %indvars.iv.next15.i, %36 ], 
+  %20 = tail call i32 @fgetc(%struct._IO_FILE* %18) #7, 
+  %21 = mul nuw nsw i64 %indvars.iv14.i, 100, 
+  %22 = add nuw nsw i64 %21, %19, 
+  br label %23, 

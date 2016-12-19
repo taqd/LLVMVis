@@ -1,0 +1,5 @@
+File: main.c, Lines: 157, Cols: 2,
+; label:155                                     ; preds = %.us-lcssa.us.i39
+  %indvars.iv.next45.i40 = add nsw i64 %indvars.iv44.i21, 1, 
+  %exitcond46.i41 = icmp eq i64 %indvars.iv.next45.i40, 132, 
+  br i1 %exitcond46.i41, label %LBM_initializeSpecialCellsForChannel.exit42.loopexit, label %.preheader28.i22, 

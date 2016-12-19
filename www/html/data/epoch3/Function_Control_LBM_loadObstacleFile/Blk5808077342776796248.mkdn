@@ -1,0 +1,4 @@
+File: lbm.c, Lines: 112,113 Cols: 1,2
+; label:22                                      ; preds = %20
+  %23 = tail call i32 @fclose(%struct._IO_FILE* %1), 
+  ret void, 

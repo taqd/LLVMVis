@@ -1,0 +1,6 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+_crit_edgeloopexit8 (._crit_edge.loopexit8):
+L26,C13:  br label %._crit_edge, !dbg !205
+

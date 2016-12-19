@@ -1,0 +1,11 @@
+;; Line: 39, Column: 7
+  store i8* %7, i8** %2, align 8, 
+</pre>
+<br/>Operand # 0 (0x4ef0f90) <br /><pre class="prettyprint lang-llvm ">  %7 = getelementptr inbounds i8, i8* %1, i64 3200000, </pre>
+Operand # 1 (0x4ef0398) <br /><pre class="prettyprint lang-llvm ">  %2 = bitcast double** %ptr to i8**, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:6                                       ; preds = %0
+  %7 = getelementptr inbounds i8, i8* %1, i64 3200000, 
+  store i8* %7, i8** %2, align 8, 
+  ret void, 
+</pre>

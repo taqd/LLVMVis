@@ -1,0 +1,9 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk5000613108533968335 ():
+L526,C11:  %29 = getelementptr inbounds [4 x i8], [4 x i8]* %buffer, i32 0, i32 0, !dbg !240
+L526,C50:  %30 = load %struct._IO_FILE*, %struct._IO_FILE** %1, align 8, !dbg !241
+L526,C3:  %31 = call i64 @fwrite(i8* %29, i64 4, i64 1, %struct._IO_FILE* %30), !dbg !242
+L527,C2:  br label %37, !dbg !243
+

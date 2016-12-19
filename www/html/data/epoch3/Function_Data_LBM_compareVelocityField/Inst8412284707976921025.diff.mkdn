@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4dba288) <br /><pre class="prettyprint lang-llvm ">  %145 = fpext float %maxDiff2.3.lcssa.lcssa.lcssa to double, </pre>
+< Operand # 1 (0x4d24198) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f7dad8) <br /><pre class="prettyprint lang-llvm ">  %145 = fpext float %maxDiff2.3.lcssa.lcssa.lcssa to double, </pre>
+> Operand # 1 (0x4ee0e88) <br /><pre class="prettyprint lang-llvm ">

@@ -1,0 +1,30 @@
+2c2
+<   %or.cond = or i1 %15, %16, 
+---
+>   %or.cond = or i1 %54, %55, 
+4,5c4,5
+< <br/>Operand # 0 (0x4d4e440) <br /><pre class="prettyprint lang-llvm ">  %15 = icmp eq i64 %indvars.iv, 0, </pre>
+< Operand # 1 (0x4d4e4f0) <br /><pre class="prettyprint lang-llvm ">  %16 = icmp eq i64 %indvars.iv, 99, </pre>
+---
+> <br/>Operand # 0 (0x4f0e380) <br /><pre class="prettyprint lang-llvm ">  %54 = icmp eq i64 %indvars.iv57, 0, </pre>
+> Operand # 1 (0x4ee8630) <br /><pre class="prettyprint lang-llvm ">  %55 = icmp eq i64 %indvars.iv57, 99, </pre>
+7,16c7,14
+< ; label:14                                      ; preds = %39, %.preheader
+<   %indvars.iv = phi i64 [ 0, %.preheader ], [ %indvars.iv.next, %39 ]
+<   %15 = icmp eq i64 %indvars.iv, 0, 
+<   %16 = icmp eq i64 %indvars.iv, 99, 
+<   %or.cond = or i1 %15, %16, 
+<   %or.cond3 = or i1 %7, %or.cond, 
+<   %or.cond5 = or i1 %8, %or.cond3, 
+<   %or.cond7 = or i1 %2, %or.cond5, 
+<   %or.cond9 = or i1 %3, %or.cond7, 
+<   br i1 %or.cond9, label %17, label %25, 
+---
+> .preheader.split.split:                           ; preds = %.preheader.split.split.preheader, %78
+>   %indvars.iv57 = phi i64 [ %indvars.iv.next58, %78 ], [ 0, %.preheader.split.split.preheader ]
+>   %54 = icmp eq i64 %indvars.iv57, 0, 
+>   %55 = icmp eq i64 %indvars.iv57, 99, 
+>   %or.cond = or i1 %54, %55, 
+>   %or.cond3 = or i1 %5, %or.cond, 
+>   %or.cond5 = or i1 %6, %or.cond3, 
+>   br i1 %or.cond5, label %56, label %64, 

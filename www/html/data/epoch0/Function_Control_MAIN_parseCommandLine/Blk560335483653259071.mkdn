@@ -1,0 +1,6 @@
+File: main.c, Lines: 84, Cols: 7,16,24,
+; label:53                                      ; preds = %37
+  %54 = getelementptr inbounds %struct.stat, %struct.stat* %fileStat, i32 0, i32 8, 
+  %55 = load i64, i64* %54, align 8, 
+  %56 = icmp ne i64 %55, 1313130, 
+  br i1 %56, label %57, label %65, 

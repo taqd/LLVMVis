@@ -1,0 +1,20 @@
+;; Line: 150, Column: 39
+</pre>
+<br/>Operand # 0 (0x5db9b60) <br /><pre class="prettyprint lang-llvm ">%struct.MAIN_Param** %1</pre>
+Operand # 1 (0x5db9da0) <br /><pre class="prettyprint lang-llvm ">= (name: "param", arg: 1, scope: , file: , line: 150, type: )</pre>
+Operand # 2 (0x5c9f0e0) <br /><pre class="prettyprint lang-llvm ">= ()</pre>
+Operand # 3 (0x5c8ffa8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind readnone
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = alloca %struct.MAIN_Param*, align 8
+  store %struct.MAIN_Param* %param, %struct.MAIN_Param** %1, align 8
+  %2 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %3 = getelementptr inbounds [26000000 x double], [26000000 x double]* %2, i32 0, i32 0, 
+  call void @LBM_showGridStatistics(double* %3), 
+  %4 = load %struct.MAIN_Param*, %struct.MAIN_Param** %1, align 8, 
+  %5 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %4, i32 0, i32 2, 
+  %6 = load i32, i32* %5, align 8, 
+  %7 = icmp eq i32 %6, 1, 
+  br i1 %7, label %8, label %14, 
+</pre>

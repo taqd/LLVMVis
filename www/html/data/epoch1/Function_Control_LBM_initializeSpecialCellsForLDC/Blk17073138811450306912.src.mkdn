@@ -1,0 +1,11 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk17073138811450306912 ():
+L135,C18:  %32 = add i64 %indvars.iv, 4294967294, !dbg !226
+L135,C18:  %33 = trunc i64 %32 to i32, !dbg !226
+L135,C18:  %34 = icmp ult i32 %33, 96, !dbg !226
+L135,C18:  %35 = and i1 %or.cond11, %34, !dbg !226
+L135,C18:  %36 = and i1 %17, %35, !dbg !226
+L135,C18:  br i1 %36, label %37, label %45, !dbg !226
+

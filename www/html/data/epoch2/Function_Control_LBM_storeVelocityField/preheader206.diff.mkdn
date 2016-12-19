@@ -1,0 +1,8 @@
+2,4c2,4
+< .preheader206:                                    ; preds = %151, %0
+<   %indvars.iv213 = phi i64 [ 0, %0 ], [ %indvars.iv.next214, %151 ]
+<   %4 = mul nuw nsw i64 %indvars.iv213, 10000, 
+---
+> .preheader206:                                    ; preds = %132, %0
+>   %indvars.iv213 = phi i64 [ 0, %0 ], [ %indvars.iv.next214, %132 ]
+>   %7 = mul nuw nsw i64 %indvars.iv213, 10000, 

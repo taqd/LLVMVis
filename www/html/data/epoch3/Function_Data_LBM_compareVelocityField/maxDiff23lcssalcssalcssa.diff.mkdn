@@ -1,0 +1,4 @@
+4c4
+< <br/>Operand # 0 (0x4dba028) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa, %142 ]</pre>
+---
+> <br/>Operand # 0 (0x4f7d818) <br /><pre class="prettyprint lang-llvm ">  %maxDiff2.3.lcssa.lcssa = phi float [ %maxDiff2.3.lcssa, %142 ]</pre>

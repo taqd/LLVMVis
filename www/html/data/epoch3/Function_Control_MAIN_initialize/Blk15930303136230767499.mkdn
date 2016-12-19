@@ -1,0 +1,6 @@
+File: main.c, Lines: 104,105 Cols: 4,9,
+; label:58                                      ; preds = %50, %47
+  %indvars.iv.next.i10 = add nuw nsw i64 %indvars.iv.i9, 1, 
+  %59 = tail call i32 @fgetc(%struct._IO_FILE* %42) #7, 
+  %exitcond.i11 = icmp eq i64 %indvars.iv.next.i10, 100, 
+  br i1 %exitcond.i11, label %60, label %47, 

@@ -1,0 +1,11 @@
+;; Line: 162, Column: 6
+  %69 = mul nsw i64 %indvars.iv44.i, 10000, 
+</pre>
+<br/>Operand # 0 (0x4f903b8) <br /><pre class="prettyprint lang-llvm ">  %indvars.iv44.i = phi i64 [ %indvars.iv.next45.i, %111 ], [ -2, %.preheader28.i.preheader ], </pre>
+Operand # 1 (0x4f07810) <br /><pre class="prettyprint lang-llvm ">i64 10000</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader28.i:                                   ; preds = %.preheader28.i.preheader, %111
+  %indvars.iv44.i = phi i64 [ %indvars.iv.next45.i, %111 ], [ -2, %.preheader28.i.preheader ], 
+  %69 = mul nsw i64 %indvars.iv44.i, 10000, 
+  br label %.preheader.i17, 
+</pre>

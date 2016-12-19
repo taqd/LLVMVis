@@ -1,0 +1,35 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk15015210044080087479 ():
+L670,C16:  %124 = load float, float* %fileUx, align 4, !dbg !344
+L618,C19:  call void @llvm.dbg.value(metadata float %124, i64 0, metadata !1541, metadata !199), !dbg !1542
+L670,C16:  %125 = fpext float %124 to double, !dbg !344
+L670,C14:  %126 = fsub double %114, %125, !dbg !345
+L670,C11:  %127 = fptrunc double %126 to float, !dbg !346
+L619,C19:  call void @llvm.dbg.value(metadata float %127, i64 0, metadata !1572, metadata !199), !dbg !1573
+L671,C16:  %128 = load float, float* %fileUy, align 4, !dbg !349
+L618,C27:  call void @llvm.dbg.value(metadata float %128, i64 0, metadata !1552, metadata !199), !dbg !1553
+L671,C16:  %129 = fpext float %128 to double, !dbg !349
+L671,C14:  %130 = fsub double %115, %129, !dbg !350
+L671,C11:  %131 = fptrunc double %130 to float, !dbg !351
+L619,C24:  call void @llvm.dbg.value(metadata float %131, i64 0, metadata !1577, metadata !199), !dbg !1578
+L672,C16:  %132 = load float, float* %fileUz, align 4, !dbg !354
+L618,C35:  call void @llvm.dbg.value(metadata float %132, i64 0, metadata !1558, metadata !199), !dbg !1559
+L672,C16:  %133 = fpext float %132 to double, !dbg !354
+L672,C14:  %134 = fsub double %116, %133, !dbg !355
+L672,C11:  %135 = fptrunc double %134 to float, !dbg !356
+L619,C29:  call void @llvm.dbg.value(metadata float %135, i64 0, metadata !1582, metadata !199), !dbg !1583
+L673,C16:  %136 = fmul float %127, %127, !dbg !359
+L673,C26:  %137 = fmul float %131, %131, !dbg !360
+L673,C21:  %138 = fadd float %136, %137, !dbg !361
+L673,C36:  %139 = fmul float %135, %135, !dbg !362
+L673,C31:  %140 = fadd float %138, %139, !dbg !363
+L620,C19:  call void @llvm.dbg.value(metadata float %140, i64 0, metadata !1589, metadata !199), !dbg !1590
+L674,C15:  %141 = fcmp ogt float %140, %maxDiff2.2215, !dbg !366
+L620,C26:  call void @llvm.dbg.value(metadata float %140, i64 0, metadata !1433, metadata !199), !dbg !1434
+L674,C9:  %maxDiff2.3 = select i1 %141, float %140, float %maxDiff2.2215, !dbg !368
+L626,C4:  %indvars.iv.next = add nuw nsw i64 %indvars.iv, 1, !dbg !237
+L626,C4:  %exitcond = icmp eq i64 %indvars.iv.next, 100, !dbg !237
+L626,C4:  br i1 %exitcond, label %142, label %10, !dbg !237
+

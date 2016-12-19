@@ -1,0 +1,15 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk1140150991482724961 ():
+L162,C6:  %103 = add nsw i64 %indvars.iv38.i, %71, !dbg !300
+L162,C6:  %104 = mul nsw i64 %103, 20, !dbg !300
+L162,C6:  %105 = add nsw i64 %104, 19, !dbg !300
+L162,C6:  %106 = getelementptr inbounds [26000000 x double], [26000000 x double]* %68, i64 0, i64 %105, !dbg !300
+L162,C6:  %107 = bitcast double* %106 to i32*, !dbg !300
+L162,C6:  tail call void @llvm.dbg.value(metadata i32* %107, i64 0, metadata !369, metadata !199), !dbg !1883
+L162,C6:  %108 = load i32, i32* %107, align 4, !dbg !300
+L162,C6:  %109 = or i32 %108, 1, !dbg !300
+L162,C6:  store i32 %109, i32* %107, align 4, !dbg !300
+L164,C18:  br label %.preheader.split.split.i.164, !dbg !321
+

@@ -1,0 +1,5 @@
+File: main.c, Lines: 158,159 Cols: 1,2
+; label:25                                      ; preds = %19, %14
+  call void @LBM_freeGrid(double** bitcast ([26000000 x double]** @srcGrid to double**)), 
+  call void @LBM_freeGrid(double** bitcast ([26000000 x double]** @dstGrid to double**)), 
+  ret void, 

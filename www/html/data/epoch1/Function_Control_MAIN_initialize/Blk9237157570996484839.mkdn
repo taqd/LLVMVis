@@ -1,0 +1,7 @@
+File: main.c, Lines: 137,138 Cols: 2,3-41,42
+; label:20                                      ; preds = %14
+  tail call void @LBM_initializeSpecialCellsForChannel(double* %19), 
+  %21 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %22 = getelementptr inbounds [26000000 x double], [26000000 x double]* %21, i64 0, i64 0, 
+  tail call void @LBM_initializeSpecialCellsForChannel(double* %22), 
+  br label %26, 

@@ -1,0 +1,49 @@
+2,30c2,18
+< ; label:671                                     ; preds = %1753, %670
+<   %672 = load i32, i32* %i, align 4, 
+<   %673 = icmp slt i32 %672, 26000000, 
+<   br i1 %673, label %674, label %1756, 
+< <br/>; label:674                                     ; preds = %671
+<   %675 = load i32, i32* %i, align 4, 
+<   %676 = add nsw i32 -200000, %675, 
+<   %677 = sext i32 %676 to i64, 
+<   %678 = load double*, double** %1, align 8, 
+<   %679 = getelementptr inbounds double, double* %678, i64 %677, 
+<   %680 = load double, double* %679, align 8, 
+<   %681 = load i32, i32* %i, align 4, 
+<   %682 = add nsw i32 -199999, %681, 
+<   %683 = sext i32 %682 to i64, 
+<   %684 = load double*, double** %1, align 8, 
+<   %685 = getelementptr inbounds double, double* %684, i64 %683, 
+<   %686 = load double, double* %685, align 8, 
+<   %687 = fadd double %680, %686, 
+<   %688 = load i32, i32* %i, align 4, 
+<   %689 = add nsw i32 -199998, %688, 
+<   %690 = sext i32 %689 to i64, 
+<   %691 = load double*, double** %1, align 8, 
+<   %692 = getelementptr inbounds double, double* %691, i64 %690, 
+< ... (TRIMMED)
+< ; label:1753                                    ; preds = %674
+<   %1754 = load i32, i32* %i, align 4, 
+<   %1755 = add nsw i32 %1754, 20, 
+<   store i32 %1755, i32* %i, align 4, 
+<   br label %671, 
+---
+> .preheader:                                       ; preds = %.preheader.preheader, %.preheader
+>   %indvars.iv = phi i64 [ %indvars.iv.next, %.preheader ], [ 25800000, %.preheader.preheader ]
+>   %252 = add nsw i64 %indvars.iv, -200000, 
+>   %253 = getelementptr inbounds double, double* %srcGrid, i64 %252, 
+>   %254 = load double, double* %253, align 8, 
+>   %255 = add nsw i64 %indvars.iv, -199999, 
+>   %256 = getelementptr inbounds double, double* %srcGrid, i64 %255, 
+>   %257 = load double, double* %256, align 8, 
+>   %258 = fadd double %254, %257, 
+>   %259 = add nsw i64 %indvars.iv, -199998, 
+>   %260 = getelementptr inbounds double, double* %srcGrid, i64 %259, 
+>   %261 = load double, double* %260, align 8, 
+>   %262 = fadd double %258, %261, 
+>   %263 = add nsw i64 %indvars.iv, -199997, 
+>   %264 = getelementptr inbounds double, double* %srcGrid, i64 %263, 
+>   %265 = load double, double* %264
+> ... (TRIMMED)
+\ No newline at end of file

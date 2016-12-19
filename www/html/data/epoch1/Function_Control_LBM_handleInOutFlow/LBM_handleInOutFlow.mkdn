@@ -1,0 +1,16 @@
+
+; Function Attrs: norecurse nounwind uwtable
+define void @LBM_handleInOutFlow(double* %srcGrid) #4 {
+  br label %1, 
+<br/>; label:1                                       ; preds = %0, %1
+  %indvars.iv572 = phi i64 [ 0, %0 ], [ %indvars.iv.next573, %1 ]
+  %2 = add nuw nsw i64 %indvars.iv572, 200000, 
+  %3 = getelementptr inbounds double, double* %srcGrid, i64 %2, 
+  %4 = load double, double* %3, align 8, 
+  %5 = add nuw nsw i64 %indvars.iv572, 200001, 
+  %6 = getelementptr inbounds double, double* %srcGrid, i64 %5, 
+  %7 = load double, double* %6, align 8, 
+  %8 = fadd double %4, %7, 
+  %9 = add nuw nsw i64 %indvars.iv572, 200002, 
+  %10 = getelementptr inbounds double, double* %srcGrid, i64 %9, 
+... (TRIMMED)

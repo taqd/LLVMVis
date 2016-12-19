@@ -1,0 +1,15 @@
+;; Line: 519, Column: 22
+  %4 = bitcast float* %ux to i8*, 
+</pre>
+<br/>Operand # 0 (0x4da59d8) <br /><pre class="prettyprint lang-llvm ">  %ux = alloca float, align 4</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %ux = alloca float, align 4
+  %uy = alloca float, align 4
+  %uz = alloca float, align 4
+  %1 = icmp ne i32 %binary, 0, 
+  %2 = select i1 %1, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.3, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.4, i64 0, i64 0), 
+  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), 
+  %4 = bitcast float* %ux to i8*, 
+  %5 = bitcast float* %uy to i8*, 
+  %6 = 
+... (TRIMMED)</pre>

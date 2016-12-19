@@ -1,0 +1,24 @@
+;; Line: 34, Column: 2
+  call void @MAIN_initialize(%struct.MAIN_Param* nonnull %param), 
+</pre>
+<br/>Operand # 0 (0x4f54658) <br /><pre class="prettyprint lang-llvm ">  %param = alloca %struct.MAIN_Param, align 8</pre>
+Operand # 1 (0x4f19fd8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define void @MAIN_initialize(%struct.MAIN_Param* nocapture readonly %param) #0 {
+  tail call void @LBM_allocateGrid(double** bitcast ([26000000 x double]** @srcGrid to double**)), 
+  tail call void @LBM_allocateGrid(double** bitcast ([26000000 x double]** @dstGrid to double**)), 
+  %1 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %2 = getelementptr inbounds [26000000 x double], [26000000 x double]* %1, i64 0, i64 0, 
+  tail call void @LBM_initializeGrid(double* %2), 
+  %3 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %4 = getelementptr inbounds [26000000 x double], [26000000 x double]* %3, i64 0, i64 0, 
+  tail call void @LBM_initializeGrid(double* %4), 
+  %5 = getelementptr inbounds %struct
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %param = alloca %struct.MAIN_Param, align 8
+  call void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* nonnull %param), 
+  call void @MAIN_printInfo(%struct.MAIN_Param* nonnull %param), 
+  call void @MAIN_initialize(%struct.MAIN_Param* nonnull %param), 
+  %1 = getelementptr inbounds %struct.MAIN_
+... (TRIMMED)</pre>

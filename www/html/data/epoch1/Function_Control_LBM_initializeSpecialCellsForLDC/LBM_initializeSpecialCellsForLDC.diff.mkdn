@@ -1,0 +1,35 @@
+2,17c2,18
+< ; Function Attrs: nounwind uwtable
+< define void @LBM_initializeSpecialCellsForLDC(double* %grid) #0 {
+<   %1 = alloca double*, align 8
+<   %x = alloca i32, align 4
+<   %y = alloca i32, align 4
+<   %z = alloca i32, align 4
+<   %_aux_ = alloca i32*, align 8
+<   %_aux_1 = alloca i32*, align 8
+<   store double* %grid, double** %1, align 8
+<   store i32 -2, i32* %z, align 4, 
+<   br label %2, 
+< <br/>; label:2                                       ; preds = %97, %0
+<   %3 = load i32, i32* %z, align 4, 
+<   %4 = icmp slt i32 %3, 132, 
+<   br i1 %4, label %5, label %100, 
+< <br/>; label:5                              
+---
+> ; Function Attrs: norecurse nounwind uwtable
+> define void @LBM_initializeSpecialCellsForLDC(double* nocapture %grid) #4 {
+>   br label %.preheader42, 
+> <br/>.preheader42:                                     ; preds = %47, %0
+>   %indvars.iv51 = phi i64 [ -2, %0 ], [ %indvars.iv.next52, %47 ]
+>   %1 = trunc i64 %indvars.iv51 to i32, 
+>   %2 = icmp eq i32 %1, 0, 
+>   %3 = trunc i64 %indvars.iv51 to i32, 
+>   %4 = icmp eq i32 %3, 129, 
+>   %5 = mul nsw i64 %indvars.iv51, 10000, 
+>   %6 = trunc i64 %indvars.iv51 to i32, 
+>   %7 = icmp eq i32 %6, 1, 
+>   %8 = trunc i64 %indvars.iv51 to i32, 
+>   %9 = icmp eq i32 %8, 128, 
+>   %or.cond11 = or i1 %7, %9, 
+>   %10 = mul nsw i64 %indvars.iv51, 10000, 
+>   br labe

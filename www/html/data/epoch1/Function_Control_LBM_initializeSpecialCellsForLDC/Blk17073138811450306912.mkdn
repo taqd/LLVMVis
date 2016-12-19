@@ -1,0 +1,8 @@
+File: lbm.c, Lines: 135, Cols: 18,
+; label:31                                      ; preds = %20
+  %32 = add i64 %indvars.iv, 4294967294, 
+  %33 = trunc i64 %32 to i32, 
+  %34 = icmp ult i32 %33, 96, 
+  %35 = and i1 %or.cond11, %34, 
+  %36 = and i1 %17, %35, 
+  br i1 %36, label %37, label %45, 

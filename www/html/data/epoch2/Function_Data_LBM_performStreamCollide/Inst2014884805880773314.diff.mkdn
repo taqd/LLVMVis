@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4f6b000) <br /><pre class="prettyprint lang-llvm ">  %322 = fadd double %.358, %., </pre>
+< Operand # 1 (0x4f6b160) <br /><pre class="prettyprint lang-llvm ">  %324 = fadd double %323, 3.000000e+00, </pre>
+---
+> <br/>Operand # 0 (0x4d6a390) <br /><pre class="prettyprint lang-llvm ">  %322 = fadd double %.358, %., </pre>
+> Operand # 1 (0x4d6a4f0) <br /><pre class="prettyprint lang-llvm ">  %324 = fadd double %323, 3.000000e+00, </pre>

@@ -1,0 +1,16 @@
+;; Line: 162, Column: 6
+  %3 = add nsw i64 %2, %1, 
+</pre>
+<br/>Operand # 0 (0x4f130e0) <br /><pre class="prettyprint lang-llvm ">  %2 = mul nuw nsw i64 %indvars.iv41, 100, </pre>
+Operand # 1 (0x4f12eb0) <br /><pre class="prettyprint lang-llvm ">  %1 = mul nsw i64 %indvars.iv44, 10000, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+.preheader:                                       ; preds = %.us-lcssa.us, %.preheader28
+  %indvars.iv41 = phi i64 [ 0, %.preheader28 ], [ %indvars.iv.next42, %.us-lcssa.us ]
+  %2 = mul nuw nsw i64 %indvars.iv41, 100, 
+  %3 = add nsw i64 %2, %1, 
+  %4 = trunc i64 %indvars.iv41 to i32, 
+  switch i32 %4, label %.preheader.split.split.preheader [
+    i32 99, label %.preheader.split.us.preheader
+    i32 0, label %.preheader.split.split.us.preheader
+  ], 
+</pre>

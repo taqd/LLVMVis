@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4da60b8) <br /><pre class="prettyprint lang-llvm ">  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), </pre>
+< Operand # 1 (0x4d23888) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f69938) <br /><pre class="prettyprint lang-llvm ">  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), </pre>
+> Operand # 1 (0x4ee0548) <br /><pre class="prettyprint lang-llvm ">

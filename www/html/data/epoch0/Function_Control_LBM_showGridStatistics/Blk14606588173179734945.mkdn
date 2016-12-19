@@ -1,0 +1,5 @@
+File: lbm.c, Lines: 499, Cols: 21,27,29,
+; label:409                                     ; preds = %183
+  %410 = load double, double* %u2, align 8, 
+  store double %410, double* %minU2, align 8, 
+  br label %411, 

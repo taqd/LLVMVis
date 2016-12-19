@@ -1,0 +1,13 @@
+;; Line: 517, Column: 12
+</pre>
+<br/>Operand # 0 (0x4dabc20) <br /><pre class="prettyprint lang-llvm ">[3 x i8]* undef</pre>
+Operand # 1 (0x4dabc50) <br /><pre class="prettyprint lang-llvm ">= (name: "litteBigEndianTest", scope: , file: , line: 517, type: )</pre>
+Operand # 2 (0x4dabc80) <br /><pre class="prettyprint lang-llvm ">= (DW_OP_bit_piece, 8, 24)</pre>
+Operand # 3 (0x4d22ed8) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind readnone
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:121                                     ; preds = %10
+  %122 = call i64 @fwrite(i8* nonnull %4, i64 4, i64 1, %struct._IO_FILE* %3) #7, 
+  tail call voi
+... (TRIMMED)</pre>

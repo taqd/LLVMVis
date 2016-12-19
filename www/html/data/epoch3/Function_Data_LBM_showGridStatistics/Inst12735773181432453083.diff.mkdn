@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4da1720) <br /><pre class="prettyprint lang-llvm ">  %94 = fsub double %93, %42, </pre>
+< Operand # 1 (0x4d93bd8) <br /><pre class="prettyprint lang-llvm ">  %62 = load double, double* %61, align 8, </pre>
+---
+> <br/>Operand # 0 (0x4f64010) <br /><pre class="prettyprint lang-llvm ">  %94 = fsub double %93, %42, </pre>
+> Operand # 1 (0x4f624f8) <br /><pre class="prettyprint lang-llvm ">  %62 = load double, double* %61, align 8, </pre>

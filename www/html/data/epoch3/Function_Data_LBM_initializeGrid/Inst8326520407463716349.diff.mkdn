@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d27d60) <br /><pre class="prettyprint lang-llvm "><2 x double> <double 0x3FD5555555555555, double 0x3FAC71C71C71C71C></pre>
+< Operand # 1 (0x4d3b8b8) <br /><pre class="prettyprint lang-llvm ">  %3 = bitcast double* %2 to <2 x double>*, </pre>
+---
+> <br/>Operand # 0 (0x4ef5090) <br /><pre class="prettyprint lang-llvm "><2 x double> <double 0x3FD5555555555555, double 0x3FAC71C71C71C71C></pre>
+> Operand # 1 (0x4ef8718) <br /><pre class="prettyprint lang-llvm ">  %3 = bitcast double* %2 to <2 x double>*, </pre>

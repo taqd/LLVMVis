@@ -1,0 +1,30 @@
+;; Line: 544, Column: 3
+  br i1 %16, label %17, label %31, 
+</pre>
+<br/>Operand # 0 (0x5dacdc0) <br /><pre class="prettyprint lang-llvm ">  %16 = icmp ult i64 %15, 4, </pre>
+Operand # 1 (0x5dab2a0) <br /><pre class="prettyprint lang-llvm ">
+; label:31                                      ; preds = %13
+  br label %37, 
+</pre>
+Operand # 2 (0x5dab200) <br /><pre class="prettyprint lang-llvm ">
+; label:17                                      ; preds = %13
+  %18 = load i32, i32* %i, align 4, 
+  %19 = sext i32 %18 to i64, 
+  %20 = sub i64 4, %19, 
+  %21 = sub i64 %20, 1, 
+  %22 = getelementptr inbounds [4 x i8], [4 x i8]* %buffer, i64 0, i64 %21, 
+  %23 = load i8, i8* %22, align 1, 
+  %24 = load i32, i32* %i, align 4, 
+  %25 = sext i32 %24 to i64, 
+  %26 = load i8*, i8** %vPtr, align 8, 
+  %27 = getelementptr inbounds i8, i8* %26, i64 %25, 
+  store i8 %23, i8* %27, align 1, 
+  br label %28, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:13                                      ; preds = %28, %7
+  %14 = load i32, i32* %i, align 4, 
+  %15 = sext i32 %14 to i64, 
+  %16 = icmp ult i64 %15, 4, 
+  br i1 %16, label %17, label %31, 
+</pre>

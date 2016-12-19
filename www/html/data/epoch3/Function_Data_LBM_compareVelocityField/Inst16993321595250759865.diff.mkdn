@@ -1,0 +1,14 @@
+4,9c4,9
+< <br/>Operand # 0 (0x4db06c8) <br /><pre class="prettyprint lang-llvm ">  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), </pre>
+< Operand # 1 (0x4dae608) <br /><pre class="prettyprint lang-llvm ">i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i64 0, i64 0)</pre>
+< Operand # 2 (0x4dafe88) <br /><pre class="prettyprint lang-llvm ">  %fileUx = alloca float, align 4</pre>
+< Operand # 3 (0x4dafef8) <br /><pre class="prettyprint lang-llvm ">  %fileUy = alloca float, align 4</pre>
+< Operand # 4 (0x4daff68) <br /><pre class="prettyprint lang-llvm ">  %fileUz = alloca float, align 4</pre>
+< Operand # 5 (0x4d24738) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f73f48) <br /><pre class="prettyprint lang-llvm ">  %3 = tail call %struct._IO_FILE* @fopen(i8* %filename, i8* %2), </pre>
+> Operand # 1 (0x4f71e88) <br /><pre class="prettyprint lang-llvm ">i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.7, i64 0, i64 0)</pre>
+> Operand # 2 (0x4f73708) <br /><pre class="prettyprint lang-llvm ">  %fileUx = alloca float, align 4</pre>
+> Operand # 3 (0x4f73778) <br /><pre class="prettyprint lang-llvm ">  %fileUy = alloca float, align 4</pre>
+> Operand # 4 (0x4f737e8) <br /><pre class="prettyprint lang-llvm ">  %fileUz = alloca float, align 4</pre>
+> Operand # 5 (0x4ee1428) <br /><pre class="prettyprint lang-llvm ">

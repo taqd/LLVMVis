@@ -1,0 +1,15 @@
+;; Line: 132, Column: 26
+  %9 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+</pre>
+<br/>Operand # 0 (0x4f16ae8) <br /><pre class="prettyprint lang-llvm ">@srcGrid = internal global [26000000 x double]* null, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:8                                       ; preds = %0
+  %9 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, 
+  %10 = getelementptr inbounds [26000000 x double], [26000000 x double]* %9, i64 0, i64 0, 
+  tail call void @LBM_loadObstacleFile(double* %10, i8* nonnull %6), 
+  %11 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  %12 = getelementptr inbounds [26000000 x double], [26000000 x double]* %11, i64 0, i64 0, 
+  %13 = load i8*, i8** %5, align 8, 
+  tail call void @LBM_loadObstacleFile(double* %12, i8* %13), 
+  br label %14, 
+</pre>

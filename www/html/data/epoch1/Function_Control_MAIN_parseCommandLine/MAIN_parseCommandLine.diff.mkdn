@@ -1,0 +1,25 @@
+3,6c3
+< define void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* %param) #0 {
+<   %1 = alloca i32, align 4
+<   %2 = alloca i8**, align 8
+<   %3 = alloca %struct.MAIN_Param*, align 8
+---
+> define void @MAIN_parseCommandLine(i32 %nArgs, i8** nocapture readonly %arg, %struct.MAIN_Param* nocapture %param) #0 {
+8,14c5,13
+<   store i32 %nArgs, i32* %1, align 4
+<   store i8** %arg, i8*** %2, align 8
+<   store %struct.MAIN_Param* %param, %struct.MAIN_Param** %3, align 8
+<   %4 = load i32, i32* %1, align 4, 
+<   %5 = icmp slt i32 %4, 5, 
+<   br i1 %5, label %9, label %6, 
+< <br/>; label:6                                       ; pr
+---
+>   %nArgs.off = add i32 %nArgs, -5, 
+>   %1 = icmp ugt i32 %nArgs.off, 1, 
+>   br i1 %1, label %2, label %3, 
+> <br/>; label:2                                       ; preds = %0
+>   %puts = tail call i32 @puts(i8* nonnull getelementptr inbounds ([108 x i8], [108 x i8]* @str, i64 0, i64 0)), 
+>   tail call void @exit(i32 1) #8, 
+>   unreachable, 
+> <br/>; label:3                                       ; preds = %0
+>   %4 = 

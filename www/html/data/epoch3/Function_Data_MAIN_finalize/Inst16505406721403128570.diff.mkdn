@@ -1,0 +1,10 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4dcb8b0) <br /><pre class="prettyprint lang-llvm ">  %13 = icmp eq i32 %12, 2, </pre>
+< Operand # 1 (0x4dcac80) <br /><pre class="prettyprint lang-llvm ">
+---
+> <br/>Operand # 0 (0x4f99600) <br /><pre class="prettyprint lang-llvm ">  %13 = icmp eq i32 %12, 2, </pre>
+> Operand # 1 (0x4f893a0) <br /><pre class="prettyprint lang-llvm ">
+14c14
+< Operand # 2 (0x4dcac30) <br /><pre class="prettyprint lang-llvm ">
+---
+> Operand # 2 (0x4f89350) <br /><pre class="prettyprint lang-llvm ">

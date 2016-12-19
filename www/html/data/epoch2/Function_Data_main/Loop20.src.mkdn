@@ -1,0 +1,40 @@
+File: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+Blk17106421296306770831 ():
+L40,C7:  br i1 %19, label %21, label %24, !dbg !233
+
+Blk13016339920956618406 ():
+L41,C26:  %22 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !234
+L41,C25:  %23 = getelementptr inbounds [26000000 x double], [26000000 x double]* %22, i64 0, i64 0, !dbg !236
+L41,C4:  tail call void @LBM_handleInOutFlow(double* %23), !dbg !237
+L42,C3:  br label %24, !dbg !238
+
+Blk7527733738623449515 ():
+L44,C30:  %25 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !239
+L44,C29:  %26 = getelementptr inbounds [26000000 x double], [26000000 x double]* %25, i64 0, i64 0, !dbg !240
+L44,C40:  %27 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !241
+L44,C39:  %28 = getelementptr inbounds [26000000 x double], [26000000 x double]* %27, i64 0, i64 0, !dbg !242
+L44,C3:  tail call void @LBM_performStreamCollide(double* %26, double* %28), !dbg !243
+L89,C34:  tail call void @llvm.dbg.value(metadata [26000000 x double]** @srcGrid, i64 0, metadata !259, metadata !199), !dbg !1650
+L89,C54:  tail call void @llvm.dbg.value(metadata [26000000 x double]** @dstGrid, i64 0, metadata !261, metadata !199), !dbg !1652
+L90,C20:  %29 = load i64, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, !dbg !249
+L91,C11:  %30 = load i64, i64* bitcast ([26000000 x double]** @dstGrid to i64*), align 8, !dbg !250
+L91,C9:  store i64 %30, i64* bitcast ([26000000 x double]** @srcGrid to i64*), align 8, !dbg !251
+L92,C9:  store i64 %29, i64* bitcast ([26000000 x double]** @dstGrid to i64*), align 8, !dbg !252
+L47,C10:  %31 = and i32 %t.04, 63, !dbg !253
+L47,C16:  %32 = icmp eq i32 %31, 0, !dbg !255
+L47,C7:  br i1 %32, label %33, label %37, !dbg !256
+
+Blk6635548312862092407 ():
+L48,C4:  %34 = tail call i32 (i8*, ...) @printf(i8* nonnull getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i32 %t.04), !dbg !257
+L49,C29:  %35 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !259
+L49,C28:  %36 = getelementptr inbounds [26000000 x double], [26000000 x double]* %35, i64 0, i64 0, !dbg !260
+L49,C4:  tail call void @LBM_showGridStatistics(double* %36), !dbg !261
+L50,C3:  br label %37, !dbg !262
+
+Blk12180742530983187523 ():
+L39,C38:  %38 = add nuw nsw i32 %t.04, 1, !dbg !263
+L30,C6:  tail call void @llvm.dbg.value(metadata i32 %38, i64 0, metadata !1631, metadata !199), !dbg !1632
+L39,C16:  %39 = icmp slt i32 %t.04, %2, !dbg !227
+L39,C2:  br i1 %39, label %20, label %._crit_edge.loopexit, !dbg !228
+

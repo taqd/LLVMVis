@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d915f0) <br /><pre class="prettyprint lang-llvm ">double* %grid</pre>
+< Operand # 1 (0x4db15b0) <br /><pre class="prettyprint lang-llvm ">  %15 = or i64 %12, 1, </pre>
+---
+> <br/>Operand # 0 (0x4f5ff10) <br /><pre class="prettyprint lang-llvm ">double* %grid</pre>
+> Operand # 1 (0x4f74e30) <br /><pre class="prettyprint lang-llvm ">  %15 = or i64 %12, 1, </pre>

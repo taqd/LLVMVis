@@ -1,0 +1,12 @@
+;; Line: 105, Column: 23
+  %19 = icmp ne i32 %18, 46, 
+</pre>
+<br/>Operand # 0 (0x5cbf110) <br /><pre class="prettyprint lang-llvm ">  %18 = call i32 @fgetc(%struct._IO_FILE* %17), </pre>
+Operand # 1 (0x5cbcf40) <br /><pre class="prettyprint lang-llvm ">i32 46</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:16                                      ; preds = %13
+  %17 = load %struct._IO_FILE*, %struct._IO_FILE** %file, align 8, 
+  %18 = call i32 @fgetc(%struct._IO_FILE* %17), 
+  %19 = icmp ne i32 %18, 46, 
+  br i1 %19, label %20, label %39, 
+</pre>

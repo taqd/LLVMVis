@@ -1,0 +1,9 @@
+Filename: lbm.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk96428813427823757 ():
+L548,C10:  %33 = load float*, float** %2, align 8, !dbg !244
+L548,C10:  %34 = bitcast float* %33 to i8*, !dbg !244
+L548,C44:  %35 = load %struct._IO_FILE*, %struct._IO_FILE** %1, align 8, !dbg !246
+L548,C3:  %36 = call i64 @fread(i8* %34, i64 4, i64 1, %struct._IO_FILE* %35), !dbg !247
+

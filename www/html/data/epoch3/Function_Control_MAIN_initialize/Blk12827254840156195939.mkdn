@@ -1,0 +1,6 @@
+File: main.c, Lines: 102,109, Cols: 2,3
+; label:61                                      ; preds = %60
+  %62 = tail call i32 @fgetc(%struct._IO_FILE* %42) #7, 
+  %indvars.iv.next18.i14 = add nuw nsw i64 %indvars.iv17.i5, 1, 
+  %exitcond19.i15 = icmp eq i64 %indvars.iv.next18.i14, 130, 
+  br i1 %exitcond19.i15, label %LBM_loadObstacleFile.exit16, label %.preheader10.i6, 

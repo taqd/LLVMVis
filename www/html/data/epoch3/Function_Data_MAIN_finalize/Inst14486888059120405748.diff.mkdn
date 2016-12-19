@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d301c0) <br /><pre class="prettyprint lang-llvm ">double* null</pre>
+< Operand # 1 (0x4d24c08) <br /><pre class="prettyprint lang-llvm ">double** bitcast ([26000000 x double]** @srcGrid to double**)</pre>
+---
+> <br/>Operand # 0 (0x4ef19f0) <br /><pre class="prettyprint lang-llvm ">double* null</pre>
+> Operand # 1 (0x4ee18f8) <br /><pre class="prettyprint lang-llvm ">double** bitcast ([26000000 x double]** @srcGrid to double**)</pre>

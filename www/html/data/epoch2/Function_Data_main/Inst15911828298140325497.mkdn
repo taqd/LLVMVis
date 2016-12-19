@@ -1,0 +1,28 @@
+;; Line: 32, Column: 2
+  call void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* nonnull %param), 
+</pre>
+<br/>Operand # 0 (0x4d25ca0) <br /><pre class="prettyprint lang-llvm ">i32 %nArgs</pre>
+Operand # 1 (0x4d25bc0) <br /><pre class="prettyprint lang-llvm ">i8** %arg</pre>
+Operand # 2 (0x4d533f8) <br /><pre class="prettyprint lang-llvm ">  %param = alloca %struct.MAIN_Param, align 8</pre>
+Operand # 3 (0x4d24918) <br /><pre class="prettyprint lang-llvm ">
+; Function Attrs: nounwind uwtable
+define void @MAIN_parseCommandLine(i32 %nArgs, i8** nocapture readonly %arg, %struct.MAIN_Param* nocapture %param) #0 {
+  %fileStat = alloca %struct.stat, align 8
+  %nArgs.off = add i32 %nArgs, -5, 
+  %1 = icmp ugt i32 %nArgs.off, 1, 
+  br i1 %1, label %2, label %3, 
+<br/>; label:2                                       ; preds = %0
+  %puts = tail call i32 @puts(i8* nonnull getelementptr inbounds ([108 x i8], [108 x i8]* @str, i64 0, i64 0)), 
+  tail call void @exit(i32 1) #8, 
+  unreachable, 
+<br/>; label:3                                       ; preds = %0
+  %4 = 
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %param = alloca %struct.MAIN_Param, align 8
+  call void @MAIN_parseCommandLine(i32 %nArgs, i8** %arg, %struct.MAIN_Param* nonnull %param), 
+  %1 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 0, 
+  %2 = load i32, i32* %1, align 8, 
+  %3 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, 
+  %4 = load i8*, i8** %3, align 8, 
+... (TRIMMED)</pre>

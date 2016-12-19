@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4fb2f60) <br /><pre class="prettyprint lang-llvm ">i8** %arg</pre>
+< Operand # 1 (0x4f3b780) <br /><pre class="prettyprint lang-llvm ">i64 5</pre>
+---
+> <br/>Operand # 0 (0x4d53220) <br /><pre class="prettyprint lang-llvm ">i8** %arg</pre>
+> Operand # 1 (0x4d378f0) <br /><pre class="prettyprint lang-llvm ">i64 5</pre>

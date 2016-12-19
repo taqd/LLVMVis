@@ -1,0 +1,27 @@
+5,6c5,6
+< <br/>.preheader42:                                     ; preds = %47, %0
+<   %indvars.iv51 = phi i64 [ -2, %0 ], [ %indvars.iv.next52, %47 ]
+---
+> <br/>.preheader42:                                     ; preds = %41, %0
+>   %indvars.iv51 = phi i64 [ -2, %0 ], [ %indvars.iv.next52, %41 ]
+9,18c9,17
+<   %3 = trunc i64 %indvars.iv51 to i32, 
+<   %4 = icmp eq i32 %3, 129, 
+<   %5 = mul nsw i64 %indvars.iv51, 10000, 
+<   %6 = trunc i64 %indvars.iv51 to i32, 
+<   %7 = icmp eq i32 %6, 1, 
+<   %8 = trunc i64 %indvars.iv51 to i32, 
+<   %9 = icmp eq i32 %8, 128, 
+<   %or.cond11 = or i1 %7, %9, 
+<   %10 = mul nsw i64 %indvars.iv51, 10000, 
+<   br labe
+---
+>   %3 = icmp eq i32 %1, 129, 
+>   %4 = mul nsw i64 %indvars.iv51, 10000, 
+>   %5 = icmp eq i32 %1, 1, 
+>   %6 = icmp eq i32 %1, 128, 
+>   %or.cond11 = or i1 %5, %6, 
+>   br label %.preheader, 
+> <br/>.preheader:                                       ; preds = %40, %.preheader42
+>   %indvars.iv47 = phi i64 [ 0, %.preheader42 ], [ %indvars.iv.next48, %40 ]
+>   %7 = icmp eq i64

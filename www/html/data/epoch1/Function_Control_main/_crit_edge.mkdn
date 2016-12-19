@@ -1,0 +1,4 @@
+File: main.c, Lines: 26,56,58, Cols: 2,13,
+._crit_edge:                                      ; preds = %._crit_edge.loopexit, %0
+  call void @MAIN_finalize(%struct.MAIN_Param* nonnull %param), 
+  ret i32 0, 

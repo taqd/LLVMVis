@@ -1,0 +1,6 @@
+4,5c4,5
+< <br/>Operand # 0 (0x4d63a00) <br /><pre class="prettyprint lang-llvm ">  %516 = fsub <2 x double> %515, %507, </pre>
+< Operand # 1 (0x4d27e10) <br /><pre class="prettyprint lang-llvm "><2 x double> <double 0x3FAC71C71C71C71C, double 0x3FAC71C71C71C71C></pre>
+---
+> <br/>Operand # 0 (0x4f53b20) <br /><pre class="prettyprint lang-llvm ">  %516 = fsub <2 x double> %515, %507, </pre>
+> Operand # 1 (0x4ef5140) <br /><pre class="prettyprint lang-llvm "><2 x double> <double 0x3FAC71C71C71C71C, double 0x3FAC71C71C71C71C></pre>

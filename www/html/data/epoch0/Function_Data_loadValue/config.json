@@ -1,0 +1,588 @@
+{
+	"title" : "loadValue",
+	"graph" : {
+		"linkDistance" : 20,
+		"charge" : -400,
+		"ticksWithoutCollisions" : 100,
+		"maxLineChars" : 8,
+		"numColors" : 12,
+		"labelPadding" : {
+			"left" : 2,
+			"right" : 2,
+			"top" : 2,
+			"bottom" : 2
+		},
+		"labelMargin" : {
+			"left" : 3,
+			"right" : 3,
+			"top" : 2,
+			"bottom" : 2
+		}
+	},
+	"types" : {
+		"Helper" : {
+			"short" : "Helper",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Loop21" : {
+			"short" : "Loop21",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		},
+		"Not in a loop" : {
+			"short" : "Not in a loop",
+			"long"  : "" 
+		}
+	},
+	"constraints" : [
+		{
+			"has" : { "name" : "loadValue" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "loadValue" },
+			"type" : "position",
+			"x" : 1.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Inst16364743158928000205" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst16364743158928000205" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst12627262123998381796" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst12627262123998381796" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst4768303350197498527" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst4768303350197498527" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst4424095789392598019" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst4424095789392598019" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst5617665615339997847" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst5617665615339997847" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst17227650363166212615" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst17227650363166212615" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst11805239347772200010" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst11805239347772200010" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst18331305068989683936" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst18331305068989683936" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst9611730556908072217" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst9611730556908072217" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst17367861347544678857" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst17367861347544678857" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst61430073966500265" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst61430073966500265" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst960631412589549954" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst960631412589549954" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst14193127130066695459" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst14193127130066695459" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst13998982827601358571" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst13998982827601358571" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst7839677322447556365" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst7839677322447556365" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst17411934345795627621" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst17411934345795627621" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst10138404984169560082" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst10138404984169560082" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Inst12900128701571659141" },
+			"type" : "linkStrength",
+			"target" : "Loop21",
+			"strength" : 0.000000
+		}, {
+			"has" : { "name" : "Inst12900128701571659141" },
+			"type" : "linkColor",
+			"target" : "Loop21",
+			"color" : "invisible"
+		}, {
+			"has" : { "name" : "Loop21" },
+			"type" : "position",
+			"y" : 0.100000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop21" },
+			"type" : "position",
+			"x" : 0.900000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Loop21" },
+			"type" : "strength",
+			"strength" : 0.000100,
+			"weight" : 1.0
+		}, {
+			"has" : { "name" : "file" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "file" },
+			"type" : "position",
+			"x" : 0.000000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "v" },
+			"type" : "position",
+			"y" : 0.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "v" },
+			"type" : "position",
+			"x" : 0.500000,
+			"weight" : 1.000000
+		}, {
+			"has" : { "name" : "Inst16199648464487999036" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst3082986394906011252" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst9884284126164318459" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst306092316665936828" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst18409775271532298391" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst11657811291655732696" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst3535045165539677195" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst5874766350049443243" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst12915409794125069019" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst7112239318810331840" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst5024731160708821774" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst347813497930874569" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst7839677322447556365" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst12900128701571659141" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst6451278371242863754" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}, {
+			"has" : { "name" : "Inst572770657884518231" },
+			"type" : "position",
+			"y" : 1.000000,
+			"weight" : 5.000000
+		}	]
+
+}

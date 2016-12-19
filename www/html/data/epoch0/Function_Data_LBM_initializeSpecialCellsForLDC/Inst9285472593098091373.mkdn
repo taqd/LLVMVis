@@ -1,0 +1,20 @@
+;; Line: 136, Column: 17
+  br i1 %58, label %59, label %87, 
+</pre>
+<br/>Operand # 0 (0x5cc4910) <br /><pre class="prettyprint lang-llvm ">  %58 = icmp sgt i32 %57, 1, </pre>
+Operand # 1 (0x5cc1300) <br /><pre class="prettyprint lang-llvm ">
+; label:87                                      ; preds = %68, %65, %62, %59, %56, %53
+  br label %88
+</pre>
+Operand # 2 (0x5cc11c0) <br /><pre class="prettyprint lang-llvm ">
+; label:59                                      ; preds = %56
+  %60 = load i32, i32* %x, align 4, 
+  %61 = icmp slt i32 %60, 98, 
+  br i1 %61, label %62, label %87, 
+</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:56                                      ; preds = %53, %50
+  %57 = load i32, i32* %x, align 4, 
+  %58 = icmp sgt i32 %57, 1, 
+  br i1 %58, label %59, label %87, 
+</pre>

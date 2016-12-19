@@ -1,0 +1,11 @@
+;; Line: 96, Column: 19
+  %45 = load i8*, i8** %11, align 8, 
+</pre>
+<br/>Operand # 0 (0x4fc2928) <br /><pre class="prettyprint lang-llvm ">  %11 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %param, i64 0, i32 1, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:44                                      ; preds = %41
+  %45 = load i8*, i8** %11, align 8, 
+  %46 = call i32 @stat(i8* %45, %struct.stat* nonnull %fileStat) #7, 
+  %47 = icmp eq i32 %46, 0, 
+  br i1 %47, label %51, label %48, 
+</pre>

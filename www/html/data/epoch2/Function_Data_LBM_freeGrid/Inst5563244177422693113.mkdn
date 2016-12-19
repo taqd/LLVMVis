@@ -1,0 +1,13 @@
+;; Line: 48, Column: 7
+  store double* null, double** %ptr, align 8, 
+</pre>
+<br/>Operand # 0 (0x4d301c0) <br /><pre class="prettyprint lang-llvm ">double* null</pre>
+Operand # 1 (0x4d34c50) <br /><pre class="prettyprint lang-llvm ">double** %ptr</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+  %1 = load double*, double** %ptr, align 8, 
+  %2 = getelementptr inbounds double, double* %1, i64 -400000, 
+  %3 = bitcast double* %2 to i8*, 
+  tail call void @free(i8* %3) #7, 
+  store double* null, double** %ptr, align 8, 
+  ret void, 
+</pre>

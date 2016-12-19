@@ -1,0 +1,35 @@
+Filename: main.c
+Directory: /p-ssd/amoeba/shared/bench/SPEC2006-Install/benchspec/CPU2006/470.lbm/run/build_base_amd64-m64-clang-nn.0000
+
+Blk15392711468491868489 ():
+L71,C32:  %12 = load i8**, i8*** %2, align 8, !dbg !252
+L71,C32:  %13 = getelementptr inbounds i8*, i8** %12, i64 1, !dbg !252
+L71,C32:  %14 = load i8*, i8** %13, align 8, !dbg !252
+L71,C26:  %15 = call i32 @atoi(i8* %14) #7, !dbg !253
+L71,C2:  %16 = load %struct.MAIN_Param*, %struct.MAIN_Param** %3, align 8, !dbg !254
+L71,C9:  %17 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %16, i32 0, i32 0, !dbg !255
+L71,C24:  store i32 %15, i32* %17, align 8, !dbg !256
+L72,C26:  %18 = load i8**, i8*** %2, align 8, !dbg !257
+L72,C26:  %19 = getelementptr inbounds i8*, i8** %18, i64 2, !dbg !257
+L72,C26:  %20 = load i8*, i8** %19, align 8, !dbg !257
+L72,C2:  %21 = load %struct.MAIN_Param*, %struct.MAIN_Param** %3, align 8, !dbg !258
+L72,C9:  %22 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %21, i32 0, i32 1, !dbg !259
+L72,C24:  store i8* %20, i8** %22, align 8, !dbg !260
+L73,C46:  %23 = load i8**, i8*** %2, align 8, !dbg !261
+L73,C46:  %24 = getelementptr inbounds i8*, i8** %23, i64 3, !dbg !261
+L73,C46:  %25 = load i8*, i8** %24, align 8, !dbg !261
+L73,C40:  %26 = call i32 @atoi(i8* %25) #7, !dbg !262
+L73,C2:  %27 = load %struct.MAIN_Param*, %struct.MAIN_Param** %3, align 8, !dbg !263
+L73,C9:  %28 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %27, i32 0, i32 2, !dbg !264
+L73,C24:  store i32 %26, i32* %28, align 8, !dbg !265
+L74,C47:  %29 = load i8**, i8*** %2, align 8, !dbg !266
+L74,C47:  %30 = getelementptr inbounds i8*, i8** %29, i64 4, !dbg !266
+L74,C47:  %31 = load i8*, i8** %30, align 8, !dbg !266
+L74,C41:  %32 = call i32 @atoi(i8* %31) #7, !dbg !267
+L74,C2:  %33 = load %struct.MAIN_Param*, %struct.MAIN_Param** %3, align 8, !dbg !268
+L74,C9:  %34 = getelementptr inbounds %struct.MAIN_Param, %struct.MAIN_Param* %33, i32 0, i32 3, !dbg !269
+L74,C24:  store i32 %32, i32* %34, align 4, !dbg !270
+L76,C6:  %35 = load i32, i32* %1, align 4, !dbg !271
+L76,C12:  %36 = icmp eq i32 %35, 6, !dbg !273
+L76,C6:  br i1 %36, label %37, label %66, !dbg !274
+

@@ -1,0 +1,9 @@
+;; Line: 138, Column: 42
+  %46 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+</pre>
+<br/>Operand # 0 (0x4d21f58) <br /><pre class="prettyprint lang-llvm ">@dstGrid = internal global [26000000 x double]* null, align 8</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+LBM_initializeSpecialCellsForChannel.exit:        ; preds = %45
+  %46 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, 
+  br label %.preheader28.i6, 
+</pre>

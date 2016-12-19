@@ -1,0 +1,6 @@
+File: lbm.c, Lines: 481, Cols: 16,
+; label:180                                     ; preds = %166
+  %181 = load i32, i32* %nFluidCells, align 4, 
+  %182 = add nsw i32 %181, 1, 
+  store i32 %182, i32* %nFluidCells, align 4, 
+  br label %183

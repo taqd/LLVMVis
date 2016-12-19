@@ -1,0 +1,17 @@
+;; Line: 673, Column: 26
+  %131 = fmul float %125, %125, 
+</pre>
+<br/>Operand # 0 (0x4fbb128) <br /><pre class="prettyprint lang-llvm ">  %125 = fptrunc double %124 to float, </pre>
+Operand # 1 (0x4fbb128) <br /><pre class="prettyprint lang-llvm ">  %125 = fptrunc double %124 to float, </pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:117                                     ; preds = %115, %114
+  %118 = load float, float* %fileUx, align 4, 
+  %119 = fpext float %118 to double, 
+  %120 = fsub double %111, %119, 
+  %121 = fptrunc double %120 to float, 
+  %122 = load float, float* %fileUy, align 4, 
+  %123 = fpext float %122 to double, 
+  %124 = fsub double %112, %123, 
+  %125 = fptrunc double %124 to float, 
+  %126 = load float, float* %fileUz, align 4, 
+... (TRIMMED)</pre>

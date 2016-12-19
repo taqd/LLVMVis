@@ -1,0 +1,58 @@
+;; Line: 187, Column: 7
+  br i1 %7, label %138, label %10, 
+</pre>
+<br/>Operand # 0 (0x4f38020) <br /><pre class="prettyprint lang-llvm ">  %7 = icmp eq i32 %6, 0, </pre>
+Operand # 1 (0x4f37990) <br /><pre class="prettyprint lang-llvm ">
+; label:10                                      ; preds = %1
+  %11 = getelementptr inbounds double, double* %dstGrid, i64 %indvars.iv, 
+  store double %9, double* %11, align 8, 
+  %12 = or i64 %indvars.iv, 1, 
+  %13 = getelementptr inbounds double, double* %srcGrid, i64 %12, 
+  %14 = bitcast double* %13 to i64*, 
+  %15 = load i64, i64* %14, align 8, 
+  %16 = add nsw i64 %indvars.iv, -1998, 
+  %17 = getelementptr inbounds double, double* %dstGrid, i64 %16, 
+  %18 = bitcast double* %17 to i64*, 
+  store i64 %15, i64* %18, align 8, 
+  %19 = or i64 %indvars.iv, 2, 
+  %20 = getelementptr inbounds double, double* %srcGrid, i64 %19, 
+  %21 = bitcast double* %20 to i64*, 
+  %22 = load i64, i64* %21, align 8, 
+  %23 = add nuw nsw i64 %indvars.iv, 2001, 
+  %24 = getelementptr inbounds double, double* %dstGrid, i64 %23, 
+  %25 = bitcast double* %24 to 
+... (TRIMMED)</pre>
+Operand # 2 (0x4f379e0) <br /><pre class="prettyprint lang-llvm ">
+; label:138                                     ; preds = %1
+  %139 = or i64 %indvars.iv, 1, 
+  %140 = getelementptr inbounds double, double* %srcGrid, i64 %139, 
+  %141 = load double, double* %140, align 8, 
+  %142 = fadd double %9, %141, 
+  %143 = or i64 %indvars.iv, 2, 
+  %144 = getelementptr inbounds double, double* %srcGrid, i64 %143, 
+  %145 = load double, double* %144, align 8, 
+  %146 = fadd double %142, %145, 
+  %147 = or i64 %indvars.iv, 3, 
+  %148 = getelementptr inbounds double, double* %srcGrid, i64 %147, 
+  %149 = load double, double* %148, align 8, 
+  %150 = fadd double %146, %149, 
+  %151 = add nuw nsw i64 %indvars.iv, 4, 
+  %152 = getelementptr inbounds double, double* %srcGrid, i64 %151, 
+  %153 = load double, double* %152, align 8, 
+  %154 = fadd double %150, %153, 
+  %155 = add nuw nsw i64 %indvars.iv, 5, 
+  %156
+... (TRIMMED)</pre>
+Parent Block : <br /><pre class="prettyprint lang-llvm ">
+; label:1                                       ; preds = %0, %466
+  %indvars.iv = phi i64 [ 0, %0 ], [ %indvars.iv.next, %466 ]
+  %2 = add nuw nsw i64 %indvars.iv, 19, 
+  %3 = getelementptr inbounds double, double* %srcGrid, i64 %2, 
+  %4 = bitcast double* %3 to i32*, 
+  %5 = load i32, i32* %4, align 4, 
+  %6 = and i32 %5, 1, 
+  %7 = icmp eq i32 %6, 0, 
+  %8 = getelementptr inbounds double, double* %srcGrid, i64 %indvars.iv, 
+  %9 = load double, double* %8, align 8, 
+  br i1 %7, label %138, label %10, 
+</pre>
