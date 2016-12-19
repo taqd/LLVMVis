@@ -22,7 +22,10 @@ javascript library.
 
 
 ![Control Flow view of Module](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_ModuleCF.gif)]
-
+![Control Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionCF.gif)]
+![Data Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionDF.gif)]
+![History Feature](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_History.gif])
+![Customization option](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_Features.gif)]
 ### Other details
 
 The code uses a
