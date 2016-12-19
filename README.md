@@ -46,22 +46,22 @@ Try it out yourself at [http://137.82.252.51/graph.php?dataset=Module_Control_st
 
 ### Module Level Control Flow View
 
-![Control Flow view of Module](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_ModuleCF.gif)
+![Control Flow view of Module](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_ModuleCF.gif) [View as album](http://imgur.com/a/034g7)
 
 ### Function Level Control Flow View
 
-![Control Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionCF.gif)
+![Control Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionCF.gif) [View as album](http://imgur.com/a/qyvkd)
 
 ### Function Level Dataflow view
 
-![Data Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionDF.gif)
+![Data Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionDF.gif) [View as album](http://imgur.com/a/l8Joj)
 
 ### The history feature
-![History Feature](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_History.gif)
+![History Feature](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_History.gif) [View as album](http://imgur.com/a/PCJl0)
 
 ### Some customization options
 
-![Customization option](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_Features.gif)
+![Customization option](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_Features.gif) [View as album](http://imgur.com/a/cuumf)
 
 
 ## Other details
