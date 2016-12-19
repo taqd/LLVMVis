@@ -42,6 +42,7 @@ opt –load visualize.so –visualize -o dump < your_input.bc
 ## Demonstration
 
 Try it out yourself at [http://trocadero.cs.sfu.ca/graph.php?dataset=Module_Control_stdin](http://trocadero.cs.sfu.ca/graph.php?dataset=Module_Control_stdin)
+Note: This demo is showing 470.lbm from SPEC2006 at the -O0, -O1, -O2, and -O3 optmization levels. Each level can be visited by changing the history, 0=-O0,=-O1, etc
 
 ### Module Level Control Flow View | [View as album](http://imgur.com/a/034g7)
 
