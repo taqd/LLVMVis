@@ -16,23 +16,35 @@ javascript library.
 * Ability to navigate through a program, from function to function, or block to block in a single, easy to use interface.
 * Themeable! 
 
-### Examples
+## Demonstration
 
-#### Module Level Control Flow View
+### Module Level Control Flow View
+
+![Control Flow view of Module](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_ModuleCF.gif)
+
+### Function Level Control Flow View
+
+![Control Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionCF.gif)
+
+### Function Level Dataflow view
+
+![Data Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionDF.gif)
+
+### The history feature
+![History Feature](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_History.gif)
+
+### Some customization options
+
+![Customization option](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_Features.gif)
 
 
-![Control Flow view of Module](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_ModuleCF.gif)]
-![Control Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionCF.gif)]
-![Data Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionDF.gif)]
-![History Feature](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_History.gif])
-![Customization option](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_Features.gif)]
-### Other details
+## Other details
 
 The code uses a
 [d3.js force layout](https://github.com/mbostock/d3/wiki/Force-Layout) to
 compute object positions, with
 [collision detection](http://bl.ocks.org/mbostock/3231298) to prevent nodes
-from overlapping each other.
+from overlapping each other, and is based upon the [d3-process-map](https://github.com/nylen/d3-process-map) example.
 
 Nodes are colored by the
 [ColorBrewer Set3 scheme](http://colorbrewer2.org/?type=qualitative&scheme=Set3&n=12),
