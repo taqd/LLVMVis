@@ -38,6 +38,8 @@ opt –load visualize.so –visualize -o dump < your_input.bc
 
 ## Demonstration
 
+Try it out yourself at [http://137.82.252.51/graph.php?dataset=Module_Control_stdin](http://137.82.252.51/graph.php?dataset=Module_Control_stdin). *NOTE: To access this server you will need to be on the UBC ECE network, I suggest tunneling your browser traffic through SSH.*
+
 ### Module Level Control Flow View
 
 ![Control Flow view of Module](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_ModuleCF.gif)
