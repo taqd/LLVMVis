@@ -44,22 +44,22 @@ opt –load visualize.so –visualize -o dump < your_input.bc
 Try it out yourself at [http://137.82.252.51/graph.php?dataset=Module_Control_stdin](http://137.82.252.51/graph.php?dataset=Module_Control_stdin).
 *NOTE: To access this server you will need to be on the UBC ECE network, I suggest tunneling your browser traffic through ssh.ece.ubc.ca*
 
-### Module Level Control Flow View [View as album](http://imgur.com/a/034g)7
+### Module Level Control Flow View | [View as album](http://imgur.com/a/034g)
 
 ![Control Flow view of Module](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_ModuleCF.gif) 
 
-### Function Level Control Flow View [View as album](http://imgur.com/a/qyvkd)
+### Function Level Control Flow View | [View as album](http://imgur.com/a/qyvkd)
 
 ![Control Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionCF.gif) 
 
-### Function Level Dataflow view [View as album](http://imgur.com/a/l8Joj)
+### Function Level Dataflow view | [View as album](http://imgur.com/a/l8Joj)
 
 ![Data Flow view of Function](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_FunctionDF.gif) 
 
 ### The history feature [View as album](http://imgur.com/a/PCJl0)
 ![History Feature](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_History.gif) 
 
-### Some customization options [View as album](http://imgur.com/a/cuumf)
+### Some customization options | [View as album](http://imgur.com/a/cuumf)
 
 ![Customization option](https://github.com/tqdwyer/LLVMVis/blob/master/www/html/img/LLVMVis_470lbm_Features.gif) 
 
