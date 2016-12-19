@@ -18,15 +18,21 @@ javascript library.
 
 ## Installation
 * Add the source code to your LLVM source directory
-** git clone https://github.com/tqdwyer/LLVMVis.git ~/<LLVM SRC>/lib/Analysis
-** add “add_subdirectory(visualize)” to <LLVM SRC>/lib/Analysis/CMakeLists.txt
-** Re-build your llvm
+```bash
+git clone https://github.com/tqdwyer/LLVMVis.git ~/<LLVM SRC>/lib/Analysis
+add “add_subdirectory(visualize)” to <LLVM SRC>/lib/Analysis/CMakeLists.txt
+#Re-build your llvm
+```
 
 * Install a webserver with php
-** sudo apt-get install apache2 php libapache2-mod-php
+```bash
+sudo apt-get install apache2 php libapache2-mod-php
+```
 
 * Run the visualization pass
-** opt –load visualize.so –visualize -o dump < your_input.bc
+```bash
+opt –load visualize.so –visualize -o dump < your_input.bc
+```
 
 * Now check out your webserver! The pass will automatically sync the data files to /var/www/http/data
 
