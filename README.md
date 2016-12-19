@@ -1,14 +1,15 @@
 # LLVM Visualize
 
-LLVM Visualize (LLVMVis) is a an interactive program
+LLVM Visualize (LLVMVis) is an interactive program
 visualization/exploration/debugging tool for LLVM. It uses a compiler
-pass as a backend, and transforms several of LLVM's internal data
-structures into a json format, to then be visualized using the D3
-javascript library.
+pass as a backend and transforms several of LLVM's internal data
+structures into json format, to then be visualized in your webbrowser
+using the D3 javascript library.
 
 ## Features
 * Interactive acyclic graph with automatic force layout.
-* Ability to manually set node positions, along with edge widths, and color.
+* Additional, and totally customizable, 'additional information' for every node.
+* Ability to manually set node positions, and edge widths/colours.
 * Prebuilt control flow, data flow, and call graph views
 * An easy to use API with several well documented examples.
 * A history across successive visualizations allowing for changes in code to be easily seen and understood.
@@ -29,6 +30,8 @@ add “add_subdirectory(visualize)” to <LLVM SRC>/lib/Analysis/CMakeLists.txt
 sudo apt-get install apache2 php libapache2-mod-php
 ```
 
+* Set your configuration settings in visualize.hpp
+
 * Run the visualization pass
 ```bash
 opt –load visualize.so –visualize -o dump < your_input.bc
@@ -39,7 +42,7 @@ opt –load visualize.so –visualize -o dump < your_input.bc
 ## Demonstration
 
 Try it out yourself at [http://137.82.252.51/graph.php?dataset=Module_Control_stdin](http://137.82.252.51/graph.php?dataset=Module_Control_stdin).
-*NOTE: To access this server you will need to be on the UBC ECE network, I suggest tunneling your browser traffic through SSH.*
+*NOTE: To access this server you will need to be on the UBC ECE network, I suggest tunneling your browser traffic through ssh.ece.ubc.ca*
 
 ### Module Level Control Flow View
 
