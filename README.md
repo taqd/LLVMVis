@@ -41,8 +41,7 @@ opt –load visualize.so –visualize -o dump < your_input.bc
 
 ## Demonstration
 
-Try it out yourself at [http://137.82.252.51/graph.php?dataset=Module_Control_stdin](http://137.82.252.51/graph.php?dataset=Module_Control_stdin).
-*NOTE: To access this server you will need to be on the UBC ECE network, I suggest tunneling your browser traffic through ssh.ece.ubc.ca*
+Try it out yourself at [http://trocadero.cs.sfu.ca/graph.php?dataset=Module_Control_stdin](http://trocadero.cs.sfu.ca/graph.php?dataset=Module_Control_stdin)
 
 ### Module Level Control Flow View | [View as album](http://imgur.com/a/034g7)
 
